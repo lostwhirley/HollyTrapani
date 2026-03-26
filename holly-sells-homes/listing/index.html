@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Listing | Holly Trapani</title>
+  <meta name="description" id="page-description" content="Property listing - Holly Trapani Real Estate">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #3d3530;
+      --accent: #b08d7a;
+      --accent-soft: #d4b8a8;
+      --dark: #2c2420;
+      --light: #f5f0eb;
+      --cream: #faf7f4;
+      --white: #ffffff;
+      --gray: #a89d98;
+      --border: #e8ddd7;
+      --text-muted: #7a6e69;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--dark); background: var(--cream); line-height: 1.7; font-weight: 300; letter-spacing: 0.01em; }
+
+    nav { position: sticky; top: 0; background: var(--cream); border-bottom: 1px solid var(--border); z-index: 100; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-style: italic; font-weight: 400; color: var(--primary); text-decoration: none; }
+    .nav-logo span { font-family: 'Jost', sans-serif; display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.15em; font-style: normal; }
+    .nav-back { color: var(--primary); text-decoration: none; font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+    .nav-back:hover { color: var(--accent); }
+
+    .hero { background: var(--cream); color: var(--dark); padding: 3.5rem 2rem; }
+    .hero-inner { max-width: 1200px; margin: 0 auto; }
+    .hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.7rem; margin-bottom: 0.5rem; font-weight: 400; letter-spacing: -0.5px; color: var(--primary); line-height: 1.2; text-align: center; }
+    .hero-sub { font-family: 'Jost', sans-serif; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; text-align: center; }
+    .hero-price { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.1rem; font-weight: 400; color: var(--accent); margin-bottom: 1.2rem; text-align: center; }
+    .hero-specs { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .spec-badge { background: transparent; border: 1px solid var(--border); padding: 0.55rem 1rem; border-radius: 0; font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; color: var(--primary); transition: all 0.2s; }
+    .spec-badge:hover { border-color: var(--accent); color: var(--accent); }
+
+    .property-image { max-width: 1200px; margin: 0.5rem auto 2rem auto; padding: 0 2rem; }
+    .property-image img { width: 85%; max-width: 900px; border-radius: 0; box-shadow: none; border: 8px solid #000; margin: 0 auto; display: block; }
+
+    .details { max-width: 1200px; margin: 3rem auto; padding: 0 2rem; }
+    .details h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 1rem; color: var(--primary); text-align: center; }
+    .details p { color: #1a1a1a; line-height: 1.9; margin: 0 auto 1rem auto; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 1.2rem; letter-spacing: 0.2px; width: 80%; }
+
+    .specs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem auto; max-width: 1200px; padding: 0 2rem; }
+    .spec-item { background: var(--white); padding: 1rem 1.2rem; border-radius: 0; border-bottom: 1px solid var(--border); }
+    .spec-label { font-family: 'Jost', sans-serif; font-size: 0.6rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.35rem; }
+    .spec-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 400; color: var(--primary); }
+
+    .contact-bar { background: var(--cream); padding: 2rem; margin: 3rem 0; border-radius: 0; }
+    .contact-inner { max-width: 1200px; margin: 0 auto; padding: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .contact-info h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 1rem; color: var(--primary); }
+    .contact-item { margin-bottom: 1rem; }
+    .contact-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.25rem; }
+    .contact-value { font-family: 'Jost', sans-serif; font-size: 0.95rem; font-weight: 300; color: var(--dark); }
+    .contact-value a { color: var(--accent); text-decoration: none; font-weight: 400; border-bottom: 1px solid var(--accent-soft); }
+    .contact-value a:hover { border-bottom-color: var(--accent); }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 0;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      min-height: 44px;
+    }
+    .btn:hover { background: var(--dark); }
+
+    .location-section { background: var(--cream); padding: 4rem 0; margin: 3rem 0; }
+    .location-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .location-header { margin-bottom: 2rem; }
+    .location-header h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 0.5rem; color: var(--primary); letter-spacing: -0.01em; }
+    .location-header p { color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; }
+    .location-map { width: 100%; height: 600px; border-radius: 0; overflow: hidden; box-shadow: none; margin-top: 2rem; }
+    .location-map iframe { width: 100%; height: 100%; border: none; }
+
+    .loader { text-align: center; padding: 4rem 2rem; }
+    .spinner { width: 50px; height: 50px; border: 4px solid rgba(176, 141, 122, 0.15); border-top-color: var(--accent); border-right-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto; }
+    @keyframes spin { 0% { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    .page-loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--cream); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+    .page-loader.hidden { display: none; }
+
+    .hero { opacity: 0; }
+    .hero.loaded { opacity: 1; }
+    .property-image img { opacity: 0; }
+    .property-image img.loaded { opacity: 1; transition: opacity 0.3s; }
+
+    .calculator-section { background: var(--light); margin: 3rem 0; border-radius: 0; padding: 3rem 0; }
+    .calculator-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .calculator-inner h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 2rem; color: var(--primary); }
+    .calculator-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 2rem; }
+    .calc-input { display: flex; flex-direction: column; }
+    .calc-input label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; }
+    .calc-input input[type="number"] { padding: 0.6rem; border: none; border-bottom: 1px solid var(--border); border-radius: 0; font-family: 'Jost', sans-serif; font-size: 0.9rem; background: transparent; color: var(--dark); margin-bottom: 0.5rem; }
+    .calc-input input[type="number"]:focus { outline: none; border-bottom-color: var(--accent); }
+    .calc-input input[type="range"] { width: 100%; height: 4px; border-radius: 0; background: var(--border); outline: none; -webkit-appearance: none; appearance: none; cursor: pointer; }
+    .calc-input input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; }
+    .calc-input input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; border: none; }
+    .calc-result { background: var(--white); padding: 1.5rem; border-radius: 0; border-bottom: 1px solid var(--border); }
+    .calc-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+    .calc-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 400; color: var(--primary); }
+    .save-btn { background: none; border: 1px solid var(--accent); color: var(--accent); padding: 0.5rem 1rem; border-radius: 0; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+    .save-btn:hover { background: var(--accent-soft); }
+    .save-btn.saved { background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+    .get-in-touch-section { background: var(--light); padding: 4rem 0; margin: 3rem 0; }
+    .get-in-touch-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .get-in-touch-header { margin-bottom: 2.5rem; }
+    .get-in-touch-header h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 400; margin-bottom: 0.5rem; color: var(--primary); }
+    .get-in-touch-header p { color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; }
+    .get-in-touch-content { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; align-items: start; }
+    .get-in-touch-contact { text-align: center; }
+    .get-in-touch-contact div { margin-bottom: 2rem; }
+    .get-in-touch-contact-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+    .get-in-touch-contact-link { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 400; color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--accent-soft); display: inline-block; }
+    .get-in-touch-form { background: var(--white); padding: 2.5rem; display: flex; flex-direction: column; gap: 1.2rem; border: 2px solid var(--accent-soft); box-shadow: 0 4px 12px rgba(176, 141, 122, 0.15); }
+    .get-in-touch-form input,
+    .get-in-touch-form textarea { padding: 0.8rem 0.6rem; border: none; border-bottom: 2px solid var(--border); border-radius: 0; font-family: 'Jost', sans-serif; font-size: 0.9rem; background: transparent; color: var(--dark); transition: all 0.3s; }
+    .get-in-touch-form input::placeholder,
+    .get-in-touch-form textarea::placeholder { color: var(--text-muted); }
+    .get-in-touch-form input:focus,
+    .get-in-touch-form textarea:focus { outline: none; border-bottom-color: var(--accent); background: rgba(212, 184, 168, 0.05); }
+    .get-in-touch-form textarea { resize: none; min-height: 120px; }
+    .get-in-touch-form button { padding: 1rem 2rem; background: var(--primary); color: var(--white); border: none; border-radius: 0; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; cursor: pointer; transition: all 0.3s; margin-top: 0.5rem; }
+    .get-in-touch-form button:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(61, 53, 48, 0.2); }
+
+    footer { background: var(--cream); color: var(--text-muted); padding: 3rem 2rem; text-align: center; font-family: 'Jost', sans-serif; font-size: 0.75rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-brokerage { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 400; color: var(--primary); margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-family: 'Jost', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 0.5rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav-inner { padding: 0.75rem 1rem; }
+      .nav-logo { font-size: 1.15rem; }
+      .nav-logo span { font-size: 0.55rem; margin-top: 2px; }
+      .hero { padding: 2rem 1.5rem; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero-sub { font-size: 0.7rem; }
+      .hero-price { font-size: 1.8rem; }
+      .hero-specs { gap: 0.75rem; flex-direction: column; }
+      .spec-badge { width: 100%; text-align: center; }
+      .property-image { padding: 0 1.5rem; margin: 1.5rem auto; }
+      .details { padding: 2rem 1.5rem; margin: 2rem 0; }
+      .details h2 { font-size: 1.4rem; }
+      .specs-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 0 1.5rem; }
+      .contact-bar { padding: 1.5rem; margin: 2rem 0; }
+      .contact-inner { grid-template-columns: 1fr; padding: 1.5rem; gap: 1.5rem; }
+      .contact-info h3 { font-size: 1.3rem; }
+      .contact-item { margin-bottom: 0.75rem; }
+      .btn { width: 100%; min-height: 48px; }
+      .location-section { padding: 2rem 1.5rem; margin: 2rem 0; }
+      .location-header h2 { font-size: 1.6rem; }
+      .location-map { height: 400px; }
+      footer { padding: 2rem 1.5rem; }
+      .footer-brokerage { font-size: 0.9rem; }
+      .footer-links { gap: 1rem; }
+      .footer-links a { min-height: 44px; padding: 0 0.25rem; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner { padding: 0.75rem 1rem; }
+      .nav-logo { font-size: 1.05rem; }
+      .hero { padding: 2rem 1rem; }
+      .hero h1 { font-size: 1.5rem; }
+      .hero-sub { font-size: 0.65rem; }
+      .hero-price { font-size: 1.5rem; }
+      .hero-specs { gap: 0.5rem; flex-direction: column; }
+      .spec-badge { width: 100%; text-align: center; }
+      .property-image { padding: 0 1rem; margin: 1rem auto; }
+      .property-image img { border-radius: 0; }
+      .details { padding: 1.5rem 1rem; margin: 1rem 0; }
+      .details h2 { font-size: 1.3rem; }
+      .specs-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+      .spec-item { padding: 1rem; }
+      .spec-label { font-size: 0.6rem; }
+      .spec-value { font-size: 1.2rem; }
+      .contact-bar { padding: 1rem; margin: 1.5rem 0; }
+      .contact-inner { padding: 1rem; gap: 1rem; }
+      .contact-info h3 { font-size: 1.1rem; }
+      .contact-item { margin-bottom: 0.5rem; }
+      .contact-label { font-size: 0.6rem; }
+      .contact-value { font-size: 0.85rem; }
+      .btn { padding: 0.6rem 1.2rem; font-size: 0.7rem; }
+      .location-section { padding: 2rem 1rem; margin: 1.5rem 0; }
+      .location-header h2 { font-size: 1.4rem; }
+      .location-map { height: 300px; }
+      footer { padding: 1.5rem 1rem; }
+      .footer-brokerage { font-size: 0.8rem; }
+      .footer-links { gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="page-loader" id="page-loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">
+      Holly Trapani
+      <span>New Day Realty</span>
+    </a>
+    <div style="display: flex; gap: 1.5rem; align-items: center;">
+      <a href="../#listings" class="nav-back">← Back to Listings</a>
+      <button id="save-btn" class="save-btn" onclick="toggleSaveListing()">♥ Save</button>
+      <a href="tel:2395658760" title="Call Holly" style="color: var(--text-muted); transition: color 0.2s; text-decoration: none; font-size: 1.3rem;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/holly.trapani" target="_blank" title="Facebook" style="color: var(--text-muted); transition: color 0.2s; text-decoration: none; font-size: 1.3rem;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1 id="address">Loading...</h1>
+    <p class="hero-sub" id="city">Ave Maria, Florida</p>
+    <div class="hero-price" id="price">—</div>
+    <div class="hero-specs" id="hero-specs">
+      <div class="spec-badge"><span id="beds">—</span> Beds</div>
+      <div class="spec-badge"><span id="baths">—</span> Baths</div>
+      <div class="spec-badge"><span id="sqft">—</span> Sq Ft</div>
+      <div class="spec-badge"><span id="price-badge">—</span></div>
+      <div class="spec-badge" id="status-badge">—</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTY IMAGE -->
+<div class="property-image">
+  <img id="main-photo" src="" alt="Property" style="background: #f0f0f0; aspect-ratio: 16/9; cursor: pointer;">
+</div>
+
+<!-- PHOTO MODAL -->
+<div id="photo-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 10000; align-items: center; justify-content: center; padding: 40px 20px;">
+  <div style="position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+    <img id="modal-photo" src="" alt="Property" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+    <button id="modal-close" style="position: absolute; top: 20px; right: 20px; background: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #000;">✕</button>
+  </div>
+</div>
+
+<!-- DETAILS -->
+<section class="details">
+  <h2>Property Details</h2>
+  <p id="description">Many surrounding trees provide natural shade and privacy for this beautiful home.</p>
+</section>
+
+<!-- SPECS -->
+<div class="specs-grid" id="specs-grid">
+  <div class="spec-item">
+    <div class="spec-label">Loading...</div>
+    <div class="spec-value">—</div>
+  </div>
+</div>
+
+<!-- MORTGAGE CALCULATOR -->
+<section class="calculator-section">
+  <div class="calculator-inner">
+    <h2>Mortgage Calculator</h2>
+    <div class="calculator-grid">
+      <div class="calc-input">
+        <label>Home Price</label>
+        <input type="number" id="homePrice" placeholder="0" oninput="syncSlider('homePrice'); calculateMortgage()">
+        <input type="range" id="homePriceSlider" min="50000" max="1000000" step="10000" value="0" oninput="syncInput('homePrice'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Down Payment %</label>
+        <input type="number" id="downPercent" value="20" oninput="syncSlider('downPercent'); calculateMortgage()">
+        <input type="range" id="downPercentSlider" min="0" max="50" step="1" value="20" oninput="syncInput('downPercent'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Interest Rate %</label>
+        <input type="number" id="interestRate" value="7" step="0.1" oninput="syncSlider('interestRate'); calculateMortgage()">
+        <input type="range" id="interestRateSlider" min="2" max="12" step="0.1" value="7" oninput="syncInput('interestRate'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Loan Term (years)</label>
+        <input type="number" id="loanTerm" value="30" oninput="syncSlider('loanTerm'); calculateMortgage()">
+        <input type="range" id="loanTermSlider" min="5" max="50" step="1" value="30" oninput="syncInput('loanTerm'); calculateMortgage()">
+      </div>
+    </div>
+    <div class="calc-result">
+      <div class="calc-label">Estimated Monthly Payment</div>
+      <div class="calc-value" id="monthlyPayment">$0</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION MAP -->
+<section class="location-section">
+  <div class="location-inner">
+    <div class="location-header">
+      <h2>Location</h2>
+      <p>Ave Maria, Florida</p>
+    </div>
+    <div class="location-map" id="location-map">
+      <iframe src="" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- GET IN TOUCH -->
+<section class="get-in-touch-section">
+  <div class="get-in-touch-inner">
+    <div class="get-in-touch-content">
+      <div class="get-in-touch-contact">
+        <div class="get-in-touch-header">
+          <h2>Get in Touch</h2>
+          <p>Ready to learn more? Reach out to Holly today</p>
+        </div>
+        <div>
+          <div class="get-in-touch-contact-label">Phone</div>
+          <a href="tel:2395658760" class="get-in-touch-contact-link">239-565-8760</a>
+        </div>
+        <div>
+          <div class="get-in-touch-contact-label">Email</div>
+          <a href="mailto:holly@newdayrealty.com" class="get-in-touch-contact-link">holly@newdayrealty.com</a>
+        </div>
+      </div>
+
+      <form class="get-in-touch-form" onsubmit="event.preventDefault(); alert('Thank you for your inquiry! Holly will contact you shortly.'); this.reset();">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number">
+        <textarea placeholder="Message or Questions..."></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brokerage">Holly Trapani | New Day Realty</div>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="../#listings">Listings</a>
+      <a href="../#contact">Contact</a>
+      <a href="https://facebook.com/hollyfloridarealtor" target="_blank" title="Facebook">f</a>
+      <a href="https://instagram.com/hollyfloridarealtor" target="_blank" title="Instagram">📷</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  async function loadListing() {
+    console.log('loadListing function started');
+    try {
+      // Reset page content immediately to avoid showing old data
+      document.getElementById('address').textContent = 'Loading...';
+      document.getElementById('price').textContent = '—';
+      document.getElementById('beds').textContent = '—';
+      document.getElementById('baths').textContent = '—';
+      document.getElementById('status-badge').textContent = '—';
+      document.getElementById('specs-grid').innerHTML = '<div class="spec-item"><div class="spec-label">Loading...</div><div class="spec-value">—</div></div>';
+
+      const mainPhoto = document.getElementById('main-photo');
+      mainPhoto.src = '';
+      mainPhoto.style.background = '#f0f0f0';
+
+      // Setup photo modal
+      const modal = document.getElementById('photo-modal');
+      const modalPhoto = document.getElementById('modal-photo');
+      const modalClose = document.getElementById('modal-close');
+
+      mainPhoto.addEventListener('click', function() {
+        modalPhoto.src = mainPhoto.src;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+
+      modalClose.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Get listing from sessionStorage (passed from homepage)
+      const selectedListingData = sessionStorage.getItem('selectedListing');
+      let listing;
+
+      if (selectedListingData) {
+        listing = JSON.parse(selectedListingData);
+      } else {
+        document.body.innerHTML = '<div style="text-align: center; padding: 4rem 2rem;"><h1>Listing not found</h1><p><a href="../">Return to home</a></p></div>';
+        return;
+      }
+
+      console.log('Listing data from sessionStorage:', listing);
+      console.log('gallery_images:', listing.gallery_images);
+      console.log('photos:', listing.photos);
+
+      // Process photos from listing data (already includes all photos from API)
+      if (listing.photos && listing.photos.length > 0) {
+        const processedPhotos = listing.photos.map(photo => {
+          let url = typeof photo === 'string' ? photo : photo.href;
+          // Convert HTTP to HTTPS
+          if (url && url.startsWith('http://')) {
+            url = url.replace('http://', 'https://');
+          }
+          // Upgrade to high-res version
+          if (url && url.includes('s.jpg')) {
+            url = url.replace(/s\.jpg/, 'od-w1024_h768.jpg');
+          }
+          return url;
+        });
+        console.log(`Property has ${processedPhotos.length} photos`);
+        listing.gallery_images = processedPhotos;
+      }
+
+      const address = listing.location.address;
+      const desc = listing.description;
+      const photos = listing.gallery_images || listing.photos || [];
+      const primaryPhoto = listing.primary_photo?.href || '';
+      console.log('Photos array:', photos);
+
+      // Track current photo for navigation
+      let currentPhotoIndex = 0;
+      const allPhotos = photos.map(p => typeof p === 'string' ? p : p.href);
+
+      // Update page title and meta
+      const fullAddress = address.line;
+      const price = listing.list_price.toLocaleString();
+      document.title = `${fullAddress} | $${price} | Holly Trapani`;
+      document.getElementById('page-title').textContent = `${fullAddress} | Holly Trapani`;
+      document.getElementById('page-description').textContent = `${fullAddress}, ${address.city}, ${address.state_code}. ${desc.beds} bed${desc.beds !== 1 ? 's' : ''}, ${desc.baths_consolidated} bath${desc.baths_consolidated !== 1 ? 's' : ''}. $${price}`;
+      console.log('Listing data:', listing);
+      console.log('Property description:', listing.property_description);
+      document.getElementById('description').textContent = listing.property_description || 'Beautiful home in Ave Maria.';
+
+      // Update hero
+      document.getElementById('address').textContent = fullAddress;
+      document.getElementById('city').textContent = `${address.city}, ${address.state_code} ${address.postal_code}`;
+      document.getElementById('price').textContent = `$${price}`;
+      document.getElementById('beds').textContent = desc.beds;
+      document.getElementById('baths').textContent = desc.baths_consolidated;
+      document.getElementById('sqft').textContent = desc.sqft ? desc.sqft.toLocaleString() : '—';
+      document.getElementById('price-badge').textContent = `$${price}`;
+      document.getElementById('status-badge').textContent = listing.status.replace('_', ' ');
+      document.querySelector('.hero').classList.add('loaded');
+
+      // Update main photo
+      if (primaryPhoto) {
+        mainPhoto.src = primaryPhoto;
+        mainPhoto.classList.add('loaded');
+
+        // Add arrow navigation overlays on main photo
+        if (allPhotos.length > 1) {
+          mainPhoto.style.position = 'relative';
+          const photoWrapper = mainPhoto.parentElement;
+          photoWrapper.style.position = 'relative';
+
+          const prevArrow = document.createElement('button');
+          prevArrow.innerHTML = '←';
+          prevArrow.style.cssText = `
+            position: absolute;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--border);
+            color: var(--primary);
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+            transition: all 0.2s;
+          `;
+          prevArrow.addEventListener('mouseover', function() {
+            this.style.background = 'rgba(255, 255, 255, 1)';
+            this.style.borderColor = 'var(--accent)';
+          });
+          prevArrow.addEventListener('mouseout', function() {
+            this.style.background = 'rgba(255, 255, 255, 0.9)';
+            this.style.borderColor = 'var(--border)';
+          });
+          prevArrow.addEventListener('click', function() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + allPhotos.length) % allPhotos.length;
+            mainPhoto.src = allPhotos[currentPhotoIndex];
+          });
+
+          const nextArrow = document.createElement('button');
+          nextArrow.innerHTML = '→';
+          nextArrow.style.cssText = `
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--border);
+            color: var(--primary);
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+            transition: all 0.2s;
+          `;
+          nextArrow.addEventListener('mouseover', function() {
+            this.style.background = 'rgba(255, 255, 255, 1)';
+            this.style.borderColor = 'var(--accent)';
+          });
+          nextArrow.addEventListener('mouseout', function() {
+            this.style.background = 'rgba(255, 255, 255, 0.9)';
+            this.style.borderColor = 'var(--border)';
+          });
+          nextArrow.addEventListener('click', function() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % allPhotos.length;
+            mainPhoto.src = allPhotos[currentPhotoIndex];
+          });
+
+          photoWrapper.appendChild(prevArrow);
+          photoWrapper.appendChild(nextArrow);
+        }
+      }
+
+      // Add photo gallery title before main photo
+      if (photos.length > 1) {
+        const titleHtml = `
+          <div style="max-width: 1200px; margin: 0.5rem auto 1rem auto; padding: 0 2rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary); text-align: center;">Photo Gallery (${photos.length} photos)</h3>
+          </div>
+        `;
+        document.querySelector('.property-image').insertAdjacentHTML('beforebegin', titleHtml);
+
+        const photoGalleryHtml = `
+          <div style="max-width: 1200px; margin: 1rem auto 2rem auto; padding: 0 2rem;">
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 2rem; align-items: center;">
+              <button id="gallery-prev" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0;">←</button>
+              <div id="thumbnails-container" style="display: flex; gap: 0.75rem; flex: 1; overflow: hidden;">
+                ${photos.map((p, i) => {
+                  const imageUrl = typeof p === 'string' ? p : p.href;
+                  return `<img src="${imageUrl}" alt="Photo ${i+1}"
+                    style="width: 120px; height: 120px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; border-radius: 4px; flex-shrink: 0;"
+                    class="gallery-thumb"
+                    data-full="${imageUrl}"
+                    data-index="${i}"
+                    onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)">`;
+                }).join('')}
+              </div>
+              <button id="gallery-next" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0;">→</button>
+            </div>
+          </div>
+        `;
+        document.querySelector('.property-image').insertAdjacentHTML('afterend', photoGalleryHtml);
+
+        const thumbnailsContainer = document.getElementById('thumbnails-container');
+        let scrollPosition = 0;
+        const thumbWidth = 120 + 6; // 120px width + 6px gap
+
+        // Add click handler to gallery thumbnails
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+          thumb.addEventListener('click', function() {
+            const imageUrl = this.dataset.full;
+            mainPhoto.src = imageUrl;
+            currentPhotoIndex = allPhotos.indexOf(imageUrl);
+            mainPhoto.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+        });
+
+        // Add arrow navigation handlers to scroll thumbnails
+        document.getElementById('gallery-prev').addEventListener('click', function() {
+          scrollPosition = Math.max(0, scrollPosition - thumbWidth * 3);
+          thumbnailsContainer.scrollLeft = scrollPosition;
+        });
+
+        document.getElementById('gallery-next').addEventListener('click', function() {
+          const maxScroll = thumbnailsContainer.scrollWidth - thumbnailsContainer.clientWidth;
+          scrollPosition = Math.min(maxScroll, scrollPosition + thumbWidth * 3);
+          thumbnailsContainer.scrollLeft = scrollPosition;
+        });
+      }
+
+      // Update specs
+      const specsGrid = document.getElementById('specs-grid');
+      specsGrid.innerHTML = `
+        <div class="spec-item">
+          <div class="spec-label">Bedrooms</div>
+          <div class="spec-value">${desc.beds}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Bathrooms</div>
+          <div class="spec-value">${desc.baths_consolidated}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Price</div>
+          <div class="spec-value">$${listing.list_price.toLocaleString()}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Square Feet</div>
+          <div class="spec-value">${desc.sqft ? desc.sqft.toLocaleString() : 'N/A'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Lot Size</div>
+          <div class="spec-value">${desc.lot_sqft ? desc.lot_sqft.toLocaleString() + ' sqft' : 'N/A'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Stories</div>
+          <div class="spec-value">${desc.stories || 'N/A'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Status</div>
+          <div class="spec-value">${listing.status.replace('_', ' ')}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Garage</div>
+          <div class="spec-value">${desc.garage ? desc.garage : 'N/A'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">New Construction</div>
+          <div class="spec-value">${desc.is_new_construction ? 'Yes' : 'No'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Pending</div>
+          <div class="spec-value">${listing.status === 'pending' ? 'Yes' : 'No'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Contingent</div>
+          <div class="spec-value">${listing.status === 'contingent' ? 'Yes' : 'No'}</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Senior Community</div>
+          <div class="spec-value">${desc.senior_community ? 'Yes' : 'No'}</div>
+        </div>
+      `;
+
+      // Update location map
+      const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&t=m&z=15&output=embed`;
+      document.querySelector('.location-map iframe').src = mapUrl;
+
+      // Hide loader once content is loaded
+      document.getElementById('page-loader').classList.add('hidden');
+
+    } catch (error) {
+      console.error('Error loading listing:', error);
+      document.body.innerHTML = '<div style="text-align: center; padding: 4rem 2rem;"><h1>Error loading listing</h1><p>Please try again later.</p><p><a href="/">Return to home</a></p></div>';
+    }
+  }
+
+  // Load listing when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    loadListing();
+    updateSaveButton();
+    // Set home price to listing price when it loads
+    setTimeout(() => {
+      const price = parseInt(document.getElementById('price').textContent.replace(/[^0-9]/g, ''));
+      if (price) {
+        document.getElementById('homePrice').value = price;
+        document.getElementById('homePriceSlider').value = price;
+        calculateMortgage();
+      }
+    }, 100);
+  });
+
+  // Sync slider to input
+  function syncSlider(fieldName) {
+    const input = document.getElementById(fieldName);
+    const slider = document.getElementById(fieldName + 'Slider');
+    if (slider) slider.value = input.value;
+  }
+
+  // Sync input to slider
+  function syncInput(fieldName) {
+    const input = document.getElementById(fieldName);
+    const slider = document.getElementById(fieldName + 'Slider');
+    if (slider) input.value = slider.value;
+  }
+
+  // Mortgage Calculator
+  function calculateMortgage() {
+    const principal = parseFloat(document.getElementById('homePrice').value) || 0;
+    const downPercent = parseFloat(document.getElementById('downPercent').value) || 0;
+    const interestRate = parseFloat(document.getElementById('interestRate').value) || 0;
+    const loanTerm = parseInt(document.getElementById('loanTerm').value) || 30;
+
+    const downPayment = principal * (downPercent / 100);
+    const loanAmount = principal - downPayment;
+    const monthlyRate = interestRate / 100 / 12;
+    const numberOfPayments = loanTerm * 12;
+
+    let monthlyPayment = 0;
+    if (monthlyRate > 0) {
+      monthlyPayment = (loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments))) /
+                       (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+    } else {
+      monthlyPayment = loanAmount / numberOfPayments;
+    }
+
+    document.getElementById('monthlyPayment').textContent =
+      '$' + monthlyPayment.toLocaleString('en-US', {maximumFractionDigits: 0});
+  }
+
+  // Save Listing
+  function toggleSaveListing() {
+    const listing = JSON.parse(sessionStorage.getItem('selectedListing'));
+    if (!listing) return;
+
+    let saved = JSON.parse(localStorage.getItem('savedListings')) || [];
+    const isSaved = saved.some(l => l.listing_id === listing.listing_id);
+
+    if (isSaved) {
+      saved = saved.filter(l => l.listing_id !== listing.listing_id);
+    } else {
+      saved.push(listing);
+    }
+
+    localStorage.setItem('savedListings', JSON.stringify(saved));
+    updateSaveButton();
+  }
+
+  function updateSaveButton() {
+    const listing = JSON.parse(sessionStorage.getItem('selectedListing'));
+    if (!listing) return;
+
+    const saved = JSON.parse(localStorage.getItem('savedListings')) || [];
+    const isSaved = saved.some(l => l.listing_id === listing.listing_id);
+    const btn = document.getElementById('save-btn');
+
+    if (isSaved) {
+      btn.classList.add('saved');
+      btn.textContent = '♥ Saved';
+    } else {
+      btn.classList.remove('saved');
+      btn.textContent = '♥ Save Listing';
+    }
+  }
+</script>
+
+</body>
+</html>

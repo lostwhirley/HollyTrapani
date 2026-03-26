@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holly Trapani | Real Estate Agent | Ave Maria, FL</title>
+  <meta name="description" content="Holly Trapani is a dedicated real estate agent in Ave Maria, Florida. Explore her listings and expertise in Southwest Florida real estate.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #111827;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #3d3530 0%, #2c2420 100%);
+      color: #ffffff;
+      padding: 8rem 2rem;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 3.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      font-style: italic;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #b08d7a;
+      margin: 2rem auto;
+    }
+
+    .sites-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .sites-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .sites-header h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #3d3530;
+    }
+
+    .sites-header p {
+      font-size: 1.1rem;
+      color: #6b7280;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .sites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    .site-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .site-card:hover {
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      transform: translateY(-8px);
+    }
+
+    .site-preview {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .site-preview.homes {
+      background: linear-gradient(135deg, #3d3530 0%, #2c2420 100%);
+    }
+
+    .site-content {
+      padding: 2.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .site-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      color: #3d3530;
+    }
+
+    .site-preview.homes ~ .site-content .site-name {
+      color: #3d3530;
+    }
+
+    .site-description {
+      color: #6b7280;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .site-cta {
+      display: inline-block;
+      background: #3d3530;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 0;
+      transition: all 0.2s;
+      align-self: flex-start;
+    }
+
+    .site-card:hover .site-cta {
+      background: #2c2420;
+    }
+
+    .site-card:nth-child(2) .site-cta {
+      background: #1a3c5e;
+    }
+
+    .site-card:nth-child(2):hover .site-cta {
+      background: #0f2840;
+    }
+
+    footer {
+      background: #f9fafb;
+      padding: 2rem;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    footer a {
+      color: #b08d7a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .sites-header h2 {
+        font-size: 2rem;
+      }
+
+      .sites-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .site-preview {
+        height: 200px;
+      }
+
+      .site-content {
+        padding: 2rem;
+      }
+
+      .site-name {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Holly Trapani</h1>
+    <p>Real Estate Professional in Ave Maria, Florida</p>
+    <div class="divider"></div>
+    <p>Explore two distinct designs to find the perfect way to browse Holly's exclusive listings and learn about her expertise in Southwest Florida real estate.</p>
+  </div>
+</section>
+
+<!-- SITES SECTION -->
+<section class="sites-section">
+  <div class="sites-header">
+    <h2>Choose Your Experience</h2>
+    <p>Select the design that best suits your browsing preference</p>
+  </div>
+
+  <div class="sites-grid">
+    <!-- Rachel Balmforth Aesthetic -->
+    <a href="./holly-sells-homes/" class="site-card">
+      <div class="site-preview homes">
+        <div>Elegant Minimalist Design</div>
+      </div>
+      <div class="site-content">
+        <h3 class="site-name">Holly Sells Homes</h3>
+        <p class="site-description">Clean, sophisticated design featuring Cormorant Garamond serif typography and a warm, neutral color palette. Perfect for those who appreciate elegant, editorial aesthetics.</p>
+        <a href="./holly-sells-homes/" class="site-cta">View Site →</a>
+      </div>
+    </a>
+
+    <!-- Modern Blue Design -->
+    <a href="./holly-sells-houses/" class="site-card">
+      <div class="site-preview">
+        <div>Modern Professional Design</div>
+      </div>
+      <div class="site-content">
+        <h3 class="site-name">Holly Sells Houses</h3>
+        <p class="site-description">Contemporary design with a modern blue color scheme and Inter sans-serif typography. Clean, professional, and built for intuitive browsing and property discovery.</p>
+        <a href="./holly-sells-houses/" class="site-cta">View Site →</a>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Holly Trapani | Real Estate Agent in Ave Maria, Florida</p>
+  <p style="margin-top: 1rem;">
+    <a href="tel:2395658760">Call: 239-565-8760</a> |
+    <a href="mailto:holly@newdayrealty.com">Email: holly@newdayrealty.com</a>
+  </p>
+  <p style="margin-top: 1rem; font-size: 0.85rem;">New Day Realty</p>
+</footer>
+
+</body>
+</html>

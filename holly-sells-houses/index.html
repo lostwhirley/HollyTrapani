@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holly Trapani | Real Estate Agent | Ave Maria, FL | New Day Realty</title>
+  <meta name="description" content="Holly Trapani is a real estate agent in Ave Maria, Florida. Browse current listings, learn about Holly's experience, and contact her for your real estate needs.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231a3c5e'><path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/></svg>">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELTSKFY0SJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ELTSKFY0SJ');
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1a3c5e;
+      --accent: #e8a838;
+      --dark: #111827;
+      --light: #f7f8fa;
+      --white: #ffffff;
+      --gray: #9ca3af;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* SPLASH SCREEN */
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--primary) 0%, #2d5a7b 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      z-index: 9999;
+      animation: fadeOutSplash 0.6s ease-in-out 2.4s forwards;
+    }
+
+    @keyframes fadeOutSplash {
+      0% { opacity: 1; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    .splash-address {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #d1d5db;
+      text-align: center;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    .splash-title {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      line-height: 1.3;
+    }
+
+    .splash-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .splash-line {
+      width: 80px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .nav-logo span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      background-color: #1a3c5e;
+      background-image: linear-gradient(90deg, rgba(26, 60, 94, 0.85) 0%, rgba(26, 60, 94, 0.6) 50%, transparent 100%), url('hero-background.jpg');
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      color: var(--white);
+      padding: 8rem 2rem;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero-content .tagline {
+      font-size: 1.25rem;
+      color: #d1d5db;
+      margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+      min-height: 44px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: #f0b84f;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.2);
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    /* LISTINGS SECTION */
+    .listings-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .listing-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .listing-card:hover {
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+      cursor: pointer;
+    }
+
+    .listing-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .listing-content {
+      padding: 1.5rem;
+    }
+
+    .listing-price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .listing-address {
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .listing-city {
+      color: var(--gray);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .listing-specs {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .spec {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .listing-card .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* INSIGHTS SECTION */
+    .insights-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .insight-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s;
+    }
+
+    .insight-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .insight-tag {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .insight-content {
+      padding: 2rem;
+    }
+
+    .insight-date {
+      color: var(--gray);
+      font-size: 0.85rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+
+    .insight-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .insight-excerpt {
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .insight-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .insight-link:hover {
+      color: var(--primary);
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+      background: var(--light);
+      padding: 5rem 2rem;
+    }
+
+    .about-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .about-content h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      margin-bottom: 1rem;
+      color: #4b5563;
+      line-height: 1.8;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .highlight {
+      background: var(--white);
+      padding: 1.25rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .highlight-number {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .highlight-text {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-top: 0.25rem;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      margin-bottom: 2rem;
+    }
+
+    .contact-label {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-value {
+      font-size: 1.1rem;
+      color: var(--dark);
+    }
+
+    .contact-value a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-value a:hover {
+      text-decoration: underline;
+    }
+
+    .inquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      border: 2px solid var(--accent-soft);
+      padding: 2.5rem;
+      background: var(--white);
+      box-shadow: 0 4px 12px rgba(176, 141, 122, 0.15);
+    }
+
+    .inquiry-form input,
+    .inquiry-form textarea {
+      padding: 0.8rem 0.6rem;
+      border: none;
+      border-bottom: 2px solid var(--border);
+      border-radius: 0;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      min-height: 44px;
+      width: 100%;
+      transition: all 0.3s;
+      background: transparent;
+      color: var(--dark);
+    }
+
+    .inquiry-form input::placeholder,
+    .inquiry-form textarea::placeholder {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .inquiry-form input:focus,
+    .inquiry-form textarea:focus {
+      outline: none;
+      border-bottom-color: var(--accent);
+      background: rgba(212, 184, 168, 0.05);
+    }
+
+    .inquiry-form textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    .inquiry-form .btn {
+      margin-top: 1rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 0;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 1rem 2rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .inquiry-form .btn:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(61, 53, 48, 0.2);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      color: #d1d5db;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content {
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-brokerage {
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 0.5rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-divider {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-inner {
+        padding: 0.75rem 1rem;
+      }
+
+      .nav-logo {
+        font-size: 1.3rem;
+      }
+
+      .nav-logo span {
+        font-size: 0.6rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
+
+      .hero {
+        padding: 2rem 1.5rem;
+        min-height: auto;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 1.5rem;
+      }
+
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-content .tagline {
+        font-size: 1rem;
+      }
+
+      .hero-buttons {
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+      }
+
+      .listings-section,
+      .about-section,
+      .contact-section {
+        margin: 3rem 0;
+        padding: 2rem 1.5rem;
+      }
+
+      .listings-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .listing-card img {
+        height: 250px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .contact-info h2 {
+        font-size: 1.5rem;
+      }
+
+      .inquiry-form {
+        gap: 0.75rem;
+      }
+
+      .inquiry-form .btn {
+        width: 100%;
+        min-height: 48px;
+      }
+
+      .footer-links {
+        gap: 1rem;
+      }
+
+      .footer-links a {
+        min-height: 44px;
+        padding: 0 0.25rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner {
+        padding: 0.75rem 1rem;
+      }
+
+      .nav-logo {
+        font-size: 1.2rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-content .tagline {
+        font-size: 0.95rem;
+      }
+
+      .hero-content p {
+        font-size: 0.9rem;
+      }
+
+      .hero-buttons {
+        display: none !important;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+      }
+
+      .listings-section,
+      .about-section,
+      .contact-section {
+        padding: 2rem 1rem;
+        margin: 2rem 0;
+      }
+
+      .listings-grid {
+        gap: 1rem;
+      }
+
+      .listing-card {
+        border: none;
+      }
+
+      .listing-card img {
+        height: 200px;
+      }
+
+      .listing-content {
+        padding: 1rem;
+      }
+
+      .section-header {
+        margin-bottom: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.25rem;
+      }
+
+      .section-label {
+        font-size: 0.75rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .about-content h2 {
+        font-size: 1.3rem;
+      }
+
+      .about-content p {
+        font-size: 0.9rem;
+      }
+
+      .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .highlight {
+        padding: 1rem;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info h2 {
+        font-size: 1.25rem;
+      }
+
+      .contact-item {
+        margin-bottom: 1rem;
+      }
+
+      .inquiry-form {
+        gap: 0.5rem;
+      }
+
+      .inquiry-form input,
+      .inquiry-form textarea {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .inquiry-form .btn {
+        width: 100%;
+        min-height: 48px;
+        padding: 0.75rem 1rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
+
+      .footer-brokerage {
+        font-size: 0.95rem;
+      }
+
+      .footer-links {
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      .footer-links a {
+        min-height: 44px;
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+      }
+
+      body {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .nav-logo {
+        font-size: 1rem;
+      }
+
+      .hero-content h1 {
+        font-size: 1.3rem;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      .listing-price {
+        font-size: 1.25rem;
+      }
+
+      .listings-grid {
+        gap: 0.75rem;
+      }
+
+      .listing-card img {
+        height: 180px;
+      }
+    }
+
+    /* SPINNER LOADER */
+    .spinner-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      grid-column: 1/-1;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(232, 168, 56, 0.15);
+      border-top-color: var(--accent);
+      border-right-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SPLASH INTRO (COMMENTED OUT - Can be re-enabled by removing comment tags) -->
+<!--
+<div id="splash">
+  <p class="splash-address">Ave Maria, Florida<br>Premier Real Estate Agent</p>
+  <h1 class="splash-title">Holly Trapani<br><em>New Day Realty</em></h1>
+  <div class="splash-line"></div>
+</div>
+-->
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      Holly Trapani
+      <span>New Day Realty</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#listings">Listings</a></li>
+      <li><a href="#insights">Real Estate Insights</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>Holly Trapani</h1>
+      <p class="tagline">Your Ave Maria Real Estate Expert</p>
+      <p style="color: #d1d5db; font-size: 1rem; margin-bottom: 2rem; max-width: 500px; line-height: 1.8;">
+        With over a decade of experience in Southwest Florida real estate, Holly brings expertise, dedication, and a genuine passion for helping families find their dream homes. Whether you're buying, selling, or just exploring, Holly's personalized approach and deep market knowledge are your advantage.
+      </p>
+      <div class="hero-buttons">
+        <a href="#listings" class="btn btn-primary">View Listings</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="holly-profile.jpg" alt="Holly Trapani" style="max-width: 280px; width: 100%; margin: 0 auto;">
+    </div>
+  </div>
+</section>
+
+<!-- LISTINGS -->
+<section class="listings-section" id="listings">
+  <div class="section-header">
+    <div class="section-label">Featured Properties</div>
+    <h2 class="section-title">Current Listings</h2>
+  </div>
+
+  <div class="listings-grid" id="listings-grid">
+    <!-- Listings will be loaded here by JavaScript -->
+    <div class="spinner-container">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="insights-section" id="insights">
+  <div class="section-header">
+    <div class="section-label">Market Knowledge</div>
+    <h2 class="section-title">Real Estate Insights</h2>
+  </div>
+
+  <div class="insights-grid">
+    <div class="insight-card">
+      <div class="insight-content">
+        <div class="insight-tag">Buying</div>
+        <div class="insight-date">March 2025</div>
+        <h3 class="insight-title">Why Ave Maria is Southwest Florida's Best-Kept Secret</h3>
+        <p class="insight-excerpt">Discover why Ave Maria has become one of the most sought-after communities in Southwest Florida, from its master-planned amenities to its strong sense of community.</p>
+        <a href="#" class="insight-link">Read More →</a>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-content">
+        <div class="insight-tag">Market</div>
+        <div class="insight-date">February 2025</div>
+        <h3 class="insight-title">2025 Southwest Florida Market Update</h3>
+        <p class="insight-excerpt">Get the latest insights on market trends, inventory levels, and pricing in Southwest Florida. Understand what's happening in your local real estate market.</p>
+        <a href="#" class="insight-link">Read More →</a>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-content">
+        <div class="insight-tag">Lifestyle</div>
+        <div class="insight-date">January 2025</div>
+        <h3 class="insight-title">Del Webb at Ave Maria: A Guide to 55+ Living</h3>
+        <p class="insight-excerpt">Explore what makes Del Webb communities perfect for active 55+ adults, from social activities to world-class amenities and maintenance-free living.</p>
+        <a href="#" class="insight-link">Read More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-image">
+      <img src="holly-profile.jpg" alt="Holly Trapani">
+    </div>
+    <div class="about-content">
+      <div class="section-label">About Holly</div>
+      <h2>Real Estate Professional in Ave Maria</h2>
+      <p>
+        With a passion for helping families find their perfect home, Holly Trapani brings expertise, dedication, and genuine care to every transaction. Whether you're a first-time buyer, looking to upgrade, or ready to sell, Holly's knowledge of the Ave Maria market and surrounding areas makes her your trusted partner.
+      </p>
+      <p>
+        Holly specializes in helping clients navigate the unique real estate landscape of Southwest Florida, from new construction homes to established communities. Her commitment to transparent communication and personalized service sets her apart.
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight">
+          <div class="highlight-number">10+</div>
+          <div class="highlight-text">Years in Real Estate</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-number">100+</div>
+          <div class="highlight-text">Satisfied Clients</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-number">Southwest FL</div>
+          <div class="highlight-text">Market Expert</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-number">✓</div>
+          <div class="highlight-text">Dedicated Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <div class="contact-item">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value"><a href="tel:2395658760">239-565-876</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:hollyfloridarealtor@gmail.com">hollyfloridarealtor@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Location</div>
+        <div class="contact-value">Ave Maria, Florida</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Brokerage</div>
+        <div class="contact-value">New Day Realty</div>
+      </div>
+    </div>
+
+    <form class="inquiry-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea placeholder="Message or Questions..."></textarea>
+      <button type="submit" class="btn btn-primary">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-content">
+      <div class="footer-brokerage">Holly Trapani | New Day Realty</div>
+      <p>Helping families find their perfect home in Southwest Florida</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#listings">Listings</a>
+      <a href="#insights">Real Estate Insights</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-divider">
+      <p style="font-size: 0.8rem;">© 2025 Holly Trapani. All rights reserved. Equal Housing Opportunity. This website is for informational purposes only.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Contact form handler (optional - prevents default for demo)
+  document.querySelector('.inquiry-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your inquiry! Holly will contact you shortly.');
+    this.reset();
+  });
+
+  // Fetch and display listings from API
+  async function loadListings() {
+    console.log('loadListings function called');
+    const listingsGrid = document.getElementById('listings-grid');
+
+    try {
+      // Check for refresh parameter to bypass cache
+      const urlParams = new URLSearchParams(window.location.search);
+      const forceRefresh = urlParams.has('refresh');
+
+      // Check if listings are already cached in sessionStorage (unless refresh is requested)
+      const cachedListings = !forceRefresh && sessionStorage.getItem('hollyListings');
+      if (cachedListings) {
+        // Use cached data
+        const enhancedListings = JSON.parse(cachedListings);
+
+        // Clear loading message
+        listingsGrid.innerHTML = '';
+
+        // Generate listing cards from cached data
+        enhancedListings.forEach(listing => {
+          const address = listing.location.address;
+          const price = listing.list_price;
+          const beds = listing.description.beds;
+          const baths = listing.description.baths_consolidated;
+          const photo = listing.primary_photo?.href || '';
+          const line = address.line;
+
+          const card = document.createElement('div');
+          card.style.cssText = 'text-decoration: none; color: inherit;';
+
+          const photoHtml = photo
+            ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 300px; object-fit: cover; display: block;">`
+            : `<div style="height: 300px; background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Inter', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Photos Loading...</div>`;
+
+          card.innerHTML = `
+            <div class="listing-card">
+              ${photoHtml}
+              <div class="listing-content">
+                <div class="listing-price">$${price.toLocaleString()}</div>
+                <div class="listing-address">${line}</div>
+                <div class="listing-city">${address.city}, ${address.state_code} ${address.postal_code}</div>
+                <div class="listing-specs">
+                  <div class="spec">${beds} Bed</div>
+                  <div class="spec">${baths} Bath</div>
+                </div>
+                <div class="btn btn-primary">View ${address.street_number} ${address.street_name}</div>
+              </div>
+            </div>
+          `;
+
+          card.addEventListener('click', function(e) {
+            e.preventDefault();
+            sessionStorage.setItem('selectedListing', JSON.stringify(listing));
+            window.location.href = 'listing/';
+          });
+
+          listingsGrid.appendChild(card);
+        });
+
+        return; // Exit early since we're using cached data
+      }
+
+      // Ensure spinner shows for at least 500ms
+      const startTime = Date.now();
+      const minLoadTime = 500;
+
+      // Load Holly's listings from local JSON file with detailed information
+      const response = await fetch('./all-listings.json');
+      const data = await response.json();
+      console.log('Loaded listings from local file:', data);
+
+      // Extract listings from API response
+      let listings = [];
+      if (Array.isArray(data)) {
+        listings = data;
+      } else if (data.data?.home_search?.results && Array.isArray(data.data.home_search.results)) {
+        listings = data.data.home_search.results;
+      } else if (data.agent?.listings && Array.isArray(data.agent.listings)) {
+        listings = data.agent.listings;
+      } else if (data.listings && Array.isArray(data.listings)) {
+        listings = data.listings;
+      } else if (data.properties && Array.isArray(data.properties)) {
+        listings = data.properties;
+      } else if (data.results && Array.isArray(data.results)) {
+        listings = data.results;
+      } else {
+        console.warn('Unexpected API response format:', data);
+        listings = [];
+      }
+
+      console.log(`Found ${listings.length} of Holly's listings`);
+      const areaListings = listings;
+
+      // Populate gallery_images from API response with high-res versions
+      const enhancedListings = areaListings.map(listing => {
+        // Transform primary photo to high-res version
+        let primaryPhotoHref = listing.primary_photo?.href || '';
+        if (primaryPhotoHref && primaryPhotoHref.includes('s.jpg')) {
+          primaryPhotoHref = primaryPhotoHref.replace(/s\.jpg/, 'od-w1024_h768.jpg');
+        }
+
+        // Get photos from listing (API format includes photos array with href property)
+        const photos = listing.photos || [];
+        const imageUrls = photos.map(photo => {
+          let url = typeof photo === 'string' ? photo : photo.href;
+          // Replace s.jpg with od-w1024_h768 for larger version
+          if (url && url.includes('s.jpg')) {
+            url = url.replace(/s\.jpg/, 'od-w1024_h768.jpg');
+          }
+          return url;
+        });
+
+        console.log(`Listing ${listing.property_id}: photos=${photos.length}, imageUrls=${imageUrls.length}`, imageUrls);
+
+        return {
+          ...listing,
+          primary_photo: { ...listing.primary_photo, href: primaryPhotoHref },
+          gallery_images: imageUrls,
+          photos: imageUrls.length > 0 ? imageUrls.map(url => ({ href: url })) : listing.photos
+        };
+      });
+
+      // Save enhanced listings to sessionStorage for use on listing detail pages
+      sessionStorage.setItem('hollyListings', JSON.stringify(enhancedListings));
+
+      // Pre-cache all gallery images in background
+      enhancedListings.forEach(listing => {
+        // Cache primary photo
+        if (listing.primary_photo?.href) {
+          fetch(listing.primary_photo.href, { mode: 'no-cors' }).catch(() => {});
+        }
+        // Cache all gallery images
+        if (listing.gallery_images && listing.gallery_images.length > 0) {
+          listing.gallery_images.forEach(imageUrl => {
+            fetch(imageUrl, { mode: 'no-cors' }).catch(() => {});
+          });
+        }
+      });
+
+      // Wait for minimum load time before showing results
+      const elapsedTime = Date.now() - startTime;
+      if (elapsedTime < minLoadTime) {
+        await new Promise(resolve => setTimeout(resolve, minLoadTime - elapsedTime));
+      }
+
+      // Clear loading message
+      listingsGrid.innerHTML = '';
+
+      // Generate listing cards
+      enhancedListings.forEach(listing => {
+        const address = listing.location.address;
+        const price = listing.list_price;
+        const beds = listing.description.beds;
+        const baths = listing.description.baths_consolidated;
+        const photo = listing.primary_photo?.href || '';
+        const line = address.line;
+
+        const card = document.createElement('div');
+        card.style.cssText = 'text-decoration: none; color: inherit;';
+
+        const photoHtml = photo
+          ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 300px; object-fit: cover; display: block;">`
+          : `<div style="height: 300px; background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Inter', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Photos Loading...</div>`;
+
+        card.innerHTML = `
+          <div class="listing-card">
+            ${photoHtml}
+            <div class="listing-content">
+              <div class="listing-price">$${price.toLocaleString()}</div>
+              <div class="listing-address">${line}</div>
+              <div class="listing-city">${address.city}, ${address.state_code} ${address.postal_code}</div>
+              <div class="listing-specs">
+                <div class="spec">${beds} Bed</div>
+                <div class="spec">${baths} Bath</div>
+              </div>
+              <div class="btn btn-primary">View ${address.street_number} ${address.street_name}</div>
+            </div>
+          </div>
+        `;
+
+        card.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Pass the listing object to the listing page
+          sessionStorage.setItem('selectedListing', JSON.stringify(listing));
+          window.location.href = 'listing/';
+        });
+
+        listingsGrid.appendChild(card);
+      });
+
+    } catch (error) {
+      console.error('Error loading listings:', error);
+      listingsGrid.innerHTML = '<div style="text-align: center; padding: 2rem; grid-column: 1/-1; color: #9ca3af;">Unable to load listings. Please try again later.</div>';
+    }
+  }
+
+  // Load listings when page loads
+  document.addEventListener('DOMContentLoaded', loadListings);
+</script>
+
+</body>
+</html>
