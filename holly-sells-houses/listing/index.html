@@ -473,7 +473,7 @@
       document.getElementById('baths').textContent = desc.baths_consolidated;
       document.getElementById('sqft').textContent = desc.sqft ? desc.sqft.toLocaleString() : '—';
       document.getElementById('price-badge').textContent = `$${price}`;
-      document.getElementById('status-badge').textContent = listing.status.replace('_', ' ');
+      document.getElementById('status-badge').textContent = listing.flags?.is_pending ? 'Pending' : listing.status.replace('_', ' ');
       document.querySelector('.hero').classList.add('loaded');
 
       // Update main photo
