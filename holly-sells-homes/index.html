@@ -456,6 +456,25 @@
       transform: none;
     }
 
+    .listing-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #d97706;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 2px;
+      z-index: 10;
+    }
+
+    .listing-card {
+      position: relative;
+    }
+
     /* BLOG SECTION */
     .blog-section {
       background: var(--light);
@@ -1711,6 +1730,7 @@
           const baths = listing.description.baths_consolidated;
           const photo = listing.primary_photo?.href || '';
           const line = address.line;
+          const isPending = listing.is_pending;
 
           const card = document.createElement('div');
           card.style.cssText = 'text-decoration: none; color: inherit;';
@@ -1719,9 +1739,12 @@
             ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 280px; object-fit: cover; display: block;">`
             : `<div style="height: 280px; background: var(--light); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em;">Photos Loading...</div>`;
 
+          const badgeHtml = isPending ? `<div class="listing-badge">Pending</div>` : '';
+
           card.innerHTML = `
             <div class="listing-card">
               ${photoHtml}
+              ${badgeHtml}
               <div class="listing-content">
                 <div class="listing-price">$${price.toLocaleString()}</div>
                 <div class="listing-address">${line}</div>
@@ -1841,6 +1864,7 @@
         const baths = listing.description.baths_consolidated;
         const photo = listing.primary_photo?.href || '';
         const line = address.line;
+        const isPending = listing.is_pending;
 
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit;';
@@ -1849,9 +1873,12 @@
           ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 280px; object-fit: cover; display: block;">`
           : `<div style="height: 280px; background: var(--light); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em;">Photos Loading...</div>`;
 
+        const badgeHtml = isPending ? `<div class="listing-badge">Pending</div>` : '';
+
         card.innerHTML = `
           <div class="listing-card">
             ${photoHtml}
+            ${badgeHtml}
             <div class="listing-content">
               <div class="listing-price">$${price.toLocaleString()}</div>
               <div class="listing-address">${line}</div>
