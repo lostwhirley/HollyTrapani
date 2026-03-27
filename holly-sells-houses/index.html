@@ -1325,6 +1325,13 @@
         };
       });
 
+      // Sort listings: non-pending first, then pending
+      enhancedListings.sort((a, b) => {
+        const aPending = a.flags?.is_pending ? 1 : 0;
+        const bPending = b.flags?.is_pending ? 1 : 0;
+        return aPending - bPending;
+      });
+
       // Save enhanced listings to sessionStorage for use on listing detail pages
       sessionStorage.setItem('hollyListings', JSON.stringify(enhancedListings));
 
