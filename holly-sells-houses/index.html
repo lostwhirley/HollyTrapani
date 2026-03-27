@@ -1212,7 +1212,14 @@
       const cachedListings = !forceRefresh && sessionStorage.getItem('hollyListings');
       if (cachedListings) {
         // Use cached data
-        const enhancedListings = JSON.parse(cachedListings);
+        let enhancedListings = JSON.parse(cachedListings);
+
+        // Sort listings: active first, then pending, then everything else
+        enhancedListings.sort((a, b) => {
+          const aIsActive = a.status === 'for_sale' && !a.flags?.is_pending ? 0 : (a.flags?.is_pending ? 1 : 2);
+          const bIsActive = b.status === 'for_sale' && !b.flags?.is_pending ? 0 : (b.flags?.is_pending ? 1 : 2);
+          return aIsActive - bIsActive;
+        });
 
         // Clear loading message
         listingsGrid.innerHTML = '';
