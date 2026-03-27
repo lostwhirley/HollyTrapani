@@ -1225,7 +1225,7 @@
           const baths = listing.description.baths_consolidated;
           const photo = listing.primary_photo?.href || '';
           const line = address.line;
-          const isPending = listing.is_pending;
+          const isPending = listing.flags?.is_pending;
 
           const card = document.createElement('div');
           card.style.cssText = 'text-decoration: none; color: inherit;';
@@ -1359,7 +1359,7 @@
         const baths = listing.description.baths_consolidated;
         const photo = listing.primary_photo?.href || '';
         const line = address.line;
-        const isPending = listing.is_pending;
+        const isPending = listing.flags?.is_pending;
 
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit;';
