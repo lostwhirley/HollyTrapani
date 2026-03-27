@@ -1325,11 +1325,11 @@
         };
       });
 
-      // Sort listings: non-pending first, then pending
+      // Sort listings: active first, then pending, then everything else
       enhancedListings.sort((a, b) => {
-        const aPending = a.flags?.is_pending ? 1 : 0;
-        const bPending = b.flags?.is_pending ? 1 : 0;
-        return aPending - bPending;
+        const aIsActive = a.status === 'for_sale' && !a.flags?.is_pending ? 0 : (a.flags?.is_pending ? 1 : 2);
+        const bIsActive = b.status === 'for_sale' && !b.flags?.is_pending ? 0 : (b.flags?.is_pending ? 1 : 2);
+        return aIsActive - bIsActive;
       });
 
       // Save enhanced listings to sessionStorage for use on listing detail pages
