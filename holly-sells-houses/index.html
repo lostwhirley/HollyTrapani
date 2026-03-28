@@ -1065,36 +1065,8 @@
     <h2 class="section-title">Real Estate Insights</h2>
   </div>
 
-  <div class="insights-grid">
-    <div class="insight-card">
-      <div class="insight-content">
-        <div class="insight-tag">Buying</div>
-        <div class="insight-date">March 2025</div>
-        <h3 class="insight-title">Why Ave Maria is Southwest Florida's Best-Kept Secret</h3>
-        <p class="insight-excerpt">Discover why Ave Maria has become one of the most sought-after communities in Southwest Florida, from its master-planned amenities to its strong sense of community.</p>
-        <a href="#" class="insight-link">Read More →</a>
-      </div>
-    </div>
-
-    <div class="insight-card">
-      <div class="insight-content">
-        <div class="insight-tag">Market</div>
-        <div class="insight-date">February 2025</div>
-        <h3 class="insight-title">2025 Southwest Florida Market Update</h3>
-        <p class="insight-excerpt">Get the latest insights on market trends, inventory levels, and pricing in Southwest Florida. Understand what's happening in your local real estate market.</p>
-        <a href="#" class="insight-link">Read More →</a>
-      </div>
-    </div>
-
-    <div class="insight-card">
-      <div class="insight-content">
-        <div class="insight-tag">Lifestyle</div>
-        <div class="insight-date">January 2025</div>
-        <h3 class="insight-title">Del Webb at Ave Maria: A Guide to 55+ Living</h3>
-        <p class="insight-excerpt">Explore what makes Del Webb communities perfect for active 55+ adults, from social activities to world-class amenities and maintenance-free living.</p>
-        <a href="#" class="insight-link">Read More →</a>
-      </div>
-    </div>
+  <div class="insights-grid" id="insights-grid">
+    <!-- Articles loaded dynamically by loadArticles() -->
   </div>
 </section>
 
@@ -1417,8 +1389,50 @@
     }
   }
 
-  // Load listings when page loads
-  document.addEventListener('DOMContentLoaded', loadListings);
+  // Load articles from articles.json
+  async function loadArticles() {
+    const grid = document.getElementById('insights-grid');
+    if (!grid) return;
+
+    try {
+      const response = await fetch('../articles.json');
+      if (!response.ok) throw new Error('Failed to fetch articles');
+      const data = await response.json();
+      const articles = data.articles || [];
+
+      if (articles.length === 0) {
+        grid.innerHTML = '<p style="text-align:center;color:var(--gray);font-family:\'Inter\',sans-serif;padding:2rem;">Check back soon for the latest insights.</p>';
+        return;
+      }
+
+      grid.innerHTML = articles.slice(0, 3).map(article => `
+        <div class="insight-card">
+          <div class="insight-content">
+            <div class="insight-tag">${escapeHtml(article.tag)}</div>
+            <div class="insight-date">${escapeHtml(article.date)}</div>
+            <h3 class="insight-title">${escapeHtml(article.title)}</h3>
+            <p class="insight-excerpt">${escapeHtml(article.excerpt)}</p>
+            <a href="#" class="insight-link">Read More →</a>
+          </div>
+        </div>
+      `).join('');
+
+    } catch (err) {
+      console.warn('Could not load articles:', err);
+    }
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str || '';
+    return div.innerHTML;
+  }
+
+  // Load listings and articles when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    loadListings();
+    loadArticles();
+  });
 </script>
 
 </body>

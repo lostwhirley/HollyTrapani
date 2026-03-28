@@ -1528,39 +1528,8 @@
       </div>
     </div>
 
-    <div class="blog-grid">
-      <!-- Post 1 -->
-      <div class="blog-card">
-        <div class="blog-card-body">
-          <span class="blog-tag">Buying</span>
-          <div class="blog-date">March 2025</div>
-          <h3>Why Ave Maria is Southwest Florida's Best-Kept Secret</h3>
-          <p>From top-rated schools to a thriving town center, Ave Maria offers a lifestyle that's hard to find anywhere else in Collier County. Here's what buyers are saying after making the move.</p>
-          <a href="#contact" class="blog-read-more">Read More</a>
-        </div>
-      </div>
-
-      <!-- Post 2 -->
-      <div class="blog-card">
-        <div class="blog-card-body">
-          <span class="blog-tag">Market</span>
-          <div class="blog-date">February 2025</div>
-          <h3>2025 Southwest Florida Market Update: What Sellers Need to Know</h3>
-          <p>Inventory remains tight in popular communities like Ave Maria and Golden Gate Estates. If you're thinking of selling this year, timing and pricing strategy will be everything.</p>
-          <a href="#contact" class="blog-read-more">Read More</a>
-        </div>
-      </div>
-
-      <!-- Post 3 -->
-      <div class="blog-card">
-        <div class="blog-card-body">
-          <span class="blog-tag">Lifestyle</span>
-          <div class="blog-date">January 2025</div>
-          <h3>Del Webb at Ave Maria: A Guide to 55+ Living in Florida</h3>
-          <p>Del Webb's active adult community inside Ave Maria has become one of the most sought-after addresses for retirees in Southwest Florida. A tour of what makes it special.</p>
-          <a href="#contact" class="blog-read-more">Read More</a>
-        </div>
-      </div>
+    <div class="blog-grid" id="blog-grid">
+      <!-- Articles loaded dynamically by loadArticles() -->
     </div>
   </div>
 </section>
@@ -1922,8 +1891,50 @@
     }
   }
 
-  // Load listings when page loads
-  document.addEventListener('DOMContentLoaded', loadListings);
+  // Load articles from articles.json
+  async function loadArticles() {
+    const grid = document.getElementById('blog-grid');
+    if (!grid) return;
+
+    try {
+      const response = await fetch('../articles.json');
+      if (!response.ok) throw new Error('Failed to fetch articles');
+      const data = await response.json();
+      const articles = data.articles || [];
+
+      if (articles.length === 0) {
+        grid.innerHTML = '<p style="text-align:center;color:var(--text-muted);font-family:\'Jost\',sans-serif;padding:2rem;">Check back soon for the latest insights.</p>';
+        return;
+      }
+
+      grid.innerHTML = articles.slice(0, 3).map(article => `
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <span class="blog-tag">${escapeHtml(article.tag)}</span>
+            <div class="blog-date">${escapeHtml(article.date)}</div>
+            <h3>${escapeHtml(article.title)}</h3>
+            <p>${escapeHtml(article.excerpt)}</p>
+            <a href="#contact" class="blog-read-more">Read More</a>
+          </div>
+        </div>
+      `).join('');
+
+    } catch (err) {
+      console.warn('Could not load articles:', err);
+    }
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str || '';
+    return div.innerHTML;
+  }
+
+  // Load articles on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    loadListings();
+    loadArticles();
+  });
 </script>
 
 </body>
