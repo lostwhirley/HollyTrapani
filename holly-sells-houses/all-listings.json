@@ -5,33 +5,33 @@
       "total": 4,
       "results": [
         {
-          "property_id": "6127912483",
-          "listing_id": "2988154620",
+          "property_id": "9337886864",
+          "listing_id": "2992804383",
           "status": "for_sale",
           "description": {
-            "sold_date": "1999-08-06",
+            "sold_date": "2023-04-27",
             "baths_consolidated": "2",
-            "beds": 3,
-            "lot_sqft": null,
-            "sqft": 1516,
-            "stories": 2,
-            "sold_price": 146000,
+            "beds": 2,
+            "lot_sqft": 7405,
+            "sqft": 1919,
+            "stories": 1,
+            "sold_price": 546130,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
-              "postal_code": "34108",
+              "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Gulf Pavilion",
-              "street_number": "834",
-              "city": "Naples",
+              "street_name": "Harmony",
+              "street_number": "6217",
+              "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.253478,
-                "lon": -81.804031,
+                "lat": 26.306365,
+                "lon": -81.434054,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "834 Gulf Pavilion Dr Apt 201",
+              "line": "6217 Harmony Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -40,13 +40,7 @@
             },
             "search_areas": [
               {
-                "city": "coco river",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              },
-              {
-                "city": "naples",
+                "city": "ave maria",
                 "state_code": "fl",
                 "county": "collier",
                 "__typename": "SearchArea"
@@ -54,27 +48,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 529000,
+          "list_price": 509900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m3798155085rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4268987733rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/834-Gulf-Pavilion-Dr-Apt-201_Naples_FL_34108_M61279-12483",
-          "permalink": "834-Gulf-Pavilion-Dr-Apt-201_Naples_FL_34108_M61279-12483",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -85,20 +79,20 @@
           "flags": {
             "is_coming_soon": null,
             "is_contingent": null,
-            "is_garage_present": null,
+            "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": true,
+            "is_pending": null,
             "is_short_sale": null,
             "is_foreclosure": null,
-            "is_senior_community": null,
+            "is_senior_community": true,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": true,
-            "is_new_listing": false,
+            "is_price_reduced": null,
+            "is_new_listing": true,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -296,33 +290,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9337886864",
-          "listing_id": "2992804383",
+          "property_id": "6127912483",
+          "listing_id": "2988154620",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-04-27",
+            "sold_date": "1999-08-06",
             "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 7405,
-            "sqft": 1919,
-            "stories": 1,
-            "sold_price": 546130,
+            "beds": 3,
+            "lot_sqft": null,
+            "sqft": 1516,
+            "stories": 2,
+            "sold_price": 146000,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
-              "postal_code": "34142",
+              "postal_code": "34108",
               "state": "Florida",
-              "street_name": "Harmony",
-              "street_number": "6217",
-              "city": "Ave Maria",
+              "street_name": "Gulf Pavilion",
+              "street_number": "834",
+              "city": "Naples",
               "coordinate": {
-                "lat": 26.306365,
-                "lon": -81.434054,
+                "lat": 26.253478,
+                "lon": -81.804031,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "6217 Harmony Dr",
+              "line": "834 Gulf Pavilion Dr Apt 201",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -331,7 +325,13 @@
             },
             "search_areas": [
               {
-                "city": "ave maria",
+                "city": "coco river",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              },
+              {
+                "city": "naples",
                 "state_code": "fl",
                 "county": "collier",
                 "__typename": "SearchArea"
@@ -339,27 +339,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 509900,
+          "list_price": 529000,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m3798155085rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4268987733rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
-          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "href": "https://www.realtor.com/realestateandhomes-detail/834-Gulf-Pavilion-Dr-Apt-201_Naples_FL_34108_M61279-12483",
+          "permalink": "834-Gulf-Pavilion-Dr-Apt-201_Naples_FL_34108_M61279-12483",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -370,20 +370,20 @@
           "flags": {
             "is_coming_soon": null,
             "is_contingent": null,
-            "is_garage_present": true,
+            "is_garage_present": null,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
-            "is_senior_community": true,
+            "is_senior_community": null,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": true,
+            "is_price_reduced": true,
+            "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
