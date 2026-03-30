@@ -1279,13 +1279,15 @@
         if (listing.data && listing.data.home) {
           // New detail API format - extract home data
           const home = listing.data.home;
+          // If no primary_photo, use first photo from photos array
+          const primaryPhoto = home.primary_photo || (home.photos && home.photos.length > 0 ? home.photos[0] : null);
           return {
             property_id: home.property_id,
             listing_id: home.listing_id,
             status: home.status,
             flags: home.flags,
             list_price: home.list_price,
-            primary_photo: home.primary_photo,
+            primary_photo: primaryPhoto,
             photos: home.photos,
             description: home.description,
             location: listing.location || home.location,
