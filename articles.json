@@ -1,59 +1,63 @@
 {
-  "generated_at": "2026-03-24T14:00:00Z",
+  "generated_at": "2026-03-30T17:41:57.623122Z",
   "data_snapshot": {
-    "mortgage_30yr": 6.82,
-    "mortgage_15yr": 6.11,
-    "fred_series_date": "2026-03-20",
-    "collier_median_home_value": 485300,
-    "collier_median_gross_rent": 1820,
-    "collier_homeownership_rate": 68.2,
+    "mortgage_30yr": 6.38,
+    "mortgage_15yr": 5.75,
+    "fred_series_date": "2026-03-26",
+    "collier_median_home_value": 486800,
+    "collier_median_gross_rent": 1752,
+    "collier_homeownership_rate": 76.0,
     "census_vintage": "2023",
-    "holly_listings_avg_price": 423379,
+    "holly_listings_avg_price": 423380,
     "holly_listings_count": 5
   },
   "articles": [
     {
-      "id": "2026-03-24-article-1",
-      "tag": "Market",
+      "id": "2026-03-30-article-1",
+      "tag": "Buying",
       "date": "March 2026",
-      "date_iso": "2026-03-24",
-      "title": "What 6.8% Mortgage Rates Mean for Ave Maria Buyers Right Now",
-      "excerpt": "With 30-year rates sitting at 6.82%, buyers in Ave Maria face a specific affordability window. Here's how to work the numbers in your favor and understand your real purchasing power in today's market.",
-      "full_content": "Mortgage rates have settled around 6.8%, which may feel less exciting than the sub-6% rates we saw a couple of years ago, but this is the reality for today's borrowers. If you're shopping for a home in Ave Maria or Naples, understanding what this rate means for your monthly payment is crucial. On a $400,000 purchase with 20% down ($80,000), your principal and interest payment at 6.82% would be approximately $1,910 per month. Add in property taxes, homeowners insurance, and HOA fees—typical for Ave Maria's master-planned community—and you're looking at a total monthly cost in the $2,400–$2,600 range. This matters because it determines your true affordability ceiling. If you've been waiting for rates to drop further, remember that the current market in Collier County is strong, with a median home value around $485,300. Don't let the wait for perfect rates cause you to miss the right property.",
+      "date_iso": "2026-03-30",
+      "title": "Mortgage Rates in 2026: What 6.38% Means for Your Ave Maria or Naples Home Purchase",
+      "excerpt": "With 30-year mortgage rates holding at 6.38%, understanding your monthly payment is crucial before making an offer in Southwest Florida. We've broken down what this means for buyers considering homes in the $400,000 range and explored your options in today's market.",
+      "full_content": "If you're shopping for a home in Ave Maria or Naples right now, mortgage rates matter more than ever. At 6.38% for a 30-year fixed loan, let's talk about what that actually costs you each month\u2014and what alternatives exist.\n\n**The Real Monthly Payment Example**\n\nLet's say you're looking at a $400,000 home and putting 20% down ($80,000). Your loan amount is $320,000. At today's 6.38% rate over 30 years, your principal and interest payment comes to approximately $1,950 per month. Add in the typical HOA fees, property taxes, and homeowners insurance (estimated at 3% annually, or about $1,000 monthly), and you're looking at roughly $2,950 per month total.\n\nFor context, Collier County's median home value sits at $486,800, so a $400,000 purchase is actually below the county median\u2014a smart starting point for many buyers.\n\n**Exploring Your Rate Options**\n\nCurrent 15-year mortgage rates are running 5.75%, which is about 0.63% lower than the 30-year option. That shorter timeline means higher monthly payments ($2,300+ for principal and interest alone on the same $320,000 loan), but you'll own your home free and clear much sooner and pay considerably less total interest.\n\n**What This Means for Your Decision**\n\nWith homeownership rates in Collier County at 76%\u2014among the highest in Florida\u2014clearly many families have decided the benefits outweigh the current rate environment. If you're considering a move to Ave Maria or Naples, remember that mortgage rates are just one piece of the affordability puzzle. Your down payment size, credit score, and loan term all play equally important roles.\n\nOur current listings in Ave Maria and Naples range from $329,000 to $529,000, averaging $423,380. Whether you're a first-time buyer or upgrading, this market still offers excellent options for those ready to move forward.\n\n**Ready to talk numbers?** Contact Holly Trapani at New Day Realty. We'll walk through your specific situation and help you understand what payment makes sense for your family.",
       "data_points": [
-        "30-year fixed rate: 6.82% (FRED MORTGAGE30US, 2026-03-20)",
-        "15-year fixed rate: 6.11% (FRED MORTGAGE15US, 2026-03-20)",
-        "Collier County median home value: $485,300 (Census ACS 2023)"
+        "30-year fixed rate: 6.38% (FRED MORTGAGE30US, 2026-03-26)",
+        "15-year fixed rate: 5.75% (FRED MORTGAGE15US, 2026-03-26)",
+        "Collier County median home value: $486,800 (Census ACS 2023)",
+        "Collier County median rent: $1,752/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.0% (Census ACS 2023)"
       ]
     },
     {
-      "id": "2026-03-24-article-2",
+      "id": "2026-03-30-article-2",
       "tag": "Neighborhood",
       "date": "March 2026",
-      "date_iso": "2026-03-24",
-      "title": "Ave Maria: Southwest Florida's Master-Planned Community You Should Know About",
-      "excerpt": "Ave Maria stands out as one of Southwest Florida's most thoughtfully planned communities. From its founding principles to its current housing market, here's why it's attracting savvy homebuyers.",
-      "full_content": "Ave Maria was created with intention. Founded on the principles of the Ave Maria University endowment, this master-planned community in Collier County blends residential, commercial, and educational spaces into a cohesive neighborhood. Unlike sprawling developments where the builder vanishes after construction, Ave Maria maintains a strong sense of community through its town center, schools, and planned amenities. The current real estate market in Ave Maria reflects its appeal. Holly's active listings in the area range from $329,000 to $509,000, with an average price around $423,000, offering significant diversity for buyers at different life stages. The broader Collier County market shows a median home value of $485,300, and Ave Maria's positioning within that range—often at a slight discount—makes it attractive for value-conscious buyers who don't want to sacrifice community character. With a homeownership rate of 68.2% in Collier County, the area appeals to long-term residents and families looking to settle rather than speculate. The master-planned aspect means you're not just buying a house; you're buying into a curated neighborhood experience.",
+      "date_iso": "2026-03-30",
+      "title": "Ave Maria, Florida: A Guide to Southwest Florida's Master-Planned Community",
+      "excerpt": "Ave Maria stands out as one of Collier County's most thoughtfully designed communities, offering residents a blend of planned amenities, strong neighborhood character, and accessible entry points into Southwest Florida's desirable real estate market. With active listings ranging from $329,000 to $529,000, Ave Maria welcomes both first-time homebuyers and those seeking their next chapter in paradise.",
+      "full_content": "Ave Maria is more than just a neighborhood\u2014it's a carefully planned community designed with both livability and long-term value in mind. Located in Collier County, this master-planned development reflects the region's reputation as one of Florida's most desirable places to call home.\n\n## Why Collier County Homeownership Matters\n\nCollier County boasts a 76% homeownership rate, one of the highest in Florida. That figure tells a story: families and professionals choose to stay here, invest here, and build roots here. When three out of four households own their homes, it signals strong community stability and confidence in the market. Ave Maria exemplifies this\u2014it's built for people who want to be part of something lasting.\n\n## The Ave Maria Advantage\n\nThis master-planned community offers a cohesive vision that appeals to diverse buyers. Whether you're drawn to the walkable town center, the commitment to green space, or the strong sense of community, Ave Maria delivers on the promise of intentional neighborhood design. Residents appreciate the thoughtful mix of residential areas, retail, dining, and recreational spaces.\n\n## Current Market Overview\n\nIf you're exploring Ave Maria or Naples, current listings show real opportunity. With active listings ranging from $329,000 to $529,000 and an average price of $423,380, the market reflects choices at various price points. The average home here spans about 1,623 square feet with 2.2 bedrooms\u2014ideal for downsizers, young families, and anyone seeking efficiency without sacrificing comfort.\n\nAt the current 30-year mortgage rate of 6.38%, many buyers are finding financing manageable, especially compared to rental alternatives. The median gross rent in Collier County stands at $1,752 monthly, making homeownership an increasingly attractive long-term financial decision.\n\n## Is Ave Maria Right for You?\n\nIf you value planned communities with strong architectural guidelines, appreciate convenient access to Naples' amenities, and want to join a county where homeownership is the norm rather than the exception, Ave Maria deserves your attention. The combination of smart design, reasonable pricing, and Collier County's proven appeal creates a compelling case for calling this community home.\n\nReady to explore? Holly Trapani at New Day Realty is ready to help you find your place in Ave Maria or Naples.",
       "data_points": [
-        "Ave Maria is a master-planned community in Collier County, Florida",
-        "Holly's Ave Maria listings: $329,000–$509,000 (average $423,000)",
-        "Collier County median home value: $485,300 (Census ACS 2023)",
-        "Collier County homeownership rate: 68.2% (Census ACS 2023)"
+        "30-year fixed rate: 6.38% (FRED MORTGAGE30US, 2026-03-26)",
+        "15-year fixed rate: 5.75% (FRED MORTGAGE15US, 2026-03-26)",
+        "Collier County median home value: $486,800 (Census ACS 2023)",
+        "Collier County median rent: $1,752/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.0% (Census ACS 2023)"
       ]
     },
     {
-      "id": "2026-03-24-article-3",
+      "id": "2026-03-30-article-3",
       "tag": "Selling",
       "date": "March 2026",
-      "date_iso": "2026-03-24",
-      "title": "Thinking About Selling in Ave Maria? Timing and Pricing in Today's Market",
-      "excerpt": "With mortgage rates holding steady and buyer demand strong, this could be the right moment to sell. Here's what the data tells sellers in Ave Maria and Naples.",
-      "full_content": "If you've been considering selling your home in Ave Maria or Naples, spring 2026 offers a mixed but encouraging picture. Mortgage rates have stabilized around 6.8%, which means serious buyers are already in the market—they've made their peace with current rates and are ready to move forward. Flippers and speculators have largely exited, which is good news for homeowners who want to sell to people buying to live, not to flip. The median home value in Collier County is $485,300, but Holly's active listings show prices averaging $423,000—suggesting there's still room for negotiation and flexibility in the Ave Maria market. When pricing your home, focus on comparable sales rather than wishful thinking. Your real estate agent should pull recent closings in your community, adjusted for condition, age, and amenities. With the homeownership rate at 68.2% in Collier County, your buyer pool includes many established residents and families looking for stability rather than risky investments. This is a strong foundation for a sale. The key is pricing competitively from day one, reducing the time-on-market risk. List too high and you'll sit; list right and you'll attract multiple offers and close quickly, even in a moderating market.",
+      "date_iso": "2026-03-30",
+      "title": "Selling in Southwest Florida Right Now: What Mortgage Rates Mean for Your Home's Price",
+      "excerpt": "With 30-year mortgage rates holding at 6.38%, buyer purchasing power is tighter than it's been in years. If you're considering selling your Ave Maria or Naples home, understanding how current rates affect buyer demand is essential to pricing strategically and closing quickly.",
+      "full_content": "If you've been thinking about selling your home in Ave Maria or Naples, the current mortgage landscape is worth paying close attention to. At 6.38% for a 30-year fixed rate, we're in a market where buyer affordability matters more than ever\u2014and that directly impacts your pricing strategy.\n\n**What Higher Rates Mean for Buyers**\n\nWhen mortgage rates climb, buyer purchasing power decreases. A buyer approved for a $400,000 mortgage at 4% can only afford roughly $340,000 at today's 6.38% rate. That's a significant difference. In Collier County, where the median home value sits at $486,800, this shift is reshaping buyer behavior. Homes priced competitively\u2014not inflated\u2014are moving faster because they align with what buyers can actually borrow.\n\n**Your Pricing Strategy**\n\nHolly's current listings in Ave Maria and Naples range from $329,000 to $529,000, with an average price of $423,380. This range reflects realistic market positioning: homes priced at the lower end of the spectrum are attracting serious buyers, while those overpriced relative to comparable properties are sitting longer. Here's the practical takeaway: price your home to the actual market, not to your hoped-for number. In a higher-rate environment, buyers are deliberate. They'll compare your home against every comparable listing, and they'll walk away if the price doesn't match the value.\n\n**Timing Matters**\n\nEarly spring (we're in late March) traditionally brings increased buyer activity in Southwest Florida. Combined with the region's strong 76% homeownership rate and stable rental market ($1,752 median monthly rent), there are motivated buyers in our community\u2014including those trading up from rentals. If your home is in good condition and appropriately priced, now is a reasonable window to list.\n\n**The Bottom Line**\n\nHigher mortgage rates have shifted leverage back toward sellers who price intelligently. Be realistic about your home's value, highlight its condition and unique features, and trust that the right buyer exists at the right price. Ready to explore your home's market value? Let's talk about a selling strategy tailored to today's conditions.",
       "data_points": [
-        "30-year fixed mortgage rate: 6.82% (FRED MORTGAGE30US, 2026-03-20)",
-        "Collier County median home value: $485,300 (Census ACS 2023)",
-        "Ave Maria average listing price: $423,000 (Holly Trapani's current listings)",
-        "Collier County homeownership rate: 68.2% (Census ACS 2023)"
+        "30-year fixed rate: 6.38% (FRED MORTGAGE30US, 2026-03-26)",
+        "15-year fixed rate: 5.75% (FRED MORTGAGE15US, 2026-03-26)",
+        "Collier County median home value: $486,800 (Census ACS 2023)",
+        "Collier County median rent: $1,752/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.0% (Census ACS 2023)"
       ]
     }
   ]
