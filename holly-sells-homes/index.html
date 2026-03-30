@@ -1750,8 +1750,8 @@
       const startTime = Date.now();
       const minLoadTime = 500;
 
-      // Load Holly's listings from local JSON file with detailed information
-      const response = await fetch('./all-listings.json');
+      // Load Holly's listings from local JSON file with detailed information (including all photos)
+      const response = await fetch('./listings.json');
       const data = await response.json();
       console.log('Loaded listings from local file:', data);
 
