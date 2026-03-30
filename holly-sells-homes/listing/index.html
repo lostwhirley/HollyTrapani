@@ -432,13 +432,15 @@
       if (listing.data && listing.data.home) {
         // New detail API format - flatten it
         const home = listing.data.home;
+        // If no primary_photo, use first photo from photos array
+        const primaryPhoto = home.primary_photo || (home.photos && home.photos.length > 0 ? home.photos[0] : null);
         normalizedListing = {
           ...listing,
-          location: listing.location || { address: home.description?.address || {} },
+          location: listing.location || home.location || { address: home.description?.address || {} },
           description: home.description || listing.description,
           list_price: home.list_price || listing.list_price,
           photos: home.photos || listing.photos,
-          primary_photo: home.primary_photo || listing.primary_photo,
+          primary_photo: primaryPhoto,
           status: home.status || listing.status,
           flags: home.flags || listing.flags
         };
@@ -470,7 +472,7 @@
       const address = listing.location?.address || {};
       const desc = listing.description || {};
       const photos = listing.gallery_images || listing.photos || [];
-      const primaryPhoto = listing.primary_photo?.href || '';
+      const primaryPhoto = typeof listing.primary_photo === 'string' ? listing.primary_photo : listing.primary_photo?.href || (photos.length > 0 ? photos[0] : '');
       console.log('Photos array:', photos);
 
       // Track current photo for navigation
