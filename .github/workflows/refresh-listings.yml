@@ -40,7 +40,8 @@ jobs:
           if git diff --quiet; then
             echo "No changes to commit"
           else
-            git add holly-sells-homes/all-listings.json holly-sells-houses/all-listings.json
-            git commit -m "chore: update listings from API [skip ci]"
+            git add holly-sells-homes/all-listings.json holly-sells-houses/all-listings.json \
+                    holly-sells-homes/listings.json holly-sells-houses/listings.json
+            git commit -m "chore: update listings and property details from API [skip ci]"
             git push
           fi
