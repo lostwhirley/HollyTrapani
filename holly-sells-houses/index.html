@@ -1282,6 +1282,7 @@
           // If no primary_photo, use first photo from photos array
           const primaryPhoto = home.primary_photo || (home.photos && home.photos.length > 0 ? home.photos[0] : null);
           return {
+            ...home,
             property_id: home.property_id,
             listing_id: home.listing_id,
             status: home.status,
@@ -1290,8 +1291,7 @@
             primary_photo: primaryPhoto,
             photos: home.photos,
             description: home.description,
-            location: listing.location || home.location,
-            ...home
+            location: home.location
           };
         }
         return listing;
