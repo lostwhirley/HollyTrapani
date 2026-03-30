@@ -1273,7 +1273,29 @@
       }
 
       console.log(`Found ${listings.length} of Holly's listings`);
-      const areaListings = listings;
+
+      // Normalize listing data structure (new detail API wraps each listing in { data: { home: {...} } })
+      const normalizedListings = listings.map(listing => {
+        if (listing.data && listing.data.home) {
+          // New detail API format - extract home data
+          const home = listing.data.home;
+          return {
+            property_id: home.property_id,
+            listing_id: home.listing_id,
+            status: home.status,
+            flags: home.flags,
+            list_price: home.list_price,
+            primary_photo: home.primary_photo,
+            photos: home.photos,
+            description: home.description,
+            location: listing.location || home.location,
+            ...home
+          };
+        }
+        return listing;
+      });
+
+      const areaListings = normalizedListings;
 
       // Populate gallery_images from API response with high-res versions
       const enhancedListings = areaListings.map(listing => {
@@ -1294,7 +1316,7 @@
           return url;
         });
 
-        console.log(`Listing ${listing.property_id}: photos=${photos.length}, imageUrls=${imageUrls.length}`, imageUrls);
+        console.log(`Listing ${listing.property_id}: photos=${photos.length}, imageUrls=${imageUrls.length}`);
 
         return {
           ...listing,
