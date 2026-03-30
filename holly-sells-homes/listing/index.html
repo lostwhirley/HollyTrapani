@@ -426,6 +426,26 @@
       }
 
       console.log('Listing data from sessionStorage:', listing);
+
+      // Normalize listing data structure (handle both old and new API formats)
+      let normalizedListing = listing;
+      if (listing.data && listing.data.home) {
+        // New detail API format - flatten it
+        const home = listing.data.home;
+        normalizedListing = {
+          ...listing,
+          location: listing.location || { address: home.description?.address || {} },
+          description: home.description || listing.description,
+          list_price: home.list_price || listing.list_price,
+          photos: home.photos || listing.photos,
+          primary_photo: home.primary_photo || listing.primary_photo,
+          status: home.status || listing.status,
+          flags: home.flags || listing.flags
+        };
+      }
+
+      listing = normalizedListing;
+      console.log('Normalized listing:', listing);
       console.log('gallery_images:', listing.gallery_images);
       console.log('photos:', listing.photos);
 
@@ -447,8 +467,8 @@
         listing.gallery_images = processedPhotos;
       }
 
-      const address = listing.location.address;
-      const desc = listing.description;
+      const address = listing.location?.address || {};
+      const desc = listing.description || {};
       const photos = listing.gallery_images || listing.photos || [];
       const primaryPhoto = listing.primary_photo?.href || '';
       console.log('Photos array:', photos);
