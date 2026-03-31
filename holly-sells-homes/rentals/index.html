@@ -404,19 +404,25 @@
       console.log('Normalized rental:', rental);
       console.log('photos:', rental.photos);
 
+      // Function to upgrade photo URL to high-res
+      const upgradePhotoUrl = (url) => {
+        if (!url) return url;
+        // Convert HTTP to HTTPS
+        if (url.startsWith('http://')) {
+          url = url.replace('http://', 'https://');
+        }
+        // Upgrade to high-res version
+        if (url.includes('s.jpg')) {
+          url = url.replace(/s\.jpg/, 'od-w1024_h768.jpg');
+        }
+        return url;
+      };
+
       // Process photos from rental data (already includes all photos from API)
       if (rental.photos && rental.photos.length > 0) {
         const processedPhotos = rental.photos.map(photo => {
           let url = typeof photo === 'string' ? photo : photo.href;
-          // Convert HTTP to HTTPS
-          if (url && url.startsWith('http://')) {
-            url = url.replace('http://', 'https://');
-          }
-          // Upgrade to high-res version
-          if (url && url.includes('s.jpg')) {
-            url = url.replace(/s\.jpg/, 'od-w1024_h768.jpg');
-          }
-          return url;
+          return upgradePhotoUrl(url);
         });
         console.log(`Property has ${processedPhotos.length} photos`);
         rental.gallery_images = processedPhotos;
@@ -425,7 +431,9 @@
       const address = rental.location?.address || {};
       const desc = rental.description || {};
       const photos = rental.gallery_images || rental.photos || [];
-      const primaryPhoto = typeof rental.primary_photo === 'string' ? rental.primary_photo : rental.primary_photo?.href || (photos.length > 0 ? photos[0] : '');
+      let primaryPhoto = typeof rental.primary_photo === 'string' ? rental.primary_photo : rental.primary_photo?.href || (photos.length > 0 ? photos[0] : '');
+      // Upgrade primary photo to high-res
+      primaryPhoto = upgradePhotoUrl(primaryPhoto);
       console.log('Photos array:', photos);
       console.log('Address:', address);
       console.log('Description:', desc);
