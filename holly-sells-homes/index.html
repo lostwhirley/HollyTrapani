@@ -2064,7 +2064,15 @@
         const price = rental.list_price;
         const beds = rental.description?.beds || 'N/A';
         const baths = rental.description?.baths_consolidated || 'N/A';
-        const photo = rental.primary_photo?.href || '';
+
+        // Try to use a higher-res photo from photos array, fallback to primary_photo
+        let photo = '';
+        if (rental.photos && rental.photos.length > 0) {
+          // Use the first photo from the array (usually higher quality)
+          photo = typeof rental.photos[0] === 'string' ? rental.photos[0] : rental.photos[0].href;
+        } else if (rental.primary_photo?.href) {
+          photo = rental.primary_photo.href;
+        }
 
         const photoHtml = photo
           ? `<img src="${photo}" alt="${address.line}" style="width: 100%; height: 300px; object-fit: contain; background: #f5f5f5; display: block;">`
