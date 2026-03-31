@@ -2137,6 +2137,22 @@
         document.getElementById(tabName + '-tab').classList.add('active');
       });
     });
+
+    // Check if we should activate a specific tab on page load
+    const activeTab = sessionStorage.getItem('activeTab');
+    if (activeTab) {
+      sessionStorage.removeItem('activeTab'); // Clear it after use
+      const tabButton = document.querySelector(`[data-tab="${activeTab}"]`);
+      if (tabButton) {
+        // Update active button
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        tabButton.classList.add('active');
+
+        // Update active content
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        document.getElementById(activeTab + '-tab').classList.add('active');
+      }
+    }
   });
 </script>
 
