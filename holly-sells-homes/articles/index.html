@@ -187,14 +187,6 @@
           }
           return `<p>${paragraph}</p>`;
         }).join('')}
-        ${article.data_points && article.data_points.length > 0 ? `
-          <div style="background: var(--light); padding: 2rem; margin: 2rem 0; border-radius: 4px;">
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul>
-              ${article.data_points.map(point => `<li><strong>${point.label}:</strong> ${point.value}</li>`).join('')}
-            </ul>
-          </div>
-        ` : ''}
       `;
 
       // Hide loader
