@@ -548,14 +548,14 @@
 
         const photoGalleryHtml = `
           <div style="max-width: 1200px; margin: 1rem auto 2rem auto; padding: 0 2rem;">
-            <div style="display: flex; gap: 0.75rem; margin-bottom: 2rem; align-items: flex-start; justify-content: center;">
-              <button id="gallery-prev" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0;">←</button>
-              <div style="flex: 1; min-width: 0; overflow-x: auto;">
-                <div id="thumbnails-container" style="display: flex; gap: 0.75rem; width: fit-content;">
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 2rem; align-items: flex-start;">
+              <button id="gallery-prev" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0; align-self: center;">←</button>
+              <div style="flex-grow: 1; overflow-x: auto; overflow-y: hidden; min-width: 0;">
+                <div id="thumbnails-container" style="display: flex; gap: 0.75rem; padding-bottom: 8px;">
                   ${photos.map((p, i) => {
                     const imageUrl = typeof p === 'string' ? p : p.href;
                     return `<img src="${imageUrl}" alt="Photo ${i+1}"
-                      style="width: 100px; height: 100px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; border-radius: 4px; flex-shrink: 0;"
+                      style="width: 90px; height: 90px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; border-radius: 4px; flex-shrink: 0;"
                       class="gallery-thumb"
                       data-full="${imageUrl}"
                       data-index="${i}"
@@ -564,7 +564,7 @@
                   }).join('')}
                 </div>
               </div>
-              <button id="gallery-next" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0;">→</button>
+              <button id="gallery-next" style="background: none; border: 1px solid var(--border); color: var(--primary); padding: 0.5rem 0.75rem; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; flex-shrink: 0; align-self: center;">→</button>
             </div>
           </div>
         `;
