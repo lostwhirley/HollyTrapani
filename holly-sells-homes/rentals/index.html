@@ -536,7 +536,9 @@
       }
 
       // Add photo gallery title before main photo
+      console.log('Photos length:', photos.length);
       if (photos.length > 1) {
+        console.log('Creating gallery for', photos.length, 'photos');
         const titleHtml = `
           <div style="max-width: 1200px; margin: 0.5rem auto 1rem auto; padding: 0 2rem;">
             <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary); text-align: center;">Photo Gallery (${photos.length} photos)</h3>
