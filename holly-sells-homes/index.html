@@ -1987,17 +1987,27 @@
         return;
       }
 
-      grid.innerHTML = articles.slice(0, 3).map(article => `
+      grid.innerHTML = articles.slice(0, 3).map((article, index) => `
         <div class="blog-card">
           <div class="blog-card-body">
             <span class="blog-tag">${escapeHtml(article.tag)}</span>
             <div class="blog-date">${escapeHtml(article.date)}</div>
             <h3>${escapeHtml(article.title)}</h3>
             <p>${escapeHtml(article.excerpt)}</p>
-            <a href="#" class="blog-read-more" onclick="sessionStorage.setItem('selectedArticle', JSON.stringify(${JSON.stringify(article)})); window.location.href='articles/?t=' + Date.now(); return false;">Read More</a>
+            <a href="#" class="blog-read-more" data-article-id="${index}">Read More</a>
           </div>
         </div>
       `).join('');
+
+      // Add click handlers for read more links
+      document.querySelectorAll('.blog-read-more').forEach((link, index) => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const article = articles[index];
+          sessionStorage.setItem('selectedArticle', JSON.stringify(article));
+          window.location.href = 'articles/?t=' + Date.now();
+        });
+      });
 
     } catch (err) {
       console.warn('Could not load articles:', err);
