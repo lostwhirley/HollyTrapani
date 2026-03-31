@@ -420,14 +420,16 @@
       const photos = rental.gallery_images || rental.photos || [];
       const primaryPhoto = typeof rental.primary_photo === 'string' ? rental.primary_photo : rental.primary_photo?.href || (photos.length > 0 ? photos[0] : '');
       console.log('Photos array:', photos);
+      console.log('Address:', address);
+      console.log('Description:', desc);
 
       // Track current photo for navigation
       let currentPhotoIndex = 0;
       const allPhotos = photos.map(p => typeof p === 'string' ? p : p.href);
 
       // Update page title and meta
-      const fullAddress = address.line;
-      const price = rental.list_price.toLocaleString();
+      const fullAddress = address.line || 'Property';
+      const price = rental.list_price ? rental.list_price.toLocaleString() : '0';
       document.title = `${fullAddress} | $${price}/mo | Holly Trapani`;
       document.getElementById('page-title').textContent = `${fullAddress} | Holly Trapani`;
       document.getElementById('page-description').textContent = `${fullAddress}, ${address.city}, ${address.state_code}. ${desc.beds} bed${desc.beds !== 1 ? 's' : ''}, ${desc.baths_consolidated} bath${desc.baths_consolidated !== 1 ? 's' : ''}. $${price}/month`;
@@ -622,7 +624,8 @@
 
     } catch (error) {
       console.error('Error loading rental:', error);
-      document.body.innerHTML = '<div style="text-align: center; padding: 4rem 2rem;"><h1>Error loading rental</h1><p>Please try again later.</p><p><a href="/">Return to home</a></p></div>';
+      console.error('Error stack:', error.stack);
+      document.body.innerHTML = '<div style="text-align: center; padding: 4rem 2rem;"><h1>Error loading rental</h1><p>' + error.message + '</p><p><a href="/">Return to home</a></p></div>';
     }
   }
 
