@@ -16,9 +16,7 @@ API_KEY = os.environ.get("RAPIDAPI_KEY", "2a1eca8e84msh49b38948c7d92c3p168af6jsn
 # File paths
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOMES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "all-listings.json")
-HOUSES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-houses", "all-listings.json")
 HOMES_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "listings.json")
-HOUSES_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-houses", "listings.json")
 
 def get_headers():
     """Get API headers"""
@@ -118,13 +116,11 @@ def main():
     print("\nSaving summary listings...")
     success = True
     success &= save_listings(all_listings_data, HOMES_ALL_LISTINGS_FILE)
-    success &= save_listings(all_listings_data, HOUSES_ALL_LISTINGS_FILE)
 
     # Fetch and save detailed listings
     detailed_listings_data = enrich_listings_with_details(all_listings_data)
     print("\nSaving detailed listings...")
     success &= save_listings(detailed_listings_data, HOMES_LISTINGS_FILE)
-    success &= save_listings(detailed_listings_data, HOUSES_LISTINGS_FILE)
 
     if success:
         print(f"\n✓ All listings refreshed successfully!")
