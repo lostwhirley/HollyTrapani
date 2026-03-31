@@ -2151,6 +2151,14 @@
         // Update active content
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
         document.getElementById(activeTab + '-tab').classList.add('active');
+
+        // Scroll to the listings section
+        setTimeout(() => {
+          const listingsSection = document.querySelector('.listings-section');
+          if (listingsSection) {
+            listingsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
       }
     }
   });
