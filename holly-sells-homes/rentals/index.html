@@ -573,16 +573,23 @@
         });
 
         // Add arrow navigation handlers to scroll thumbnails
-        document.getElementById('gallery-prev').addEventListener('click', function() {
-          scrollPosition = Math.max(0, scrollPosition - thumbWidth * 3);
-          thumbnailsContainer.scrollLeft = scrollPosition;
-        });
+        const galleryPrev = document.getElementById('gallery-prev');
+        const galleryNext = document.getElementById('gallery-next');
 
-        document.getElementById('gallery-next').addEventListener('click', function() {
-          const maxScroll = thumbnailsContainer.scrollWidth - thumbnailsContainer.clientWidth;
-          scrollPosition = Math.min(maxScroll, scrollPosition + thumbWidth * 3);
-          thumbnailsContainer.scrollLeft = scrollPosition;
-        });
+        if (galleryPrev) {
+          galleryPrev.addEventListener('click', function() {
+            scrollPosition = Math.max(0, scrollPosition - thumbWidth * 3);
+            thumbnailsContainer.scrollLeft = scrollPosition;
+          });
+        }
+
+        if (galleryNext) {
+          galleryNext.addEventListener('click', function() {
+            const maxScroll = thumbnailsContainer.scrollWidth - thumbnailsContainer.clientWidth;
+            scrollPosition = Math.min(maxScroll, scrollPosition + thumbWidth * 3);
+            thumbnailsContainer.scrollLeft = scrollPosition;
+          });
+        }
       }
 
       // Update specs
