@@ -328,6 +328,9 @@
       document.getElementById('specs-grid').innerHTML = '<div class="spec-item"><div class="spec-label">Loading...</div><div class="spec-value">—</div></div>';
 
       const mainPhoto = document.getElementById('main-photo');
+      if (!mainPhoto) {
+        throw new Error('main-photo element not found');
+      }
       mainPhoto.src = '';
       mainPhoto.style.background = '#f0f0f0';
 
@@ -335,6 +338,10 @@
       const modal = document.getElementById('photo-modal');
       const modalPhoto = document.getElementById('modal-photo');
       const modalClose = document.getElementById('modal-close');
+
+      if (!modal || !modalPhoto || !modalClose) {
+        throw new Error('Modal elements not found. modal=' + (modal ? 'ok' : 'null') + ', modalPhoto=' + (modalPhoto ? 'ok' : 'null') + ', modalClose=' + (modalClose ? 'ok' : 'null'));
+      }
 
       mainPhoto.addEventListener('click', function() {
         modalPhoto.src = mainPhoto.src;
@@ -660,6 +667,11 @@
     const saved = JSON.parse(localStorage.getItem('savedRentals')) || [];
     const isSaved = saved.some(r => r.listing_id === rental.listing_id);
     const btn = document.getElementById('save-btn');
+
+    if (!btn) {
+      console.error('save-btn element not found');
+      return;
+    }
 
     if (isSaved) {
       btn.classList.add('saved');
