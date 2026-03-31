@@ -449,7 +449,7 @@
       document.getElementById('page-title').textContent = `${fullAddress} | Holly Trapani`;
       document.getElementById('page-description').textContent = `${fullAddress}, ${address.city}, ${address.state_code}. ${desc.beds} bed${desc.beds !== 1 ? 's' : ''}, ${desc.baths_consolidated} bath${desc.baths_consolidated !== 1 ? 's' : ''}. $${price}/month`;
 
-      document.getElementById('description').textContent = rental.property_description || 'Beautiful rental property available for lease.';
+      document.getElementById('description').textContent = desc.text || rental.property_description || 'Beautiful rental property available for lease.';
 
       // Update hero
       document.getElementById('address').textContent = fullAddress;
