@@ -1994,7 +1994,7 @@
             <div class="blog-date">${escapeHtml(article.date)}</div>
             <h3>${escapeHtml(article.title)}</h3>
             <p>${escapeHtml(article.excerpt)}</p>
-            <a href="#contact" class="blog-read-more">Read More</a>
+            <a href="#" class="blog-read-more" onclick="sessionStorage.setItem('selectedArticle', JSON.stringify(${JSON.stringify(article)})); window.location.href='articles/?t=' + Date.now(); return false;">Read More</a>
           </div>
         </div>
       `).join('');
@@ -2160,6 +2160,18 @@
           }
         }, 100);
       }
+    }
+
+    // Check if we should scroll to a specific section
+    const activeSection = sessionStorage.getItem('activeSection');
+    if (activeSection) {
+      sessionStorage.removeItem('activeSection'); // Clear it after use
+      setTimeout(() => {
+        const section = document.querySelector(`[id*="${activeSection}"], .${activeSection}-section, #${activeSection}`);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
     }
   });
 </script>
