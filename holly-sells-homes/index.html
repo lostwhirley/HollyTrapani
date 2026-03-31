@@ -2064,11 +2064,9 @@
         const price = rental.list_price;
         const beds = rental.description?.beds || 'N/A';
         const baths = rental.description?.baths_consolidated || 'N/A';
-        const photo = rental.primary_photo?.href || '';
 
-        const photoHtml = photo
-          ? `<img src="${photo}" alt="${address.line}" style="width: 100%; height: 300px; object-fit: cover; display: block;">`
-          : `<div style="height: 300px; background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%); display: flex; align-items: center; justify-content: center; color: white;">No Image</div>`;
+        // Always use gradient placeholder for rentals (API images are poor quality)
+        const photoHtml = `<div style="height: 300px; background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">For Rent</div>`;
 
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit;';
