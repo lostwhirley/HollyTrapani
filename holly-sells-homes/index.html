@@ -351,6 +351,43 @@
       letter-spacing: -0.01em;
     }
 
+    .listings-tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .tab-button {
+      background: none;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.3s ease;
+    }
+
+    .tab-button:hover {
+      color: var(--primary);
+    }
+
+    .tab-button.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
     .listings-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1510,10 +1547,29 @@
     <h2 class="section-title">Current Listings</h2>
   </div>
 
-  <div class="listings-grid" id="listings-grid">
-    <!-- Listings will be loaded here by JavaScript -->
-    <div class="spinner-container">
-      <div class="spinner"></div>
+  <!-- Tabs -->
+  <div class="listings-tabs">
+    <button class="tab-button active" data-tab="sales">For Sale</button>
+    <button class="tab-button" data-tab="rentals">For Rent</button>
+  </div>
+
+  <!-- Sales Listings -->
+  <div class="tab-content active" id="sales-tab">
+    <div class="listings-grid" id="listings-grid">
+      <!-- Listings will be loaded here by JavaScript -->
+      <div class="spinner-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rental Listings -->
+  <div class="tab-content" id="rentals-tab">
+    <div class="listings-grid" id="rentals-grid">
+      <!-- Rentals will be loaded here by JavaScript -->
+      <div class="spinner-container">
+        <div class="spinner"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -1954,10 +2010,114 @@
     return div.innerHTML;
   }
 
-  // Load articles on page load
+  // Load rentals
+  async function loadRentals() {
+    console.log('loadRentals function called');
+    const rentalsGrid = document.getElementById('rentals-grid');
+
+    try {
+      // Fetch rentals from JSON file
+      const response = await fetch('./rentals.json');
+      const data = await response.json();
+      console.log('Loaded rentals from local file:', data);
+
+      // Extract rentals from API response
+      let rentals = [];
+      if (data.data?.home_search?.results && Array.isArray(data.data.home_search.results)) {
+        rentals = data.data.home_search.results;
+      } else {
+        rentals = [];
+      }
+
+      // Normalize rental data structure
+      const normalizedRentals = rentals.map(rental => {
+        if (rental.data && rental.data.home) {
+          const home = rental.data.home;
+          const primaryPhoto = home.primary_photo || (home.photos && home.photos.length > 0 ? home.photos[0] : null);
+          return {
+            ...home,
+            property_id: home.property_id,
+            listing_id: home.listing_id,
+            status: home.status,
+            flags: home.flags,
+            list_price: home.list_price,
+            primary_photo: primaryPhoto,
+            photos: home.photos,
+            description: home.description,
+            location: home.location
+          };
+        }
+        return rental;
+      });
+
+      // Clear loading message
+      rentalsGrid.innerHTML = '';
+
+      if (normalizedRentals.length === 0) {
+        rentalsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6b7280;">No rental listings available at this time.</p>';
+        return;
+      }
+
+      // Generate rental cards
+      normalizedRentals.forEach(rental => {
+        const address = rental.location?.address || {};
+        const price = rental.list_price;
+        const beds = rental.description?.beds || 'N/A';
+        const baths = rental.description?.baths_consolidated || 'N/A';
+        const photo = rental.primary_photo?.href || '';
+
+        const photoHtml = photo
+          ? `<img src="${photo}" alt="${address.line}" style="width: 100%; height: 300px; object-fit: cover; display: block;">`
+          : `<div style="height: 300px; background: linear-gradient(135deg, #1a3c5e 0%, #2d5a7b 100%); display: flex; align-items: center; justify-content: center; color: white;">No Image</div>`;
+
+        const card = document.createElement('div');
+        card.style.cssText = 'text-decoration: none; color: inherit;';
+
+        card.innerHTML = `
+          <div class="listing-card">
+            ${photoHtml}
+            <div class="listing-content">
+              <div class="listing-price">$${price.toLocaleString()}/mo</div>
+              <div class="listing-address">${address.line || 'N/A'}</div>
+              <div class="listing-city">${address.city || ''}, ${address.state_code || ''} ${address.postal_code || ''}</div>
+              <div class="listing-specs">
+                <div class="spec">${beds} Bed</div>
+                <div class="spec">${baths} Bath</div>
+              </div>
+              <div class="btn btn-primary">View Details</div>
+            </div>
+          </div>
+        `;
+
+        rentalsGrid.appendChild(card);
+      });
+    } catch (error) {
+      console.error('Error loading rentals:', error);
+      rentalsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6b7280;">Unable to load rental listings. Please try again later.</p>';
+    }
+  }
+
+  // Tab switching
   document.addEventListener('DOMContentLoaded', function() {
+    // Load both sales and rentals
     loadListings();
+    loadRentals();
     loadArticles();
+
+    // Handle tab clicks
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', function() {
+        const tabName = this.getAttribute('data-tab');
+
+        // Update active button
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        // Update active content
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        document.getElementById(tabName + '-tab').classList.add('active');
+      });
+    });
   });
 </script>
 
