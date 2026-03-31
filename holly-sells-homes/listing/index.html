@@ -487,7 +487,7 @@
       document.getElementById('page-description').textContent = `${fullAddress}, ${address.city}, ${address.state_code}. ${desc.beds} bed${desc.beds !== 1 ? 's' : ''}, ${desc.baths_consolidated} bath${desc.baths_consolidated !== 1 ? 's' : ''}. $${price}`;
       console.log('Listing data:', listing);
       console.log('Property description:', listing.property_description);
-      document.getElementById('description').textContent = listing.property_description || 'Beautiful home in Ave Maria.';
+      document.getElementById('description').textContent = desc.text || listing.property_description || 'Beautiful home in Ave Maria.';
 
       // Update hero
       document.getElementById('address').textContent = fullAddress;
