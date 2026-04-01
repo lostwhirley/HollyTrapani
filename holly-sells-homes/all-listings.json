@@ -1,104 +1,9 @@
 {
   "data": {
     "home_search": {
-      "count": 5,
-      "total": 5,
+      "count": 6,
+      "total": 6,
       "results": [
-        {
-          "property_id": "9337886864",
-          "listing_id": "2992804383",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2023-04-27",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 7405,
-            "sqft": 1919,
-            "stories": 1,
-            "sold_price": 546130,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Harmony",
-              "street_number": "6217",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.306365,
-                "lon": -81.434054,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "6217 Harmony Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 509900,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
-          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": null,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": true,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
         {
           "property_id": "9728116997",
           "listing_id": "2989493050",
@@ -290,6 +195,291 @@
           "__typename": "SearchHome"
         },
         {
+          "property_id": "9190425429",
+          "listing_id": "2988225600",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2022-04-19",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 6098,
+            "sqft": 1405,
+            "stories": 1,
+            "sold_price": 419295,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Revelry",
+              "street_number": "6174",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.306954,
+                "lon": -81.435075,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "6174 Revelry Ct",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 399999,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m3523209505rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m4249554528rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
+          "permalink": "6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": true,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "9337886864",
+          "listing_id": "2992804383",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2023-04-27",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 7405,
+            "sqft": 1919,
+            "stories": 1,
+            "sold_price": 546130,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Harmony",
+              "street_number": "6217",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.306365,
+                "lon": -81.434054,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "6217 Harmony Dr",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 509900,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": true,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "6044510048",
+          "listing_id": "2993142141",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2015-12-15",
+            "baths_consolidated": "2",
+            "beds": 3,
+            "lot_sqft": 8276,
+            "sqft": 2240,
+            "stories": 1,
+            "sold_price": 310674,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Ciatto",
+              "street_number": "5196",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.314535,
+                "lon": -81.430968,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "5196 Ciatto Way",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 514900,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m576345987rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m1743276095rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
+          "permalink": "5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": true,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
           "property_id": "6127912483",
           "listing_id": "2988154620",
           "status": "for_sale",
@@ -383,101 +573,6 @@
             "is_subdivision": null,
             "is_plan": null,
             "is_price_reduced": true,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9190425429",
-          "listing_id": "2988225600",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2022-04-19",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 6098,
-            "sqft": 1405,
-            "stories": 1,
-            "sold_price": 419295,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Revelry",
-              "street_number": "6174",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.306954,
-                "lon": -81.435075,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "6174 Revelry Ct",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 399999,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m3523209505rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m4249554528rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
-          "permalink": "6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
