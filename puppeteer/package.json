@@ -1,0 +1,12 @@
+{
+  "name": "holly-trapani-flyer",
+  "version": "1.0.0",
+  "description": "Generate property flyers using Puppeteer",
+  "main": "generate-flyer.js",
+  "scripts": {
+    "generate": "node generate-flyer.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
