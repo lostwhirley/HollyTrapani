@@ -79,7 +79,7 @@ function buildFlyerHTML(home, photoData) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>${addressLine} — Holly Trapani</title>
+  <title>${addressLine} — Holly Trapani LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -317,7 +317,7 @@ function buildFlyerHTML(home, photoData) {
         <div class="panel-features-text">${highlights}</div>
         <div class="divider"></div>
         <div class="agent-contact">
-          <div class="agent-name">Holly Trapani, Realtor®</div>
+          <div class="agent-name">Holly Trapani LLC, Realtor®</div>
           <div class="agent-info">
             William Raveis Real Estate<br>
             holly@hollysellshomes.com · hollysellshomes.com
@@ -416,7 +416,7 @@ function buildIndexHTML(listings) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Property Flyers — Holly Trapani</title>
+  <title>Property Flyers — Holly Trapani LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -456,10 +456,10 @@ function buildIndexHTML(listings) {
   <header>
     <div class="header-left">
       <div class="tagline">Property Flyers</div>
-      <div class="name">Holly Trapani</div>
+      <div class="name">Holly Trapani LLC</div>
     </div>
     <div class="header-right">
-      Holly Trapani, Realtor®<br>
+      Holly Trapani LLC, Realtor®<br>
       William Raveis Real Estate<br>
       holly@hollysellshomes.com
     </div>

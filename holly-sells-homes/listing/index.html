@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Listing | Holly Trapani</title>
-  <meta name="description" id="page-description" content="Property listing - Holly Trapani Real Estate">
+  <title id="page-title">Listing | Holly Trapani LLC</title>
+  <meta name="description" id="page-description" content="Property listing - Holly Trapani LLC Real Estate">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -219,7 +219,7 @@
 <nav>
   <div class="nav-inner">
     <a href="../" class="nav-logo">
-      Holly Trapani
+      Holly Trapani LLC
       <span>MRP | New Construction & 55+ Communities Specialist | New Day Realty</span>
     </a>
     <div style="display: flex; gap: 1.5rem; align-items: center;">
@@ -357,7 +357,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-brokerage">Holly Trapani | New Day Realty</div>
+    <div class="footer-brokerage">Holly Trapani LLC | New Day Realty</div>
     <div class="footer-links">
       <a href="../">Home</a>
       <a href="../#listings">Listings</a>
@@ -482,8 +482,8 @@
       // Update page title and meta
       const fullAddress = address.line;
       const price = listing.list_price.toLocaleString();
-      document.title = `${fullAddress} | $${price} | Holly Trapani`;
-      document.getElementById('page-title').textContent = `${fullAddress} | Holly Trapani`;
+      document.title = `${fullAddress} | $${price} | Holly Trapani LLC`;
+      document.getElementById('page-title').textContent = `${fullAddress} | Holly Trapani LLC`;
       document.getElementById('page-description').textContent = `${fullAddress}, ${address.city}, ${address.state_code}. ${desc.beds} bed${desc.beds !== 1 ? 's' : ''}, ${desc.baths_consolidated} bath${desc.baths_consolidated !== 1 ? 's' : ''}. $${price}`;
       console.log('Listing data:', listing);
       console.log('Property description:', listing.property_description);

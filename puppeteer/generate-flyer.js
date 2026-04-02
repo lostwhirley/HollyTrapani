@@ -60,7 +60,7 @@ function buildHTML(listings) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holly Trapani — Active Listings</title>
+  <title>Holly Trapani LLC — Active Listings</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -255,10 +255,10 @@ function buildHTML(listings) {
   <header class="header">
     <div class="header-left">
       <div class="tagline">Current Listings</div>
-      <div class="name">Holly Trapani</div>
+      <div class="name">Holly Trapani LLC</div>
     </div>
     <div class="header-right">
-      <strong>Holly Trapani, Realtor®</strong>
+      <strong>Holly Trapani LLC, Realtor®</strong>
       William Raveis Real Estate<br>
       Naples &amp; Ave Maria, FL<br>
       holly@hollysellshomes.com
