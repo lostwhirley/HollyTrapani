@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --primary: #3d3530;
       --accent: #b08d7a;
@@ -18,148 +17,29 @@
       --border: #e8ddd7;
       --text-muted: #7a6e69;
     }
-
-    body {
-      background: var(--cream);
-      font-family: 'Jost', sans-serif;
-      color: var(--primary);
-      min-height: 100vh;
-    }
-
-    /* ── Header ─────────────────────────────── */
-    header {
-      border-bottom: 1.5px solid var(--accent-soft);
-      padding: 32px 48px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .header-left .tagline {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-
-    .header-left .name {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 32px;
-      font-weight: 500;
-      font-style: italic;
-      color: var(--primary);
-      line-height: 1;
-    }
-
-    .header-right {
-      text-align: right;
-      font-size: 11px;
-      color: var(--text-muted);
-      line-height: 1.8;
-    }
-
-    /* ── Main ───────────────────────────────── */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 24px 72px;
-    }
-
-    .section-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 26px;
-      font-weight: 400;
-      font-style: italic;
-      color: var(--primary);
-      margin-bottom: 28px;
-    }
-
-    /* ── Flyer list ─────────────────────────── */
-    .flyer-list {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .flyer-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 24px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.2s, background 0.2s;
-    }
-
+    body { background: var(--cream); font-family: 'Jost', sans-serif; color: var(--primary); min-height: 100vh; }
+    header { border-bottom: 1.5px solid var(--accent-soft); padding: 32px 48px 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .header-left .tagline { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .header-left .name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 500; font-style: italic; color: var(--primary); line-height: 1; }
+    .header-right { text-align: right; font-size: 11px; color: var(--text-muted); line-height: 1.8; }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 24px 72px; }
+    .section-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic; color: var(--primary); margin-bottom: 28px; }
+    .flyer-list { display: flex; flex-direction: column; gap: 2px; }
+    .flyer-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; background: var(--white); border: 1px solid var(--border); text-decoration: none; color: inherit; transition: border-color 0.2s, background 0.2s; }
     .flyer-item:first-child { border-radius: 4px 4px 0 0; }
     .flyer-item:last-child  { border-radius: 0 0 4px 4px; }
     .flyer-item:only-child  { border-radius: 4px; }
-
-    .flyer-item:hover {
-      background: var(--light);
-      border-color: var(--accent-soft);
-    }
-
-    .flyer-info {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-
-    .flyer-address {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--primary);
-    }
-
-    .flyer-filename {
-      font-size: 11px;
-      color: var(--text-muted);
-      letter-spacing: 0.03em;
-    }
-
-    .flyer-download {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .flyer-download svg {
-      width: 14px;
-      height: 14px;
-      fill: none;
-      stroke: var(--accent);
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    /* ── Footer ─────────────────────────────── */
-    footer {
-      border-top: 1.5px solid var(--accent-soft);
-      padding: 20px 48px;
-      text-align: center;
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+    .flyer-item:hover { background: var(--light); border-color: var(--accent-soft); }
+    .flyer-info { display: flex; flex-direction: column; gap: 3px; }
+    .flyer-address { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .flyer-filename { font-size: 11px; color: var(--text-muted); letter-spacing: 0.03em; }
+    .flyer-download { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+    .flyer-download svg { width: 14px; height: 14px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    footer { border-top: 1.5px solid var(--accent-soft); padding: 20px 48px; text-align: center; font-size: 11px; color: var(--text-muted); }
+    footer a { color: var(--accent); text-decoration: none; }
   </style>
 </head>
 <body>
-
   <header>
     <div class="header-left">
       <div class="tagline">Property Flyers</div>
@@ -171,11 +51,20 @@
       holly@hollysellshomes.com
     </div>
   </header>
-
   <main>
     <div class="section-title">Active Listing Flyers</div>
-
     <div class="flyer-list">
+      
+      <a class="flyer-item" href="output/flyer-6174-revelry-ct.pdf" target="_blank">
+        <div class="flyer-info">
+          <span class="flyer-address">6174 Revelry Ct — Ave Maria, FL 34142</span>
+          <span class="flyer-filename">flyer-6174-revelry-ct.pdf</span>
+        </div>
+        <div class="flyer-download">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Open PDF
+        </div>
+      </a>
 
       <a class="flyer-item" href="output/flyer-6217-harmony-dr.pdf" target="_blank">
         <div class="flyer-info">
@@ -199,10 +88,10 @@
         </div>
       </a>
 
-      <a class="flyer-item" href="output/flyer-6174-revelry-ct.pdf" target="_blank">
+      <a class="flyer-item" href="output/flyer-5872-mayflower-way.pdf" target="_blank">
         <div class="flyer-info">
-          <span class="flyer-address">6174 Revelry Ct — Ave Maria, FL 34142</span>
-          <span class="flyer-filename">flyer-6174-revelry-ct.pdf</span>
+          <span class="flyer-address">5872 Mayflower Way — Ave Maria, FL 34142</span>
+          <span class="flyer-filename">flyer-5872-mayflower-way.pdf</span>
         </div>
         <div class="flyer-download">
           <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -221,12 +110,18 @@
         </div>
       </a>
 
+      <a class="flyer-item" href="output/flyer-5196-ciatto-way.pdf" target="_blank">
+        <div class="flyer-info">
+          <span class="flyer-address">5196 Ciatto Way — Ave Maria, FL 34142</span>
+          <span class="flyer-filename">flyer-5196-ciatto-way.pdf</span>
+        </div>
+        <div class="flyer-download">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Open PDF
+        </div>
+      </a>
     </div>
   </main>
-
-  <footer>
-    <a href="https://hollysellshomes.com">hollysellshomes.com</a>
-  </footer>
-
+  <footer><a href="https://hollysellshomes.com">hollysellshomes.com</a></footer>
 </body>
 </html>

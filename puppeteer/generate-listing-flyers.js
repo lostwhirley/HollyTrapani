@@ -381,6 +381,98 @@ async function generateFlyers() {
 
   await browser.close();
   console.log(`\n✓ All flyers generated in ${OUTPUT_DIR}`);
+
+  // Regenerate index.html from current listings
+  const homes = results.map(r => r?.data?.home).filter(Boolean);
+  const indexHTML = buildIndexHTML(homes);
+  const indexFile = path.join(__dirname, '../flyers/index.html');
+  fs.writeFileSync(indexFile, indexHTML);
+  console.log(`✓ Index updated: ${indexFile}`);
+}
+
+function buildIndexHTML(listings) {
+  const rows = listings.map(home => {
+    const addr = home.location?.address;
+    const addressLine = addr?.line || '';
+    const cityState = `${addr?.city || ''}, ${addr?.state_code || ''} ${addr?.postal_code || ''}`;
+    const slug = slugify(addressLine || `property-${home.property_id}`);
+    const filename = `flyer-${slug}.pdf`;
+
+    return `
+      <a class="flyer-item" href="output/${filename}" target="_blank">
+        <div class="flyer-info">
+          <span class="flyer-address">${addressLine} — ${cityState}</span>
+          <span class="flyer-filename">${filename}</span>
+        </div>
+        <div class="flyer-download">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Open PDF
+        </div>
+      </a>`;
+  }).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Flyers — Holly Trapani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #3d3530;
+      --accent: #b08d7a;
+      --accent-soft: #d4b8a8;
+      --light: #f5f0eb;
+      --cream: #faf7f4;
+      --white: #ffffff;
+      --border: #e8ddd7;
+      --text-muted: #7a6e69;
+    }
+    body { background: var(--cream); font-family: 'Jost', sans-serif; color: var(--primary); min-height: 100vh; }
+    header { border-bottom: 1.5px solid var(--accent-soft); padding: 32px 48px 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .header-left .tagline { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .header-left .name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 500; font-style: italic; color: var(--primary); line-height: 1; }
+    .header-right { text-align: right; font-size: 11px; color: var(--text-muted); line-height: 1.8; }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 24px 72px; }
+    .section-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic; color: var(--primary); margin-bottom: 28px; }
+    .flyer-list { display: flex; flex-direction: column; gap: 2px; }
+    .flyer-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; background: var(--white); border: 1px solid var(--border); text-decoration: none; color: inherit; transition: border-color 0.2s, background 0.2s; }
+    .flyer-item:first-child { border-radius: 4px 4px 0 0; }
+    .flyer-item:last-child  { border-radius: 0 0 4px 4px; }
+    .flyer-item:only-child  { border-radius: 4px; }
+    .flyer-item:hover { background: var(--light); border-color: var(--accent-soft); }
+    .flyer-info { display: flex; flex-direction: column; gap: 3px; }
+    .flyer-address { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .flyer-filename { font-size: 11px; color: var(--text-muted); letter-spacing: 0.03em; }
+    .flyer-download { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+    .flyer-download svg { width: 14px; height: 14px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    footer { border-top: 1.5px solid var(--accent-soft); padding: 20px 48px; text-align: center; font-size: 11px; color: var(--text-muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="tagline">Property Flyers</div>
+      <div class="name">Holly Trapani</div>
+    </div>
+    <div class="header-right">
+      Holly Trapani, Realtor®<br>
+      William Raveis Real Estate<br>
+      holly@hollysellshomes.com
+    </div>
+  </header>
+  <main>
+    <div class="section-title">Active Listing Flyers</div>
+    <div class="flyer-list">
+      ${rows}
+    </div>
+  </main>
+  <footer><a href="https://hollysellshomes.com">hollysellshomes.com</a></footer>
+</body>
+</html>`;
 }
 
 generateFlyers().catch(err => {
