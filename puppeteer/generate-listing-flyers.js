@@ -1,9 +1,28 @@
 const puppeteer = require('puppeteer');
 const path = require('path');
 const fs = require('fs');
+const https = require('https');
+const http = require('http');
 
 const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/listings.json');
 const OUTPUT_DIR = path.join(__dirname, '../flyers/output');
+
+function fetchImageAsBase64(url) {
+  return new Promise((resolve) => {
+    if (!url) return resolve('');
+    const client = url.startsWith('https') ? https : http;
+    client.get(url, { timeout: 10000 }, (res) => {
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
+      res.on('end', () => {
+        const buf = Buffer.concat(chunks);
+        const mime = res.headers['content-type'] || 'image/jpeg';
+        resolve(`data:${mime};base64,${buf.toString('base64')}`);
+      });
+      res.on('error', () => resolve(''));
+    }).on('error', () => resolve(''));
+  });
+}
 
 function formatPrice(price) {
   return new Intl.NumberFormat('en-US', {
@@ -34,14 +53,13 @@ function slugify(str) {
     .replace(/^-|-$/g, '');
 }
 
-function buildFlyerHTML(home) {
+function buildFlyerHTML(home, photoData) {
   const addr = home.location?.address;
   const desc = home.description;
-  const photos = (home.photos || []).map(p => largePhotoUrl(p.href));
-  const heroPhoto = photos[0] || '';
-  const thumb1 = photos[1] || photos[0] || '';
-  const thumb2 = photos[2] || photos[0] || '';
-  const thumb3 = photos[3] || photos[0] || '';
+  const heroPhoto = photoData[0] || '';
+  const thumb1 = photoData[1] || photoData[0] || '';
+  const thumb2 = photoData[2] || photoData[0] || '';
+  const thumb3 = photoData[3] || photoData[0] || '';
 
   const price = formatPrice(home.list_price);
   const beds = desc?.beds ?? '—';
@@ -121,9 +139,17 @@ function buildFlyerHTML(home) {
 
     .hero-photo {
       flex: 1;
-      background-size: cover;
-      background-position: center;
       border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+      min-height: 0;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .thumb-row {
@@ -135,9 +161,16 @@ function buildFlyerHTML(home) {
 
     .thumb {
       flex: 1;
-      background-size: cover;
-      background-position: center;
       border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     /* ── Right: details panel ─────────────────── */
@@ -261,11 +294,13 @@ function buildFlyerHTML(home) {
     <div class="body-row">
       <!-- Photos -->
       <div class="photo-col">
-        <div class="hero-photo" style="background-image:url('${heroPhoto}')"></div>
+        <div class="hero-photo">
+          ${heroPhoto ? `<img src="${heroPhoto}" alt="Property photo">` : ''}
+        </div>
         <div class="thumb-row">
-          <div class="thumb" style="background-image:url('${thumb1}')"></div>
-          <div class="thumb" style="background-image:url('${thumb2}')"></div>
-          <div class="thumb" style="background-image:url('${thumb3}')"></div>
+          <div class="thumb">${thumb1 ? `<img src="${thumb1}" alt="">` : ''}</div>
+          <div class="thumb">${thumb2 ? `<img src="${thumb2}" alt="">` : ''}</div>
+          <div class="thumb">${thumb3 ? `<img src="${thumb3}" alt="">` : ''}</div>
         </div>
       </div>
 
@@ -320,7 +355,13 @@ async function generateFlyers() {
     const outFile = path.join(OUTPUT_DIR, `flyer-${slug}.pdf`);
 
     console.log(`  Generating: ${addr}...`);
-    const html = buildFlyerHTML(home);
+
+    // Fetch first 4 photos as base64
+    const photoUrls = (home.photos || []).slice(0, 4).map(p => largePhotoUrl(p.href));
+    console.log(`    Fetching ${photoUrls.length} photos...`);
+    const photoData = await Promise.all(photoUrls.map(fetchImageAsBase64));
+
+    const html = buildFlyerHTML(home, photoData);
 
     const page = await browser.newPage();
     await page.setViewport({ width: 1056, height: 816 });
