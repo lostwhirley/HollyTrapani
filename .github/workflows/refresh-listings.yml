@@ -2,8 +2,9 @@ name: Refresh Listings
 
 on:
   schedule:
-    # Run daily at 15:00 UTC (11:00 AM EST / 10:00 AM EDT)
-    - cron: '0 15 * * *'
+    # Run daily at 11:00 UTC (6:00 AM EST) and 23:00 UTC (6:00 PM EST)
+    - cron: '0 11 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,7 +25,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: pip install requests
 
       - name: Refresh listings from API
@@ -32,16 +33,44 @@ jobs:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         run: python3 scripts/refresh_listings.py
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer dependencies
+        run: |
+          sudo apt-get install -y \
+            libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
+            libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 \
+            libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 \
+            libcairo2 libnss3 libnspr4
+
+      - name: Install Node dependencies
+        working-directory: puppeteer
+        run: npm install
+
+      - name: Generate flyers
+        working-directory: puppeteer
+        run: node generate-listing-flyers.js
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet; then
+          if git diff --quiet && git ls-files --others --exclude-standard | grep -q .; then
+            :
+          fi
+
+          git add holly-sells-homes/all-listings.json \
+                  holly-sells-homes/listings.json \
+                  flyers/output/ \
+                  flyers/index.html
+
+          if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git add holly-sells-homes/all-listings.json \
-                    holly-sells-homes/listings.json
-            git commit -m "chore: update listings and property details from API [skip ci]"
+            git commit -m "chore: update listings and regenerate flyers [skip ci]"
             git push
           fi
