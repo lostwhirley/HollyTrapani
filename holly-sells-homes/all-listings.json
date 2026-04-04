@@ -5,33 +5,33 @@
       "total": 6,
       "results": [
         {
-          "property_id": "9728116997",
-          "listing_id": "2989493050",
+          "property_id": "9190425429",
+          "listing_id": "2988225600",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-01-06",
+            "sold_date": "2022-04-19",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 4356,
-            "sqft": 1459,
+            "lot_sqft": 6098,
+            "sqft": 1405,
             "stories": 1,
-            "sold_price": 390000,
+            "sold_price": 419295,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5872",
+              "street_name": "Revelry",
+              "street_number": "6174",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.314938,
-                "lon": -81.447307,
+                "lat": 26.306954,
+                "lon": -81.435075,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "5872 Mayflower Way",
+              "line": "6174 Revelry Ct",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -48,27 +48,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 319000,
+          "list_price": 399999,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m3523209505rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m4249554528rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
-          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
+          "permalink": "6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -81,7 +81,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
@@ -91,7 +91,7 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": true,
+            "is_price_reduced": null,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
@@ -271,7 +271,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": true,
+            "is_pending": null,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
@@ -282,102 +282,7 @@
             "is_subdivision": null,
             "is_plan": null,
             "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9190425429",
-          "listing_id": "2988225600",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2022-04-19",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 6098,
-            "sqft": 1405,
-            "stories": 1,
-            "sold_price": 419295,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Revelry",
-              "street_number": "6174",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.306954,
-                "lon": -81.435075,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "6174 Revelry Ct",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 399999,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m3523209505rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m4249554528rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
-          "permalink": "6174-Revelry-Ct_Ave-Maria_FL_34142_M91904-25429",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
+            "is_new_listing": true,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -566,6 +471,101 @@
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": null,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": true,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "9728116997",
+          "listing_id": "2989493050",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2023-01-06",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 4356,
+            "sqft": 1459,
+            "stories": 1,
+            "sold_price": 390000,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Mayflower",
+              "street_number": "5872",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.314938,
+                "lon": -81.447307,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "5872 Mayflower Way",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 319000,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
