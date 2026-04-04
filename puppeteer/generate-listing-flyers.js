@@ -350,6 +350,233 @@ function buildTemplate3(home, photoData) {
 </body></html>`;
 }
 
+// ── Template 4: Portrait, olive headline, diagonal hero, hexagon photos, icon features ──
+function buildTemplate4(home, photoData) {
+  const addr = home.location?.address;
+  const desc = home.description;
+  const [hero, hex1, hex2, hex3] = photoData;
+  const price = formatPrice(home.list_price);
+  const beds = desc?.beds ?? '—';
+  const baths = desc?.baths_consolidated ?? '—';
+  const sqft = desc?.sqft ? desc.sqft.toLocaleString() : '—';
+  const highlights = extractHighlights(desc?.text);
+  const addressLine = addr?.line || '';
+  const cityState = `${addr?.city || ''}, ${addr?.state_code || ''} ${addr?.postal_code || ''}`;
+
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>${addressLine} — Holly Trapani LLC</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 612px; height: 816px; background: #fff; font-family: 'Jost', sans-serif; overflow: hidden; }
+
+  /* ── Top section: headline left, hex photos right ── */
+  .top { display: flex; height: 300px; }
+
+  .top-left {
+    flex: 0 0 340px;
+    padding: 28px 20px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .headline {
+    font-size: 36px;
+    font-weight: 900;
+    font-style: italic;
+    color: #6b5e1e;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin-bottom: 10px;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2420;
+  }
+
+  .top-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 10px 10px 0;
+    align-items: flex-end;
+  }
+
+  /* Hexagon-style clips */
+  .hex-photo {
+    width: 180px;
+    height: 134px;
+    overflow: hidden;
+    clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+  }
+  .hex-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* ── Middle: large hero with diagonal clip ── */
+  .hero-section {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+  }
+  .hero-section img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  /* Diagonal cut on right side — matches the template */
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0; right: -1px; bottom: -1px;
+    width: 140px;
+    background: #fff;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  /* ── Bottom: features left, dark panel right ── */
+  .bottom { display: flex; height: 256px; }
+
+  .features {
+    flex: 0 0 340px;
+    padding: 20px 16px 16px 28px;
+  }
+  .features-title {
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    color: #2c2420;
+    margin-bottom: 14px;
+  }
+  .icon-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+  }
+  .icon-circle {
+    width: 44px; height: 44px;
+    border: 2px solid #2c2420;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-circle svg { width: 22px; height: 22px; stroke: #2c2420; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .icon-label { font-size: 10px; font-weight: 600; color: #2c2420; text-align: center; line-height: 1.3; }
+
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .contact-icon { width: 28px; height: 28px; stroke: #6b5e1e; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .contact-text { font-size: 16px; font-weight: 700; color: #2c2420; }
+
+  .dark-panel {
+    flex: 1;
+    background: #2c2420;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .dark-panel .desc {
+    font-size: 11px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.65;
+    margin-bottom: 14px;
+    padding-left: 14px;
+  }
+  .dark-panel .agent {
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    padding-left: 14px;
+  }
+  .dark-panel .agent strong {
+    color: #fff;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 2px;
+  }
+</style></head>
+<body>
+
+  <!-- TOP -->
+  <div class="top">
+    <div class="top-left">
+      <div class="headline">Find Comfort in Every Corner</div>
+      <div class="price">Starts at ${price}</div>
+    </div>
+    <div class="top-right">
+      <div class="hex-photo">${hex1 ? `<img src="${hex1}" alt="">` : ''}</div>
+      <div class="hex-photo">${hex2 ? `<img src="${hex2}" alt="">` : ''}</div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero-section">
+    ${hero ? `<img src="${hero}" alt="">` : ''}
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="bottom">
+    <div class="features">
+      <div class="features-title">Features:</div>
+      <div class="icon-row">
+        <div class="icon-box">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <span class="icon-label">${addressLine}<br>${cityState}</span>
+        </div>
+        <div class="icon-box">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="icon-label">${sqft} sqft</span>
+        </div>
+        <div class="icon-box">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+          </div>
+          <span class="icon-label">${beds} Bedrooms</span>
+        </div>
+        <div class="icon-box">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="10" y1="5" x2="8" y2="7"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <span class="icon-label">${baths} Bathrooms</span>
+        </div>
+      </div>
+      <div class="contact-row">
+        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="contact-text">hollysellshomes.com</span>
+      </div>
+    </div>
+
+    <div class="dark-panel">
+      <div class="desc">${highlights}</div>
+      <div class="agent">
+        <strong>Holly Trapani LLC, Realtor®</strong>
+        William Raveis Real Estate<br>
+        holly@hollysellshomes.com
+      </div>
+    </div>
+  </div>
+
+</body></html>`;
+}
+
 function buildIndexHTML(listings) {
   const rows = listings.map(home => {
     const addr = home.location?.address;
@@ -361,6 +588,7 @@ function buildIndexHTML(listings) {
       { label: 'Style 1 — Classic', file: `flyer-${slug}-1.pdf` },
       { label: 'Style 2 — Elegant', file: `flyer-${slug}-2.pdf` },
       { label: 'Style 3 — Modern',  file: `flyer-${slug}-3.pdf` },
+      { label: 'Style 4 — Comfort', file: `flyer-${slug}-4.pdf` },
     ];
 
     const links = templates.map(t => `
@@ -450,6 +678,7 @@ async function generateFlyers() {
     { name: '1', build: buildTemplate1, width: '1056px', height: '816px' },
     { name: '2', build: buildTemplate2, width: '612px',  height: '816px' },
     { name: '3', build: buildTemplate3, width: '612px',  height: '816px' },
+    { name: '4', build: buildTemplate4, width: '612px',  height: '816px' },
   ];
 
   for (const result of results) {
