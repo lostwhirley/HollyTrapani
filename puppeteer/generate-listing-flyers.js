@@ -253,12 +253,12 @@ function buildTemplate3(home, photoData) {
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { width: 612px; height: 816px; background: #c8782a; font-family: 'Jost', sans-serif; overflow: hidden; display: flex; flex-direction: column; }
+  body { width: 612px; height: 816px; background: #e8e5e2; font-family: 'Jost', sans-serif; overflow: hidden; display: flex; flex-direction: column; }
 
   .top-section { flex: 0 0 auto; padding: 36px 36px 20px; }
-  .top-label { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
-  .top-title { font-size: 44px; font-weight: 900; color: #fff; text-transform: uppercase; line-height: 1; margin-bottom: 6px; }
-  .top-sub { font-size: 18px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 0; }
+  .top-label { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #9a8e89; margin-bottom: 8px; }
+  .top-title { font-size: 44px; font-weight: 900; color: #2c2420; text-transform: uppercase; line-height: 1; margin-bottom: 6px; }
+  .top-sub { font-size: 18px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: #5a4f4a; margin-bottom: 0; }
 
   /* Diamond/chevron photo */
   .photo-section {
@@ -275,7 +275,7 @@ function buildTemplate3(home, photoData) {
     position: absolute;
     top: -1px; left: -1px; right: -1px;
     height: 60px;
-    background: #c8782a;
+    background: #e8e5e2;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     z-index: 2;
   }
@@ -285,7 +285,7 @@ function buildTemplate3(home, photoData) {
     position: absolute;
     bottom: -1px; left: -1px; right: -1px;
     height: 60px;
-    background: #c8782a;
+    background: #e8e5e2;
     clip-path: polygon(0 100%, 50% 0, 100% 100%);
     z-index: 2;
   }
@@ -296,26 +296,26 @@ function buildTemplate3(home, photoData) {
     bottom: 20px; left: 50%; transform: translateX(-50%);
     z-index: 3;
     text-align: center;
-    background: rgba(200,120,42,0.85);
+    background: rgba(60,45,40,0.82);
     padding: 6px 20px;
     border-radius: 2px;
   }
-  .price-label { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.8); }
+  .price-label { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.75); }
   .price-amount { font-size: 22px; font-weight: 700; color: #fff; display: block; line-height: 1.1; }
 
   .bottom-section { flex: 1; padding: 30px 36px 28px; display: flex; flex-direction: column; justify-content: space-between; }
 
   .specs { display: flex; gap: 12px; justify-content: center; margin-bottom: 16px; }
-  .spec { text-align: center; background: rgba(255,255,255,0.15); padding: 10px 20px; border-radius: 2px; }
-  .spec-val { font-size: 22px; font-weight: 700; color: #fff; display: block; line-height: 1; }
-  .spec-label { font-size: 9px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+  .spec { text-align: center; background: rgba(255,255,255,0.6); padding: 10px 20px; border-radius: 2px; border: 1px solid #d4cfc9; }
+  .spec-val { font-size: 22px; font-weight: 700; color: #2c2420; display: block; line-height: 1; }
+  .spec-label { font-size: 9px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #9a8e89; }
 
-  .address { text-align: center; font-size: 12px; color: rgba(255,255,255,0.8); margin-bottom: 16px; }
+  .address { text-align: center; font-size: 12px; color: #7a6e69; margin-bottom: 16px; }
 
   .agent-row { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-  .agent-name { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: 0.05em; }
-  .agent-info { font-size: 10px; color: rgba(255,255,255,0.75); letter-spacing: 0.04em; }
-  .website { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin-top: 4px; }
+  .agent-name { font-size: 13px; font-weight: 700; color: #2c2420; letter-spacing: 0.05em; }
+  .agent-info { font-size: 10px; color: #7a6e69; letter-spacing: 0.04em; }
+  .website { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #b08d7a; margin-top: 4px; }
 </style></head>
 <body>
   <div class="top-section">
@@ -325,7 +325,7 @@ function buildTemplate3(home, photoData) {
   </div>
 
   <div class="photo-section">
-    ${hero ? `<img src="${hero}" alt="">` : '<div style="background:#a05a18;width:100%;height:100%"></div>'}
+    ${hero ? `<img src="${hero}" alt="">` : '<div style="background:#c0bbb6;width:100%;height:100%"></div>'}
     <div class="price-overlay">
       <span class="price-label">Price Start From</span>
       <span class="price-amount">${price}</span>
