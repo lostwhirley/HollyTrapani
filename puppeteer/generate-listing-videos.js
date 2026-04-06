@@ -381,17 +381,19 @@ function renderVideo(slidePaths, outputFile, tmpDir) {
     const { path: imgPath, duration } = slidePaths[i];
     const clipFile = path.join(tmpDir, `clip-${i}.mp4`);
     const frames = duration * FPS;
+    // Very subtle zoom — tiny increment over many frames keeps motion silky smooth.
+    // Zoom range 1.0–1.02 (barely visible but cinematic). Alternate in/out per slide.
     const zoomExpr = i % 2 === 0
-      ? `zoom='min(zoom+0.0003,1.05)'`
-      : `zoom='if(eq(on,1),1.05,max(zoom-0.0003,1.0))'`;
+      ? `zoom='min(zoom+0.00007,1.02)'`
+      : `zoom='if(eq(on,1),1.02,max(zoom-0.00007,1.0))'`;
 
     execSync([
       'ffmpeg -y',
-      `-loop 1 -t ${duration} -i "${imgPath}"`,
-      `-vf "scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},` +
+      `-loop 1 -framerate ${FPS} -t ${duration} -i "${imgPath}"`,
+      `-vf "scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},` +
         `zoompan=${zoomExpr}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},` +
-        `setpts=PTS-STARTPTS"`,
-      `-c:v libx264 -pix_fmt yuv420p -crf 20 -preset fast`,
+        `fps=${FPS},setpts=PTS-STARTPTS"`,
+      `-c:v libx264 -pix_fmt yuv420p -crf 18 -preset slow`,
       `-t ${duration} -r ${FPS}`,
       `"${clipFile}"`
     ].join(' '), { stdio: 'pipe' });
