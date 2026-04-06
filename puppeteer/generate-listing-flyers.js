@@ -591,11 +591,13 @@ function buildIndexHTML(listings) {
       { label: 'Style 4 — Comfort', file: `flyer-${slug}-4.pdf` },
     ];
 
-    const links = templates.map(t => `
+    const pdfLinks = templates.map(t => `
       <a class="flyer-link" href="output/${t.file}" target="_blank">
         <span class="flyer-style">${t.label}</span>
         <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>`).join('');
+
+    const videoFile = `video-${slug}.mp4`;
 
     return `
       <div class="flyer-item">
@@ -603,7 +605,13 @@ function buildIndexHTML(listings) {
           <span class="flyer-address">${addressLine}</span>
           <span class="flyer-city">${cityState}</span>
         </div>
-        <div class="flyer-links">${links}</div>
+        <div class="flyer-links">
+          ${pdfLinks}
+          <a class="flyer-link video-link" href="videos/${videoFile}" target="_blank">
+            <span class="flyer-style">Facebook Video</span>
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </a>
+        </div>
       </div>`;
   }).join('\n');
 
@@ -634,6 +642,10 @@ function buildIndexHTML(listings) {
     .flyer-link { display:flex; align-items:center; gap:6px; padding:7px 14px; border:1px solid var(--border); border-radius:3px; text-decoration:none; color:var(--accent); font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; transition:background 0.2s, border-color 0.2s; }
     .flyer-link:hover { background:var(--light); border-color:var(--accent-soft); }
     .flyer-link svg { width:13px; height:13px; fill:none; stroke:var(--accent); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .video-link { background:var(--primary); color:#fff; border-color:var(--primary); }
+    .video-link svg { stroke:#fff; fill:#fff; }
+    .video-link .flyer-style { color:#fff; }
+    .video-link:hover { background:#2c2420; border-color:#2c2420; }
     footer { border-top:1.5px solid var(--accent-soft); padding:20px 48px; text-align:center; font-size:11px; color:var(--muted); }
     footer a { color:var(--accent); text-decoration:none; }
   </style>
