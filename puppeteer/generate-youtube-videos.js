@@ -336,7 +336,8 @@ async function main() {
 
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    timeout: 60000
   });
 
   for (const result of results) {
@@ -393,7 +394,7 @@ async function main() {
       const pngPath = path.join(listingDir, `${s.name}.png`);
       const page = await browser.newPage();
       await page.setViewport({ width: W, height: H, deviceScaleFactor: 1 });
-      await page.setContent(s.html, { waitUntil: 'networkidle0' });
+      await page.setContent(s.html, { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.screenshot({ path: pngPath, type: 'png' });
       await page.close();
       staticPngPaths[s.name] = pngPath;
@@ -407,7 +408,7 @@ async function main() {
       const html = slidePhoto(photoSlidePhotos[i]);
       const page = await browser.newPage();
       await page.setViewport({ width: W, height: H, deviceScaleFactor: 1 });
-      await page.setContent(html, { waitUntil: 'networkidle0' });
+      await page.setContent(html, { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.screenshot({ path: pngPath, type: 'png' });
       await page.close();
       photoPngPaths.push(pngPath);
