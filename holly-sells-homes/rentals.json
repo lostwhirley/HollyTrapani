@@ -1019,10 +1019,10 @@
                       "__typename": "GeoStatistics",
                       "housing_market": {
                         "__typename": "HousingMarket",
-                        "median_price_per_sqft": 264,
-                        "median_sold_price": 467000,
-                        "median_listing_price": 496500,
-                        "median_days_on_market": 91
+                        "median_price_per_sqft": 259,
+                        "median_sold_price": 377250,
+                        "median_listing_price": 481950,
+                        "median_days_on_market": 83
                       }
                     }
                   }
