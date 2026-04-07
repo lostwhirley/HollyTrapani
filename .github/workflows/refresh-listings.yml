@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install Puppeteer dependencies
+      - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -46,6 +46,7 @@ jobs:
             libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 \
             libxrandr2 libgbm1 libpango-1.0-0 \
             libcairo2 libnss3 libnspr4 \
+            ffmpeg \
             libasound2 libasound2t64 || true
 
       - name: Install Node dependencies
@@ -56,23 +57,59 @@ jobs:
         working-directory: puppeteer
         run: node generate-listing-flyers.js
 
+      - name: Generate Facebook videos
+        working-directory: puppeteer
+        run: node generate-listing-videos.js
+
+      - name: Generate YouTube videos
+        working-directory: puppeteer
+        run: node generate-youtube-videos.js
+
+      - name: Mix music into Facebook videos
+        run: |
+          MUSIC="flyers/videos/music.mp3"
+          for f in flyers/videos/*.mp4; do
+            dur=$(ffprobe -v error -show_entries format=duration \
+              -of default=noprint_wrappers=1:nokey=1 "$f")
+            fadeout=$(echo "$dur - 2" | bc)
+            tmp="${f%.mp4}_tmp.mp4"
+            ffmpeg -y -i "$f" -i "$MUSIC" \
+              -filter_complex "[1:a]volume=0.28,afade=t=in:st=0:d=1.5,afade=t=out:st=${fadeout}:d=2[a]" \
+              -map "0:v" -map "[a]" -c:v copy -c:a aac -shortest "$tmp" 2>/dev/null \
+              && mv "$tmp" "$f"
+            echo "✓ Music added to $(basename $f)"
+          done
+
+      - name: Mix music into YouTube videos
+        run: |
+          MUSIC="flyers/videos/music.mp3"
+          for f in flyers/youtube/*.mp4; do
+            dur=$(ffprobe -v error -show_entries format=duration \
+              -of default=noprint_wrappers=1:nokey=1 "$f")
+            fadeout=$(echo "$dur - 2.5" | bc)
+            tmp="${f%.mp4}_tmp.mp4"
+            ffmpeg -y -i "$f" -i "$MUSIC" \
+              -filter_complex "[1:a]volume=0.7,afade=t=in:st=0:d=2,afade=t=out:st=${fadeout}:d=2.5[a]" \
+              -map "0:v" -map "[a]" -c:v copy -c:a aac -shortest "$tmp" 2>/dev/null \
+              && mv "$tmp" "$f"
+            echo "✓ Music added to $(basename $f)"
+          done
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet && git ls-files --others --exclude-standard | grep -q .; then
-            :
-          fi
-
           git add holly-sells-homes/all-listings.json \
                   holly-sells-homes/listings.json \
                   flyers/output/ \
-                  flyers/index.html
+                  flyers/index.html \
+                  flyers/videos/*.mp4 \
+                  flyers/youtube/*.mp4
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update listings and regenerate flyers [skip ci]"
+            git commit -m "chore: refresh listings, flyers, and videos [skip ci]"
             git push
           fi
