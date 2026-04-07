@@ -259,7 +259,7 @@ function buildHTML(listings) {
     </div>
     <div class="header-right">
       <strong>Holly Trapani LLC, Realtor®</strong>
-      William Raveis Real Estate<br>
+      New Day Realty<br>
       Naples &amp; Ave Maria, FL<br>
       holly@hollysellshomes.com
     </div>

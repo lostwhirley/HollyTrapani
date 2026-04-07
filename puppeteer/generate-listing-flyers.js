@@ -123,7 +123,7 @@ function buildTemplate1(home, photoData) {
       <div class="divider"></div>
       <div class="agent-contact">
         <div class="agent-name">Holly Trapani LLC, Realtor®</div>
-        <div class="agent-info">William Raveis Real Estate<br>holly@hollysellshomes.com · hollysellshomes.com</div>
+        <div class="agent-info">New Day Realty<br>holly@hollysellshomes.com · hollysellshomes.com</div>
       </div>
     </div>
   </div>
@@ -227,7 +227,7 @@ function buildTemplate2(home, photoData) {
     <div class="agent">
       <div>
         <div class="agent-name">Holly Trapani LLC, Realtor®</div>
-        <div class="agent-info">William Raveis Real Estate</div>
+        <div class="agent-info">New Day Realty</div>
       </div>
       <div class="agent-contact">holly@hollysellshomes.com<br>hollysellshomes.com</div>
     </div>
@@ -343,7 +343,7 @@ function buildTemplate3(home, photoData) {
     </div>
     <div class="agent-row">
       <div class="agent-name">Holly Trapani LLC, Realtor®</div>
-      <div class="agent-info">William Raveis Real Estate · holly@hollysellshomes.com</div>
+      <div class="agent-info">New Day Realty · holly@hollysellshomes.com</div>
       <div class="website">hollysellshomes.com</div>
     </div>
   </div>
@@ -568,7 +568,7 @@ function buildTemplate4(home, photoData) {
       <div class="desc">${highlights}</div>
       <div class="agent">
         <strong>Holly Trapani LLC, Realtor®</strong>
-        William Raveis Real Estate<br>
+        New Day Realty<br>
         holly@hollysellshomes.com
       </div>
     </div>
@@ -664,7 +664,7 @@ function buildIndexHTML(listings) {
       <div class="tagline">Property Flyers</div>
       <div class="name">Holly Trapani LLC</div>
     </div>
-    <div class="header-right">Holly Trapani LLC, Realtor®<br>William Raveis Real Estate<br>holly@hollysellshomes.com</div>
+    <div class="header-right">Holly Trapani LLC, Realtor®<br>New Day Realty<br>holly@hollysellshomes.com</div>
   </header>
   <main>
     <div class="section-title">Active Listing Flyers</div>

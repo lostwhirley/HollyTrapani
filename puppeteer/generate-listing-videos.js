@@ -310,7 +310,7 @@ function slide5(price, addressLine) {
     <div class="photo-bg" style="background: linear-gradient(160deg, #3d3530 0%, #2c2420 50%, #1a1410 100%)"></div>
     <div class="content" style="justify-content: center; text-align: center; align-items: center; padding: 80px 64px;">
       <div class="logo" style="font-size: 60px; margin-bottom: 16px;">Holly Trapani LLC</div>
-      <div class="logo-tag" style="margin-bottom: 60px;">Realtor® · William Raveis Real Estate</div>
+      <div class="logo-tag" style="margin-bottom: 60px;">Realtor® · New Day Realty</div>
       <div class="divider" style="margin: 0 auto 60px;"></div>
       <div class="main-title" style="font-size: 56px; margin-bottom: 24px;">${addressLine}</div>
       <div class="price" style="font-size: 56px; margin-bottom: 60px;">${price}</div>

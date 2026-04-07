@@ -169,7 +169,7 @@ function slideIntro(photo, price, addressLine, cityState) {
     <div class="overlay"></div>
     <div class="logo-bar">
       <span class="logo">Holly Trapani LLC</span>
-      <span class="logo-tag">Realtor® · William Raveis Real Estate</span>
+      <span class="logo-tag">Realtor® · New Day Realty</span>
     </div>
     <div class="content">
       <div class="tag">Featured Listing</div>
@@ -255,7 +255,7 @@ function slideContact(price, addressLine) {
     <div class="photo-bg" style="background: linear-gradient(135deg, #3d3530 0%, #2c2420 50%, #1a1410 100%)"></div>
     <div class="content" style="align-items:center; text-align:center; justify-content:center;">
       <div class="logo" style="font-size:52px; margin-bottom:12px;">Holly Trapani LLC</div>
-      <div class="logo-tag" style="margin-bottom:48px;">Realtor® · William Raveis Real Estate</div>
+      <div class="logo-tag" style="margin-bottom:48px;">Realtor® · New Day Realty</div>
       <div class="divider" style="margin:0 auto 48px;"></div>
       <div class="main-title" style="font-size:44px; margin-bottom:16px;">${addressLine}</div>
       <div class="price" style="font-size:48px; margin-bottom:48px;">${price}</div>
