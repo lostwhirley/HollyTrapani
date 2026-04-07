@@ -53,19 +53,32 @@ jobs:
         working-directory: puppeteer
         run: npm install
 
+      - name: Check if listings changed
+        id: listings_changed
+        run: |
+          if git diff --quiet holly-sells-homes/all-listings.json holly-sells-homes/listings.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Generate flyers
+        if: steps.listings_changed.outputs.changed == 'true'
         working-directory: puppeteer
         run: node generate-listing-flyers.js
 
       - name: Generate Facebook videos
+        if: steps.listings_changed.outputs.changed == 'true'
         working-directory: puppeteer
         run: node generate-listing-videos.js
 
       - name: Generate YouTube videos
+        if: steps.listings_changed.outputs.changed == 'true'
         working-directory: puppeteer
         run: node generate-youtube-videos.js
 
       - name: Mix music into Facebook videos
+        if: steps.listings_changed.outputs.changed == 'true'
         run: |
           MUSIC="flyers/videos/music.mp3"
           for f in flyers/videos/*.mp4; do
@@ -81,6 +94,7 @@ jobs:
           done
 
       - name: Mix music into YouTube videos
+        if: steps.listings_changed.outputs.changed == 'true'
         run: |
           MUSIC="flyers/videos/music.mp3"
           for f in flyers/youtube/*.mp4; do
@@ -101,11 +115,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add holly-sells-homes/all-listings.json \
-                  holly-sells-homes/listings.json \
-                  flyers/output/ \
-                  flyers/index.html \
-                  flyers/videos/*.mp4 \
-                  flyers/youtube/*.mp4
+                  holly-sells-homes/listings.json
+
+          if [ "${{ steps.listings_changed.outputs.changed }}" == "true" ]; then
+            git add flyers/output/ flyers/index.html flyers/videos/*.mp4 flyers/youtube/*.mp4
+          fi
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

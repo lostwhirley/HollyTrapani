@@ -269,17 +269,25 @@ function slideContact(price, addressLine) {
 // ── Render one clip with subtle Ken Burns ──────────────────────────────────────
 function renderClip(imgPath, duration, clipFile, idx) {
   const frames = Math.ceil(duration * FPS);
-  const zoomExpr = idx % 2 === 0
-    ? `zoom='min(zoom+0.00007,1.02)'`
-    : `zoom='if(eq(on,1),1.02,max(zoom-0.00007,1.0))'`;
+  const IS_CI = process.env.CI === 'true';
+
+  let vf;
+  if (IS_CI) {
+    vf = `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS},setpts=PTS-STARTPTS`;
+  } else {
+    const zoomExpr = idx % 2 === 0
+      ? `zoom='min(zoom+0.00007,1.02)'`
+      : `zoom='if(eq(on,1),1.02,max(zoom-0.00007,1.0))'`;
+    vf = `scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},` +
+      `zoompan=${zoomExpr}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},` +
+      `fps=${FPS},setpts=PTS-STARTPTS`;
+  }
 
   execSync([
     'ffmpeg -y',
     `-loop 1 -framerate ${FPS} -t ${duration} -i "${imgPath}"`,
-    `-vf "scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},` +
-      `zoompan=${zoomExpr}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},` +
-      `fps=${FPS},setpts=PTS-STARTPTS"`,
-    `-c:v libx264 -pix_fmt yuv420p -crf 18 -preset slow`,
+    `-vf "${vf}"`,
+    `-c:v libx264 -pix_fmt yuv420p -crf ${IS_CI ? 26 : 18} -preset ${IS_CI ? 'ultrafast' : 'slow'}`,
     `-t ${duration} -r ${FPS}`,
     `"${clipFile}"`
   ].join(' '), { stdio: 'pipe' });

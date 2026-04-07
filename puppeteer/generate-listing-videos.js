@@ -15,6 +15,9 @@ const H = 1920;
 const FPS = 30;
 const SLIDE_DURATION = 4;     // seconds per slide
 const FADE_DURATION = 0.8;    // crossfade between slides
+const IS_CI = process.env.CI === 'true';
+const PRESET = IS_CI ? 'ultrafast' : 'slow';
+const CRF = IS_CI ? 26 : 18;
 
 function fetchImageAsBase64(url) {
   return new Promise((resolve) => {
@@ -381,19 +384,27 @@ function renderVideo(slidePaths, outputFile, tmpDir) {
     const { path: imgPath, duration } = slidePaths[i];
     const clipFile = path.join(tmpDir, `clip-${i}.mp4`);
     const frames = duration * FPS;
-    // Very subtle zoom — tiny increment over many frames keeps motion silky smooth.
-    // Zoom range 1.0–1.02 (barely visible but cinematic). Alternate in/out per slide.
-    const zoomExpr = i % 2 === 0
-      ? `zoom='min(zoom+0.00007,1.02)'`
-      : `zoom='if(eq(on,1),1.02,max(zoom-0.00007,1.0))'`;
+    const IS_CI = process.env.CI === 'true';
+
+    let vf;
+    if (IS_CI) {
+      // CI: skip zoompan — just scale. Much faster on limited runners.
+      vf = `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS},setpts=PTS-STARTPTS`;
+    } else {
+      // Local: smooth Ken Burns zoom
+      const zoomExpr = i % 2 === 0
+        ? `zoom='min(zoom+0.00007,1.02)'`
+        : `zoom='if(eq(on,1),1.02,max(zoom-0.00007,1.0))'`;
+      vf = `scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},` +
+        `zoompan=${zoomExpr}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},` +
+        `fps=${FPS},setpts=PTS-STARTPTS`;
+    }
 
     execSync([
       'ffmpeg -y',
       `-loop 1 -framerate ${FPS} -t ${duration} -i "${imgPath}"`,
-      `-vf "scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},` +
-        `zoompan=${zoomExpr}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},` +
-        `fps=${FPS},setpts=PTS-STARTPTS"`,
-      `-c:v libx264 -pix_fmt yuv420p -crf 18 -preset slow`,
+      `-vf "${vf}"`,
+      `-c:v libx264 -pix_fmt yuv420p -crf ${IS_CI ? 26 : 18} -preset ${IS_CI ? 'ultrafast' : 'slow'}`,
       `-t ${duration} -r ${FPS}`,
       `"${clipFile}"`
     ].join(' '), { stdio: 'pipe' });
