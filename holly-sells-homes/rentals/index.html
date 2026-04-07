@@ -107,6 +107,7 @@
     .get-in-touch-header h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 400; margin-bottom: 0.5rem; color: var(--primary); }
     .get-in-touch-header p { color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; }
     .get-in-touch-content { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; align-items: start; }
+    @media (max-width: 768px) { .get-in-touch-content { grid-template-columns: 1fr; } }
     .get-in-touch-contact { text-align: center; }
     .get-in-touch-contact div { margin-bottom: 2rem; }
     .get-in-touch-contact-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
@@ -132,7 +133,7 @@
     @media (max-width: 768px) {
       .nav-inner { padding: 0.75rem 1rem; }
       .nav-logo { font-size: 1.15rem; }
-      .nav-logo span { font-size: 0.55rem; margin-top: 2px; }
+      .nav-logo span { display: none; }
       .hero { padding: 2rem 1.5rem; }
       .hero h1 { font-size: 1.8rem; }
       .hero-sub { font-size: 0.7rem; }
