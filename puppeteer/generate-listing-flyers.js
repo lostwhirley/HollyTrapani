@@ -611,6 +611,10 @@ function buildIndexHTML(listings) {
             <span class="flyer-style">Facebook Video</span>
             <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           </a>
+          <a class="flyer-link youtube-link" href="youtube/youtube-${slug}.mp4" target="_blank">
+            <span class="flyer-style">YouTube Video</span>
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </a>
         </div>
       </div>`;
   }).join('\n');
@@ -646,6 +650,10 @@ function buildIndexHTML(listings) {
     .video-link svg { stroke:#fff; fill:#fff; }
     .video-link .flyer-style { color:#fff; }
     .video-link:hover { background:#2c2420; border-color:#2c2420; }
+    .youtube-link { background:#cc0000; color:#fff; border-color:#cc0000; }
+    .youtube-link svg { stroke:#fff; fill:#fff; }
+    .youtube-link .flyer-style { color:#fff; }
+    .youtube-link:hover { background:#aa0000; border-color:#aa0000; }
     footer { border-top:1.5px solid var(--accent-soft); padding:20px 48px; text-align:center; font-size:11px; color:var(--muted); }
     footer a { color:var(--accent); text-decoration:none; }
   </style>
