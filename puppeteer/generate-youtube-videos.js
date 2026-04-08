@@ -260,11 +260,9 @@ function slideFeatures(photo, chips) {
 
 function slideContact(price, addressLine, zillowB64) {
   const zillowBadge = zillowB64 ? `
-    <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 0;">
-      <div style="width: 50px; height: 2px; background: rgba(176,141,122,0.4); margin-bottom: 28px;"></div>
-      <div style="width: 210px; height: 84px; overflow: hidden; position: relative; border-radius: 3px;">
-        <img src="${zillowB64}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center 65%;">
-      </div>
+    <div style="margin-top: 28px; display: flex; flex-direction: column; align-items: center;">
+      <div style="width: 50px; height: 2px; background: rgba(176,141,122,0.4); margin-bottom: 20px;"></div>
+      <img src="${zillowB64}" style="width: 300px; height: 120px; object-fit: cover; object-position: center 48%; display: block; border-radius: 3px;">
     </div>` : '';
 
   return wrap(`
