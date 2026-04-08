@@ -261,7 +261,7 @@ function buildHTML(listings) {
       <strong>Holly Trapani LLC, Realtor®</strong>
       New Day Realty<br>
       Naples &amp; Ave Maria, FL<br>
-      holly@hollysellshomes.com
+      hollyfloridarealtor@gmail.com
     </div>
   </header>
 
@@ -272,10 +272,10 @@ function buildHTML(listings) {
   </div>
 
   <footer class="footer">
-    <div class="footer-left">hollysellshomes.com</div>
+    <div class="footer-left">hollytrapani.com</div>
     <div class="footer-right">
       All listings are subject to change. Contact Holly for current availability.<br>
-      <a href="https://hollysellshomes.com">hollysellshomes.com</a>
+      <a href="https://www.hollytrapani.com/">hollytrapani.com</a>
     </div>
   </footer>
 </body>

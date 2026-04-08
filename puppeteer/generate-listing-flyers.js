@@ -123,7 +123,7 @@ function buildTemplate1(home, photoData) {
       <div class="divider"></div>
       <div class="agent-contact">
         <div class="agent-name">Holly Trapani LLC, Realtor®</div>
-        <div class="agent-info">New Day Realty<br>holly@hollysellshomes.com · hollysellshomes.com</div>
+        <div class="agent-info">New Day Realty<br>hollyfloridarealtor@gmail.com · hollytrapani.com</div>
       </div>
     </div>
   </div>
@@ -229,7 +229,7 @@ function buildTemplate2(home, photoData) {
         <div class="agent-name">Holly Trapani LLC, Realtor®</div>
         <div class="agent-info">New Day Realty</div>
       </div>
-      <div class="agent-contact">holly@hollysellshomes.com<br>hollysellshomes.com</div>
+      <div class="agent-contact">hollyfloridarealtor@gmail.com<br>hollytrapani.com</div>
     </div>
   </div>
 </body></html>`;
@@ -343,8 +343,8 @@ function buildTemplate3(home, photoData) {
     </div>
     <div class="agent-row">
       <div class="agent-name">Holly Trapani LLC, Realtor®</div>
-      <div class="agent-info">New Day Realty · holly@hollysellshomes.com</div>
-      <div class="website">hollysellshomes.com</div>
+      <div class="agent-info">New Day Realty · hollyfloridarealtor@gmail.com</div>
+      <div class="website">hollytrapani.com</div>
     </div>
   </div>
 </body></html>`;
@@ -560,7 +560,7 @@ function buildTemplate4(home, photoData) {
       </div>
       <div class="contact-row">
         <svg class="contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span class="contact-text">hollysellshomes.com</span>
+        <span class="contact-text">hollytrapani.com</span>
       </div>
     </div>
 
@@ -569,7 +569,7 @@ function buildTemplate4(home, photoData) {
       <div class="agent">
         <strong>Holly Trapani LLC, Realtor®</strong>
         New Day Realty<br>
-        holly@hollysellshomes.com
+        hollyfloridarealtor@gmail.com
       </div>
     </div>
   </div>
@@ -664,13 +664,13 @@ function buildIndexHTML(listings) {
       <div class="tagline">Property Flyers</div>
       <div class="name">Holly Trapani LLC</div>
     </div>
-    <div class="header-right">Holly Trapani LLC, Realtor®<br>New Day Realty<br>holly@hollysellshomes.com</div>
+    <div class="header-right">Holly Trapani LLC, Realtor®<br>New Day Realty<br>hollyfloridarealtor@gmail.com</div>
   </header>
   <main>
     <div class="section-title">Active Listing Flyers</div>
     ${rows}
   </main>
-  <footer><a href="https://hollysellshomes.com">hollysellshomes.com</a></footer>
+  <footer><a href="https://www.hollytrapani.com/">hollytrapani.com</a></footer>
 </body>
 </html>`;
 }

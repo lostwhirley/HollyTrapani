@@ -187,7 +187,7 @@ function slidePhoto(photo) {
     <div class="overlay-bottom"></div>
     <div class="logo-bar">
       <span class="logo">Holly Trapani LLC</span>
-      <span class="logo-tag">hollysellshomes.com</span>
+      <span class="logo-tag">hollytrapani.com</span>
     </div>
   `);
 }
@@ -260,8 +260,8 @@ function slideContact(price, addressLine) {
       <div class="main-title" style="font-size:44px; margin-bottom:16px;">${addressLine}</div>
       <div class="price" style="font-size:48px; margin-bottom:48px;">${price}</div>
       <div class="divider" style="margin:0 auto 40px;"></div>
-      <div class="subtitle" style="font-size:22px; margin-bottom:10px;">holly@hollysellshomes.com</div>
-      <div class="subtitle" style="font-size:28px; font-weight:500; color:#d4b8a8;">hollysellshomes.com</div>
+      <div class="subtitle" style="font-size:22px; margin-bottom:10px;">hollyfloridarealtor@gmail.com</div>
+      <div class="subtitle" style="font-size:28px; font-weight:500; color:#d4b8a8;">hollytrapani.com</div>
     </div>
   `);
 }
