@@ -8,6 +8,14 @@ const { execSync } = require('child_process');
 const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/listings.json');
 const OUTPUT_DIR = path.join(__dirname, '../flyers/videos');
 const FRAMES_DIR = path.join(__dirname, '../flyers/videos/frames');
+const ZILLOW_FILE = path.join(__dirname, '../holly-sells-homes/zillow.jpeg');
+
+function loadZillowBadge() {
+  try {
+    const buf = fs.readFileSync(ZILLOW_FILE);
+    return `data:image/jpeg;base64,${buf.toString('base64')}`;
+  } catch(_) { return ''; }
+}
 
 // Video config
 const W = 1080;
@@ -305,7 +313,15 @@ function slide4(photo, chips) {
 }
 
 // Slide 5: Contact / CTA
-function slide5(price, addressLine) {
+function slide5(price, addressLine, zillowB64) {
+  const zillowBadge = zillowB64 ? `
+    <div style="margin-top: 56px; display: flex; flex-direction: column; align-items: center; gap: 0;">
+      <div style="width: 60px; height: 2px; background: rgba(176,141,122,0.4); margin-bottom: 40px;"></div>
+      <div style="width: 300px; height: 120px; overflow: hidden; position: relative; border-radius: 3px;">
+        <img src="${zillowB64}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center 65%;">
+      </div>
+    </div>` : '';
+
   return slideWrapper(`
     <div class="photo-bg" style="background: linear-gradient(160deg, #3d3530 0%, #2c2420 50%, #1a1410 100%)"></div>
     <div class="content" style="justify-content: center; text-align: center; align-items: center; padding: 80px 64px;">
@@ -317,12 +333,13 @@ function slide5(price, addressLine) {
       <div class="divider" style="margin: 0 auto 48px;"></div>
       <div class="subtitle" style="font-size: 28px; margin-bottom: 12px;">hollyfloridarealtor@gmail.com</div>
       <div class="subtitle" style="font-size: 32px; font-weight: 500; color: #d4b8a8; margin-bottom: 0;">hollytrapani.com</div>
+      ${zillowBadge}
     </div>
   `);
 }
 
 // ── Build video for one listing ────────────────────────────────────────────────
-async function buildVideo(browser, home, listingFramesDir) {
+async function buildVideo(browser, home, listingFramesDir, zillowB64) {
   const addr = home.location?.address;
   const desc = home.description;
   const addressLine = addr?.line || '';
@@ -353,7 +370,7 @@ async function buildVideo(browser, home, listingFramesDir) {
     { html: slide2(photos[1] || photos[0], beds, baths, sqft),  duration: 4 + FADE_DURATION },
     { html: slide3(photos[2] || photos[0], highlights),          duration: 4 + FADE_DURATION },
     { html: slide4(photos[3] || photos[0], chips),               duration: 4 + FADE_DURATION },
-    { html: slide5(price, addressLine),                           duration: 3 },
+    { html: slide5(price, addressLine, zillowB64),                 duration: 3 },
   ];
 
   fs.mkdirSync(listingFramesDir, { recursive: true });
@@ -464,6 +481,8 @@ async function main() {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
+  const zillowB64 = loadZillowBadge();
+
   for (const result of results) {
     const home = result?.data?.home;
     if (!home) continue;
@@ -475,7 +494,7 @@ async function main() {
 
     console.log(`\n  Listing: ${addrLine}`);
 
-    const slidePaths = await buildVideo(browser, home, listingFramesDir);
+    const slidePaths = await buildVideo(browser, home, listingFramesDir, zillowB64);
 
     console.log(`    Rendering video...`);
     renderVideo(slidePaths, outputFile, listingFramesDir);

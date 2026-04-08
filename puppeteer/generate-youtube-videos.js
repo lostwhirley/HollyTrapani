@@ -8,6 +8,14 @@ const { execSync } = require('child_process');
 const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/listings.json');
 const OUTPUT_DIR = path.join(__dirname, '../flyers/youtube');
 const FRAMES_DIR = path.join(__dirname, '../flyers/youtube/frames');
+const ZILLOW_FILE = path.join(__dirname, '../holly-sells-homes/zillow.jpeg');
+
+function loadZillowBadge() {
+  try {
+    const buf = fs.readFileSync(ZILLOW_FILE);
+    return `data:image/jpeg;base64,${buf.toString('base64')}`;
+  } catch(_) { return ''; }
+}
 
 const W = 1920;
 const H = 1080;
@@ -250,7 +258,15 @@ function slideFeatures(photo, chips) {
   `);
 }
 
-function slideContact(price, addressLine) {
+function slideContact(price, addressLine, zillowB64) {
+  const zillowBadge = zillowB64 ? `
+    <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 0;">
+      <div style="width: 50px; height: 2px; background: rgba(176,141,122,0.4); margin-bottom: 28px;"></div>
+      <div style="width: 210px; height: 84px; overflow: hidden; position: relative; border-radius: 3px;">
+        <img src="${zillowB64}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center 65%;">
+      </div>
+    </div>` : '';
+
   return wrap(`
     <div class="photo-bg" style="background: linear-gradient(135deg, #3d3530 0%, #2c2420 50%, #1a1410 100%)"></div>
     <div class="content" style="align-items:center; text-align:center; justify-content:center;">
@@ -262,6 +278,7 @@ function slideContact(price, addressLine) {
       <div class="divider" style="margin:0 auto 40px;"></div>
       <div class="subtitle" style="font-size:22px; margin-bottom:10px;">hollyfloridarealtor@gmail.com</div>
       <div class="subtitle" style="font-size:28px; font-weight:500; color:#d4b8a8;">hollytrapani.com</div>
+      ${zillowBadge}
     </div>
   `);
 }
@@ -332,6 +349,8 @@ async function main() {
 
   if (!results.length) { console.error('No listings found.'); process.exit(1); }
 
+  const zillowB64 = loadZillowBadge();
+
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
   const browser = await puppeteer.launch({
@@ -385,7 +404,7 @@ async function main() {
       { name: 'specs',   html: slideSpecs(allPhotos[1] || allPhotos[0], beds, baths, sqft, garage, yearBuilt), duration: 5 + FADE_DURATION },
       { name: 'desc',    html: slideDescription(allPhotos[2] || allPhotos[0], descText),                      duration: 7 + FADE_DURATION },
       { name: 'feat',    html: slideFeatures(allPhotos[3] || allPhotos[0], chips),                            duration: 5 + FADE_DURATION },
-      { name: 'contact', html: slideContact(price, addressLine),                                               duration: 8 },
+      { name: 'contact', html: slideContact(price, addressLine, zillowB64),                                    duration: 8 },
     ];
 
     // Screenshot static slides
