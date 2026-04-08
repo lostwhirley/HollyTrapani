@@ -331,8 +331,9 @@ function slide5(price, addressLine, zillowB64) {
       <div class="main-title" style="font-size: 56px; margin-bottom: 24px;">${addressLine}</div>
       <div class="price" style="font-size: 56px; margin-bottom: 60px;">${price}</div>
       <div class="divider" style="margin: 0 auto 48px;"></div>
+      <div class="subtitle" style="font-size: 28px; margin-bottom: 12px;">239-565-8765</div>
       <div class="subtitle" style="font-size: 28px; margin-bottom: 12px;">hollyfloridarealtor@gmail.com</div>
-      <div class="subtitle" style="font-size: 32px; font-weight: 500; color: #d4b8a8; margin-bottom: 0;">hollytrapani.com</div>
+      <div class="subtitle" style="font-size: 32px; font-weight: 500; color: #d4b8a8; margin-bottom: 0;">www.hollytrapani.com</div>
       ${zillowBadge}
     </div>
   `);
