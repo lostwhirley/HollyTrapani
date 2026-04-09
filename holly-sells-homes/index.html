@@ -712,6 +712,47 @@
       object-position: center 48%;
     }
 
+    /* MORTGAGE CALCULATOR */
+    .calculator-section {
+      background: var(--light);
+      padding: 6rem 2rem;
+    }
+    .calculator-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .calculator-inner .section-label {
+      margin-bottom: 0.5rem;
+    }
+    .calculator-inner h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--primary);
+      margin-bottom: 3rem;
+      letter-spacing: -0.01em;
+    }
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .calc-input { display: flex; flex-direction: column; }
+    .calc-input label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; }
+    .calc-input input[type="number"] { padding: 0.6rem 0; border: none; border-bottom: 1px solid var(--border); font-family: 'Jost', sans-serif; font-size: 1rem; background: transparent; color: var(--dark); margin-bottom: 0.75rem; outline: none; }
+    .calc-input input[type="number"]:focus { border-bottom-color: var(--accent); }
+    .calc-input input[type="range"] { width: 100%; height: 3px; background: var(--border); outline: none; -webkit-appearance: none; appearance: none; cursor: pointer; }
+    .calc-input input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; }
+    .calc-input input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; border: none; }
+    .calc-result { border-top: 1px solid var(--border); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .calc-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+    .calc-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3rem; font-weight: 400; color: var(--primary); }
+    @media (max-width: 768px) {
+      .calculator-grid { grid-template-columns: 1fr; }
+      .calc-value { font-size: 2.2rem; }
+    }
+
     /* CONTACT SECTION */
     .contact-section {
       background: var(--light);
@@ -1666,6 +1707,42 @@
   </div>
 </section>
 
+<!-- MORTGAGE CALCULATOR -->
+<section class="calculator-section">
+  <div class="calculator-inner">
+    <div class="section-label">Tools</div>
+    <h2>Mortgage Calculator</h2>
+    <div class="calculator-grid">
+      <div class="calc-input">
+        <label>Home Price</label>
+        <input type="number" id="homePrice" placeholder="400000" value="400000" oninput="syncSlider('homePrice'); calculateMortgage()">
+        <input type="range" id="homePriceSlider" min="50000" max="2000000" step="10000" value="400000" oninput="syncInput('homePrice'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Down Payment %</label>
+        <input type="number" id="downPercent" value="20" oninput="syncSlider('downPercent'); calculateMortgage()">
+        <input type="range" id="downPercentSlider" min="0" max="50" step="1" value="20" oninput="syncInput('downPercent'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Interest Rate %</label>
+        <input type="number" id="interestRate" value="7" step="0.1" oninput="syncSlider('interestRate'); calculateMortgage()">
+        <input type="range" id="interestRateSlider" min="2" max="12" step="0.1" value="7" oninput="syncInput('interestRate'); calculateMortgage()">
+      </div>
+      <div class="calc-input">
+        <label>Loan Term (years)</label>
+        <input type="number" id="loanTerm" value="30" oninput="syncSlider('loanTerm'); calculateMortgage()">
+        <input type="range" id="loanTermSlider" min="5" max="50" step="1" value="30" oninput="syncInput('loanTerm'); calculateMortgage()">
+      </div>
+    </div>
+    <div class="calc-result">
+      <div>
+        <div class="calc-label">Estimated Monthly Payment</div>
+        <div class="calc-value" id="monthlyPayment">$2,147</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="contact-inner">
@@ -2222,6 +2299,37 @@
       }, 100);
     }
   });
+
+  // Mortgage Calculator
+  function syncSlider(fieldName) {
+    const input = document.getElementById(fieldName);
+    const slider = document.getElementById(fieldName + 'Slider');
+    if (slider) slider.value = input.value;
+  }
+  function syncInput(fieldName) {
+    const input = document.getElementById(fieldName);
+    const slider = document.getElementById(fieldName + 'Slider');
+    if (slider) input.value = slider.value;
+  }
+  function calculateMortgage() {
+    const principal = parseFloat(document.getElementById('homePrice').value) || 0;
+    const downPercent = parseFloat(document.getElementById('downPercent').value) || 0;
+    const interestRate = parseFloat(document.getElementById('interestRate').value) || 0;
+    const loanTerm = parseInt(document.getElementById('loanTerm').value) || 30;
+    const loanAmount = principal - (principal * (downPercent / 100));
+    const monthlyRate = interestRate / 100 / 12;
+    const numberOfPayments = loanTerm * 12;
+    let monthlyPayment = 0;
+    if (monthlyRate > 0) {
+      monthlyPayment = (loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments))) /
+                       (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+    } else {
+      monthlyPayment = loanAmount / numberOfPayments;
+    }
+    document.getElementById('monthlyPayment').textContent =
+      '$' + monthlyPayment.toLocaleString('en-US', { maximumFractionDigits: 0 });
+  }
+  calculateMortgage();
 </script>
 
 </body>
