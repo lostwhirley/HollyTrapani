@@ -168,25 +168,28 @@
       color: var(--accent);
     }
 
+    .nav-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+
     .nav-phone {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.4rem;
       font-family: 'Jost', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 500;
-      color: var(--primary);
+      color: var(--accent);
       text-decoration: none;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.06em;
       white-space: nowrap;
       transition: color 0.2s;
     }
-    .nav-phone:hover { color: var(--accent); }
-    .nav-phone svg { color: var(--accent); flex-shrink: 0; }
-
-    @media (max-width: 640px) {
-      .nav-phone-text { display: none; }
-    }
+    .nav-phone:hover { color: var(--primary); }
+    .nav-phone svg { flex-shrink: 0; }
 
     /* HERO */
     .hero {
@@ -1602,16 +1605,18 @@
       Holly Trapani LLC
       <span>New Day Realty</span>
     </a>
-    <ul class="nav-links">
-      <li><a href="#listings">Listings</a></li>
-      <li><a href="#blog">Real Estate Insights</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="tel:2395658765" class="nav-phone">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 11.88 19.79 19.79 0 0 1 1.06 3.26 2 2 0 0 1 3.04 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span class="nav-phone-text">239-565-8765</span>
-    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#blog">Real Estate Insights</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:2395658765" class="nav-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 11.88 19.79 19.79 0 0 1 1.06 3.26 2 2 0 0 1 3.04 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        239-565-8765
+      </a>
+    </div>
   </div>
 </nav>
 
