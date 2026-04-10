@@ -1,0 +1,23 @@
+[
+  {
+    "property_id": "9190425429",
+    "status": "sold",
+    "last_sold_date": "2026-04-06",
+    "last_sold_price": 400000,
+    "list_price": 399999,
+    "address": {
+      "line": "6174 Revelry Ct",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1405,
+      "type": "single_family",
+      "year_built": 2022
+    },
+    "primary_photo": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961s.jpg"
+  }
+]

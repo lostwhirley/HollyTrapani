@@ -17,6 +17,7 @@ API_KEY = os.environ.get("RAPIDAPI_KEY", "2a1eca8e84msh49b38948c7d92c3p168af6jsn
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOMES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "all-listings.json")
 HOMES_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "listings.json")
+SOLD_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "sold-listings.json")
 
 def get_headers():
     """Get API headers"""
@@ -99,6 +100,80 @@ def enrich_listings_with_details(all_listings_data):
         }
     }
 
+def load_sold_listings():
+    """Load existing sold listings from file."""
+    try:
+        with open(SOLD_LISTINGS_FILE, 'r') as f:
+            return json.load(f)
+    except (IOError, json.JSONDecodeError):
+        return []
+
+def check_for_newly_sold(previous_ids, current_ids):
+    """Check properties that dropped off the active list to see if they sold."""
+    missing_ids = previous_ids - current_ids
+    if not missing_ids:
+        return []
+
+    print(f"\nChecking {len(missing_ids)} property(ies) that left active listings...")
+    newly_sold = []
+
+    for prop_id in missing_ids:
+        print(f"  Checking property {prop_id}...")
+        details = fetch_property_details(prop_id)
+        if not details:
+            continue
+        home = details.get('data', {}).get('home', {})
+        status = home.get('status', '').lower()
+        if status == 'sold':
+            desc = home.get('description', {})
+            addr = home.get('location', {}).get('address', {})
+            photos = home.get('photos', [])
+            primary = home.get('primary_photo', {})
+            sold_entry = {
+                'property_id': prop_id,
+                'status': 'sold',
+                'last_sold_date': home.get('last_sold_date'),
+                'last_sold_price': home.get('last_sold_price'),
+                'list_price': home.get('list_price'),
+                'address': {
+                    'line': addr.get('line'),
+                    'city': addr.get('city'),
+                    'state_code': addr.get('state_code'),
+                    'postal_code': addr.get('postal_code')
+                },
+                'description': {
+                    'beds': desc.get('beds'),
+                    'baths_consolidated': desc.get('baths_consolidated'),
+                    'sqft': desc.get('sqft'),
+                    'type': desc.get('type'),
+                    'year_built': desc.get('year_built')
+                },
+                'primary_photo': primary.get('href', photos[0].get('href') if photos else '')
+            }
+            newly_sold.append(sold_entry)
+            print(f"  ✓ {addr.get('line')} sold on {home.get('last_sold_date')} for ${home.get('last_sold_price'):,}")
+
+    return newly_sold
+
+def update_sold_listings(newly_sold):
+    """Merge newly sold properties into sold-listings.json."""
+    if not newly_sold:
+        return
+
+    existing = load_sold_listings()
+    existing_ids = {e['property_id'] for e in existing}
+
+    added = 0
+    for entry in newly_sold:
+        if entry['property_id'] not in existing_ids:
+            existing.insert(0, entry)  # newest first
+            added += 1
+
+    if added:
+        with open(SOLD_LISTINGS_FILE, 'w') as f:
+            json.dump(existing, f, indent=2)
+        print(f"✓ Added {added} new sold listing(s) to sold-listings.json")
+
 def main():
     print(f"\n{'='*60}")
     print(f"Refreshing listings from Realty in US API")
@@ -106,11 +181,27 @@ def main():
     print(f"Timestamp: {datetime.now().isoformat()}")
     print(f"{'='*60}")
 
+    # Load previous listing IDs to detect sold properties
+    previous_ids = set()
+    try:
+        with open(HOMES_ALL_LISTINGS_FILE, 'r') as f:
+            prev = json.load(f)
+        for r in prev.get('data', {}).get('home_search', {}).get('results', []):
+            if r.get('property_id'):
+                previous_ids.add(str(r['property_id']))
+    except (IOError, json.JSONDecodeError):
+        pass
+
     # Fetch all listings
     all_listings_data = fetch_listings()
     if not all_listings_data:
         print("\n✗ Failed to fetch listings. Exiting.")
         return False
+
+    # Detect newly sold (dropped off active list)
+    current_ids = {str(r['property_id']) for r in all_listings_data.get('data', {}).get('home_search', {}).get('results', []) if r.get('property_id')}
+    newly_sold = check_for_newly_sold(previous_ids, current_ids)
+    update_sold_listings(newly_sold)
 
     # Save all-listings.json (summary data)
     print("\nSaving summary listings...")
