@@ -704,24 +704,19 @@
       margin-top: 0.35rem;
     }
 
-    /* SOLD LISTINGS */
-    .sold-section {
-      max-width: 1200px;
-      margin: 5rem auto;
-      padding: 0 2rem;
-    }
-
-    .sold-badge {
-      display: inline-block;
-      background: var(--primary);
-      color: var(--white);
-      font-family: 'Jost', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 500;
+    .listing-badge-sold {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #4a7c59;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      padding: 0.35rem 0.85rem;
-      margin-bottom: 1.25rem;
+      letter-spacing: 0.1em;
+      border-radius: 2px;
+      z-index: 10;
     }
 
     .sold-price-tag {
@@ -1721,19 +1716,6 @@
   </div>
 </section>
 
-<!-- RECENTLY SOLD -->
-<section class="sold-section" id="sold">
-  <div class="section-header">
-    <div>
-      <div class="section-label">Portfolio</div>
-      <div class="section-title">Recently Sold</div>
-    </div>
-  </div>
-  <div class="listings-grid" id="sold-grid">
-    <!-- populated by JS -->
-  </div>
-</section>
-
 <!-- ABOUT -->
 <section class="about-section" id="about">
   <div class="about-inner">
@@ -1986,6 +1968,9 @@
           listingsGrid.appendChild(card);
         });
 
+        // Append sold listings at the end
+        await appendSoldListings(listingsGrid);
+
         return; // Exit early since we're using cached data
       }
 
@@ -2151,6 +2136,9 @@
 
         listingsGrid.appendChild(card);
       });
+
+      // Append sold listings at the end
+      await appendSoldListings(listingsGrid);
 
     } catch (error) {
       console.error('Error loading listings:', error);
@@ -2403,24 +2391,22 @@
   }
   calculateMortgage();
 
-  // Recently Sold
-  async function loadSoldListings() {
-    const grid = document.getElementById('sold-grid');
-    const section = document.getElementById('sold');
+  // Append sold listings to the main listings grid
+  async function appendSoldListings(grid) {
     try {
       const resp = await fetch('sold-listings.json');
-      if (!resp.ok) { section.style.display = 'none'; return; }
+      if (!resp.ok) return;
       const sold = await resp.json();
-      if (!sold.length) { section.style.display = 'none'; return; }
+      if (!sold.length) return;
 
-      grid.innerHTML = sold.map(home => {
+      sold.forEach(home => {
         const addr = home.address || {};
         const desc = home.description || {};
         const price = home.last_sold_price
-          ? new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(home.last_sold_price)
+          ? '$' + home.last_sold_price.toLocaleString()
           : '—';
         const listPrice = home.list_price
-          ? new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(home.list_price)
+          ? '$' + home.list_price.toLocaleString()
           : '—';
         const soldDate = home.last_sold_date
           ? new Date(home.last_sold_date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
@@ -2430,30 +2416,29 @@
         const baths = desc.baths_consolidated || '—';
         const sqft = desc.sqft ? desc.sqft.toLocaleString() : '—';
 
-        return `
-          <div class="listing-card" style="pointer-events:none;">
-            <div style="position:relative;">
-              ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;">` : '<div style="width:100%;height:280px;background:var(--border);"></div>'}
-              <div style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:#fff;font-family:\'Jost\',sans-serif;font-size:0.65rem;font-weight:500;text-transform:uppercase;letter-spacing:0.15em;padding:0.35rem 0.85rem;">Sold</div>
-            </div>
+        const card = document.createElement('div');
+        card.style.cssText = 'text-decoration: none; color: inherit;';
+        card.innerHTML = `
+          <div class="listing-card">
+            ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;">` : `<div style="height:280px;background:var(--light);"></div>`}
+            <div class="listing-badge-sold">Sold</div>
             <div class="listing-content">
               <div class="listing-price">${price}</div>
               <div class="listing-address">${addr.line || ''}</div>
               <div class="listing-city">${addr.city || ''}, ${addr.state_code || ''} ${addr.postal_code || ''}</div>
               <div class="listing-specs">
-                <span>${beds} bd</span>
-                <span>${baths} ba</span>
-                <span>${sqft} sqft</span>
+                <div class="spec">${beds} Bed</div>
+                <div class="spec">${baths} Bath</div>
               </div>
               <div class="sold-price-tag">Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}</div>
             </div>
           </div>`;
-      }).join('');
+        grid.appendChild(card);
+      });
     } catch(e) {
-      section.style.display = 'none';
+      // silently skip if sold-listings.json unavailable
     }
   }
-  loadSoldListings();
 </script>
 
 </body>
