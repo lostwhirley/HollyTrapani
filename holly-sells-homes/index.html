@@ -2411,16 +2411,20 @@
         const soldDate = home.last_sold_date
           ? new Date(home.last_sold_date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
           : '';
-        const photo = home.primary_photo || '';
+        // Upscale thumbnail to high-res version
+        let photo = home.primary_photo || '';
+        if (photo && photo.includes('s.jpg')) {
+          photo = photo.replace(/s\.jpg/, 'od-w1024_h768.jpg');
+        }
         const beds = desc.beds || '—';
         const baths = desc.baths_consolidated || '—';
         const sqft = desc.sqft ? desc.sqft.toLocaleString() : '—';
 
         const card = document.createElement('div');
-        card.style.cssText = 'text-decoration: none; color: inherit;';
+        card.style.cssText = 'text-decoration: none; color: inherit; cursor: default;';
         card.innerHTML = `
           <div class="listing-card">
-            ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;">` : `<div style="height:280px;background:var(--light);"></div>`}
+            ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`}
             <div class="listing-badge-sold">Sold</div>
             <div class="listing-content">
               <div class="listing-price">${price}</div>
