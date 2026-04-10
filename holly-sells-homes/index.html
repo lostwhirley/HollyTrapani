@@ -2421,7 +2421,7 @@
         const sqft = desc.sqft ? desc.sqft.toLocaleString() : '—';
 
         const card = document.createElement('div');
-        card.style.cssText = 'text-decoration: none; color: inherit; cursor: default;';
+        card.style.cssText = 'text-decoration: none; color: inherit; cursor: default; pointer-events: none;';
         card.innerHTML = `
           <div class="listing-card">
             ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`}
