@@ -41,7 +41,6 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
           sudo apt-get install -y \
             libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
             libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 \
@@ -67,48 +66,6 @@ jobs:
         working-directory: puppeteer
         run: node generate-listing-flyers.js
 
-      - name: Generate Facebook videos
-        if: steps.listings_changed.outputs.changed == 'true'
-        working-directory: puppeteer
-        run: node generate-listing-videos.js
-
-      - name: Generate YouTube videos
-        if: steps.listings_changed.outputs.changed == 'true'
-        working-directory: puppeteer
-        run: node generate-youtube-videos.js
-
-      - name: Mix music into Facebook videos
-        if: steps.listings_changed.outputs.changed == 'true'
-        run: |
-          MUSIC="flyers/videos/music.mp3"
-          for f in flyers/videos/*.mp4; do
-            dur=$(ffprobe -v error -show_entries format=duration \
-              -of default=noprint_wrappers=1:nokey=1 "$f")
-            fadeout=$(echo "$dur - 2" | bc)
-            tmp="${f%.mp4}_tmp.mp4"
-            ffmpeg -y -i "$f" -i "$MUSIC" \
-              -filter_complex "[1:a]volume=0.28,afade=t=in:st=0:d=1.5,afade=t=out:st=${fadeout}:d=2[a]" \
-              -map "0:v" -map "[a]" -c:v copy -c:a aac -shortest "$tmp" 2>/dev/null \
-              && mv "$tmp" "$f"
-            echo "✓ Music added to $(basename $f)"
-          done
-
-      - name: Mix music into YouTube videos
-        if: steps.listings_changed.outputs.changed == 'true'
-        run: |
-          MUSIC="flyers/videos/music.mp3"
-          for f in flyers/youtube/*.mp4; do
-            dur=$(ffprobe -v error -show_entries format=duration \
-              -of default=noprint_wrappers=1:nokey=1 "$f")
-            fadeout=$(echo "$dur - 2.5" | bc)
-            tmp="${f%.mp4}_tmp.mp4"
-            ffmpeg -y -i "$f" -i "$MUSIC" \
-              -filter_complex "[1:a]volume=0.7,afade=t=in:st=0:d=2,afade=t=out:st=${fadeout}:d=2.5[a]" \
-              -map "0:v" -map "[a]" -c:v copy -c:a aac -shortest "$tmp" 2>/dev/null \
-              && mv "$tmp" "$f"
-            echo "✓ Music added to $(basename $f)"
-          done
-
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
@@ -119,7 +76,7 @@ jobs:
                   holly-sells-homes/sold-listings.json
 
           if [ "${{ steps.listings_changed.outputs.changed }}" == "true" ]; then
-            git add flyers/output/ flyers/index.html flyers/videos/*.mp4 flyers/youtube/*.mp4
+            git add flyers/output/ flyers/index.html
           fi
 
           if git diff --cached --quiet; then
