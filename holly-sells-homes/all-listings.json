@@ -5,101 +5,6 @@
       "total": 6,
       "results": [
         {
-          "property_id": "9238269562",
-          "listing_id": "2992843571",
-          "status": "for_sale",
-          "description": {
-            "sold_date": null,
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": null,
-            "sqft": 1816,
-            "stories": 2,
-            "sold_price": null,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5690",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.318965,
-                "lon": -81.442659,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "5690 Mayflower Way Unit 608",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 349000,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
-          "permalink": "5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
           "property_id": "6127912483",
           "listing_id": "2988154620",
           "status": "for_sale",
@@ -391,6 +296,101 @@
           "__typename": "SearchHome"
         },
         {
+          "property_id": "9238269562",
+          "listing_id": "2992843571",
+          "status": "for_sale",
+          "description": {
+            "sold_date": null,
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": null,
+            "sqft": 1816,
+            "stories": 2,
+            "sold_price": null,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Mayflower",
+              "street_number": "5690",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.318965,
+                "lon": -81.442659,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "5690 Mayflower Way Unit 608",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 349000,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
+          "permalink": "5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": true,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
           "property_id": "9337886864",
           "listing_id": "2992804383",
           "status": "for_sale",
@@ -494,7 +494,7 @@
             "baths_consolidated": "4.5",
             "beds": 5,
             "lot_sqft": 7405,
-            "sqft": 3416,
+            "sqft": 3440,
             "stories": 2,
             "sold_price": null,
             "__typename": "SearchHomeDescription"

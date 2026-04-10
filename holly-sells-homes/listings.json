@@ -6,1604 +6,6 @@
           "data": {
             "home": {
               "__typename": "Home",
-              "property_id": "9238269562",
-              "last_update_date": "2026-03-25T20:40:42Z",
-              "last_price_change_date": null,
-              "last_price_change_amount": null,
-              "listing_id": "2992843571",
-              "status": "for_sale",
-              "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
-              "days_on_market": null,
-              "list_date": "2026-03-23T17:32:57Z",
-              "create_date": "2026-03-23T17:32:57Z",
-              "mortgage": {
-                "__typename": "Mortgage",
-                "property_tax_rate": 0.01448424,
-                "rates_url": "https://www.realtor.com/mortgage/rates/?from=mobile#zip=34142&property_price=349000&mlid=9238269562",
-                "insurance_rate": 0.0085,
-                "estimate": {
-                  "__typename": "MortgageEstimate",
-                  "loan_amount": 279200,
-                  "monthly_payment": 3214,
-                  "total_payment": 622404,
-                  "down_payment": 69800,
-                  "average_rate": {
-                    "__typename": "Rate",
-                    "rate": 0.06304,
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "term": 30
-                    }
-                  },
-                  "monthly_payment_details": [
-                    {
-                      "__typename": "MonthlyOwnershipExpense",
-                      "type": "principal_and_interest",
-                      "amount": 1729,
-                      "display_name": "Principal & interest"
-                    },
-                    {
-                      "__typename": "MonthlyOwnershipExpense",
-                      "type": "home_insurance",
-                      "amount": 247,
-                      "display_name": "Home insurance"
-                    },
-                    {
-                      "__typename": "MonthlyOwnershipExpense",
-                      "type": "hoa_fees",
-                      "amount": 817,
-                      "display_name": "HOA fees"
-                    },
-                    {
-                      "__typename": "MonthlyOwnershipExpense",
-                      "type": "mortgage_insurance",
-                      "amount": 0,
-                      "display_name": "Mortgage insurance"
-                    },
-                    {
-                      "__typename": "MonthlyOwnershipExpense",
-                      "type": "property_tax",
-                      "amount": 421,
-                      "display_name": "Property tax"
-                    }
-                  ]
-                },
-                "average_rates": [
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "thirty_year_fix"
-                    },
-                    "rate": 0.06304
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "twenty_year_fix"
-                    },
-                    "rate": 0.06149
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "fifteen_year_fix"
-                    },
-                    "rate": 0.05519
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "ten_year_fix"
-                    },
-                    "rate": 0.05384
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "thirty_year_fha"
-                    },
-                    "rate": 0.05713
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "thirty_year_va"
-                    },
-                    "rate": 0.05802
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "five_one_arm"
-                    },
-                    "rate": 0.05972
-                  },
-                  {
-                    "__typename": "Rate",
-                    "loan_type": {
-                      "__typename": "LoanType",
-                      "loan_id": "seven_one_arm"
-                    },
-                    "rate": 0.06119
-                  }
-                ]
-              },
-              "hoa": {
-                "__typename": "HomeHOA",
-                "fee": 817,
-                "historic_fee": true
-              },
-              "buyers": null,
-              "description": {
-                "__typename": "HomeDescription",
-                "baths_consolidated": "2",
-                "baths": 2,
-                "baths_min": null,
-                "baths_max": null,
-                "heating": null,
-                "cooling": null,
-                "beds": 2,
-                "beds_min": null,
-                "beds_max": null,
-                "garage": 1,
-                "garage_min": null,
-                "garage_max": null,
-                "pool": null,
-                "sqft": 1816,
-                "sqft_min": null,
-                "sqft_max": null,
-                "styles": null,
-                "lot_sqft": null,
-                "units": 8,
-                "stories": 2,
-                "type": "condos",
-                "sub_type": "condo",
-                "text": "TURNKEY! WATER + GOLF VIEWS! END UNIT CONDO IN DEL WEBB NAPLES. Move right into this beautifully upgraded 2-story condo that lives like a single-family home and shows like a model. Ideally positioned with long lake and golf course views, this light-filled end unit offers privacy, space, and one of the best settings in the community. The open-concept layout features large tile flooring, volume ceilings, and seamless indoor-outdoor living. The kitchen is a standout with quartz countertops, white cabinetry, stainless steel appliances, and a large island perfect for entertaining. Sliding glass doors open to a screened lanai with panoramic water and golf course views-an ideal backdrop for morning coffee or sunset evenings. Upstairs, generously sized bedrooms provide comfortable space for owners and guests, all offered TURNKEY furnished with stylish coastal decor-ready for immediate enjoyment or seasonal use. Paver driveway, attached garage, and low-maintenance living complete the package. Perfect as a full-time residence, winter retreat, or lock-and-leave lifestyle-this is one of the best values in Del Webb Naples. Del Webb's vibrant 55+ lifestyle includes pickleball, tennis, bocce, golf simulator, lap pool, resort pool, sauna, steam room, fitness center, library, billiards, and a full social calendar - all just a golf cart ride into the heart of Ave Maria for dining, shopping, and entertainment. As we say: \"Ave Maria ~ Once you get here you \"get it.\"",
-                "year_built": 2023,
-                "name": null
-              },
-              "pet_policy": null,
-              "assigned_schools": {
-                "__typename": "SchoolList",
-                "schools": [
-                  {
-                    "__typename": "School",
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "name": "Collier",
-                      "id": "06160000141",
-                      "phone": null,
-                      "student_count": null,
-                      "grades": null
-                    }
-                  },
-                  {
-                    "__typename": "School",
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "name": "Collier",
-                      "id": "06160000141",
-                      "phone": null,
-                      "student_count": null,
-                      "grades": null
-                    }
-                  },
-                  {
-                    "__typename": "School",
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "name": "Collier",
-                      "id": "06160000141",
-                      "phone": null,
-                      "student_count": null,
-                      "grades": null
-                    }
-                  }
-                ]
-              },
-              "nearby_schools": {
-                "__typename": "SchoolList",
-                "schools": [
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.340866,
-                      "lon": -81.548827
-                    },
-                    "distance_in_miles": 6.8,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "elementary"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "K",
-                      "1",
-                      "2",
-                      "3",
-                      "4",
-                      "5"
-                    ],
-                    "id": "0717234011",
-                    "name": "Estates Elementary School",
-                    "parent_rating": 5,
-                    "rating": 7,
-                    "student_count": 862
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.295583,
-                      "lon": -81.577626
-                    },
-                    "distance_in_miles": 8.5,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "high"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717239121",
-                    "name": "Palmetto Ridge High School",
-                    "parent_rating": 3,
-                    "rating": 5,
-                    "student_count": 2347
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.294523,
-                      "lon": -81.586468
-                    },
-                    "distance_in_miles": 9.1,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "middle"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "6",
-                      "7",
-                      "8"
-                    ],
-                    "id": "0717211131",
-                    "name": "Corkscrew Middle School",
-                    "parent_rating": 5,
-                    "rating": 8,
-                    "student_count": 958
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.337442,
-                      "lon": -81.436432
-                    },
-                    "distance_in_miles": 1.3,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000001",
-                      "name": null
-                    },
-                    "education_levels": [
-                      "elementary"
-                    ],
-                    "funding_type": "private",
-                    "grades": [
-                      "PK",
-                      "K",
-                      "1",
-                      "2",
-                      "3",
-                      "4",
-                      "5",
-                      "6"
-                    ],
-                    "id": "0717415921",
-                    "name": "Ave Maria Montessori",
-                    "parent_rating": null,
-                    "rating": null,
-                    "student_count": 31
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.340799,
-                      "lon": -81.43494
-                    },
-                    "distance_in_miles": 1.6,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000001",
-                      "name": null
-                    },
-                    "education_levels": [
-                      "elementary",
-                      "middle",
-                      "high"
-                    ],
-                    "funding_type": "private",
-                    "grades": [
-                      "K",
-                      "1",
-                      "2",
-                      "3",
-                      "4",
-                      "5",
-                      "6",
-                      "7",
-                      "8",
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717348821",
-                    "name": "Rhodora J Donahue Academy",
-                    "parent_rating": 4,
-                    "rating": null,
-                    "student_count": 342
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.40677,
-                      "lon": -81.420638
-                    },
-                    "distance_in_miles": 6.2,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "elementary",
-                      "middle",
-                      "high"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "4",
-                      "5",
-                      "6",
-                      "7",
-                      "8",
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717238301",
-                    "name": "The Phoenix Program-Immokalee",
-                    "parent_rating": null,
-                    "rating": 1,
-                    "student_count": 110
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.407322,
-                      "lon": -81.420151
-                    },
-                    "distance_in_miles": 6.2,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "high"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717322511",
-                    "name": "Immokalee Technology Academy",
-                    "parent_rating": 5,
-                    "rating": null,
-                    "student_count": 0
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.265155,
-                      "lon": -81.523617
-                    },
-                    "distance_in_miles": 6.2,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "middle"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "6",
-                      "7",
-                      "8"
-                    ],
-                    "id": "0717255741",
-                    "name": "Cypress Palm Middle School",
-                    "parent_rating": 2,
-                    "rating": 8,
-                    "student_count": 796
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.407661,
-                      "lon": -81.420695
-                    },
-                    "distance_in_miles": 6.3,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "elementary",
-                      "middle"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "2",
-                      "3",
-                      "4",
-                      "5",
-                      "6",
-                      "7",
-                      "8"
-                    ],
-                    "id": "0717238041",
-                    "name": "New Beginnings Immokalee",
-                    "parent_rating": 2,
-                    "rating": 3,
-                    "student_count": 28
-                  }
-                ]
-              },
-              "schools": {
-                "__typename": "SchoolList",
-                "schools": [
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.340866,
-                      "lon": -81.548827
-                    },
-                    "distance_in_miles": 6.8,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "elementary"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "K",
-                      "1",
-                      "2",
-                      "3",
-                      "4",
-                      "5"
-                    ],
-                    "id": "0717234011",
-                    "name": "Estates Elementary School",
-                    "parent_rating": 5,
-                    "rating": 7,
-                    "student_count": 862
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.295583,
-                      "lon": -81.577626
-                    },
-                    "distance_in_miles": 8.5,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "high"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717239121",
-                    "name": "Palmetto Ridge High School",
-                    "parent_rating": 3,
-                    "rating": 5,
-                    "student_count": 2347
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": true,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.294523,
-                      "lon": -81.586468
-                    },
-                    "distance_in_miles": 9.1,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "middle"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "6",
-                      "7",
-                      "8"
-                    ],
-                    "id": "0717211131",
-                    "name": "Corkscrew Middle School",
-                    "parent_rating": 5,
-                    "rating": 8,
-                    "student_count": 958
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.337442,
-                      "lon": -81.436432
-                    },
-                    "distance_in_miles": 1.3,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000001",
-                      "name": null
-                    },
-                    "education_levels": [
-                      "elementary"
-                    ],
-                    "funding_type": "private",
-                    "grades": [
-                      "PK",
-                      "K",
-                      "1",
-                      "2",
-                      "3",
-                      "4",
-                      "5",
-                      "6"
-                    ],
-                    "id": "0717415921",
-                    "name": "Ave Maria Montessori",
-                    "parent_rating": null,
-                    "rating": null,
-                    "student_count": 31
-                  }
-                ]
-              },
-              "products": {
-                "__typename": "ProductSummary",
-                "products": [
-                  "core.agent",
-                  "core.broker",
-                  "co_broke"
-                ]
-              },
-              "list_price": 349000,
-              "list_price_min": null,
-              "list_price_max": null,
-              "price_per_sqft": 192,
-              "community": null,
-              "lead_attributes": {
-                "__typename": "LeadAttributes",
-                "opcity_lead_attributes": {
-                  "__typename": "OpCityLeadAttributes",
-                  "flip_the_market_enabled": false,
-                  "cashback_enabled": false,
-                  "phones": null,
-                  "local_phone": null
-                },
-                "ready_connect_mortgage": {
-                  "__typename": "ReadyConnectMortgage",
-                  "show_contact_a_lender": true,
-                  "show_veterans_united": true
-                },
-                "show_contact_an_agent": true,
-                "lead_type": "co_broke",
-                "show_lead_form": true,
-                "disclaimer_text": null,
-                "is_tcpa_message_enabled": null,
-                "show_text_leads": true
-              },
-              "flags": {
-                "__typename": "HomeFlags",
-                "is_contingent": null,
-                "is_garage_present": true,
-                "is_new_construction": null,
-                "is_pending": true,
-                "is_short_sale": null,
-                "is_foreclosure": null,
-                "is_senior_community": true,
-                "is_for_rent": null,
-                "is_deal_available": null,
-                "is_price_excludes_land": null,
-                "is_promotion_present": null,
-                "is_subdivision": null,
-                "is_plan": null,
-                "is_price_reduced": null,
-                "is_new_listing": false,
-                "is_coming_soon": null
-              },
-              "provider_url": null,
-              "source": {
-                "__typename": "MlsSource",
-                "id": "NAFL",
-                "disclaimer": {
-                  "__typename": "MlsDisclaimer",
-                  "text": "The source of the information about real property available for sale or rent is the copyrighted and proprietary database of the M.L.S. of Naples, Inc. \u00a9 2026 M.L.S. of Naples, Inc.; all rights reserved.",
-                  "href": null
-                },
-                "listing_id": "226012254",
-                "plan_id": null,
-                "spec_id": null,
-                "community_id": null,
-                "name": "Naples",
-                "type": "mls",
-                "raw": {
-                  "__typename": "MlsRawData",
-                  "style": "2 Story, End-Unit",
-                  "tax_amount": 5055
-                }
-              },
-              "details": [
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Bedrooms",
-                  "text": [
-                    "Bedrooms: 2"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Bathrooms",
-                  "text": [
-                    "Total Bathrooms: 2",
-                    "Full Bathrooms: 2"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Interior Features",
-                  "text": [
-                    "Fire Sprinkler",
-                    "Foyer",
-                    "Pantry",
-                    "Smoke Detectors",
-                    "Vaulted Ceiling(s)",
-                    "Window Coverings",
-                    "Interior Amenities: Great Room, 2 Story",
-                    "Furnished Description: Turnkey",
-                    "Flooring: Carpet, Tile",
-                    "Window Features: Window Coverings"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Appliances",
-                  "text": [
-                    "Dishwasher",
-                    "Disposal",
-                    "Dryer",
-                    "Microwave",
-                    "Refrigerator/Freezer",
-                    "Refrigerator/Icemaker",
-                    "Self Cleaning Oven",
-                    "Washer",
-                    "Laundry Features: Laundry in Residence"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Other Rooms",
-                  "text": [
-                    "Den - Study",
-                    "Great Room",
-                    "Laundry in Residence",
-                    "Screened Balcony"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Heating and Cooling",
-                  "text": [
-                    "Cooling Features: Central Electric",
-                    "Heating Features: Central Electric",
-                    "Heating: Yes"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Kitchen and Dining",
-                  "text": [
-                    "Dining Room Features: Dining - Family"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Exterior and Lot Features",
-                  "text": [
-                    "Screened Balcony",
-                    "Frontage Type: Golf Course",
-                    "Other Structures: Tennis Court(s)",
-                    "Road Surface Type: Paved"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Pool and Spa",
-                  "text": [
-                    "Pool Features: Community",
-                    "Spa Features: Community"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Waterfront and Water Access",
-                  "text": [
-                    "Fresh Water"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Land Info",
-                  "text": [
-                    "Golf Course",
-                    "Zero Lot Line",
-                    "Lot Description: Golf Course, Zero Lot Line"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Garage and Parking",
-                  "text": [
-                    "Attached Garage: Yes",
-                    "Covered Spaces: 1",
-                    "Garage Spaces: 1",
-                    "Parking Features: Attached",
-                    "Parking Total: 1"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Home Features",
-                  "text": [
-                    "View: Golf Course, Pond",
-                    "Security Features: Smoke Detector(s), Gated Community, Fire Sprinkler System"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Homeowners Association",
-                  "text": [
-                    "Association: Yes",
-                    "Association Amenities: Basketball Court, Barbecue, Bike And Jog Path, Billiard Room, Bocce Court, Clubhouse, Park, Pool, Community Room, Spa/Hot Tub, Dog Park, Fitness Center, Golf Course, Hobby Room, Internet Access, Library, Pickleball, Putting Green, Restaurant, Sauna, Shopping, Sidewalk, Streetlight, Tennis Court(s), Underground Utility",
-                    "Association Fee: 9800",
-                    "Association Fee Frequency: Annually",
-                    "Calculated Total Monthly Association Fees: 817",
-                    "Pets Allowed: Limits",
-                    "Senior Community: Yes"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "School Information",
-                  "text": [
-                    "Elementary School: ESTATES ELEMENTARY",
-                    "High School: PALMETTO RIDGE",
-                    "Middle School: CORKSCREW MIDDLE"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Multi-Unit Info",
-                  "text": [
-                    "Number of Units In Community: 24",
-                    "Number of Units: 8"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Condo Info",
-                  "text": [
-                    "Unit Floor In Building: 2"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Rental Info",
-                  "text": [
-                    "Lease Term: Buyer Finance/Cash,FHA,VA"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Amenities and Community Features",
-                  "text": [
-                    "Community Features: Clubhouse, Park, Pool, Dog Park, Fitness Center, Golf, Putting Green, Restaurant, Sidewalks, Street Lights, Tennis Court(s), Gated"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Other Property Info",
-                  "text": [
-                    "Impact Resistant Doors,Impact Resistant Windows",
-                    "Annual Tax Amount: 5055",
-                    "Source Listing Status: Pending",
-                    "County: Collier",
-                    "Tax Year: 2025",
-                    "Restrictions: Architectural, No Commercial, No RV",
-                    "Source Property Type: Residential",
-                    "Area: AVE MARIA",
-                    "Property Subtype: condo",
-                    "Source Neighborhood: DEL WEBB",
-                    "Ownership Type: Condo",
-                    "Parcel Number: 59940004269",
-                    "Park Name: AVE MARIA",
-                    "Subdivision: DEL WEBB",
-                    "Property Subtype: Low Rise (1-3)"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Farm Info",
-                  "text": [
-                    "Irrigation Source: Central, Reclaimed"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Building and Construction",
-                  "text": [
-                    "Total Square Feet Living: 2029",
-                    "Year Built: 2023",
-                    "Building Area Total: 2029",
-                    "Building Area Units: Square Feet",
-                    "Building Features: DSL/Cable Available",
-                    "Construction Materials: Concrete Block, Stucco",
-                    "Foundation Details: Concrete Block",
-                    "Levels: 2",
-                    "Living Area Units: Square Feet",
-                    "Property Age: 3",
-                    "Roof: Tile",
-                    "Levels or Stories: 2",
-                    "Building Total Stories: 2",
-                    "House Style: 2 Story, End-Unit",
-                    "Year Built Details: Resale Property",
-                    "Vaulted Ceiling: Yes",
-                    "Architectural Style: Two Story, Low Rise (1-3)"
-                  ]
-                },
-                {
-                  "__typename": "HomeDetails",
-                  "category": "Utilities",
-                  "text": [
-                    "Water Source: Central"
-                  ]
-                }
-              ],
-              "open_houses": null,
-              "tax_history": null,
-              "location": {
-                "__typename": "HomeLocation",
-                "address": {
-                  "__typename": "HomeAddress",
-                  "line": "5690 Mayflower Way Unit 608",
-                  "street_number": "5690",
-                  "street_name": "Mayflower",
-                  "street_suffix": "Way",
-                  "unit": "Unit 608",
-                  "city": "Ave Maria",
-                  "state_code": "FL",
-                  "postal_code": "34142",
-                  "state": "Florida",
-                  "coordinate": {
-                    "__typename": "HomeCoordinate",
-                    "lat": 26.318965,
-                    "lon": -81.442659
-                  }
-                },
-                "county": {
-                  "__typename": "HomeCounty",
-                  "fips_code": "12021"
-                },
-                "street_view_url": "https://maps.googleapis.com/maps/api/streetview?channel=rdc-streetview&client=gme-movesalesinc&location=5690%20Mayflower%20Way%20Unit%20608%2C%20Ave%20Maria%2C%20FL%2034142&size=640x480&source=outdoor&signature=XsWUle1dQg3dwQAfUf3fu3atKOk=",
-                "neighborhoods": [
-                  {
-                    "__typename": "Neighborhood",
-                    "name": "Northeast Naples",
-                    "city": "Immokalee",
-                    "level": "macro_neighborhood",
-                    "geo_statistics": {
-                      "__typename": "GeoStatistics",
-                      "housing_market": {
-                        "__typename": "HousingMarket",
-                        "median_price_per_sqft": 259,
-                        "median_sold_price": 377250,
-                        "median_listing_price": 481950,
-                        "median_days_on_market": 83
-                      }
-                    }
-                  }
-                ]
-              },
-              "branding": [
-                {
-                  "__typename": "Branding",
-                  "type": "Agent",
-                  "photo": null,
-                  "name": "Holly Trapani LLC",
-                  "phone": null,
-                  "slogan": null,
-                  "accent_color": null,
-                  "link": null
-                },
-                {
-                  "__typename": "Branding",
-                  "type": "Office",
-                  "photo": null,
-                  "name": "ND Realty",
-                  "phone": null,
-                  "slogan": null,
-                  "accent_color": null,
-                  "link": null
-                }
-              ],
-              "consumer_advertisers": [
-                {
-                  "__typename": "ConsumerAdvertiser",
-                  "advertiser_id": "3010208",
-                  "office_id": "3010208",
-                  "agent_id": "100732851",
-                  "name": "Holly Trapani LLC",
-                  "phone": null,
-                  "type": "Agent",
-                  "href": "/realestateagents/Holly-Trapani-LLC_Ave-Maria_FL_100732851_294764057",
-                  "slogan": null,
-                  "photo": {
-                    "__typename": "Photo",
-                    "href": null
-                  },
-                  "show_realtor_logo": true,
-                  "hours": null
-                },
-                {
-                  "__typename": "ConsumerAdvertiser",
-                  "advertiser_id": "3010208",
-                  "office_id": "3010208",
-                  "agent_id": "100732851",
-                  "name": "ND Realty",
-                  "phone": "(239) 231-5999",
-                  "type": "Office",
-                  "href": "",
-                  "slogan": null,
-                  "photo": {
-                    "__typename": "Photo",
-                    "href": null
-                  },
-                  "show_realtor_logo": false,
-                  "hours": null
-                }
-              ],
-              "advertisers": [
-                {
-                  "__typename": "HomeAdvertiser",
-                  "fulfillment_id": "100732851",
-                  "name": "Holly Trapani LLC",
-                  "type": "seller",
-                  "team_name": null,
-                  "email": "hollyfloridarealtor@gmail.com",
-                  "href": "",
-                  "state_license": "",
-                  "phones": [
-                    {
-                      "__typename": "AdvertiserPhone",
-                      "number": "2395658765",
-                      "type": "Mobile",
-                      "ext": ""
-                    }
-                  ],
-                  "office": {
-                    "__typename": "HomeAdvertiserOffice",
-                    "fulfillment_id": "3010208",
-                    "name": "ND Realty",
-                    "href": "",
-                    "photo": {
-                      "__typename": "Href",
-                      "href": ""
-                    },
-                    "email": "",
-                    "phones": [
-                      {
-                        "__typename": "AdvertiserPhone",
-                        "number": "2392315999",
-                        "type": "Office",
-                        "ext": ""
-                      }
-                    ]
-                  },
-                  "broker": {
-                    "__typename": "HomeAdvertiserBroker",
-                    "fulfillment_id": "4080640",
-                    "name": "ND Realty "
-                  },
-                  "photo": {
-                    "__typename": "Href",
-                    "href": "http://ap.rdcpix.com/2ddf0107ac276ca657e6b9ef8a811fd0r-c1402729971l.jpg"
-                  }
-                }
-              ],
-              "photo_count": 5,
-              "photos": [
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "garage",
-                      "probability": 0.9991052746772766
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "house_view",
-                      "probability": 0.9989840388298035
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "yard",
-                      "probability": 0.9970558881759644
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "house_view",
-                      "probability": 0.9961493015289307
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "house_view",
-                      "probability": 0.9955787062644958
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "unknown",
-                      "probability": 0.9956075549125671
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "farm_land",
-                      "probability": 0.38100698590278625
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "porch",
-                      "probability": 0.6996791958808899
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "yard",
-                      "probability": 0.5364774465560913
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "living_room",
-                      "probability": 0.995583713054657
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3763595501s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "dining_room",
-                      "probability": 0.999948263168335
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3965318105s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "kitchen",
-                      "probability": 0.9999480247497559
-                    }
-                  ]
-                }
-              ],
-              "property_history": [
-                {
-                  "__typename": "HomePropertyHistory",
-                  "date": "2026-03-23",
-                  "event_name": "Listed",
-                  "price": 349000,
-                  "source_name": "Naples",
-                  "listing": {
-                    "__typename": "HomeListing",
-                    "photos": [
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "garage",
-                            "probability": 0.9991052746772766
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.9989840388298035
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9970558881759644
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.9961493015289307
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.9955787062644958
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.9956075549125671
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "farm_land",
-                            "probability": 0.38100698590278625
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "porch",
-                            "probability": 0.6996791958808899
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.5364774465560913
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "living_room",
-                            "probability": 0.995583713054657
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3763595501s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "dining_room",
-                            "probability": 0.999948263168335
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3965318105s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "kitchen",
-                            "probability": 0.9999480247497559
-                          }
-                        ]
-                      }
-                    ],
-                    "description": {
-                      "__typename": "HomeDescription",
-                      "sqft": 1816
-                    }
-                  }
-                }
-              ],
-              "local": {
-                "__typename": "Local",
-                "noise": {
-                  "__typename": "Noise",
-                  "score": null,
-                  "noise_categories": [
-                    {
-                      "__typename": "NoiseCategory",
-                      "type": "airport",
-                      "text": null
-                    },
-                    {
-                      "__typename": "NoiseCategory",
-                      "type": "traffic",
-                      "text": null
-                    },
-                    {
-                      "__typename": "NoiseCategory",
-                      "type": "local",
-                      "text": null
-                    },
-                    {
-                      "__typename": "NoiseCategory",
-                      "type": "score",
-                      "text": null
-                    }
-                  ]
-                },
-                "flood": {
-                  "__typename": "Flood",
-                  "flood_factor_score": 1,
-                  "fema_zone": [
-                    "X (unshaded)"
-                  ]
-                }
-              },
-              "last_sold_price": null,
-              "last_sold_date": null,
-              "estimates": {
-                "__typename": "HomeEstimates",
-                "current_values": [
-                  {
-                    "__typename": "LatestEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
-                      "type": "quantarium",
-                      "name": "Quantarium"
-                    },
-                    "estimate": 338372,
-                    "estimate_high": 351906,
-                    "estimate_low": 324837,
-                    "date": "2026-04-01"
-                  }
-                ],
-                "historical_values": [
-                  {
-                    "__typename": "HistoricalEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
-                      "type": "quantarium",
-                      "name": "Quantarium"
-                    },
-                    "estimates": [
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 338372,
-                        "date": "2026-04-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 287367,
-                        "date": "2026-03-25"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 290114,
-                        "date": "2026-02-25"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 294085,
-                        "date": "2026-01-28"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 305044,
-                        "date": "2025-12-31"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 319707,
-                        "date": "2025-11-26"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 318480,
-                        "date": "2025-10-29"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 324590,
-                        "date": "2025-09-24"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 333895,
-                        "date": "2025-08-27"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 339280,
-                        "date": "2025-07-30"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 355535,
-                        "date": "2025-06-25"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 361891,
-                        "date": "2025-05-28"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 362310,
-                        "date": "2025-04-30"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 363974,
-                        "date": "2025-03-26"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 359407,
-                        "date": "2025-02-12"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 360789,
-                        "date": "2025-01-29"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 390183,
-                        "date": "2024-12-18"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 333468,
-                        "date": "2024-11-27"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 329510,
-                        "date": "2024-10-30"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 334570,
-                        "date": "2024-09-25"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 357635,
-                        "date": "2024-08-28"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 361390,
-                        "date": "2024-07-31"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 361682,
-                        "date": "2024-06-26"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 353130,
-                        "date": "2024-05-29"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 320908,
-                        "date": "2024-04-24"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 328639,
-                        "date": "2024-03-27"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 302387,
-                        "date": "2024-02-28"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 506276,
-                        "date": "2024-01-31"
-                      }
-                    ]
-                  }
-                ],
-                "forecast_values": [
-                  {
-                    "__typename": "ForecastEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
-                      "type": "quantarium",
-                      "name": "Quantarium"
-                    },
-                    "estimates": [
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 336258,
-                        "date": "2026-05-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 334847,
-                        "date": "2026-06-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 333105,
-                        "date": "2026-07-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 332104,
-                        "date": "2026-08-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 330471,
-                        "date": "2026-09-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 329221,
-                        "date": "2026-10-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 328334,
-                        "date": "2026-11-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 327433,
-                        "date": "2026-12-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 326857,
-                        "date": "2027-01-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 325668,
-                        "date": "2027-02-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 325000,
-                        "date": "2027-03-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 324304,
-                        "date": "2027-04-01"
-                      }
-                    ]
-                  }
-                ]
-              },
-              "virtual_tours": null,
-              "videos": null,
-              "matterport": null,
-              "terms": null,
-              "monthly_fees": null,
-              "one_time_fees": null,
-              "units": null
-            }
-          }
-        },
-        {
-          "data": {
-            "home": {
-              "__typename": "Home",
               "property_id": "6127912483",
               "last_update_date": "2026-03-17T16:57:56Z",
               "last_price_change_date": "2026-03-05T23:25:59.658Z",
@@ -25030,6 +23432,1604 @@
           "data": {
             "home": {
               "__typename": "Home",
+              "property_id": "9238269562",
+              "last_update_date": "2026-03-25T20:40:42Z",
+              "last_price_change_date": null,
+              "last_price_change_amount": null,
+              "listing_id": "2992843571",
+              "status": "for_sale",
+              "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
+              "days_on_market": null,
+              "list_date": "2026-03-23T17:32:57Z",
+              "create_date": "2026-03-23T17:32:57Z",
+              "mortgage": {
+                "__typename": "Mortgage",
+                "property_tax_rate": 0.01448424,
+                "rates_url": "https://www.realtor.com/mortgage/rates/?from=mobile#zip=34142&property_price=349000&mlid=9238269562",
+                "insurance_rate": 0.0085,
+                "estimate": {
+                  "__typename": "MortgageEstimate",
+                  "loan_amount": 279200,
+                  "monthly_payment": 3214,
+                  "total_payment": 622404,
+                  "down_payment": 69800,
+                  "average_rate": {
+                    "__typename": "Rate",
+                    "rate": 0.06304,
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "term": 30
+                    }
+                  },
+                  "monthly_payment_details": [
+                    {
+                      "__typename": "MonthlyOwnershipExpense",
+                      "type": "principal_and_interest",
+                      "amount": 1729,
+                      "display_name": "Principal & interest"
+                    },
+                    {
+                      "__typename": "MonthlyOwnershipExpense",
+                      "type": "home_insurance",
+                      "amount": 247,
+                      "display_name": "Home insurance"
+                    },
+                    {
+                      "__typename": "MonthlyOwnershipExpense",
+                      "type": "hoa_fees",
+                      "amount": 817,
+                      "display_name": "HOA fees"
+                    },
+                    {
+                      "__typename": "MonthlyOwnershipExpense",
+                      "type": "mortgage_insurance",
+                      "amount": 0,
+                      "display_name": "Mortgage insurance"
+                    },
+                    {
+                      "__typename": "MonthlyOwnershipExpense",
+                      "type": "property_tax",
+                      "amount": 421,
+                      "display_name": "Property tax"
+                    }
+                  ]
+                },
+                "average_rates": [
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "thirty_year_fix"
+                    },
+                    "rate": 0.06304
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "twenty_year_fix"
+                    },
+                    "rate": 0.06149
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "fifteen_year_fix"
+                    },
+                    "rate": 0.05519
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "ten_year_fix"
+                    },
+                    "rate": 0.05384
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "thirty_year_fha"
+                    },
+                    "rate": 0.05713
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "thirty_year_va"
+                    },
+                    "rate": 0.05802
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "five_one_arm"
+                    },
+                    "rate": 0.05972
+                  },
+                  {
+                    "__typename": "Rate",
+                    "loan_type": {
+                      "__typename": "LoanType",
+                      "loan_id": "seven_one_arm"
+                    },
+                    "rate": 0.06119
+                  }
+                ]
+              },
+              "hoa": {
+                "__typename": "HomeHOA",
+                "fee": 817,
+                "historic_fee": true
+              },
+              "buyers": null,
+              "description": {
+                "__typename": "HomeDescription",
+                "baths_consolidated": "2",
+                "baths": 2,
+                "baths_min": null,
+                "baths_max": null,
+                "heating": null,
+                "cooling": null,
+                "beds": 2,
+                "beds_min": null,
+                "beds_max": null,
+                "garage": 1,
+                "garage_min": null,
+                "garage_max": null,
+                "pool": null,
+                "sqft": 1816,
+                "sqft_min": null,
+                "sqft_max": null,
+                "styles": null,
+                "lot_sqft": null,
+                "units": 8,
+                "stories": 2,
+                "type": "condos",
+                "sub_type": "condo",
+                "text": "TURNKEY! WATER + GOLF VIEWS! END UNIT CONDO IN DEL WEBB NAPLES. Move right into this beautifully upgraded 2-story condo that lives like a single-family home and shows like a model. Ideally positioned with long lake and golf course views, this light-filled end unit offers privacy, space, and one of the best settings in the community. The open-concept layout features large tile flooring, volume ceilings, and seamless indoor-outdoor living. The kitchen is a standout with quartz countertops, white cabinetry, stainless steel appliances, and a large island perfect for entertaining. Sliding glass doors open to a screened lanai with panoramic water and golf course views-an ideal backdrop for morning coffee or sunset evenings. Upstairs, generously sized bedrooms provide comfortable space for owners and guests, all offered TURNKEY furnished with stylish coastal decor-ready for immediate enjoyment or seasonal use. Paver driveway, attached garage, and low-maintenance living complete the package. Perfect as a full-time residence, winter retreat, or lock-and-leave lifestyle-this is one of the best values in Del Webb Naples. Del Webb's vibrant 55+ lifestyle includes pickleball, tennis, bocce, golf simulator, lap pool, resort pool, sauna, steam room, fitness center, library, billiards, and a full social calendar - all just a golf cart ride into the heart of Ave Maria for dining, shopping, and entertainment. As we say: \"Ave Maria ~ Once you get here you \"get it.\"",
+                "year_built": 2023,
+                "name": null
+              },
+              "pet_policy": null,
+              "assigned_schools": {
+                "__typename": "SchoolList",
+                "schools": [
+                  {
+                    "__typename": "School",
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "name": "Collier",
+                      "id": "06160000141",
+                      "phone": null,
+                      "student_count": null,
+                      "grades": null
+                    }
+                  },
+                  {
+                    "__typename": "School",
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "name": "Collier",
+                      "id": "06160000141",
+                      "phone": null,
+                      "student_count": null,
+                      "grades": null
+                    }
+                  },
+                  {
+                    "__typename": "School",
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "name": "Collier",
+                      "id": "06160000141",
+                      "phone": null,
+                      "student_count": null,
+                      "grades": null
+                    }
+                  }
+                ]
+              },
+              "nearby_schools": {
+                "__typename": "SchoolList",
+                "schools": [
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.340866,
+                      "lon": -81.548827
+                    },
+                    "distance_in_miles": 6.8,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "elementary"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "K",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5"
+                    ],
+                    "id": "0717234011",
+                    "name": "Estates Elementary School",
+                    "parent_rating": 5,
+                    "rating": 7,
+                    "student_count": 862
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.295583,
+                      "lon": -81.577626
+                    },
+                    "distance_in_miles": 8.5,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "high"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717239121",
+                    "name": "Palmetto Ridge High School",
+                    "parent_rating": 3,
+                    "rating": 5,
+                    "student_count": 2347
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.294523,
+                      "lon": -81.586468
+                    },
+                    "distance_in_miles": 9.1,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "middle"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "6",
+                      "7",
+                      "8"
+                    ],
+                    "id": "0717211131",
+                    "name": "Corkscrew Middle School",
+                    "parent_rating": 5,
+                    "rating": 8,
+                    "student_count": 958
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.337442,
+                      "lon": -81.436432
+                    },
+                    "distance_in_miles": 1.3,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000001",
+                      "name": null
+                    },
+                    "education_levels": [
+                      "elementary"
+                    ],
+                    "funding_type": "private",
+                    "grades": [
+                      "PK",
+                      "K",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6"
+                    ],
+                    "id": "0717415921",
+                    "name": "Ave Maria Montessori",
+                    "parent_rating": null,
+                    "rating": null,
+                    "student_count": 31
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.340799,
+                      "lon": -81.43494
+                    },
+                    "distance_in_miles": 1.6,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000001",
+                      "name": null
+                    },
+                    "education_levels": [
+                      "elementary",
+                      "middle",
+                      "high"
+                    ],
+                    "funding_type": "private",
+                    "grades": [
+                      "K",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8",
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717348821",
+                    "name": "Rhodora J Donahue Academy",
+                    "parent_rating": 4,
+                    "rating": null,
+                    "student_count": 342
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.40677,
+                      "lon": -81.420638
+                    },
+                    "distance_in_miles": 6.2,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "elementary",
+                      "middle",
+                      "high"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8",
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717238301",
+                    "name": "The Phoenix Program-Immokalee",
+                    "parent_rating": null,
+                    "rating": 1,
+                    "student_count": 110
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.407322,
+                      "lon": -81.420151
+                    },
+                    "distance_in_miles": 6.2,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "high"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717322511",
+                    "name": "Immokalee Technology Academy",
+                    "parent_rating": 5,
+                    "rating": null,
+                    "student_count": 0
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.265155,
+                      "lon": -81.523617
+                    },
+                    "distance_in_miles": 6.2,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "middle"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "6",
+                      "7",
+                      "8"
+                    ],
+                    "id": "0717255741",
+                    "name": "Cypress Palm Middle School",
+                    "parent_rating": 2,
+                    "rating": 8,
+                    "student_count": 796
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.407661,
+                      "lon": -81.420695
+                    },
+                    "distance_in_miles": 6.3,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "elementary",
+                      "middle"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8"
+                    ],
+                    "id": "0717238041",
+                    "name": "New Beginnings Immokalee",
+                    "parent_rating": 2,
+                    "rating": 3,
+                    "student_count": 28
+                  }
+                ]
+              },
+              "schools": {
+                "__typename": "SchoolList",
+                "schools": [
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.340866,
+                      "lon": -81.548827
+                    },
+                    "distance_in_miles": 6.8,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "elementary"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "K",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5"
+                    ],
+                    "id": "0717234011",
+                    "name": "Estates Elementary School",
+                    "parent_rating": 5,
+                    "rating": 7,
+                    "student_count": 862
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.295583,
+                      "lon": -81.577626
+                    },
+                    "distance_in_miles": 8.5,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "high"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717239121",
+                    "name": "Palmetto Ridge High School",
+                    "parent_rating": 3,
+                    "rating": 5,
+                    "student_count": 2347
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": true,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.294523,
+                      "lon": -81.586468
+                    },
+                    "distance_in_miles": 9.1,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "middle"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "6",
+                      "7",
+                      "8"
+                    ],
+                    "id": "0717211131",
+                    "name": "Corkscrew Middle School",
+                    "parent_rating": 5,
+                    "rating": 8,
+                    "student_count": 958
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.337442,
+                      "lon": -81.436432
+                    },
+                    "distance_in_miles": 1.3,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000001",
+                      "name": null
+                    },
+                    "education_levels": [
+                      "elementary"
+                    ],
+                    "funding_type": "private",
+                    "grades": [
+                      "PK",
+                      "K",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6"
+                    ],
+                    "id": "0717415921",
+                    "name": "Ave Maria Montessori",
+                    "parent_rating": null,
+                    "rating": null,
+                    "student_count": 31
+                  }
+                ]
+              },
+              "products": {
+                "__typename": "ProductSummary",
+                "products": [
+                  "core.agent",
+                  "core.broker",
+                  "co_broke"
+                ]
+              },
+              "list_price": 349000,
+              "list_price_min": null,
+              "list_price_max": null,
+              "price_per_sqft": 192,
+              "community": null,
+              "lead_attributes": {
+                "__typename": "LeadAttributes",
+                "opcity_lead_attributes": {
+                  "__typename": "OpCityLeadAttributes",
+                  "flip_the_market_enabled": false,
+                  "cashback_enabled": false,
+                  "phones": null,
+                  "local_phone": null
+                },
+                "ready_connect_mortgage": {
+                  "__typename": "ReadyConnectMortgage",
+                  "show_contact_a_lender": true,
+                  "show_veterans_united": true
+                },
+                "show_contact_an_agent": true,
+                "lead_type": "co_broke",
+                "show_lead_form": true,
+                "disclaimer_text": null,
+                "is_tcpa_message_enabled": null,
+                "show_text_leads": true
+              },
+              "flags": {
+                "__typename": "HomeFlags",
+                "is_contingent": null,
+                "is_garage_present": true,
+                "is_new_construction": null,
+                "is_pending": true,
+                "is_short_sale": null,
+                "is_foreclosure": null,
+                "is_senior_community": true,
+                "is_for_rent": null,
+                "is_deal_available": null,
+                "is_price_excludes_land": null,
+                "is_promotion_present": null,
+                "is_subdivision": null,
+                "is_plan": null,
+                "is_price_reduced": null,
+                "is_new_listing": false,
+                "is_coming_soon": null
+              },
+              "provider_url": null,
+              "source": {
+                "__typename": "MlsSource",
+                "id": "NAFL",
+                "disclaimer": {
+                  "__typename": "MlsDisclaimer",
+                  "text": "The source of the information about real property available for sale or rent is the copyrighted and proprietary database of the M.L.S. of Naples, Inc. \u00a9 2026 M.L.S. of Naples, Inc.; all rights reserved.",
+                  "href": null
+                },
+                "listing_id": "226012254",
+                "plan_id": null,
+                "spec_id": null,
+                "community_id": null,
+                "name": "Naples",
+                "type": "mls",
+                "raw": {
+                  "__typename": "MlsRawData",
+                  "style": "2 Story, End-Unit",
+                  "tax_amount": 5055
+                }
+              },
+              "details": [
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Bedrooms",
+                  "text": [
+                    "Bedrooms: 2"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Bathrooms",
+                  "text": [
+                    "Total Bathrooms: 2",
+                    "Full Bathrooms: 2"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Interior Features",
+                  "text": [
+                    "Fire Sprinkler",
+                    "Foyer",
+                    "Pantry",
+                    "Smoke Detectors",
+                    "Vaulted Ceiling(s)",
+                    "Window Coverings",
+                    "Interior Amenities: Great Room, 2 Story",
+                    "Furnished Description: Turnkey",
+                    "Flooring: Carpet, Tile",
+                    "Window Features: Window Coverings"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Appliances",
+                  "text": [
+                    "Dishwasher",
+                    "Disposal",
+                    "Dryer",
+                    "Microwave",
+                    "Refrigerator/Freezer",
+                    "Refrigerator/Icemaker",
+                    "Self Cleaning Oven",
+                    "Washer",
+                    "Laundry Features: Laundry in Residence"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Other Rooms",
+                  "text": [
+                    "Den - Study",
+                    "Great Room",
+                    "Laundry in Residence",
+                    "Screened Balcony"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Heating and Cooling",
+                  "text": [
+                    "Cooling Features: Central Electric",
+                    "Heating Features: Central Electric",
+                    "Heating: Yes"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Kitchen and Dining",
+                  "text": [
+                    "Dining Room Features: Dining - Family"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Exterior and Lot Features",
+                  "text": [
+                    "Screened Balcony",
+                    "Frontage Type: Golf Course",
+                    "Other Structures: Tennis Court(s)",
+                    "Road Surface Type: Paved"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Pool and Spa",
+                  "text": [
+                    "Pool Features: Community",
+                    "Spa Features: Community"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Waterfront and Water Access",
+                  "text": [
+                    "Fresh Water"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Land Info",
+                  "text": [
+                    "Golf Course",
+                    "Zero Lot Line",
+                    "Lot Description: Golf Course, Zero Lot Line"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Garage and Parking",
+                  "text": [
+                    "Attached Garage: Yes",
+                    "Covered Spaces: 1",
+                    "Garage Spaces: 1",
+                    "Parking Features: Attached",
+                    "Parking Total: 1"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Home Features",
+                  "text": [
+                    "View: Golf Course, Pond",
+                    "Security Features: Smoke Detector(s), Gated Community, Fire Sprinkler System"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Homeowners Association",
+                  "text": [
+                    "Association: Yes",
+                    "Association Amenities: Basketball Court, Barbecue, Bike And Jog Path, Billiard Room, Bocce Court, Clubhouse, Park, Pool, Community Room, Spa/Hot Tub, Dog Park, Fitness Center, Golf Course, Hobby Room, Internet Access, Library, Pickleball, Putting Green, Restaurant, Sauna, Shopping, Sidewalk, Streetlight, Tennis Court(s), Underground Utility",
+                    "Association Fee: 9800",
+                    "Association Fee Frequency: Annually",
+                    "Calculated Total Monthly Association Fees: 817",
+                    "Pets Allowed: Limits",
+                    "Senior Community: Yes"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "School Information",
+                  "text": [
+                    "Elementary School: ESTATES ELEMENTARY",
+                    "High School: PALMETTO RIDGE",
+                    "Middle School: CORKSCREW MIDDLE"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Multi-Unit Info",
+                  "text": [
+                    "Number of Units In Community: 24",
+                    "Number of Units: 8"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Condo Info",
+                  "text": [
+                    "Unit Floor In Building: 2"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Rental Info",
+                  "text": [
+                    "Lease Term: Buyer Finance/Cash,FHA,VA"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Amenities and Community Features",
+                  "text": [
+                    "Community Features: Clubhouse, Park, Pool, Dog Park, Fitness Center, Golf, Putting Green, Restaurant, Sidewalks, Street Lights, Tennis Court(s), Gated"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Other Property Info",
+                  "text": [
+                    "Impact Resistant Doors,Impact Resistant Windows",
+                    "Annual Tax Amount: 5055",
+                    "Source Listing Status: Pending",
+                    "County: Collier",
+                    "Tax Year: 2025",
+                    "Restrictions: Architectural, No Commercial, No RV",
+                    "Source Property Type: Residential",
+                    "Area: AVE MARIA",
+                    "Property Subtype: condo",
+                    "Source Neighborhood: DEL WEBB",
+                    "Ownership Type: Condo",
+                    "Parcel Number: 59940004269",
+                    "Park Name: AVE MARIA",
+                    "Subdivision: DEL WEBB",
+                    "Property Subtype: Low Rise (1-3)"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Farm Info",
+                  "text": [
+                    "Irrigation Source: Central, Reclaimed"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Building and Construction",
+                  "text": [
+                    "Total Square Feet Living: 2029",
+                    "Year Built: 2023",
+                    "Building Area Total: 2029",
+                    "Building Area Units: Square Feet",
+                    "Building Features: DSL/Cable Available",
+                    "Construction Materials: Concrete Block, Stucco",
+                    "Foundation Details: Concrete Block",
+                    "Levels: 2",
+                    "Living Area Units: Square Feet",
+                    "Property Age: 3",
+                    "Roof: Tile",
+                    "Levels or Stories: 2",
+                    "Building Total Stories: 2",
+                    "House Style: 2 Story, End-Unit",
+                    "Year Built Details: Resale Property",
+                    "Vaulted Ceiling: Yes",
+                    "Architectural Style: Two Story, Low Rise (1-3)"
+                  ]
+                },
+                {
+                  "__typename": "HomeDetails",
+                  "category": "Utilities",
+                  "text": [
+                    "Water Source: Central"
+                  ]
+                }
+              ],
+              "open_houses": null,
+              "tax_history": null,
+              "location": {
+                "__typename": "HomeLocation",
+                "address": {
+                  "__typename": "HomeAddress",
+                  "line": "5690 Mayflower Way Unit 608",
+                  "street_number": "5690",
+                  "street_name": "Mayflower",
+                  "street_suffix": "Way",
+                  "unit": "Unit 608",
+                  "city": "Ave Maria",
+                  "state_code": "FL",
+                  "postal_code": "34142",
+                  "state": "Florida",
+                  "coordinate": {
+                    "__typename": "HomeCoordinate",
+                    "lat": 26.318965,
+                    "lon": -81.442659
+                  }
+                },
+                "county": {
+                  "__typename": "HomeCounty",
+                  "fips_code": "12021"
+                },
+                "street_view_url": "https://maps.googleapis.com/maps/api/streetview?channel=rdc-streetview&client=gme-movesalesinc&location=5690%20Mayflower%20Way%20Unit%20608%2C%20Ave%20Maria%2C%20FL%2034142&size=640x480&source=outdoor&signature=XsWUle1dQg3dwQAfUf3fu3atKOk=",
+                "neighborhoods": [
+                  {
+                    "__typename": "Neighborhood",
+                    "name": "Northeast Naples",
+                    "city": "Immokalee",
+                    "level": "macro_neighborhood",
+                    "geo_statistics": {
+                      "__typename": "GeoStatistics",
+                      "housing_market": {
+                        "__typename": "HousingMarket",
+                        "median_price_per_sqft": 259,
+                        "median_sold_price": 377250,
+                        "median_listing_price": 481950,
+                        "median_days_on_market": 83
+                      }
+                    }
+                  }
+                ]
+              },
+              "branding": [
+                {
+                  "__typename": "Branding",
+                  "type": "Agent",
+                  "photo": null,
+                  "name": "Holly Trapani LLC",
+                  "phone": null,
+                  "slogan": null,
+                  "accent_color": null,
+                  "link": null
+                },
+                {
+                  "__typename": "Branding",
+                  "type": "Office",
+                  "photo": null,
+                  "name": "ND Realty",
+                  "phone": null,
+                  "slogan": null,
+                  "accent_color": null,
+                  "link": null
+                }
+              ],
+              "consumer_advertisers": [
+                {
+                  "__typename": "ConsumerAdvertiser",
+                  "advertiser_id": "3010208",
+                  "office_id": "3010208",
+                  "agent_id": "100732851",
+                  "name": "Holly Trapani LLC",
+                  "phone": null,
+                  "type": "Agent",
+                  "href": "/realestateagents/Holly-Trapani-LLC_Ave-Maria_FL_100732851_294764057",
+                  "slogan": null,
+                  "photo": {
+                    "__typename": "Photo",
+                    "href": null
+                  },
+                  "show_realtor_logo": true,
+                  "hours": null
+                },
+                {
+                  "__typename": "ConsumerAdvertiser",
+                  "advertiser_id": "3010208",
+                  "office_id": "3010208",
+                  "agent_id": "100732851",
+                  "name": "ND Realty",
+                  "phone": "(239) 231-5999",
+                  "type": "Office",
+                  "href": "",
+                  "slogan": null,
+                  "photo": {
+                    "__typename": "Photo",
+                    "href": null
+                  },
+                  "show_realtor_logo": false,
+                  "hours": null
+                }
+              ],
+              "advertisers": [
+                {
+                  "__typename": "HomeAdvertiser",
+                  "fulfillment_id": "100732851",
+                  "name": "Holly Trapani LLC",
+                  "type": "seller",
+                  "team_name": null,
+                  "email": "hollyfloridarealtor@gmail.com",
+                  "href": "",
+                  "state_license": "",
+                  "phones": [
+                    {
+                      "__typename": "AdvertiserPhone",
+                      "number": "2395658765",
+                      "type": "Mobile",
+                      "ext": ""
+                    }
+                  ],
+                  "office": {
+                    "__typename": "HomeAdvertiserOffice",
+                    "fulfillment_id": "3010208",
+                    "name": "ND Realty",
+                    "href": "",
+                    "photo": {
+                      "__typename": "Href",
+                      "href": ""
+                    },
+                    "email": "",
+                    "phones": [
+                      {
+                        "__typename": "AdvertiserPhone",
+                        "number": "2392315999",
+                        "type": "Office",
+                        "ext": ""
+                      }
+                    ]
+                  },
+                  "broker": {
+                    "__typename": "HomeAdvertiserBroker",
+                    "fulfillment_id": "4080640",
+                    "name": "ND Realty "
+                  },
+                  "photo": {
+                    "__typename": "Href",
+                    "href": "http://ap.rdcpix.com/2ddf0107ac276ca657e6b9ef8a811fd0r-c1402729971l.jpg"
+                  }
+                }
+              ],
+              "photo_count": 5,
+              "photos": [
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "garage",
+                      "probability": 0.9991052746772766
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "house_view",
+                      "probability": 0.9989840388298035
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "yard",
+                      "probability": 0.9970558881759644
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "house_view",
+                      "probability": 0.9961493015289307
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "house_view",
+                      "probability": 0.9955787062644958
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "unknown",
+                      "probability": 0.9956075549125671
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "farm_land",
+                      "probability": 0.38100698590278625
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "porch",
+                      "probability": 0.6996791958808899
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "yard",
+                      "probability": 0.5364774465560913
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "living_room",
+                      "probability": 0.995583713054657
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3763595501s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "dining_room",
+                      "probability": 0.999948263168335
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3965318105s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "kitchen",
+                      "probability": 0.9999480247497559
+                    }
+                  ]
+                }
+              ],
+              "property_history": [
+                {
+                  "__typename": "HomePropertyHistory",
+                  "date": "2026-03-23",
+                  "event_name": "Listed",
+                  "price": 349000,
+                  "source_name": "Naples",
+                  "listing": {
+                    "__typename": "HomeListing",
+                    "photos": [
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "garage",
+                            "probability": 0.9991052746772766
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9989840388298035
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "yard",
+                            "probability": 0.9970558881759644
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9961493015289307
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9955787062644958
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9956075549125671
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "farm_land",
+                            "probability": 0.38100698590278625
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.6996791958808899
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "yard",
+                            "probability": 0.5364774465560913
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "living_room",
+                            "probability": 0.995583713054657
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3763595501s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "dining_room",
+                            "probability": 0.999948263168335
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m3965318105s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "kitchen",
+                            "probability": 0.9999480247497559
+                          }
+                        ]
+                      }
+                    ],
+                    "description": {
+                      "__typename": "HomeDescription",
+                      "sqft": 1816
+                    }
+                  }
+                }
+              ],
+              "local": {
+                "__typename": "Local",
+                "noise": {
+                  "__typename": "Noise",
+                  "score": null,
+                  "noise_categories": [
+                    {
+                      "__typename": "NoiseCategory",
+                      "type": "airport",
+                      "text": null
+                    },
+                    {
+                      "__typename": "NoiseCategory",
+                      "type": "traffic",
+                      "text": null
+                    },
+                    {
+                      "__typename": "NoiseCategory",
+                      "type": "local",
+                      "text": null
+                    },
+                    {
+                      "__typename": "NoiseCategory",
+                      "type": "score",
+                      "text": null
+                    }
+                  ]
+                },
+                "flood": {
+                  "__typename": "Flood",
+                  "flood_factor_score": 1,
+                  "fema_zone": [
+                    "X (unshaded)"
+                  ]
+                }
+              },
+              "last_sold_price": null,
+              "last_sold_date": null,
+              "estimates": {
+                "__typename": "HomeEstimates",
+                "current_values": [
+                  {
+                    "__typename": "LatestEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "quantarium",
+                      "name": "Quantarium"
+                    },
+                    "estimate": 338372,
+                    "estimate_high": 351906,
+                    "estimate_low": 324837,
+                    "date": "2026-04-01"
+                  }
+                ],
+                "historical_values": [
+                  {
+                    "__typename": "HistoricalEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "quantarium",
+                      "name": "Quantarium"
+                    },
+                    "estimates": [
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 338372,
+                        "date": "2026-04-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 287367,
+                        "date": "2026-03-25"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 290114,
+                        "date": "2026-02-25"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 294085,
+                        "date": "2026-01-28"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 305044,
+                        "date": "2025-12-31"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 319707,
+                        "date": "2025-11-26"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 318480,
+                        "date": "2025-10-29"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 324590,
+                        "date": "2025-09-24"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 333895,
+                        "date": "2025-08-27"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 339280,
+                        "date": "2025-07-30"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 355535,
+                        "date": "2025-06-25"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 361891,
+                        "date": "2025-05-28"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 362310,
+                        "date": "2025-04-30"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 363974,
+                        "date": "2025-03-26"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 359407,
+                        "date": "2025-02-12"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 360789,
+                        "date": "2025-01-29"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 390183,
+                        "date": "2024-12-18"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 333468,
+                        "date": "2024-11-27"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 329510,
+                        "date": "2024-10-30"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 334570,
+                        "date": "2024-09-25"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 357635,
+                        "date": "2024-08-28"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 361390,
+                        "date": "2024-07-31"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 361682,
+                        "date": "2024-06-26"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 353130,
+                        "date": "2024-05-29"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 320908,
+                        "date": "2024-04-24"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 328639,
+                        "date": "2024-03-27"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 302387,
+                        "date": "2024-02-28"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 506276,
+                        "date": "2024-01-31"
+                      }
+                    ]
+                  }
+                ],
+                "forecast_values": [
+                  {
+                    "__typename": "ForecastEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "quantarium",
+                      "name": "Quantarium"
+                    },
+                    "estimates": [
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 336258,
+                        "date": "2026-05-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 334847,
+                        "date": "2026-06-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 333105,
+                        "date": "2026-07-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 332104,
+                        "date": "2026-08-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 330471,
+                        "date": "2026-09-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 329221,
+                        "date": "2026-10-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 328334,
+                        "date": "2026-11-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 327433,
+                        "date": "2026-12-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 326857,
+                        "date": "2027-01-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 325668,
+                        "date": "2027-02-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 325000,
+                        "date": "2027-03-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 324304,
+                        "date": "2027-04-01"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "virtual_tours": null,
+              "videos": null,
+              "matterport": null,
+              "terms": null,
+              "monthly_fees": null,
+              "one_time_fees": null,
+              "units": null
+            }
+          }
+        },
+        {
+          "data": {
+            "home": {
+              "__typename": "Home",
               "property_id": "9337886864",
               "last_update_date": "2026-04-08T18:41:11Z",
               "last_price_change_date": null,
@@ -32929,7 +32929,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9010214527",
-              "last_update_date": "2026-04-10T11:05:49Z",
+              "last_update_date": "2026-04-10T21:55:56Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2993504654",
@@ -33078,7 +33078,7 @@
                 "garage_min": null,
                 "garage_max": null,
                 "pool": null,
-                "sqft": 3416,
+                "sqft": 3440,
                 "sqft_min": null,
                 "sqft_max": null,
                 "styles": null,
@@ -33550,7 +33550,7 @@
               "list_price": 720000,
               "list_price_min": null,
               "list_price_max": null,
-              "price_per_sqft": 211,
+              "price_per_sqft": 209,
               "community": null,
               "lead_attributes": {
                 "__typename": "LeadAttributes",
@@ -33817,9 +33817,9 @@
                   "__typename": "HomeDetails",
                   "category": "Building and Construction",
                   "text": [
-                    "Total Square Feet Living: 3440",
+                    "Total Square Feet Living: 4806",
                     "Year Built: 2023",
-                    "Building Area Total: 3440",
+                    "Building Area Total: 4806",
                     "Building Area Units: Square Feet",
                     "Building Features: DSL/Cable Available",
                     "Construction Materials: Concrete Block, Wood Frame, Stucco",
@@ -33844,7 +33844,20 @@
                   ]
                 }
               ],
-              "open_houses": null,
+              "open_houses": [
+                {
+                  "__typename": "HomeOpenHouse",
+                  "start_date": "2026-04-12T16:00:00Z",
+                  "end_date": "2026-04-12T18:00:00Z",
+                  "description": "New Listing!!",
+                  "time_zone": "EST",
+                  "dst": true,
+                  "href": null,
+                  "methods": [
+                    "in_person"
+                  ]
+                }
+              ],
               "tax_history": [
                 {
                   "__typename": "TaxHistory",
@@ -35364,7 +35377,7 @@
                     ],
                     "description": {
                       "__typename": "HomeDescription",
-                      "sqft": 3416
+                      "sqft": 3440
                     }
                   }
                 },
@@ -35434,18 +35447,6 @@
                     "__typename": "LatestEstimate",
                     "source": {
                       "__typename": "EstimateSource",
-                      "type": "corelogic",
-                      "name": "Cotality\u2122"
-                    },
-                    "estimate": 562000,
-                    "estimate_high": 614300,
-                    "estimate_low": 509600,
-                    "date": "2026-03-09"
-                  },
-                  {
-                    "__typename": "LatestEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
                       "type": "collateral",
                       "name": "Collateral Analytics"
                     },
@@ -35453,6 +35454,18 @@
                     "estimate_high": 772800,
                     "estimate_low": 607200,
                     "date": "2026-03-14"
+                  },
+                  {
+                    "__typename": "LatestEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "corelogic",
+                      "name": "Cotality\u2122"
+                    },
+                    "estimate": 562000,
+                    "estimate_high": 614300,
+                    "estimate_low": 509600,
+                    "date": "2026-03-09"
                   }
                 ],
                 "historical_values": [
@@ -35855,7 +35868,12 @@
                   }
                 ]
               },
-              "virtual_tours": null,
+              "virtual_tours": [
+                {
+                  "__typename": "VirtualTour",
+                  "href": "https://track.pstmrk.it/3s/moshin-real-estate-media.aryeo.com%2Fsites%2Frbvxbopk%2Funbranded/cUpU/6IvEAQ/AQ/18ec84ce-4bf4-44c2-86e5-0f6c84a79e46/3/_8TqpZc9LJ"
+                }
+              ],
               "videos": null,
               "matterport": null,
               "terms": null,
