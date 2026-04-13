@@ -18,6 +18,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOMES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "all-listings.json")
 HOMES_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "listings.json")
 SOLD_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "sold-listings.json")
+REVIEWS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "reviews.json")
 
 def get_headers():
     """Get API headers"""
@@ -26,6 +27,32 @@ def get_headers():
         "x-rapidapi-host": API_HOST,
         "x-rapidapi-key": API_KEY
     }
+
+def fetch_reviews():
+    """Fetch agent reviews from Realty in US API"""
+    print("Fetching agent reviews...")
+    url = f"https://{API_HOST}/agents/v2/get-reviews"
+    params = {"fulfillment_id": FULFILLMENT_ID}
+    try:
+        response = requests.get(url, headers=get_headers(), params=params, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        reviews = data.get('data', {}).get('agent_branding_reviews', {}).get('reviews', [])
+        print(f"✓ Fetched {len(reviews)} review(s)")
+        # Compute average rating
+        if reviews:
+            avg = sum(r.get('rating', 0) for r in reviews) / len(reviews)
+            result = {"average_rating": round(avg, 1), "total_reviews": len(reviews), "reviews": reviews}
+        else:
+            result = {"average_rating": 0, "total_reviews": 0, "reviews": []}
+        with open(REVIEWS_FILE, 'w') as f:
+            json.dump(result, f, indent=2)
+        print(f"✓ Saved to reviews.json")
+        return True
+    except Exception as e:
+        print(f"✗ Error fetching reviews: {e}")
+        return False
+
 
 def fetch_listings():
     """Fetch listings from Realty in US API"""
@@ -191,6 +218,9 @@ def main():
                 previous_ids.add(str(r['property_id']))
     except (IOError, json.JSONDecodeError):
         pass
+
+    # Fetch reviews
+    fetch_reviews()
 
     # Fetch all listings
     all_listings_data = fetch_listings()

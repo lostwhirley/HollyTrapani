@@ -73,7 +73,8 @@ jobs:
 
           git add holly-sells-homes/all-listings.json \
                   holly-sells-homes/listings.json \
-                  holly-sells-homes/sold-listings.json
+                  holly-sells-homes/sold-listings.json \
+                  holly-sells-homes/reviews.json
 
           if [ "${{ steps.listings_changed.outputs.changed }}" == "true" ]; then
             git add flyers/output/ flyers/index.html

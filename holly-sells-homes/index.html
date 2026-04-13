@@ -704,6 +704,59 @@
       margin-top: 0.35rem;
     }
 
+    /* REVIEWS */
+    .agent-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .agent-stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .agent-stars svg {
+      width: 16px;
+      height: 16px;
+      fill: #d97706;
+    }
+
+    .agent-rating-text {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .review-card {
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+    }
+
+    .review-quote {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--primary);
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .review-author {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-top: 0.75rem;
+    }
+
     .listing-badge-sold {
       position: absolute;
       top: 1rem;
@@ -1724,6 +1777,10 @@
     </div>
     <div class="about-content">
       <div class="section-label">About Holly</div>
+      <div class="agent-rating" id="agent-rating" style="display:none;">
+        <div class="agent-stars" id="agent-stars"></div>
+        <div class="agent-rating-text" id="agent-rating-text"></div>
+      </div>
       <h2>MRP Designation | New Construction & 55+ Communities Specialist | Real Estate Professional in Ave Maria & Naples, Florida</h2>
       <p>
         With a passion for helping families find their perfect home, Holly Trapani brings expertise, dedication, and genuine care to every transaction. Whether you're a first-time buyer, looking to upgrade, or ready to sell, Holly's knowledge of the Ave Maria and Naples markets makes her your trusted partner.
@@ -1749,6 +1806,11 @@
           <div class="highlight-number">24/7</div>
           <div class="highlight-text">Client Support</div>
         </div>
+      </div>
+
+      <div class="review-card" id="review-card" style="display:none;">
+        <div class="review-quote" id="review-quote"></div>
+        <div class="review-author" id="review-author"></div>
       </div>
 
       <div class="zillow-partner-badge">
@@ -2307,6 +2369,7 @@
     loadListings();
     loadRentals();
     loadArticles();
+    loadReviews();
 
     // Handle tab clicks
     document.querySelectorAll('.tab-button').forEach(button => {
@@ -2390,6 +2453,39 @@
       '$' + monthlyPayment.toLocaleString('en-US', { maximumFractionDigits: 0 });
   }
   calculateMortgage();
+
+  // Load agent reviews and rating
+  async function loadReviews() {
+    try {
+      const resp = await fetch('reviews.json');
+      if (!resp.ok) return;
+      const data = await resp.json();
+      if (!data.total_reviews) return;
+
+      // Star rating
+      const starsEl = document.getElementById('agent-stars');
+      const ratingTextEl = document.getElementById('agent-rating-text');
+      const ratingEl = document.getElementById('agent-rating');
+      const avg = data.average_rating;
+      const starSvg = `<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>`;
+      starsEl.innerHTML = Array.from({length: 5}, (_, i) => starSvg).join('');
+      const label = data.total_reviews === 1 ? '1 Review on Realtor.com' : `${data.total_reviews} Reviews on Realtor.com`;
+      ratingTextEl.textContent = `${avg} / 5 · ${label}`;
+      ratingEl.style.display = 'flex';
+
+      // Featured review
+      const review = data.reviews[0];
+      if (review && review.comment) {
+        document.getElementById('review-quote').textContent = `"${review.comment}"`;
+        const loc = review.location ? ` · ${review.location}` : '';
+        const year = review.year ? ` · ${review.year}` : '';
+        document.getElementById('review-author').textContent = `— ${review.display_name}${loc}${year}`;
+        document.getElementById('review-card').style.display = 'block';
+      }
+    } catch(e) {
+      // silently skip
+    }
+  }
 
   // Append sold listings to the main listings grid
   async function appendSoldListings(grid) {
