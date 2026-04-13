@@ -2,11 +2,10 @@ name: Refresh Listings
 
 on:
   schedule:
-    # Run every 6 hours: 5am, 11am, 5pm, 11pm EST
-    - cron: '0 10 * * *'
-    - cron: '0 16 * * *'
-    - cron: '0 22 * * *'
-    - cron: '0 4 * * *'
+    # Run 3x daily: 6am, 2pm, 10pm EST
+    - cron: '0 11 * * *'
+    - cron: '0 19 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 permissions:
