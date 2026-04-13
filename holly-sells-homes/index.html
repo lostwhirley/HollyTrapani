@@ -704,46 +704,83 @@
       margin-top: 0.35rem;
     }
 
-    /* REVIEWS */
-    .agent-rating {
+    /* REVIEWS SECTION */
+    .reviews-section {
+      background: var(--cream);
+      padding: 6rem 2rem;
+    }
+
+    .reviews-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .reviews-inner h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .reviews-rating-row {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 1.25rem;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
     }
 
-    .agent-stars {
+    .reviews-stars {
       display: flex;
-      gap: 2px;
+      gap: 4px;
     }
 
-    .agent-stars svg {
-      width: 16px;
-      height: 16px;
+    .reviews-stars svg {
+      width: 28px;
+      height: 28px;
       fill: #d97706;
     }
 
-    .agent-rating-text {
-      font-family: 'Jost', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+    .reviews-avg {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
     }
 
     .review-card {
-      border-top: 1px solid var(--border);
-      margin-top: 2rem;
-      padding-top: 1.5rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+
+    .review-card-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 1.25rem;
+    }
+
+    .review-card-stars svg {
+      width: 14px;
+      height: 14px;
+      fill: #d97706;
     }
 
     .review-quote {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 400;
       color: var(--primary);
-      line-height: 1.7;
+      line-height: 1.75;
       font-style: italic;
     }
 
@@ -754,7 +791,9 @@
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: var(--text-muted);
-      margin-top: 0.75rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
     }
 
     .listing-badge-sold {
@@ -1777,10 +1816,6 @@
     </div>
     <div class="about-content">
       <div class="section-label">About Holly</div>
-      <div class="agent-rating" id="agent-rating" style="display:none;">
-        <div class="agent-stars" id="agent-stars"></div>
-        <div class="agent-rating-text" id="agent-rating-text"></div>
-      </div>
       <h2>MRP Designation | New Construction & 55+ Communities Specialist | Real Estate Professional in Ave Maria & Naples, Florida</h2>
       <p>
         With a passion for helping families find their perfect home, Holly Trapani brings expertise, dedication, and genuine care to every transaction. Whether you're a first-time buyer, looking to upgrade, or ready to sell, Holly's knowledge of the Ave Maria and Naples markets makes her your trusted partner.
@@ -1808,11 +1843,6 @@
         </div>
       </div>
 
-      <div class="review-card" id="review-card" style="display:none;">
-        <div class="review-quote" id="review-quote"></div>
-        <div class="review-author" id="review-author"></div>
-      </div>
-
       <div class="zillow-partner-badge">
         <div class="partner-label">Trusted Platforms</div>
         <div class="zillow-badge">
@@ -1820,6 +1850,19 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- WHAT CLIENTS SAY -->
+<section class="reviews-section" id="reviews" style="display:none;">
+  <div class="reviews-inner">
+    <div class="section-label">Testimonials</div>
+    <h2>What Clients Say</h2>
+    <div class="reviews-rating-row" id="reviews-rating-row">
+      <div class="reviews-stars" id="reviews-stars"></div>
+      <div class="reviews-avg" id="reviews-avg"></div>
+    </div>
+    <div class="reviews-grid" id="reviews-grid"></div>
   </div>
 </section>
 
@@ -2462,26 +2505,29 @@
       const data = await resp.json();
       if (!data.total_reviews) return;
 
-      // Star rating
-      const starsEl = document.getElementById('agent-stars');
-      const ratingTextEl = document.getElementById('agent-rating-text');
-      const ratingEl = document.getElementById('agent-rating');
-      const avg = data.average_rating;
       const starSvg = `<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>`;
-      starsEl.innerHTML = Array.from({length: 5}, (_, i) => starSvg).join('');
-      const label = data.total_reviews === 1 ? '1 Review on Realtor.com' : `${data.total_reviews} Reviews on Realtor.com`;
-      ratingTextEl.innerHTML = `${avg} / 5 · <a href="#review-card" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">${label}</a>`;
-      ratingEl.style.display = 'flex';
+      const avg = data.average_rating;
 
-      // Featured review
-      const review = data.reviews[0];
-      if (review && review.comment) {
-        document.getElementById('review-quote').textContent = `"${review.comment}"`;
+      // Big star rating row
+      document.getElementById('reviews-stars').innerHTML = Array.from({length: 5}, () => starSvg).join('');
+      const reviewWord = data.total_reviews === 1 ? 'Review' : 'Reviews';
+      document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on Realtor.com`;
+
+      // Review cards
+      const grid = document.getElementById('reviews-grid');
+      grid.innerHTML = data.reviews.map(review => {
         const loc = review.location ? ` · ${review.location}` : '';
         const year = review.year ? ` · ${review.year}` : '';
-        document.getElementById('review-author').textContent = `— ${review.display_name}${loc}${year}`;
-        document.getElementById('review-card').style.display = 'block';
-      }
+        const role = review.describe_yourself ? review.describe_yourself.charAt(0) + review.describe_yourself.slice(1).toLowerCase() : '';
+        return `
+          <div class="review-card">
+            <div class="review-card-stars">${Array.from({length: review.rating || 5}, () => starSvg).join('')}</div>
+            <div class="review-quote">"${review.comment}"</div>
+            <div class="review-author">${review.display_name}${loc}${year}${role ? ' · ' + role : ''}</div>
+          </div>`;
+      }).join('');
+
+      document.getElementById('reviews').style.display = 'block';
     } catch(e) {
       // silently skip
     }
