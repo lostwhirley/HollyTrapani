@@ -751,36 +751,47 @@
       color: var(--primary);
     }
 
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+    .reviews-carousel {
+      position: relative;
+    }
+
+    .reviews-track-outer {
+      overflow: hidden;
+    }
+
+    .reviews-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .review-card {
+      flex: 0 0 100%;
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 2rem;
+      padding: 3rem;
+      box-sizing: border-box;
+      max-width: 820px;
+      margin: 0 auto;
     }
 
     .review-card-stars {
       display: flex;
       gap: 3px;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
     }
 
     .review-card-stars svg {
-      width: 14px;
-      height: 14px;
+      width: 16px;
+      height: 16px;
       fill: #d97706;
     }
 
     .review-quote {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       font-weight: 400;
       color: var(--primary);
-      line-height: 1.75;
+      line-height: 1.8;
       font-style: italic;
     }
 
@@ -791,9 +802,68 @@
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: var(--text-muted);
-      margin-top: 1.25rem;
-      padding-top: 1.25rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
       border-top: 1px solid var(--border);
+    }
+
+    .carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .carousel-btn {
+      background: none;
+      border: 1px solid var(--border);
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--primary);
+      transition: background 0.2s, color 0.2s;
+      flex-shrink: 0;
+    }
+
+    .carousel-btn:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .carousel-btn svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .carousel-dots {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .carousel-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      padding: 0;
+    }
+
+    .carousel-dot.active {
+      background: var(--primary);
+      transform: scale(1.3);
     }
 
     .listing-badge-sold {
@@ -1862,7 +1932,20 @@
       <div class="reviews-stars" id="reviews-stars"></div>
       <div class="reviews-avg" id="reviews-avg"></div>
     </div>
-    <div class="reviews-grid" id="reviews-grid"></div>
+    <div class="reviews-carousel" id="reviews-carousel" style="display:none;">
+      <div class="reviews-track-outer">
+        <div class="reviews-track" id="reviews-track"></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Previous review">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn" id="carousel-next" aria-label="Next review">
+          <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2516,9 +2599,9 @@
       const sources = [hasRDC ? 'Realtor.com' : null, hasFacebook ? 'Facebook' : null].filter(Boolean).join(' & ');
       document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on ${sources}`;
 
-      // Review cards
-      const grid = document.getElementById('reviews-grid');
-      grid.innerHTML = data.reviews.map(review => {
+      // Build carousel cards
+      const track = document.getElementById('reviews-track');
+      track.innerHTML = data.reviews.map(review => {
         const loc = review.location ? ` · ${review.location}` : '';
         const year = review.year ? ` · ${review.year}` : '';
         const role = review.describe_yourself ? review.describe_yourself.charAt(0) + review.describe_yourself.slice(1).toLowerCase() : '';
@@ -2530,7 +2613,53 @@
           </div>`;
       }).join('');
 
+      // Carousel logic
+      const total = data.reviews.length;
+      let current = 0;
+      let autoTimer = null;
+
+      const dotsContainer = document.getElementById('carousel-dots');
+      dotsContainer.innerHTML = Array.from({length: total}, (_, i) =>
+        `<button class="carousel-dot${i === 0 ? ' active' : ''}" data-index="${i}" aria-label="Review ${i + 1}"></button>`
+      ).join('');
+
+      function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) =>
+          d.classList.toggle('active', i === current)
+        );
+      }
+
+      function startAuto() {
+        autoTimer = setInterval(() => goTo(current + 1), 5000);
+      }
+
+      function stopAuto() {
+        clearInterval(autoTimer);
+      }
+
+      document.getElementById('carousel-prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+      document.getElementById('carousel-next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+      dotsContainer.addEventListener('click', e => {
+        const dot = e.target.closest('.carousel-dot');
+        if (dot) { stopAuto(); goTo(+dot.dataset.index); startAuto(); }
+      });
+
+      const carousel = document.getElementById('reviews-carousel');
+      carousel.addEventListener('mouseenter', stopAuto);
+      carousel.addEventListener('mouseleave', startAuto);
+
+      // Hide controls if only one review
+      if (total <= 1) {
+        document.getElementById('carousel-prev').style.display = 'none';
+        document.getElementById('carousel-next').style.display = 'none';
+        dotsContainer.style.display = 'none';
+      }
+
+      carousel.style.display = 'block';
       document.getElementById('reviews').style.display = 'block';
+      startAuto();
     } catch(e) {
       // silently skip
     }
