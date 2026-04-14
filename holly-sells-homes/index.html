@@ -753,10 +753,13 @@
 
     .reviews-carousel {
       position: relative;
+      max-width: 680px;
+      margin: 0 auto;
     }
 
     .reviews-track-outer {
       overflow: hidden;
+      width: 100%;
     }
 
     .reviews-track {
@@ -765,45 +768,44 @@
     }
 
     .review-card {
-      flex: 0 0 100%;
+      flex-shrink: 0;
+      width: 100%;
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 3rem;
+      padding: 2rem;
       box-sizing: border-box;
-      max-width: 820px;
-      margin: 0 auto;
     }
 
     .review-card-stars {
       display: flex;
       gap: 3px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .review-card-stars svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       fill: #d97706;
     }
 
     .review-quote {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 400;
       color: var(--primary);
-      line-height: 1.8;
+      line-height: 1.75;
       font-style: italic;
     }
 
     .review-author {
       font-family: 'Jost', sans-serif;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: var(--text-muted);
-      margin-top: 1.5rem;
-      padding-top: 1.5rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
       border-top: 1px solid var(--border);
     }
 
@@ -811,15 +813,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
     }
 
     .carousel-btn {
       background: none;
       border: 1px solid var(--border);
-      width: 42px;
-      height: 42px;
+      width: 36px;
+      height: 36px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -835,8 +837,8 @@
     }
 
     .carousel-btn svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       stroke: currentColor;
       fill: none;
       stroke-width: 2;
@@ -847,12 +849,12 @@
     .carousel-dots {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
     }
 
     .carousel-dot {
-      width: 7px;
-      height: 7px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--border);
       cursor: pointer;
@@ -2627,13 +2629,25 @@
         `<button class="carousel-dot${i === 0 ? ' active' : ''}" data-index="${i}" aria-label="Review ${i + 1}"></button>`
       ).join('');
 
+      const trackOuter = document.querySelector('.reviews-track-outer');
+      const cards = track.querySelectorAll('.review-card');
+
+      function sizeCards() {
+        const w = trackOuter.offsetWidth;
+        cards.forEach(c => { c.style.width = w + 'px'; });
+      }
+
       function goTo(index) {
         current = (index + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
+        const w = trackOuter.offsetWidth;
+        track.style.transform = `translateX(-${current * w}px)`;
         dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) =>
           d.classList.toggle('active', i === current)
         );
       }
+
+      sizeCards();
+      window.addEventListener('resize', () => { sizeCards(); goTo(current); });
 
       function startAuto() {
         autoTimer = setInterval(() => goTo(current + 1), 5000);
