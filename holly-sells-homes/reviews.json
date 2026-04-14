@@ -1,7 +1,18 @@
 {
   "average_rating": 5.0,
-  "total_reviews": 1,
+  "total_reviews": 2,
   "reviews": [
+    {
+      "source_id": "Facebook",
+      "comment": "Holly Trapani did a great job for us back in 2014 when she helped us find the home of our dreams in Ave Maria Florida. I am an Air Force veteran and I qualified for a VA loan. Holly helped us through the necessary steps to get this accomplished and pick out the home that we have just enjoyed and loved thoroughly for the last 11 years. Her approach to all the details and questions that we were concerned with was terrific. She made it a very smooth transition. Barb and I would recommend her to anyone looking to purchase or sell a home. If you are working with this professional Realtor you are going to enjoy the experience.",
+      "display_name": "John & Barb Broderick",
+      "location": "Ave Maria, FL",
+      "year": "2025",
+      "rating": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2025-10-19T00:00:00.000Z",
+      "__typename": "FacebookReview"
+    },
     {
       "source_id": "RDC",
       "responsiveness": 5,

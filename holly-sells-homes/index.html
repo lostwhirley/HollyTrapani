@@ -2511,7 +2511,10 @@
       // Big star rating row
       document.getElementById('reviews-stars').innerHTML = Array.from({length: 5}, () => starSvg).join('');
       const reviewWord = data.total_reviews === 1 ? 'Review' : 'Reviews';
-      document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on Realtor.com`;
+      const hasFacebook = data.reviews.some(r => r.source_id === 'Facebook');
+      const hasRDC = data.reviews.some(r => r.source_id === 'RDC');
+      const sources = [hasRDC ? 'Realtor.com' : null, hasFacebook ? 'Facebook' : null].filter(Boolean).join(' & ');
+      document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on ${sources}`;
 
       // Review cards
       const grid = document.getElementById('reviews-grid');

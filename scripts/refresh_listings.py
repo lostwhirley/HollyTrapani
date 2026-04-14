@@ -29,25 +29,38 @@ def get_headers():
     }
 
 def fetch_reviews():
-    """Fetch agent reviews from Realty in US API"""
+    """Fetch agent reviews from Realty in US API, preserving manually-added reviews from other sources"""
     print("Fetching agent reviews...")
     url = f"https://{API_HOST}/agents/v2/get-reviews"
     params = {"fulfillment_id": FULFILLMENT_ID}
     try:
+        # Load any existing manually-added reviews (e.g. Facebook) so we don't overwrite them
+        manual_reviews = []
+        try:
+            with open(REVIEWS_FILE, 'r') as f:
+                existing = json.load(f)
+            manual_reviews = [r for r in existing.get('reviews', []) if r.get('source_id') != 'RDC']
+            if manual_reviews:
+                print(f"  Preserving {len(manual_reviews)} manually-added review(s) from other sources")
+        except (IOError, json.JSONDecodeError):
+            pass
+
         response = requests.get(url, headers=get_headers(), params=params, timeout=30)
         response.raise_for_status()
         data = response.json()
-        reviews = data.get('data', {}).get('agent_branding_reviews', {}).get('reviews', [])
-        print(f"✓ Fetched {len(reviews)} review(s)")
-        # Compute average rating
-        if reviews:
-            avg = sum(r.get('rating', 0) for r in reviews) / len(reviews)
-            result = {"average_rating": round(avg, 1), "total_reviews": len(reviews), "reviews": reviews}
+        rdc_reviews = data.get('data', {}).get('agent_branding_reviews', {}).get('reviews', [])
+        print(f"✓ Fetched {len(rdc_reviews)} review(s) from Realtor.com")
+
+        all_reviews = rdc_reviews + manual_reviews
+        if all_reviews:
+            avg = sum(r.get('rating', 0) for r in all_reviews) / len(all_reviews)
+            result = {"average_rating": round(avg, 1), "total_reviews": len(all_reviews), "reviews": all_reviews}
         else:
             result = {"average_rating": 0, "total_reviews": 0, "reviews": []}
+
         with open(REVIEWS_FILE, 'w') as f:
             json.dump(result, f, indent=2)
-        print(f"✓ Saved to reviews.json")
+        print(f"✓ Saved {len(all_reviews)} total review(s) to reviews.json")
         return True
     except Exception as e:
         print(f"✗ Error fetching reviews: {e}")
