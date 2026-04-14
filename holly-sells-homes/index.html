@@ -2596,7 +2596,11 @@
       const reviewWord = data.total_reviews === 1 ? 'Review' : 'Reviews';
       const hasFacebook = data.reviews.some(r => r.source_id === 'Facebook');
       const hasRDC = data.reviews.some(r => r.source_id === 'RDC');
-      const sources = [hasRDC ? 'Realtor.com' : null, hasFacebook ? 'Facebook' : null].filter(Boolean).join(' & ');
+      const hasZillow = data.reviews.some(r => r.source_id === 'Zillow');
+      const sourceParts = [hasRDC ? 'Realtor.com' : null, hasZillow ? 'Zillow' : null, hasFacebook ? 'Facebook' : null].filter(Boolean);
+      const sources = sourceParts.length > 1
+        ? sourceParts.slice(0, -1).join(', ') + ' & ' + sourceParts[sourceParts.length - 1]
+        : sourceParts[0] || '';
       document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on ${sources}`;
 
       // Build carousel cards

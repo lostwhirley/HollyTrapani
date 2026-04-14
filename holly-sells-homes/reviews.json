@@ -1,7 +1,40 @@
 {
   "average_rating": 5.0,
-  "total_reviews": 2,
+  "total_reviews": 5,
   "reviews": [
+    {
+      "source_id": "Zillow",
+      "comment": "I purchased two homes in Ave Maria with Holly and I highly recommend her as a realtor. Both purchases were enjoyable experiences, in which she demonstrated high degrees of professionalism and kindness. She is very knowledgeable about the different communities within Ave. Highly recommend.",
+      "display_name": "Mark Fein",
+      "location": "Ave Maria, FL",
+      "year": "2026",
+      "rating": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-03-17T00:00:00.000Z",
+      "__typename": "ZillowReview"
+    },
+    {
+      "source_id": "Zillow",
+      "comment": "Holly was excellent to work with when we purchased our home. She is professional, knowledgeable about the market, and communicates clearly throughout the process. I would absolutely recommend her to anyone buying or selling.",
+      "display_name": "mail91236",
+      "location": "Immokalee, FL",
+      "year": "2026",
+      "rating": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-03-13T00:00:00.000Z",
+      "__typename": "ZillowReview"
+    },
+    {
+      "source_id": "Zillow",
+      "comment": "My husband and I first worked with Holly Trapani (formerly Imbus) almost 4 years ago when purchasing our home in Del Webb, Naples. She was professional in her demeanor, and knowledgeable in all areas that pertained to purchasing our home. I consistently had questions, and contacted Holly more than most clients, I am sure. She returned my calls/texts in a timely fashion. Both Dan and I felt secure and confident, in our working relationship with Holly. She did not disappoint. Once again, the need for a realtor has become necessary, this time for rental purposes. Holly again was the realtor whom we contacted. She is personable, trustworthy and an individual with integrity, all characteristics which Dan and I admire. I would wholeheartedly recommend Holly Trapani for anyone seeking a highly qualified realtor in the Ave Maria/Naples vicinity.",
+      "display_name": "Corinne Rogers",
+      "location": "Naples, FL",
+      "year": "2026",
+      "rating": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-03-06T00:00:00.000Z",
+      "__typename": "ZillowReview"
+    },
     {
       "source_id": "Facebook",
       "comment": "Holly Trapani did a great job for us back in 2014 when she helped us find the home of our dreams in Ave Maria Florida. I am an Air Force veteran and I qualified for a VA loan. Holly helped us through the necessary steps to get this accomplished and pick out the home that we have just enjoyed and loved thoroughly for the last 11 years. Her approach to all the details and questions that we were concerned with was terrific. She made it a very smooth transition. Barb and I would recommend her to anyone looking to purchase or sell a home. If you are working with this professional Realtor you are going to enjoy the experience.",

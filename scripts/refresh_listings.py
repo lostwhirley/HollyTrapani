@@ -39,9 +39,10 @@ def fetch_reviews():
         try:
             with open(REVIEWS_FILE, 'r') as f:
                 existing = json.load(f)
-            manual_reviews = [r for r in existing.get('reviews', []) if r.get('source_id') != 'RDC']
+            manual_reviews = [r for r in existing.get('reviews', []) if r.get('source_id') not in ('RDC',)]
             if manual_reviews:
-                print(f"  Preserving {len(manual_reviews)} manually-added review(s) from other sources")
+                sources = set(r.get('source_id') for r in manual_reviews)
+                print(f"  Preserving {len(manual_reviews)} manually-added review(s) from: {', '.join(sources)}")
         except (IOError, json.JSONDecodeError):
             pass
 
