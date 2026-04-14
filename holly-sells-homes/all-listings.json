@@ -5,33 +5,33 @@
       "total": 6,
       "results": [
         {
-          "property_id": "9337886864",
-          "listing_id": "2992804383",
+          "property_id": "9728116997",
+          "listing_id": "2989493050",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-04-27",
+            "sold_date": "2023-01-06",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 7405,
-            "sqft": 1919,
+            "lot_sqft": 4356,
+            "sqft": 1459,
             "stories": 1,
-            "sold_price": 546130,
+            "sold_price": 390000,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Harmony",
-              "street_number": "6217",
+              "street_name": "Mayflower",
+              "street_number": "5872",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.306365,
-                "lon": -81.434054,
+                "lat": 26.314938,
+                "lon": -81.447307,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "6217 Harmony Dr",
+              "line": "5872 Mayflower Way",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -48,27 +48,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 509900,
+          "list_price": 319000,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
-          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -91,7 +91,7 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": null,
+            "is_price_reduced": true,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
@@ -296,33 +296,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9728116997",
-          "listing_id": "2989493050",
+          "property_id": "9337886864",
+          "listing_id": "2992804383",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-01-06",
+            "sold_date": "2023-04-27",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 4356,
-            "sqft": 1459,
+            "lot_sqft": 7405,
+            "sqft": 1919,
             "stories": 1,
-            "sold_price": 390000,
+            "sold_price": 546130,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5872",
+              "street_name": "Harmony",
+              "street_number": "6217",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.314938,
-                "lon": -81.447307,
+                "lat": 26.306365,
+                "lon": -81.434054,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "5872 Mayflower Way",
+              "line": "6217 Harmony Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -339,27 +339,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 319000,
+          "list_price": 509900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
-          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -382,7 +382,7 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": true,
+            "is_price_reduced": null,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,

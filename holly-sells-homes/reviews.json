@@ -3,6 +3,21 @@
   "total_reviews": 5,
   "reviews": [
     {
+      "source_id": "RDC",
+      "responsiveness": 5,
+      "market_expertise": 5,
+      "comment": "Holly helped me buy my first home. She made the process painless, answered all my questions, and set my mind at ease about signing for the largest purchase I will likely ever make in my life. She's also hilarious, which made the buying process even more fun. I personally recommended 2 other friends to Holly who had similar experiences later that year. I highly recommend Holly to anyone looking for an easy, fun experience in realty. ",
+      "display_name": "Nick C",
+      "location": "Ave Maria, FL",
+      "year": "2017",
+      "negotiation_skills": 5,
+      "rating": 5,
+      "professionalism_communication": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2025-11-13T17:25:00.798Z",
+      "__typename": "AgentBrandingReview"
+    },
+    {
       "source_id": "Zillow",
       "comment": "I purchased two homes in Ave Maria with Holly and I highly recommend her as a realtor. Both purchases were enjoyable experiences, in which she demonstrated high degrees of professionalism and kindness. She is very knowledgeable about the different communities within Ave. Highly recommend.",
       "display_name": "Mark Fein",
@@ -45,21 +60,6 @@
       "describe_yourself": "BUYER",
       "started_timestamp": "2025-10-19T00:00:00.000Z",
       "__typename": "FacebookReview"
-    },
-    {
-      "source_id": "RDC",
-      "responsiveness": 5,
-      "market_expertise": 5,
-      "comment": "Holly helped me buy my first home. She made the process painless, answered all my questions, and set my mind at ease about signing for the largest purchase I will likely ever make in my life. She's also hilarious, which made the buying process even more fun. I personally recommended 2 other friends to Holly who had similar experiences later that year. I highly recommend Holly to anyone looking for an easy, fun experience in realty. ",
-      "display_name": "Nick C",
-      "location": "Ave Maria, FL",
-      "year": "2017",
-      "negotiation_skills": 5,
-      "rating": 5,
-      "professionalism_communication": 5,
-      "describe_yourself": "BUYER",
-      "started_timestamp": "2025-11-13T17:25:00.798Z",
-      "__typename": "AgentBrandingReview"
     }
   ]
 }
