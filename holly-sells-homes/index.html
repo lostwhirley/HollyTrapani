@@ -753,8 +753,6 @@
 
     .reviews-carousel {
       position: relative;
-      max-width: 680px;
-      margin: 0 auto;
     }
 
     .reviews-track-outer {
@@ -2646,7 +2644,6 @@
         );
       }
 
-      sizeCards();
       window.addEventListener('resize', () => { sizeCards(); goTo(current); });
 
       function startAuto() {
@@ -2677,6 +2674,8 @@
 
       carousel.style.display = 'block';
       document.getElementById('reviews').style.display = 'block';
+      sizeCards();
+      goTo(0);
       startAuto();
     } catch(e) {
       // silently skip
