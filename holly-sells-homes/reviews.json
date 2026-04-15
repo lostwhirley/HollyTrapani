@@ -1,7 +1,37 @@
 {
   "average_rating": 5.0,
-  "total_reviews": 5,
+  "total_reviews": 7,
   "reviews": [
+    {
+      "source_id": "RDC",
+      "responsiveness": 5,
+      "market_expertise": 5,
+      "comment": "I actually bought my home from Holly in 2013. I lived in S.C. and came to the area after making an appointment to look the area over. Holly was absolutely wonderful. I bought my lot and picked out my house in a couple of hours. I have been here nearly 13 years and had the pleasure of seeing Holly the other day. She goes above and beyond for her customers. She is not just an Agent, she does what she says she is going to do and made the whole sale and even my move in. She is the BEST!!",
+      "display_name": "Maryann Wright",
+      "location": "Ave Maria, FL",
+      "year": "2017",
+      "negotiation_skills": 5,
+      "rating": 5,
+      "professionalism_communication": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-04-15T19:05:54.715Z",
+      "__typename": "AgentBrandingReview"
+    },
+    {
+      "source_id": "RDC",
+      "responsiveness": 5,
+      "market_expertise": 5,
+      "comment": "Holly was very fair, honest, personable and easy to work with in the purchase of our new home in Ave Maria and she made sure everything was to our satisfaction after the sale. ",
+      "display_name": "Dale Fath",
+      "location": "Ave Maria, FL",
+      "year": "2020",
+      "negotiation_skills": 5,
+      "rating": 5,
+      "professionalism_communication": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-04-15T18:57:05.188Z",
+      "__typename": "AgentBrandingReview"
+    },
     {
       "source_id": "RDC",
       "responsiveness": 5,
