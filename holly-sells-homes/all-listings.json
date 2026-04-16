@@ -100,6 +100,196 @@
           "__typename": "SearchHome"
         },
         {
+          "property_id": "9010214527",
+          "listing_id": "2993504654",
+          "status": "for_sale",
+          "description": {
+            "sold_date": null,
+            "baths_consolidated": "4.5",
+            "beds": 5,
+            "lot_sqft": 7405,
+            "sqft": 3440,
+            "stories": 2,
+            "sold_price": null,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Traditions",
+              "street_number": "4163",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.345769,
+                "lon": -81.435646,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "4163 Traditions Dr",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 720000,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m2390444836rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m788911679rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
+          "permalink": "4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": null,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": true,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "9728116997",
+          "listing_id": "2989493050",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2023-01-06",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 4356,
+            "sqft": 1459,
+            "stories": 1,
+            "sold_price": 390000,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Mayflower",
+              "street_number": "5872",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.314938,
+                "lon": -81.447307,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "5872 Mayflower Way",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 319000,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": true,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
           "property_id": "9337886864",
           "listing_id": "2992804383",
           "status": "for_sale",
@@ -195,17 +385,17 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9728116997",
-          "listing_id": "2989493050",
+          "property_id": "9238269562",
+          "listing_id": "2992843571",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-01-06",
+            "sold_date": null,
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 4356,
-            "sqft": 1459,
-            "stories": 1,
-            "sold_price": 390000,
+            "lot_sqft": null,
+            "sqft": 1816,
+            "stories": 2,
+            "sold_price": null,
             "__typename": "SearchHomeDescription"
           },
           "location": {
@@ -213,15 +403,15 @@
               "postal_code": "34142",
               "state": "Florida",
               "street_name": "Mayflower",
-              "street_number": "5872",
+              "street_number": "5690",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.314938,
-                "lon": -81.447307,
+                "lat": 26.318965,
+                "lon": -81.442659,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "5872 Mayflower Way",
+              "line": "5690 Mayflower Way Unit 608",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -238,27 +428,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 319000,
+          "list_price": 349000,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m767134358rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m4143885741rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/d090fc5460f98d79ad8b14831a6ffa58l-m3239344825rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
-          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
+          "permalink": "5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -271,7 +461,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
@@ -281,7 +471,7 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": true,
+            "is_price_reduced": null,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
@@ -455,196 +645,6 @@
           },
           "href": "https://www.realtor.com/realestateandhomes-detail/5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
           "permalink": "5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9010214527",
-          "listing_id": "2993504654",
-          "status": "for_sale",
-          "description": {
-            "sold_date": null,
-            "baths_consolidated": "4.5",
-            "beds": 5,
-            "lot_sqft": 7405,
-            "sqft": 3440,
-            "stories": 2,
-            "sold_price": null,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Traditions",
-              "street_number": "4163",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.345769,
-                "lon": -81.435646,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "4163 Traditions Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 720000,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m2390444836rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m788911679rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
-          "permalink": "4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": null,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": null,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": true,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9238269562",
-          "listing_id": "2992843571",
-          "status": "for_sale",
-          "description": {
-            "sold_date": null,
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": null,
-            "sqft": 1816,
-            "stories": 2,
-            "sold_price": null,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5690",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.318965,
-                "lon": -81.442659,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "5690 Mayflower Way Unit 608",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 349000,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m324276492rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m737494904rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
-          "permalink": "5690-Mayflower-Way-Unit-608_Ave-Maria_FL_34142_M92382-69562",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
