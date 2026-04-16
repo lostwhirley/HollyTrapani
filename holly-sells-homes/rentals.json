@@ -2612,10 +2612,10 @@
                       "type": "corelogic",
                       "name": "Cotality\u2122"
                     },
-                    "estimate": 371500,
-                    "estimate_high": 397800,
-                    "estimate_low": 345200,
-                    "date": "2026-03-09"
+                    "estimate": 383700,
+                    "estimate_high": 409300,
+                    "estimate_low": 358100,
+                    "date": "2026-04-06"
                   }
                 ],
                 "historical_values": [
@@ -2627,6 +2627,11 @@
                       "name": "Cotality\u2122"
                     },
                     "estimates": [
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 383700,
+                        "date": "2026-04-06"
+                      },
                       {
                         "__typename": "EstimateRecord",
                         "estimate": 371500,
@@ -3136,62 +3141,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386430,
+                        "estimate": 388888,
                         "date": "2026-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 384808,
+                        "estimate": 388830,
                         "date": "2026-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 382806,
+                        "estimate": 388752,
                         "date": "2026-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 381656,
+                        "estimate": 388668,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 379779,
+                        "estimate": 388582,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 378342,
+                        "estimate": 388494,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 377323,
+                        "estimate": 388407,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 376288,
+                        "estimate": 388317,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 375626,
+                        "estimate": 388227,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 374260,
+                        "estimate": 388135,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 373491,
+                        "estimate": 388043,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 372692,
+                        "estimate": 387950,
                         "date": "2027-04-01"
                       }
                     ]
@@ -3206,63 +3211,63 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 373493,
-                        "date": "2026-04-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 375834,
+                        "estimate": 386105,
                         "date": "2026-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 378348,
+                        "estimate": 388688,
                         "date": "2026-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 380554,
+                        "estimate": 390954,
                         "date": "2026-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 382322,
+                        "estimate": 392771,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 383644,
+                        "estimate": 394129,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 384694,
+                        "estimate": 395207,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 385765,
+                        "estimate": 396307,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386026,
+                        "estimate": 396575,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386269,
+                        "estimate": 396825,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386589,
+                        "estimate": 397154,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 387702,
+                        "estimate": 398297,
                         "date": "2027-03-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 400248,
+                        "date": "2027-04-01"
                       }
                     ]
                   }
