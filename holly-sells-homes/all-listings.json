@@ -195,101 +195,6 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "6044510048",
-          "listing_id": "2993142141",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2015-12-15",
-            "baths_consolidated": "2",
-            "beds": 3,
-            "lot_sqft": 8276,
-            "sqft": 2240,
-            "stories": 1,
-            "sold_price": 310674,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Ciatto",
-              "street_number": "5196",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.314535,
-                "lon": -81.430968,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "5196 Ciatto Way",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 514900,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m576345987rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m1743276095rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
-          "permalink": "5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
           "property_id": "6127912483",
           "listing_id": "2988154620",
           "status": "for_sale",
@@ -486,6 +391,101 @@
           "__typename": "SearchHome"
         },
         {
+          "property_id": "9200755764",
+          "listing_id": "2993663411",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2022-04-02",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 4356,
+            "sqft": 1460,
+            "stories": 1,
+            "sold_price": 388110,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Mayflower",
+              "street_number": "5901",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.314242,
+                "lon": -81.447939,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "5901 Mayflower Way",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 324995,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1352117288rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m3738182341rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1079619059rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1352117288rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/5901-Mayflower-Way_Ave-Maria_FL_34142_M92007-55764",
+          "permalink": "5901-Mayflower-Way_Ave-Maria_FL_34142_M92007-55764",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": true,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
           "property_id": "9337886864",
           "listing_id": "2992804383",
           "status": "for_sale",
@@ -581,33 +581,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9200755764",
-          "listing_id": "2993663411",
+          "property_id": "6044510048",
+          "listing_id": "2993142141",
           "status": "for_sale",
           "description": {
-            "sold_date": "2022-04-02",
+            "sold_date": "2015-12-15",
             "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 4356,
-            "sqft": 1460,
+            "beds": 3,
+            "lot_sqft": 8276,
+            "sqft": 2240,
             "stories": 1,
-            "sold_price": 388110,
+            "sold_price": 310674,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5901",
+              "street_name": "Ciatto",
+              "street_number": "5196",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.314242,
-                "lon": -81.447939,
+                "lat": 26.314535,
+                "lon": -81.430968,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "5901 Mayflower Way",
+              "line": "5196 Ciatto Way",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -624,27 +624,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 324995,
+          "list_price": 514900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1352117288rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m3738182341rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m576345987rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1079619059rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m1743276095rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1352117288rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5901-Mayflower-Way_Ave-Maria_FL_34142_M92007-55764",
-          "permalink": "5901-Mayflower-Way_Ave-Maria_FL_34142_M92007-55764",
+          "href": "https://www.realtor.com/realestateandhomes-detail/5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
+          "permalink": "5196-Ciatto-Way_Ave-Maria_FL_34142_M60445-10048",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -657,7 +657,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
@@ -668,7 +668,7 @@
             "is_subdivision": null,
             "is_plan": null,
             "is_price_reduced": null,
-            "is_new_listing": true,
+            "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
