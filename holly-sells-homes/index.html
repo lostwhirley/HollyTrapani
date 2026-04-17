@@ -2656,7 +2656,7 @@
       const sources = sourceParts.length > 1
         ? sourceParts.slice(0, -1).join(', ') + ' & ' + sourceParts[sourceParts.length - 1]
         : sourceParts[0] || '';
-      document.getElementById('reviews-avg').textContent = `${avg} out of 5 · ${data.total_reviews} ${reviewWord} on ${sources}`;
+      document.getElementById('reviews-avg').textContent = `${avg} out of 5 stars · ${data.total_reviews} ${reviewWord} on ${sources}`;
 
       // Build carousel cards
       const track = document.getElementById('reviews-track');
