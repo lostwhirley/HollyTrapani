@@ -908,11 +908,19 @@
       margin-bottom: 1rem;
     }
 
+    .platform-badges {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
     .zillow-badge {
-      width: 360px;
-      height: 144px;
+      width: 180px;
+      height: 72px;
       overflow: hidden;
       display: block;
+      flex-shrink: 0;
     }
 
     .zillow-badge img {
@@ -921,6 +929,43 @@
       object-fit: cover;
       object-position: center 48%;
     }
+
+    .platform-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      height: 72px;
+      min-width: 130px;
+      flex-shrink: 0;
+    }
+
+    .platform-badge-name {
+      font-family: 'Jost', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .platform-badge-title {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .platform-badge.homes { border-color: #00a676; }
+    .platform-badge.homes .platform-badge-name { color: #00a676; }
+
+    .platform-badge.realtor { border-color: #d92228; }
+    .platform-badge.realtor .platform-badge-name { color: #d92228; }
 
     /* MORTGAGE CALCULATOR */
     .calculator-section {
@@ -1915,8 +1960,18 @@
 
       <div class="zillow-partner-badge">
         <div class="partner-label">Trusted Platforms</div>
-        <div class="zillow-badge">
-          <img src="zillow.jpeg" alt="Zillow Premier Agent — Holly Trapani">
+        <div class="platform-badges">
+          <div class="zillow-badge">
+            <img src="zillow.jpeg" alt="Zillow Premier Agent — Holly Trapani">
+          </div>
+          <div class="platform-badge homes">
+            <div class="platform-badge-name">Homes.com</div>
+            <div class="platform-badge-title">Member Agent</div>
+          </div>
+          <div class="platform-badge realtor">
+            <div class="platform-badge-name">Realtor.com</div>
+            <div class="platform-badge-title">Pro</div>
+          </div>
         </div>
       </div>
     </div>
