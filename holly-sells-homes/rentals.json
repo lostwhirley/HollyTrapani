@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9530668405",
-              "last_update_date": "2026-04-10T17:42:45Z",
+              "last_update_date": "2026-04-20T17:20:14Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2991350517",
@@ -24,12 +24,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
-                  "monthly_payment": 551,
-                  "total_payment": 9155,
+                  "monthly_payment": 552,
+                  "total_payment": 9270,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06182,
+                    "rate": 0.063,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -39,7 +39,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 25,
+                      "amount": 26,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06182
+                    "rate": 0.063
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06031
+                    "rate": 0.0617
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05368
+                    "rate": 0.05488
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05219
+                    "rate": 0.05347
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.05636
+                    "rate": 0.05723
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.05718
+                    "rate": 0.05832
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.05988
+                    "rate": 0.0587
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06005
+                    "rate": 0.0613
                   }
                 ]
               },
@@ -237,7 +237,7 @@
                     "name": "Estates Elementary School",
                     "parent_rating": 5,
                     "rating": 7,
-                    "student_count": 862
+                    "student_count": 850
                   },
                   {
                     "__typename": "School",
@@ -266,8 +266,8 @@
                     "id": "0717239121",
                     "name": "Palmetto Ridge High School",
                     "parent_rating": 3,
-                    "rating": 5,
-                    "student_count": 2347
+                    "rating": 6,
+                    "student_count": 1974
                   },
                   {
                     "__typename": "School",
@@ -296,7 +296,7 @@
                     "name": "Corkscrew Middle School",
                     "parent_rating": 5,
                     "rating": 8,
-                    "student_count": 958
+                    "student_count": 1010
                   },
                   {
                     "__typename": "School",
@@ -400,7 +400,7 @@
                     "name": "Cypress Palm Middle School",
                     "parent_rating": 2,
                     "rating": 8,
-                    "student_count": 796
+                    "student_count": 844
                   },
                   {
                     "__typename": "School",
@@ -432,44 +432,7 @@
                     "name": "Sabal Palm Elementary School",
                     "parent_rating": 5,
                     "rating": 7,
-                    "student_count": 664
-                  },
-                  {
-                    "__typename": "School",
-                    "assigned": null,
-                    "coordinate": {
-                      "__typename": "Coordinate",
-                      "lat": 26.40677,
-                      "lon": -81.420638
-                    },
-                    "distance_in_miles": 6.7,
-                    "district": {
-                      "__typename": "SchoolDistrict",
-                      "id": "06160000141",
-                      "name": "Collier"
-                    },
-                    "education_levels": [
-                      "elementary",
-                      "middle",
-                      "high"
-                    ],
-                    "funding_type": "public",
-                    "grades": [
-                      "4",
-                      "5",
-                      "6",
-                      "7",
-                      "8",
-                      "9",
-                      "10",
-                      "11",
-                      "12"
-                    ],
-                    "id": "0717238301",
-                    "name": "The Phoenix Program-Immokalee",
-                    "parent_rating": null,
-                    "rating": 1,
-                    "student_count": 110
+                    "student_count": 685
                   },
                   {
                     "__typename": "School",
@@ -500,6 +463,43 @@
                     "parent_rating": 5,
                     "rating": null,
                     "student_count": 0
+                  },
+                  {
+                    "__typename": "School",
+                    "assigned": null,
+                    "coordinate": {
+                      "__typename": "Coordinate",
+                      "lat": 26.407322,
+                      "lon": -81.420151
+                    },
+                    "distance_in_miles": 6.8,
+                    "district": {
+                      "__typename": "SchoolDistrict",
+                      "id": "06160000141",
+                      "name": "Collier"
+                    },
+                    "education_levels": [
+                      "elementary",
+                      "middle",
+                      "high"
+                    ],
+                    "funding_type": "public",
+                    "grades": [
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8",
+                      "9",
+                      "10",
+                      "11",
+                      "12"
+                    ],
+                    "id": "0717238301",
+                    "name": "The Phoenix Program-Immokalee",
+                    "parent_rating": null,
+                    "rating": 1,
+                    "student_count": 71
                   }
                 ]
               },
@@ -536,7 +536,7 @@
                     "name": "Estates Elementary School",
                     "parent_rating": 5,
                     "rating": 7,
-                    "student_count": 862
+                    "student_count": 850
                   },
                   {
                     "__typename": "School",
@@ -565,8 +565,8 @@
                     "id": "0717239121",
                     "name": "Palmetto Ridge High School",
                     "parent_rating": 3,
-                    "rating": 5,
-                    "student_count": 2347
+                    "rating": 6,
+                    "student_count": 1974
                   },
                   {
                     "__typename": "School",
@@ -595,7 +595,7 @@
                     "name": "Corkscrew Middle School",
                     "parent_rating": 5,
                     "rating": 8,
-                    "student_count": 958
+                    "student_count": 1010
                   },
                   {
                     "__typename": "School",
@@ -2600,10 +2600,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 400296,
-                    "estimate_high": 452334,
-                    "estimate_low": 348257,
-                    "date": "2026-04-15"
+                    "estimate": 408890,
+                    "estimate_high": 470223,
+                    "estimate_low": 347556,
+                    "date": "2026-04-22"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2612,10 +2612,10 @@
                       "type": "corelogic",
                       "name": "Cotality\u2122"
                     },
-                    "estimate": 383700,
-                    "estimate_high": 409300,
-                    "estimate_low": 358100,
-                    "date": "2026-04-06"
+                    "estimate": 382300,
+                    "estimate_high": 407800,
+                    "estimate_low": 356900,
+                    "date": "2026-04-13"
                   }
                 ],
                 "historical_values": [
@@ -2629,8 +2629,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 383700,
-                        "date": "2026-04-06"
+                        "estimate": 382300,
+                        "date": "2026-04-13"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -2909,8 +2909,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400296,
-                        "date": "2026-04-15"
+                        "estimate": 408890,
+                        "date": "2026-04-22"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -3141,62 +3141,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400326,
+                        "estimate": 408920,
                         "date": "2026-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400266,
+                        "estimate": 408860,
                         "date": "2026-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400186,
+                        "estimate": 408778,
                         "date": "2026-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400100,
+                        "estimate": 408689,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400011,
+                        "estimate": 408599,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399921,
+                        "estimate": 408506,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399830,
+                        "estimate": 408414,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399738,
+                        "estimate": 408320,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399645,
+                        "estimate": 408225,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399551,
+                        "estimate": 408129,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399456,
+                        "estimate": 408032,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399360,
+                        "estimate": 407934,
                         "date": "2027-04-01"
                       }
                     ]
@@ -3211,62 +3211,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386105,
+                        "estimate": 384361,
                         "date": "2026-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 388688,
+                        "estimate": 386721,
                         "date": "2026-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390954,
+                        "estimate": 388766,
                         "date": "2026-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 392771,
+                        "estimate": 390466,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 394129,
+                        "estimate": 391816,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 395207,
+                        "estimate": 393204,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 396307,
+                        "estimate": 394766,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 396575,
+                        "estimate": 395756,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 396825,
+                        "estimate": 396887,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 397154,
+                        "estimate": 398115,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 398297,
+                        "estimate": 399931,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400248,
+                        "estimate": 402189,
                         "date": "2027-04-01"
                       }
                     ]
