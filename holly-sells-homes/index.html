@@ -986,6 +986,74 @@
       width: auto;
     }
 
+    /* VIDEO TOURS */
+    .video-section {
+      background: var(--cream);
+      padding: 6rem 2rem;
+    }
+
+    .video-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .video-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+      box-shadow: 0 8px 30px rgba(61, 53, 48, 0.08);
+    }
+
+    .video-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-card-body {
+      padding: 1.5rem 2rem 2rem;
+    }
+
+    .video-card-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .video-card h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--primary);
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
     /* MORTGAGE CALCULATOR */
     .calculator-section {
       background: var(--light);
@@ -1943,6 +2011,30 @@
 
     <div class="blog-grid" id="blog-grid">
       <!-- Articles loaded dynamically by loadArticles() -->
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TOURS -->
+<section class="video-section" id="videos">
+  <div class="video-inner">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Property Tours</div>
+        <h2 class="section-title">Video Walkthroughs</h2>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/0sXqz4mzX7c" title="4163 Traditions Dr — Property Tour" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-card-body">
+          <div class="video-card-label">Property Tour</div>
+          <h3>4163 Traditions Dr</h3>
+        </div>
+      </div>
     </div>
   </div>
 </section>
