@@ -1,5 +1,26 @@
 [
   {
+    "property_id": "6127912483",
+    "status": "sold",
+    "last_sold_date": "2026-04-30",
+    "last_sold_price": 475000,
+    "list_price": 529000,
+    "address": {
+      "line": "834 Gulf Pavilion Dr Apt 201",
+      "city": "Naples",
+      "state_code": "FL",
+      "postal_code": "34108"
+    },
+    "description": {
+      "beds": 3,
+      "baths_consolidated": "2",
+      "sqft": 1516,
+      "type": "condos",
+      "year_built": 1988
+    },
+    "primary_photo": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611s.jpg"
+  },
+  {
     "property_id": "9190425429",
     "status": "sold",
     "last_sold_date": "2026-04-06",
