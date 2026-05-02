@@ -1,5 +1,26 @@
 [
   {
+    "property_id": "9238269562",
+    "status": "sold",
+    "last_sold_date": "2026-05-01",
+    "last_sold_price": 335000,
+    "list_price": 349000,
+    "address": {
+      "line": "5690 Mayflower Way Unit 608",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1816,
+      "type": "condos",
+      "year_built": 2023
+    },
+    "primary_photo": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg"
+  },
+  {
     "property_id": "6127912483",
     "status": "sold",
     "last_sold_date": "2026-04-30",
