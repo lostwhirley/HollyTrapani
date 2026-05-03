@@ -21,6 +21,27 @@
     "primary_photo": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg"
   },
   {
+    "property_id": "6117104104",
+    "status": "sold",
+    "last_sold_date": "2026-04-30",
+    "last_sold_price": 585000,
+    "list_price": 594500,
+    "address": {
+      "line": "6189 Victory Dr",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 3,
+      "baths_consolidated": "3",
+      "sqft": 2496,
+      "type": "single_family",
+      "year_built": 2013
+    },
+    "primary_photo": "https://ap.rdcpix.com/293b9ab7caad8183d25b9180376a0ad0l-m455282969s.jpg"
+  },
+  {
     "property_id": "6127912483",
     "status": "sold",
     "last_sold_date": "2026-04-30",
@@ -40,6 +61,27 @@
       "year_built": 1988
     },
     "primary_photo": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611s.jpg"
+  },
+  {
+    "property_id": "6107039946",
+    "status": "sold",
+    "last_sold_date": "2026-04-28",
+    "last_sold_price": 430000,
+    "list_price": 439900,
+    "address": {
+      "line": "4357 Steinbeck Way",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 4,
+      "baths_consolidated": "2",
+      "sqft": 1760,
+      "type": "single_family",
+      "year_built": 2016
+    },
+    "primary_photo": "https://ap.rdcpix.com/6a5e554239b1f8a1645e15625614dc1bl-m3861297860s.jpg"
   },
   {
     "property_id": "9190425429",
