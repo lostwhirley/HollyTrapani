@@ -3022,9 +3022,11 @@
       { key: 'seller', label: 'Worked with Seller',  count: counts.seller },
     ].filter(f => f.count > 0);
 
-    bar.innerHTML = filters.map(f =>
-      `<button class="filter-btn" data-filter="${f.key}">${f.label} (${f.count})</button>`
+    bar.innerHTML = filters.map((f, i) =>
+      `<button class="filter-btn${i === 0 ? ' active' : ''}" data-filter="${f.key}">${f.label} (${f.count})</button>`
     ).join('');
+
+    if (filters.length > 0) filterListings(filters[0].key);
 
     bar.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
