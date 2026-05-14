@@ -2385,6 +2385,7 @@
 
           const card = document.createElement('div');
           card.style.cssText = 'text-decoration: none; color: inherit;';
+          card.dataset.category = 'active';
 
           const photoHtml = photo
             ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 280px; object-fit: cover; display: block;">`
@@ -2420,6 +2421,7 @@
 
         // Append sold listings at the end
         await appendSoldListings(listingsGrid);
+        updateFilterBar(listingsGrid);
 
         return; // Exit early since we're using cached data
       }
