@@ -1000,8 +1000,9 @@
       color: var(--text-muted);
     }
 
-    .platform-badge.homes { border-color: #00a676; }
-    .platform-badge.homes .platform-badge-name { color: #00a676; }
+    .platform-badge.homes { border-color: #e07820; min-width: 160px; }
+    .platform-badge.homes img { height: 36px; width: auto; display: block; }
+    .platform-badge.homes .platform-badge-title { margin-top: 0.3rem; }
 
     .platform-badge.realtor { border-color: #d92228; }
     .platform-badge.realtor .platform-badge-name { color: #d92228; }
@@ -2169,7 +2170,7 @@
             <img src="zillow.jpeg" alt="Zillow Premier Agent — Holly Trapani">
           </div>
           <div class="platform-badge homes">
-            <div class="platform-badge-name">Homes.com</div>
+            <img src="homes-logo.png" alt="Homes.com">
             <div class="platform-badge-title">Member Agent</div>
           </div>
           <div class="platform-badge realtor">
@@ -2977,12 +2978,16 @@
         const baths = desc.baths_consolidated || '—';
         const sqft = desc.sqft ? desc.sqft.toLocaleString() : '—';
 
+        const isBuyer = home.holly_role === 'buyer';
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit; cursor: default; pointer-events: none;';
-        card.dataset.category = home.holly_role === 'buyer' ? 'buyer' : 'seller';
+        card.dataset.category = isBuyer ? 'buyer' : 'seller';
+        const photoHtml = isBuyer
+          ? `<div style="height:280px;background:var(--light);display:flex;align-items:center;justify-content:center;"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>`
+          : (photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`);
         card.innerHTML = `
           <div class="listing-card">
-            ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`}
+            ${photoHtml}
             <div class="listing-badge-sold">Sold</div>
             <div class="listing-content">
               <div class="listing-price">${price}</div>
