@@ -18,7 +18,8 @@
       "type": "condos",
       "year_built": 2023
     },
-    "primary_photo": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg"
+    "primary_photo": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg",
+    "holly_role": "seller"
   },
   {
     "property_id": "6117104104",
@@ -39,7 +40,8 @@
       "type": "single_family",
       "year_built": 2013
     },
-    "primary_photo": "https://ap.rdcpix.com/293b9ab7caad8183d25b9180376a0ad0l-m455282969s.jpg"
+    "primary_photo": "https://ap.rdcpix.com/293b9ab7caad8183d25b9180376a0ad0l-m455282969s.jpg",
+    "holly_role": "buyer"
   },
   {
     "property_id": "6127912483",
@@ -60,7 +62,8 @@
       "type": "condos",
       "year_built": 1988
     },
-    "primary_photo": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611s.jpg"
+    "primary_photo": "https://ap.rdcpix.com/214390882118df77bb662c5f233792d2l-m4087038611s.jpg",
+    "holly_role": "seller"
   },
   {
     "property_id": "6107039946",
@@ -81,7 +84,8 @@
       "type": "single_family",
       "year_built": 2016
     },
-    "primary_photo": "https://ap.rdcpix.com/6a5e554239b1f8a1645e15625614dc1bl-m3861297860s.jpg"
+    "primary_photo": "https://ap.rdcpix.com/6a5e554239b1f8a1645e15625614dc1bl-m3861297860s.jpg",
+    "holly_role": "buyer"
   },
   {
     "property_id": "9190425429",
@@ -102,6 +106,7 @@
       "type": "single_family",
       "year_built": 2022
     },
-    "primary_photo": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961s.jpg"
+    "primary_photo": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961s.jpg",
+    "holly_role": "seller"
   }
 ]

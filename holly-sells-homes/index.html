@@ -418,6 +418,38 @@
       display: block;
     }
 
+    .listings-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 2rem;
+      padding: 0.5rem 1.25rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      letter-spacing: 0.01em;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--white);
+    }
+
     .listings-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -2023,6 +2055,7 @@
 
   <!-- Sales Listings -->
   <div class="tab-content active" id="sales-tab">
+    <div class="listings-filter-bar" id="listings-filter-bar"></div>
     <div class="listings-grid" id="listings-grid">
       <!-- Listings will be loaded here by JavaScript -->
       <div class="spinner-container">
@@ -2520,6 +2553,7 @@
 
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit;';
+        card.dataset.category = 'active';
 
         const photoHtml = photo
           ? `<img src="${photo}" alt="${line}" style="width: 100%; height: 280px; object-fit: cover; display: block;">`
@@ -2556,6 +2590,7 @@
 
       // Append sold listings at the end
       await appendSoldListings(listingsGrid);
+      updateFilterBar(listingsGrid);
 
     } catch (error) {
       console.error('Error loading listings:', error);
@@ -2942,6 +2977,7 @@
 
         const card = document.createElement('div');
         card.style.cssText = 'text-decoration: none; color: inherit; cursor: default; pointer-events: none;';
+        card.dataset.category = home.holly_role === 'buyer' ? 'buyer' : 'seller';
         card.innerHTML = `
           <div class="listing-card">
             ${photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`}
@@ -2962,6 +2998,42 @@
     } catch(e) {
       // silently skip if sold-listings.json unavailable
     }
+  }
+
+  function updateFilterBar(grid) {
+    const bar = document.getElementById('listings-filter-bar');
+    if (!bar) return;
+
+    const cards = grid.querySelectorAll(':scope > div[data-category]');
+    const counts = { active: 0, buyer: 0, seller: 0 };
+    cards.forEach(c => { if (counts[c.dataset.category] !== undefined) counts[c.dataset.category]++; });
+    const total = cards.length;
+
+    const filters = [
+      { key: 'all',    label: 'All',                count: total },
+      { key: 'active', label: 'Active Listings',     count: counts.active },
+      { key: 'buyer',  label: 'Worked with Buyer',   count: counts.buyer },
+      { key: 'seller', label: 'Worked with Seller',  count: counts.seller },
+    ].filter(f => f.key === 'all' || f.count > 0);
+
+    bar.innerHTML = filters.map(f =>
+      `<button class="filter-btn${f.key === 'all' ? ' active' : ''}" data-filter="${f.key}">${f.label} (${f.count})</button>`
+    ).join('');
+
+    bar.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterListings(btn.dataset.filter);
+        bar.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b === btn));
+      });
+    });
+  }
+
+  function filterListings(category) {
+    const grid = document.getElementById('listings-grid');
+    if (!grid) return;
+    grid.querySelectorAll(':scope > div[data-category]').forEach(card => {
+      card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+    });
   }
 
   async function navigateToListing(listingId) {

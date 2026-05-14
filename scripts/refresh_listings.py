@@ -141,6 +141,13 @@ def enrich_listings_with_details(all_listings_data):
         }
     }
 
+def get_holly_role(advertisers):
+    """Return Holly's role ('seller', 'buyer', etc.) from an advertisers list, or None."""
+    for adv in advertisers or []:
+        if str(adv.get('fulfillment_id')) == FULFILLMENT_ID:
+            return adv.get('type')
+    return None
+
 def load_sold_listings():
     """Load existing sold listings from file."""
     try:
@@ -170,9 +177,11 @@ def check_for_newly_sold(previous_ids, current_ids):
             addr = home.get('location', {}).get('address', {})
             photos = home.get('photos', [])
             primary = home.get('primary_photo', {})
+            holly_role = get_holly_role(home.get('advertisers', []))
             sold_entry = {
                 'property_id': prop_id,
                 'status': 'sold',
+                'holly_role': holly_role,
                 'last_sold_date': home.get('last_sold_date'),
                 'last_sold_price': home.get('last_sold_price'),
                 'list_price': home.get('list_price'),
@@ -192,9 +201,44 @@ def check_for_newly_sold(previous_ids, current_ids):
                 'primary_photo': primary.get('href', photos[0].get('href') if photos else '')
             }
             newly_sold.append(sold_entry)
-            print(f"  ✓ {addr.get('line')} sold on {home.get('last_sold_date')} for ${home.get('last_sold_price'):,}")
+            role_label = holly_role or 'unknown role'
+            print(f"  ✓ {addr.get('line')} sold on {home.get('last_sold_date')} for ${home.get('last_sold_price'):,} (Holly: {role_label})")
 
     return newly_sold
+
+def backfill_holly_role():
+    """Re-fetch property details for sold listings missing holly_role and add it."""
+    existing = load_sold_listings()
+    missing = [e for e in existing if e.get('holly_role') is None]
+    if not missing:
+        return
+
+    print(f"\nBackfilling holly_role for {len(missing)} sold listing(s)...")
+    changed = False
+    for entry in missing:
+        prop_id = entry['property_id']
+        print(f"  Checking property {prop_id} ({entry['address']['line']})...")
+        details = fetch_property_details(prop_id)
+        if not details:
+            continue
+        home = details.get('data', {}).get('home', {})
+        role = get_holly_role(home.get('advertisers', []))
+        if role is not None:
+            entry['holly_role'] = role
+            changed = True
+            print(f"  ✓ Role: {role}")
+        elif home.get('advertisers') is not None:
+            # Advertisers present but Holly isn't the listing agent → she was buyer's agent
+            entry['holly_role'] = 'buyer'
+            changed = True
+            print(f"  ✓ Role: buyer (inferred — listing agent is someone else)")
+        else:
+            print(f"  ⚠ No advertiser data available")
+
+    if changed:
+        with open(SOLD_LISTINGS_FILE, 'w') as f:
+            json.dump(existing, f, indent=2)
+        print(f"✓ Saved updated sold-listings.json")
 
 def update_sold_listings(newly_sold):
     """Merge newly sold properties into sold-listings.json."""
@@ -232,6 +276,9 @@ def main():
                 previous_ids.add(str(r['property_id']))
     except (IOError, json.JSONDecodeError):
         pass
+
+    # Backfill role data for existing sold listings
+    backfill_holly_role()
 
     # Fetch reviews
     fetch_reviews()
