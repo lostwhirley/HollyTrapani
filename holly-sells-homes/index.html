@@ -3017,14 +3017,13 @@
     const total = cards.length;
 
     const filters = [
-      { key: 'all',    label: 'All',                count: total },
       { key: 'active', label: 'Active Listings',     count: counts.active },
       { key: 'buyer',  label: 'Worked with Buyer',   count: counts.buyer },
       { key: 'seller', label: 'Worked with Seller',  count: counts.seller },
-    ].filter(f => f.key === 'all' || f.count > 0);
+    ].filter(f => f.count > 0);
 
     bar.innerHTML = filters.map(f =>
-      `<button class="filter-btn${f.key === 'all' ? ' active' : ''}" data-filter="${f.key}">${f.label} (${f.count})</button>`
+      `<button class="filter-btn" data-filter="${f.key}">${f.label} (${f.count})</button>`
     ).join('');
 
     bar.querySelectorAll('.filter-btn').forEach(btn => {
