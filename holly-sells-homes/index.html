@@ -2978,29 +2978,29 @@
         const baths = desc.baths_consolidated || '—';
         const sqft = desc.sqft ? desc.sqft.toLocaleString() : '—';
 
-        const isBuyer = home.holly_role === 'buyer';
-        const card = document.createElement('div');
-        card.style.cssText = 'text-decoration: none; color: inherit; cursor: default; pointer-events: none;';
-        card.dataset.category = isBuyer ? 'buyer' : 'seller';
-        const photoHtml = isBuyer
-          ? `<div style="height:280px;background:var(--light);display:flex;align-items:center;justify-content:center;"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>`
-          : (photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`);
-        card.innerHTML = `
-          <div class="listing-card">
-            ${photoHtml}
-            <div class="listing-badge-sold">Sold</div>
-            <div class="listing-content">
-              <div class="listing-price">${price}</div>
-              <div class="listing-address">${addr.line || ''}</div>
-              <div class="listing-city">${addr.city || ''}, ${addr.state_code || ''} ${addr.postal_code || ''}</div>
-              <div class="listing-specs">
-                <div class="spec">${beds} Bed</div>
-                <div class="spec">${baths} Bath</div>
-              </div>
-              <div class="sold-price-tag">Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}</div>
+        const role = home.holly_role;
+        const categories = role === 'both' ? ['buyer', 'seller'] : [role === 'buyer' ? 'buyer' : 'seller'];
+        const photoHtml = photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`;
+        const houseIcon = `<div style="height:280px;background:var(--light);display:flex;align-items:center;justify-content:center;"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>`;
+        const cardBody = `
+          <div class="listing-badge-sold">Sold</div>
+          <div class="listing-content">
+            <div class="listing-price">${price}</div>
+            <div class="listing-address">${addr.line || ''}</div>
+            <div class="listing-city">${addr.city || ''}, ${addr.state_code || ''} ${addr.postal_code || ''}</div>
+            <div class="listing-specs">
+              <div class="spec">${beds} Bed</div>
+              <div class="spec">${baths} Bath</div>
             </div>
+            <div class="sold-price-tag">Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}</div>
           </div>`;
-        grid.appendChild(card);
+        categories.forEach(cat => {
+          const card = document.createElement('div');
+          card.style.cssText = 'text-decoration: none; color: inherit; cursor: default; pointer-events: none;';
+          card.dataset.category = cat;
+          card.innerHTML = `<div class="listing-card">${cat === 'buyer' ? houseIcon : photoHtml}${cardBody}</div>`;
+          grid.appendChild(card);
+        });
       });
     } catch(e) {
       // silently skip if sold-listings.json unavailable
