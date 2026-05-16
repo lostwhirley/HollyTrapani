@@ -1,5 +1,27 @@
 [
   {
+    "property_id": "6044510048",
+    "status": "sold",
+    "holly_role": "seller",
+    "last_sold_date": "2026-05-15",
+    "last_sold_price": 495000,
+    "list_price": 514900,
+    "address": {
+      "line": "5196 Ciatto Way",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 3,
+      "baths_consolidated": "2",
+      "sqft": 2240,
+      "type": "single_family",
+      "year_built": 2015
+    },
+    "primary_photo": "https://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537s.jpg"
+  },
+  {
     "property_id": "9238269562",
     "status": "sold",
     "last_sold_date": "2026-05-01",
