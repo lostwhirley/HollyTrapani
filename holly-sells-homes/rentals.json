@@ -2600,10 +2600,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 414301,
-                    "estimate_high": 459874,
-                    "estimate_low": 368727,
-                    "date": "2026-05-06"
+                    "estimate": 412943,
+                    "estimate_high": 450107,
+                    "estimate_low": 375778,
+                    "date": "2026-05-13"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2914,8 +2914,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 414301,
-                        "date": "2026-05-06"
+                        "estimate": 412943,
+                        "date": "2026-05-13"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -3151,62 +3151,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 414240,
+                        "estimate": 412882,
                         "date": "2026-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 414157,
+                        "estimate": 412799,
                         "date": "2026-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 414067,
+                        "estimate": 412710,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413975,
+                        "estimate": 412618,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413882,
+                        "estimate": 412525,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413788,
+                        "estimate": 412432,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413693,
+                        "estimate": 412337,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413597,
+                        "estimate": 412241,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413500,
+                        "estimate": 412144,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413401,
+                        "estimate": 412046,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413301,
+                        "estimate": 411947,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 413202,
+                        "estimate": 411847,
                         "date": "2027-05-01"
                       }
                     ]
