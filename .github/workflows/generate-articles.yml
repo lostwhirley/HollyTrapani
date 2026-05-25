@@ -28,6 +28,7 @@ jobs:
       - name: Generate articles
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         run: python scripts/generate_articles.py
 
       - name: Commit and push articles.json

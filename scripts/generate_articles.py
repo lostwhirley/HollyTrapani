@@ -61,11 +61,19 @@ def fetch_census_data():
         "for": "county:021",
         "in": "state:12"
     }
+    api_key = os.environ.get("CENSUS_API_KEY")
+    if api_key:
+        params["key"] = api_key
 
     resp = requests.get(CENSUS_ACS_URL, params=params, timeout=10)
     resp.raise_for_status()
 
-    data = resp.json()
+    try:
+        data = resp.json()
+    except Exception:
+        raise ValueError(f"Census API returned non-JSON response (status {resp.status_code}). "
+                         "A CENSUS_API_KEY may be required — get one free at https://api.census.gov/data/key_signup.html")
+
     headers = data[0]
     values = data[1]
     row = dict(zip(headers, values))
