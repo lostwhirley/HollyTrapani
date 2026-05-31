@@ -51,6 +51,10 @@ jobs:
         working-directory: puppeteer
         run: npm install
 
+      - name: Install Chrome for Puppeteer
+        working-directory: puppeteer
+        run: npx puppeteer browsers install chrome
+
       - name: Check if listings changed
         id: listings_changed
         run: |
