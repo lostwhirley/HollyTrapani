@@ -217,7 +217,7 @@
     const closeBtn = document.getElementById('video-modal-close');
 
     function openModal(youtubeId, title) {
-      iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+      iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&rel=0`;
       iframe.title = title;
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
