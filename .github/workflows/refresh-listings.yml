@@ -47,16 +47,22 @@ jobs:
             libcairo2 libnss3 libnspr4 \
             libasound2 libasound2t64 || true
 
-      - name: Install Node dependencies
+      - name: Clean and reinstall Node dependencies
         working-directory: puppeteer
-        run: npm install
+        run: |
+          rm -rf node_modules package-lock.json
+          rm -rf ~/.cache/puppeteer
+          npm install
 
-      - name: Clean Puppeteer cache
-        run: rm -rf ~/.cache/puppeteer
-
-      - name: Install Chrome for Puppeteer
-        working-directory: puppeteer
-        run: npx puppeteer browsers install chrome
+      - name: Download and install Chrome
+        run: |
+          cd puppeteer
+          npm run postinstall 2>/dev/null || npx puppeteer browsers install chrome@latest
+          # Fallback: if chrome still not found, try headless-shell
+          if ! ls ~/.cache/puppeteer/chrome*/*/chrome 2>/dev/null | head -1; then
+            echo "Chrome not found, trying chrome-headless-shell..."
+            npx puppeteer browsers install chrome-headless-shell@latest
+          fi
 
       - name: Check if listings changed
         id: listings_changed
