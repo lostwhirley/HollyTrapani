@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Tours | Holly Trapani LLC</title>
+  <meta name="description" content="Property video tours - Holly Trapani LLC Real Estate">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #3d3530;
+      --accent: #b08d7a;
+      --accent-soft: #d4b8a8;
+      --dark: #2c2420;
+      --light: #f5f0eb;
+      --cream: #faf7f4;
+      --white: #ffffff;
+      --gray: #a89d98;
+      --border: #e8ddd7;
+      --text-muted: #7a6e69;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--dark); background: var(--cream); line-height: 1.7; font-weight: 300; letter-spacing: 0.01em; }
+
+    nav { position: sticky; top: 0; background: var(--cream); border-bottom: 1px solid var(--border); z-index: 100; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-style: italic; font-weight: 400; color: var(--primary); text-decoration: none; }
+    .nav-logo span { font-family: 'Jost', sans-serif; display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.15em; font-style: normal; }
+    .nav-back { color: var(--primary); text-decoration: none; font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+    .nav-back:hover { color: var(--accent); }
+
+    .hero { background: var(--cream); color: var(--dark); padding: 3.5rem 2rem; }
+    .hero-inner { max-width: 1200px; margin: 0 auto; }
+    .hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.7rem; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px; color: var(--primary); line-height: 1.2; text-align: center; }
+    .hero p { font-family: 'Jost', sans-serif; font-size: 0.9rem; color: var(--text-muted); text-align: center; max-width: 600px; margin: 0 auto; }
+
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; max-width: 1200px; margin: 3rem auto; padding: 0 2rem; }
+    .video-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+    .video-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .video-card > div:first-child { position: relative; background: #000; padding: 12px; }
+    .video-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .video-card svg { transform: scale(1); transition: transform 0.2s; }
+    .video-card > div:first-child:hover svg { transform: scale(1.08); }
+    .video-card > div:first-child svg { position: absolute; top: 50%; left: 50%; margin-top: -11px; margin-left: -11px; }
+
+    .video-card-body { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; padding: 1.75rem; }
+    .video-card-label { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 0.5rem; }
+    .video-card h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 400; color: var(--primary); line-height: 1.3; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+    .video-card h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s, color 0.2s; }
+    .video-card h3 a:hover { color: var(--accent); border-color: var(--accent); }
+    .video-card-specs { border-left: 1px solid var(--border); padding-left: 1.5rem; display: flex; flex-direction: column; justify-content: flex-start; }
+    .video-card-price { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 400; color: var(--primary); margin-bottom: 1rem; }
+    .video-card-spec-row { display: flex; flex-direction: column; gap: 0.5rem; }
+    .video-card-spec { font-family: 'Jost', sans-serif; font-size: 0.8rem; color: var(--text-muted); }
+    .video-card-spec strong { color: var(--primary); font-weight: 500; }
+
+    footer { background: var(--cream); color: var(--text-muted); padding: 3rem 2rem; text-align: center; font-family: 'Jost', sans-serif; font-size: 0.75rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-brokerage { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 400; color: var(--primary); margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-family: 'Jost', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 0.5rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav-inner { padding: 0.75rem 1rem; }
+      .nav-logo { font-size: 1.15rem; }
+      .nav-logo span { display: none; }
+      .hero { padding: 2rem 1.5rem; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: 0.85rem; }
+      .video-grid { grid-template-columns: 1fr; padding: 0 1.5rem; margin: 2rem auto; }
+      .video-card-body { grid-template-columns: 1fr; gap: 1rem; }
+      .video-card-specs { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 1rem; }
+      footer { padding: 2rem 1.5rem; }
+      .footer-brokerage { font-size: 0.9rem; }
+      .footer-links { gap: 1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner { padding: 0.75rem 1rem; }
+      .nav-logo { font-size: 1.05rem; }
+      .hero { padding: 2rem 1rem; }
+      .hero h1 { font-size: 1.5rem; }
+      .hero p { font-size: 0.8rem; }
+      .video-grid { padding: 0 1rem; }
+      footer { padding: 1.5rem 1rem; }
+      .footer-brokerage { font-size: 0.8rem; }
+      .footer-links { gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">
+      Holly Trapani LLC
+      <span>MRP | New Construction & 55+ Communities Specialist | New Day Realty</span>
+    </a>
+    <a href="../#videos" class="nav-back">← Back to Home</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Property Video Tours</h1>
+    <p>Explore Holly's property tours and neighborhood showcases</p>
+  </div>
+</section>
+
+<!-- VIDEOS GRID -->
+<div class="video-grid" id="video-grid">
+  <div style="text-align:center; color:var(--text-muted); padding:2rem; grid-column:1/-1;">
+    <p>Loading videos...</p>
+  </div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div id="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.92); z-index:10000; align-items:center; justify-content:center; padding:20px;">
+  <div style="position:relative; width:100%; max-width:900px;">
+    <button id="video-modal-close" style="position:absolute; top:-44px; right:0; background:white; border:none; width:36px; height:36px; border-radius:50%; font-size:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; color:#000;">✕</button>
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+      <iframe id="video-modal-iframe" src="" title="" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brokerage">Holly Trapani LLC</div>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="../#listings">Listings</a>
+      <a href="../#about">About</a>
+      <a href="../#contact">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=61581878379003" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div style="margin-top: 1.5rem; font-size: 0.7rem; color: var(--text-muted);">
+      © 2024 Holly Trapani LLC. All rights reserved. | MRP | New Construction & 55+ Communities Specialist | New Day Realty
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Load videos from videos.json
+  async function loadVideos() {
+    const grid = document.getElementById('video-grid');
+    if (!grid) return;
+
+    try {
+      const response = await fetch('../videos.json');
+      if (!response.ok) throw new Error('Failed to fetch videos');
+      const videos = await response.json();
+
+      if (!Array.isArray(videos) || videos.length === 0) {
+        grid.innerHTML = '<p style="text-align:center;color:var(--text-muted);font-family:\'Jost\',sans-serif;padding:2rem;grid-column:1/-1;">No videos available yet. Check back soon!</p>';
+        return;
+      }
+
+      grid.innerHTML = videos.map(video => {
+        const titleSafe = escapeHtml(video.title || '');
+        const youtubeIdSafe = escapeHtml(video.youtube_id);
+        const priceSafe = escapeHtml(video.price || '—');
+        const bedsSafe  = escapeHtml(video.beds  || '—');
+        const bathsSafe = escapeHtml(video.baths || '—');
+        const sqftSafe  = escapeHtml(video.sqft  || '—');
+
+        const titleHtml = video.listing_id
+          ? `<a href="#" onclick="event.preventDefault(); alert('Navigate to listing: ${escapeHtml(video.listing_id)}'); return false;" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s, color 0.2s;">${titleSafe}</a>`
+          : titleSafe;
+
+        return `
+          <div class="video-card" data-youtube-id="${youtubeIdSafe}" data-title="${titleSafe}">
+            <div style="position:relative; cursor:pointer; background:#000; padding:12px;">
+              <img src="https://img.youtube.com/vi/${youtubeIdSafe}/hqdefault.jpg" alt="${titleSafe}" style="width:100%; aspect-ratio:16/9; object-fit:cover; display:block;">
+              <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:60px; height:60px; background:rgba(255,255,255,0.9); border-radius:50%; display:flex; align-items:center; justify-content:center; pointer-events:none;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#333"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <div class="video-card-body">
+              <div>
+                <div class="video-card-label">Property Tour</div>
+                <h3>${titleHtml}</h3>
+              </div>
+              <div class="video-card-specs">
+                <div class="video-card-price">${priceSafe}</div>
+                <div class="video-card-spec-row">
+                  <span class="video-card-spec"><strong>${bedsSafe}</strong> Beds</span>
+                  <span class="video-card-spec"><strong>${bathsSafe}</strong> Baths</span>
+                  <span class="video-card-spec"><strong>${sqftSafe}</strong> sq ft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+    } catch (err) {
+      console.warn('Could not load videos:', err);
+      grid.innerHTML = '<p style="text-align:center;color:var(--text-muted);font-family:\'Jost\',sans-serif;padding:2rem;grid-column:1/-1;">Unable to load videos.</p>';
+    }
+  }
+
+  function initVideoModal() {
+    const modal = document.getElementById('video-modal');
+    const iframe = document.getElementById('video-modal-iframe');
+    const closeBtn = document.getElementById('video-modal-close');
+
+    function openModal(youtubeId, title) {
+      iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+      iframe.title = title;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.style.display = 'none';
+      iframe.src = '';
+      document.body.style.overflow = 'auto';
+    }
+
+    document.getElementById('video-grid').addEventListener('click', function(e) {
+      const card = e.target.closest('.video-card');
+      if (!card) return;
+      openModal(card.dataset.youtubeId, card.dataset.title);
+    });
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
+    });
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str || '';
+    return div.innerHTML;
+  }
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    loadVideos();
+    initVideoModal();
+  });
+</script>
+
+</body>
+</html>
