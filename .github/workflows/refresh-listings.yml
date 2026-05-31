@@ -37,33 +37,6 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
-            libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 \
-            libxrandr2 libgbm1 libpango-1.0-0 \
-            libcairo2 libnss3 libnspr4 \
-            libasound2 libasound2t64 || true
-
-      - name: Clean and reinstall Node dependencies
-        working-directory: puppeteer
-        run: |
-          rm -rf node_modules package-lock.json
-          rm -rf ~/.cache/puppeteer
-          npm install
-
-      - name: Download and install Chrome
-        run: |
-          cd puppeteer
-          npm run postinstall 2>/dev/null || npx puppeteer browsers install chrome@latest
-          # Fallback: if chrome still not found, try headless-shell
-          if ! ls ~/.cache/puppeteer/chrome*/*/chrome 2>/dev/null | head -1; then
-            echo "Chrome not found, trying chrome-headless-shell..."
-            npx puppeteer browsers install chrome-headless-shell@latest
-          fi
-
       - name: Check if listings changed
         id: listings_changed
         run: |
@@ -72,11 +45,6 @@ jobs:
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-
-      - name: Generate flyers
-        if: steps.listings_changed.outputs.changed == 'true'
-        working-directory: puppeteer
-        run: node generate-listing-flyers.js
 
       - name: Commit and push if changed
         run: |
@@ -88,14 +56,10 @@ jobs:
                   holly-sells-homes/sold-listings.json \
                   holly-sells-homes/reviews.json
 
-          if [ "${{ steps.listings_changed.outputs.changed }}" == "true" ]; then
-            git add flyers/output/ flyers/index.html
-          fi
-
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: refresh listings, flyers, and videos [skip ci]"
+            git commit -m "chore: refresh listings from API [skip ci]"
             git fetch origin main
             git rebase origin/main
             git push
