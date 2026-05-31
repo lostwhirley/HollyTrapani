@@ -2671,6 +2671,18 @@
           ? `<a href="#" onclick="event.preventDefault(); navigateToListing('${escapeHtml(video.listing_id)}')" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s, color 0.2s;" onmouseover="this.style.color='var(--accent)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='inherit';this.style.borderColor='var(--border)'">${titleSafe}</a>`
           : titleSafe;
 
+        // Only show specs if price data exists
+        const specsHtml = video.price
+          ? `<div class="video-card-specs">
+              <div class="video-card-price">${priceSafe}</div>
+              <div class="video-card-spec-row">
+                <span class="video-card-spec"><strong>${bedsSafe}</strong> Beds</span>
+                <span class="video-card-spec"><strong>${bathsSafe}</strong> Baths</span>
+                <span class="video-card-spec"><strong>${sqftSafe}</strong> sq ft</span>
+              </div>
+            </div>`
+          : '';
+
         return `
           <div class="video-card" data-youtube-id="${youtubeIdSafe}" data-title="${titleSafe}">
             <div style="position:relative; cursor:pointer; background:#000; padding:12px;">
@@ -2684,14 +2696,7 @@
                 <div class="video-card-label">Property Tour</div>
                 <h3>${titleHtml}</h3>
               </div>
-              <div class="video-card-specs">
-                <div class="video-card-price">${priceSafe}</div>
-                <div class="video-card-spec-row">
-                  <span class="video-card-spec"><strong>${bedsSafe}</strong> Beds</span>
-                  <span class="video-card-spec"><strong>${bathsSafe}</strong> Baths</span>
-                  <span class="video-card-spec"><strong>${sqftSafe}</strong> sq ft</span>
-                </div>
-              </div>
+              ${specsHtml}
             </div>
           </div>
         `;
