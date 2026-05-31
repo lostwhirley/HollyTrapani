@@ -51,6 +51,9 @@ jobs:
         working-directory: puppeteer
         run: npm install
 
+      - name: Clean Puppeteer cache
+        run: rm -rf ~/.cache/puppeteer
+
       - name: Install Chrome for Puppeteer
         working-directory: puppeteer
         run: npx puppeteer browsers install chrome
