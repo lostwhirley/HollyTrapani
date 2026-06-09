@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9530668405",
-              "last_update_date": "2026-05-03T19:41:42Z",
+              "last_update_date": "2026-06-08T18:40:33Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2991350517",
@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 552,
-                  "total_payment": 9490,
+                  "total_payment": 9498,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06524,
+                    "rate": 0.06533,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06524
+                    "rate": 0.06533
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06418
+                    "rate": 0.06429
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.0572
+                    "rate": 0.05729
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05611
+                    "rate": 0.05615
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.05939
+                    "rate": 0.05954
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06089
+                    "rate": 0.06109
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06481
+                    "rate": 0.06425
                   }
                 ]
               },
@@ -1020,10 +1020,10 @@
                       "__typename": "GeoStatistics",
                       "housing_market": {
                         "__typename": "HousingMarket",
-                        "median_price_per_sqft": 253,
-                        "median_sold_price": 496025,
-                        "median_listing_price": 469900,
-                        "median_days_on_market": 90
+                        "median_price_per_sqft": 248,
+                        "median_sold_price": 499000,
+                        "median_listing_price": 476126,
+                        "median_days_on_market": 100
                       }
                     }
                   }
