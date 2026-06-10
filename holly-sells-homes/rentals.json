@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9530668405",
-              "last_update_date": "2026-06-08T18:40:33Z",
+              "last_update_date": "2026-06-09T18:37:22Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2991350517",
@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 552,
-                  "total_payment": 9498,
+                  "total_payment": 9490,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06533,
+                    "rate": 0.06525,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06533
+                    "rate": 0.06525
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06429
+                    "rate": 0.06412
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05729
+                    "rate": 0.05736
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05615
+                    "rate": 0.05644
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.05954
+                    "rate": 0.05981
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06078
+                    "rate": 0.06086
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06109
+                    "rate": 0.06172
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06425
+                    "rate": 0.06461
                   }
                 ]
               },
@@ -161,7 +161,7 @@
                 "stories": 1,
                 "type": "single_family",
                 "sub_type": null,
-                "text": "Must see views from back lanai that you will enjoy daily! Come experience 55+ living in Del Webb Naples with tons of activities in the town of Ave Maria, FL and close to Naples, FL! Full access to Del Webb clubhouse with resort pool, lap pool, steam/sauna, hot tub, virtual golf simulator, pickleball, bocce ball, tennis and golf! Activities director on site with many planned festivities. Join right in! Golf Cart use included with rental after signing waiver. You can drive golf cart into town of Ave Maria for shopping and dining or to the Del Webb clubhouse. This home is 2 bedrooms, 2 bath, plus den. Home has porcelain tile throughout and Impact glass. Screened in back lanai and extended patio gives you some of the best views Del Webb has and is very private! The exposure is East and South from the back lanai. A screened in front porch offers views of grass lands and woods and great for sunsets! Master is King size bed. 2nd bedroom is Queen. All couches have reclining feature. Golf Cart available for use after signing waiver with landlord. Panther Run golf course is available to guests as tee times allow. Come make yourself at home!",
+                "text": "Jan, Feb, & March 2027 is available!! Must see views from back lanai that you will enjoy daily! Come experience 55+ living in Del Webb Naples with tons of activities in the town of Ave Maria, FL and close to Naples, FL! Full access to Del Webb clubhouse with resort pool, lap pool, steam/sauna, hot tub, virtual golf simulator, pickleball, bocce ball, tennis and golf! Activities director on site with many planned festivities. Join right in! Golf Cart use included with rental after signing waiver. You can drive golf cart into town of Ave Maria for shopping and dining or to the Del Webb clubhouse. This home is 2 bedrooms, 2 bath, plus den. Home has porcelain tile throughout and Impact glass. Screened in back lanai and extended patio gives you some of the best views Del Webb has and is very private! The exposure is East and South from the back lanai. A screened in front porch offers views of grass lands and woods and great for sunsets! Master is King size bed. 2nd bedroom is Queen. All couches have reclining feature. Golf Cart available for use after signing waiver with landlord. Panther Run golf course is available to guests as tee times allow. Come make yourself at home!",
                 "year_built": 2022,
                 "name": null
               },
