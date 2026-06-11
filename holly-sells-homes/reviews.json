@@ -1,7 +1,22 @@
 {
   "average_rating": 5.0,
-  "total_reviews": 11,
+  "total_reviews": 12,
   "reviews": [
+    {
+      "source_id": "RDC",
+      "responsiveness": 5,
+      "market_expertise": 5,
+      "comment": "Holly was extremely knowledgeable and very quick to respond to our inquiries.  She helped us find our home in Ave Maria that checked all the boxes.  She was very professional and her communication was above and beyond what we expected.  We were very pleased to have worked with her.  ",
+      "display_name": "REBECCA GONSOROSKI",
+      "location": "Ave Maria, FL",
+      "year": "2026",
+      "negotiation_skills": 5,
+      "rating": 5,
+      "professionalism_communication": 5,
+      "describe_yourself": "BUYER",
+      "started_timestamp": "2026-06-10T20:10:14.353Z",
+      "__typename": "AgentBrandingReview"
+    },
     {
       "source_id": "RDC",
       "responsiveness": 5,
