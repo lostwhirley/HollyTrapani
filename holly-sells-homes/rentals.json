@@ -7891,18 +7891,6 @@
                     "__typename": "LatestEstimate",
                     "source": {
                       "__typename": "EstimateSource",
-                      "type": "collateral",
-                      "name": "Collateral Analytics"
-                    },
-                    "estimate": 502000,
-                    "estimate_high": 552200,
-                    "estimate_low": 451800,
-                    "date": "2026-05-15"
-                  },
-                  {
-                    "__typename": "LatestEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
                       "type": "corelogic",
                       "name": "Cotality\u2122"
                     },
@@ -7910,6 +7898,18 @@
                     "estimate_high": 429300,
                     "estimate_low": 373100,
                     "date": "2026-05-05"
+                  },
+                  {
+                    "__typename": "LatestEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "collateral",
+                      "name": "Collateral Analytics"
+                    },
+                    "estimate": 502000,
+                    "estimate_high": 552200,
+                    "estimate_low": 451800,
+                    "date": "2026-05-15"
                   }
                 ],
                 "historical_values": [
