@@ -3161,6 +3161,14 @@
       window.location.href = 'listing/';
     }
   }
+
+  // Track hash navigation for Google Analytics
+  function trackPageView() {
+    const path = window.location.pathname + window.location.hash;
+    gtag('config', 'G-NFY7ECKYG2', { page_path: path });
+  }
+  window.addEventListener('hashchange', trackPageView);
+  trackPageView();
 </script>
 
 </body>
