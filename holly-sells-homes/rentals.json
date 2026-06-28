@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9530668405",
-              "last_update_date": "2026-06-09T18:37:22Z",
+              "last_update_date": "2026-06-27T18:52:35Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2991350517",
@@ -161,7 +161,7 @@
                 "stories": 1,
                 "type": "single_family",
                 "sub_type": null,
-                "text": "Jan, Feb, & March 2027 is available!! Must see views from back lanai that you will enjoy daily! Come experience 55+ living in Del Webb Naples with tons of activities in the town of Ave Maria, FL and close to Naples, FL! Full access to Del Webb clubhouse with resort pool, lap pool, steam/sauna, hot tub, virtual golf simulator, pickleball, bocce ball, tennis and golf! Activities director on site with many planned festivities. Join right in! Golf Cart use included with rental after signing waiver. You can drive golf cart into town of Ave Maria for shopping and dining or to the Del Webb clubhouse. This home is 2 bedrooms, 2 bath, plus den. Home has porcelain tile throughout and Impact glass. Screened in back lanai and extended patio gives you some of the best views Del Webb has and is very private! The exposure is East and South from the back lanai. A screened in front porch offers views of grass lands and woods and great for sunsets! Master is King size bed. 2nd bedroom is Queen. All couches have reclining feature. Golf Cart available for use after signing waiver with landlord. Panther Run golf course is available to guests as tee times allow. Come make yourself at home!",
+                "text": "Must see views from back lanai that you will enjoy daily! Come experience 55+ living in Del Webb Naples with tons of activities in the town of Ave Maria, FL and close to Naples, FL! Full access to Del Webb clubhouse with resort pool, lap pool, steam/sauna, hot tub, virtual golf simulator, pickleball, bocce ball, tennis and golf! Activities director on site with many planned festivities. Join right in! Golf Cart use included with rental after signing waiver. You can drive golf cart into town of Ave Maria for shopping and dining or to the Del Webb clubhouse. This home is 2 bedrooms, 2 bath, plus den. Home has porcelain tile throughout and Impact glass. Screened in back lanai and extended patio gives you some of the best views Del Webb has and is very private! The exposure is East and South from the back lanai. A screened in front porch offers views of grass lands and woods and great for sunsets! Master is King size bed. 2nd bedroom is Queen. All couches have reclining feature. Golf Cart available for use after signing waiver with landlord. Panther Run golf course is available to guests as tee times allow. Come make yourself at home!",
                 "year_built": 2022,
                 "name": null
               },
@@ -791,8 +791,7 @@
                   "__typename": "HomeDetails",
                   "category": "Pool and Spa",
                   "text": [
-                    "Pool Features: Community",
-                    "Spa Features: Community"
+                    "Pool Features: Community"
                   ]
                 },
                 {
@@ -841,7 +840,7 @@
                   "__typename": "HomeDetails",
                   "category": "Homeowners Association",
                   "text": [
-                    "Association Amenities: Basketball Court, Barbecue, Beauty Salon, Bike And Jog Path, Billiard Room, Bocce Court, Clubhouse, Park, Pool, Community Room, Spa/Hot Tub, Dog Park, Fitness Center, Golf Course, Hobby Room, Internet Access, Library, Pickleball, Play Area, Putting Green, Restaurant, Sauna, Shopping, Sidewalk, Streetlight, Tennis Court(s), Underground Utility",
+                    "Association Amenities: Basketball Court, Barbecue, Beauty Salon, Bike And Jog Path, Billiard Room, Bocce Court, Clubhouse, Park, Pool, Community Room, Dog Park, Fitness Center, Golf Course, Hobby Room, Internet Access, Library, Pickleball, Play Area, Putting Green, Restaurant, Sauna, Shopping, Sidewalk, Streetlight, Tennis Court(s), Underground Utility",
                     "Pets Allowed: Limits",
                     "Senior Community: Yes"
                   ]
