@@ -341,20 +341,20 @@
           "list_price": 479900,
           "photos": [
             {
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
               "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
               "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
               "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m2143301201rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
           "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
