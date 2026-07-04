@@ -2599,10 +2599,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 397788,
-                    "estimate_high": 441544,
-                    "estimate_low": 354031,
-                    "date": "2026-06-24"
+                    "estimate": 393893,
+                    "estimate_high": 441160,
+                    "estimate_low": 346625,
+                    "date": "2026-07-01"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2918,6 +2918,11 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
+                        "estimate": 393893,
+                        "date": "2026-07-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
                         "estimate": 397788,
                         "date": "2026-06-24"
                       },
@@ -3160,63 +3165,63 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 395807,
-                        "date": "2026-07-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 394742,
+                        "estimate": 392834,
                         "date": "2026-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 392599,
+                        "estimate": 390701,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 391370,
+                        "estimate": 389478,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390620,
+                        "estimate": 388731,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390328,
+                        "estimate": 388441,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390517,
+                        "estimate": 388629,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390260,
+                        "estimate": 388373,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 389970,
+                        "estimate": 388085,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 389843,
+                        "estimate": 387958,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 389793,
+                        "estimate": 387909,
                         "date": "2027-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 389601,
+                        "estimate": 387718,
                         "date": "2027-06-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 387645,
+                        "date": "2027-07-01"
                       }
                     ]
                   },
