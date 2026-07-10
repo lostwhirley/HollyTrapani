@@ -24,12 +24,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 318400,
-                  "monthly_payment": 3302,
-                  "total_payment": 730467,
+                  "monthly_payment": 3297,
+                  "total_payment": 728502,
                   "down_payment": 79600,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06579,
+                    "rate": 0.06553,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -39,7 +39,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 2029,
+                      "amount": 2024,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06579
+                    "rate": 0.06553
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06459
+                    "rate": 0.06426
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05781
+                    "rate": 0.05759
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.0569
+                    "rate": 0.05659
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0596
+                    "rate": 0.05978
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06208
+                    "rate": 0.06226
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06461
+                    "rate": 0.06445
                   }
                 ]
               },
@@ -4081,12 +4081,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 283920,
-                  "monthly_payment": 3074,
-                  "total_payment": 651364,
+                  "monthly_payment": 3069,
+                  "total_payment": 649611,
                   "down_payment": 70980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06579,
+                    "rate": 0.06553,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -4096,7 +4096,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 1809,
+                      "amount": 1804,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -4132,7 +4132,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06579
+                    "rate": 0.06553
                   },
                   {
                     "__typename": "Rate",
@@ -4140,7 +4140,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06459
+                    "rate": 0.06426
                   },
                   {
                     "__typename": "Rate",
@@ -4148,7 +4148,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05781
+                    "rate": 0.05759
                   },
                   {
                     "__typename": "Rate",
@@ -4156,7 +4156,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.0569
+                    "rate": 0.05659
                   },
                   {
                     "__typename": "Rate",
@@ -4164,7 +4164,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0596
+                    "rate": 0.05978
                   },
                   {
                     "__typename": "Rate",
@@ -4172,7 +4172,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -4180,7 +4180,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06208
+                    "rate": 0.06226
                   },
                   {
                     "__typename": "Rate",
@@ -4188,7 +4188,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06461
+                    "rate": 0.06445
                   }
                 ]
               },
@@ -22314,12 +22314,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 249600,
-                  "monthly_payment": 2691,
-                  "total_payment": 572627,
+                  "monthly_payment": 2686,
+                  "total_payment": 571087,
                   "down_payment": 62400,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06579,
+                    "rate": 0.06553,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -22329,7 +22329,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 1591,
+                      "amount": 1586,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -22365,7 +22365,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06579
+                    "rate": 0.06553
                   },
                   {
                     "__typename": "Rate",
@@ -22373,7 +22373,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06459
+                    "rate": 0.06426
                   },
                   {
                     "__typename": "Rate",
@@ -22381,7 +22381,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05781
+                    "rate": 0.05759
                   },
                   {
                     "__typename": "Rate",
@@ -22389,7 +22389,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.0569
+                    "rate": 0.05659
                   },
                   {
                     "__typename": "Rate",
@@ -22397,7 +22397,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0596
+                    "rate": 0.05978
                   },
                   {
                     "__typename": "Rate",
@@ -22405,7 +22405,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -22413,7 +22413,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06208
+                    "rate": 0.06226
                   },
                   {
                     "__typename": "Rate",
@@ -22421,7 +22421,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06461
+                    "rate": 0.06445
                   }
                 ]
               },
@@ -34816,12 +34816,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 383920,
-                  "monthly_payment": 3869,
-                  "total_payment": 880782,
+                  "monthly_payment": 3862,
+                  "total_payment": 878412,
                   "down_payment": 95980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06579,
+                    "rate": 0.06553,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -34831,7 +34831,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 2447,
+                      "amount": 2440,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -34867,7 +34867,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06579
+                    "rate": 0.06553
                   },
                   {
                     "__typename": "Rate",
@@ -34875,7 +34875,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06459
+                    "rate": 0.06426
                   },
                   {
                     "__typename": "Rate",
@@ -34883,7 +34883,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05781
+                    "rate": 0.05759
                   },
                   {
                     "__typename": "Rate",
@@ -34891,7 +34891,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.0569
+                    "rate": 0.05659
                   },
                   {
                     "__typename": "Rate",
@@ -34899,7 +34899,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0596
+                    "rate": 0.05978
                   },
                   {
                     "__typename": "Rate",
@@ -34907,7 +34907,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -34915,7 +34915,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06208
+                    "rate": 0.06226
                   },
                   {
                     "__typename": "Rate",
@@ -34923,7 +34923,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06461
+                    "rate": 0.06445
                   }
                 ]
               },
@@ -45603,7 +45603,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9010214527",
-              "last_update_date": "2026-07-07T16:31:51Z",
+              "last_update_date": "2026-07-09T21:31:01Z",
               "last_price_change_date": "2026-06-11T13:21:54.989Z",
               "last_price_change_amount": -5000,
               "listing_id": "2993504654",
@@ -45620,12 +45620,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 572000,
-                  "monthly_payment": 5163,
-                  "total_payment": 1312271,
+                  "monthly_payment": 5153,
+                  "total_payment": 1308740,
                   "down_payment": 143000,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06579,
+                    "rate": 0.06553,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -45635,7 +45635,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 3645,
+                      "amount": 3635,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -45671,7 +45671,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06579
+                    "rate": 0.06553
                   },
                   {
                     "__typename": "Rate",
@@ -45679,7 +45679,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06459
+                    "rate": 0.06426
                   },
                   {
                     "__typename": "Rate",
@@ -45687,7 +45687,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05781
+                    "rate": 0.05759
                   },
                   {
                     "__typename": "Rate",
@@ -45695,7 +45695,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.0569
+                    "rate": 0.05659
                   },
                   {
                     "__typename": "Rate",
@@ -45703,7 +45703,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0596
+                    "rate": 0.05978
                   },
                   {
                     "__typename": "Rate",
@@ -45711,7 +45711,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06072
+                    "rate": 0.06078
                   },
                   {
                     "__typename": "Rate",
@@ -45719,7 +45719,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06208
+                    "rate": 0.06226
                   },
                   {
                     "__typename": "Rate",
@@ -45727,7 +45727,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06461
+                    "rate": 0.06445
                   }
                 ]
               },
@@ -45761,7 +45761,7 @@
                 "stories": 2,
                 "type": "single_family",
                 "sub_type": null,
-                "text": "CUSTOM SALTWATER POOL + SPA | 2.5 CAR TANDEM GARAGE and better than new! This 2023-built 5 bedroom + den + loft, and 4.5 bath home delivers the space, upgrades, and lifestyle buyers are looking for right now. Ave Maria ~ \"Once you get here, you get it\". Step outside to your CUSTOM 2024 SALTWATER POOL & SPA, finished with Diana Royal marble non-slip pavers and a panoramic picture screen overlooking the pond-private, peaceful, and designed for entertaining. LED color-changing lighting is fully remote controlled for day-to-night enjoyment. Child safe pool gate conveniently has 2 doors for easy access to and from pool area with additional childproof features for opening the doors. Another layer for pool safety is inside the home on the sliding glass doors. Both sliding glass doors have alarm/sound when the doors are opened. Inside, the home is thoughtfully upgraded with motorized shades on sliding glass doors and dual A/C systems for efficient comfort between upstairs and downstairs. The kitchen stands out with upgraded Bosch refrigerator and dishwasher, blending style with everyday function. Quartz countertops, pull out shelving in lower cabinets, and huge island make it a cooks dream for efficient space. Whirlpool range has air fryer feature, convect bake, and self cleaning! The utility tub in upstairs laundry room can be a life saver! The extra deep 2.5 tandem car garage is a MUST HAVE for extra space! Function meets convenience with an expanded paver driveway (an extra 2' on each side) for easier parking, loading, and added play space, plus additional pavers along the side yard. The 2.5 car tandem garage offers extra storage, flexibility, and room for a golf carts, and includes an additional refrigerator/freezer. Positioned across the street from a beautifully landscaped area-not another garage-this home offers a more open and attractive view. Move-in ready and available in time to be settled before the next school year, with multiple schools within walking distance. Living in Ave Maria is a lifestyle-beautiful parks, walking and biking trails, a vibrant town center with dining and shopping, year-round events, and a true sense of community that draws people here from all over the country.",
+                "text": "CUSTOM SALTWATER POOL + SPA | 2.5 CAR TANDEM GARAGE and better than new! This 2023-built Yorkshire floorplan is 5 bedroom + den + loft, and 4.5 bath home which delivers the space, upgrades, and lifestyle buyers are looking for right now. Step outside to your CUSTOM 2024 SALTWATER POOL & SPA, finished with Diana Royal marble non-slip pavers and a panoramic picture screen overlooking the pond-private, peaceful, and designed for entertaining. LED color-changing lighting is fully remote controlled for day-to-night enjoyment. Child safe pool gate conveniently has 2 doors for easy access to and from pool area with additional childproof features for opening the doors. Another layer for pool safety is inside the home on the sliding glass doors. Both sliding glass doors have alarm/sound when the doors are opened. Inside, the home is thoughtfully upgraded with motorized shades on sliding glass doors and dual A/C systems for efficient comfort between upstairs and downstairs. The kitchen stands out with upgraded Bosch refrigerator and dishwasher, blending style with everyday function. Quartz countertops, pull out shelving in lower cabinets, and huge island make it a cooks dream for efficient space. Whirlpool range has air fryer feature, convect bake, and self cleaning! The utility tub in upstairs laundry room can be a life saver! The extra deep 2.5 tandem car garage is a MUST HAVE for extra space! Function meets convenience with an expanded paver driveway (an extra 2' on each side) for easier parking, loading, and added play space, plus additional pavers along the side yard. The 2.5 car tandem garage offers extra storage, flexibility, and room for a golf carts, and includes an additional refrigerator/freezer. Positioned across the street from a beautifully landscaped area-not another garage-this home offers a more open and attractive view. Move-in ready and available in time to be settled before the next school year, with multiple schools within walking distance. Living in Ave Maria is a lifestyle-beautiful parks, walking and biking trails, a vibrant town center with dining and shopping, year-round events, and a true sense of community that draws people here from all over the country. Ave Maria ~ \"Once you get here, you get it\".",
                 "year_built": 2023,
                 "name": null
               },
@@ -48779,18 +48779,6 @@
                     "__typename": "LatestEstimate",
                     "source": {
                       "__typename": "EstimateSource",
-                      "type": "corelogic",
-                      "name": "Cotality\u2122"
-                    },
-                    "estimate": 690600,
-                    "estimate_high": 739000,
-                    "estimate_low": 642100,
-                    "date": "2026-06-08"
-                  },
-                  {
-                    "__typename": "LatestEstimate",
-                    "source": {
-                      "__typename": "EstimateSource",
                       "type": "collateral",
                       "name": "Collateral Analytics"
                     },
@@ -48798,6 +48786,18 @@
                     "estimate_high": 777200,
                     "estimate_low": 648800,
                     "date": "2026-06-14"
+                  },
+                  {
+                    "__typename": "LatestEstimate",
+                    "source": {
+                      "__typename": "EstimateSource",
+                      "type": "corelogic",
+                      "name": "Cotality\u2122"
+                    },
+                    "estimate": 690600,
+                    "estimate_high": 739000,
+                    "estimate_low": 642100,
+                    "date": "2026-06-08"
                   }
                 ],
                 "historical_values": [
