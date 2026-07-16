@@ -2343,12 +2343,6 @@
 
 <script>
   // Contact form handler (optional - prevents default for demo)
-  document.querySelector('.inquiry-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your inquiry! Holly will contact you shortly.');
-    this.reset();
-  });
-
   // Fetch and display listings from API
   async function loadListings() {
     console.log('loadListings function called');
