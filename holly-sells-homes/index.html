@@ -2272,11 +2272,11 @@
       </div>
     </div>
 
-    <form class="inquiry-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="tel" placeholder="Phone Number">
-      <textarea placeholder="Message or Questions..."></textarea>
+    <form class="inquiry-form" action="https://formspree.io/f/xeeyajeo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <textarea name="message" placeholder="Message or Questions..."></textarea>
       <button type="submit" class="btn btn-primary">Send Inquiry</button>
     </form>
   </div>
@@ -2289,7 +2289,7 @@
       <h2>Get in Touch</h2>
       <p>Tell us what you're looking for</p>
     </div>
-    <form class="listing-contact-form" onsubmit="event.preventDefault(); alert('Thank you for your inquiry! Holly will contact you shortly.'); this.reset();">
+    <form class="listing-contact-form" action="https://formspree.io/f/xeeyajeo" method="POST">
       <div class="form-group">
         <label for="mobile-name">Name</label>
         <input type="text" id="mobile-name" name="name" required>
