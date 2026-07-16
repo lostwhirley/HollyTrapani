@@ -1,5 +1,26 @@
 [
   {
+    "property_id": "6333honor",
+    "status": "sold",
+    "holly_role": "buyer",
+    "last_sold_date": "2026-07-15",
+    "last_sold_price": 395000,
+    "address": {
+      "line": "6333 Honor Way",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": "N/A",
+      "baths_consolidated": "N/A",
+      "sqft": "N/A",
+      "type": "N/A",
+      "year_built": "N/A"
+    },
+    "primary_photo": null
+  },
+  {
     "property_id": "9200755764",
     "status": "sold",
     "holly_role": "seller",
