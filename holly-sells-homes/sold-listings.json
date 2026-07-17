@@ -1,5 +1,27 @@
 [
   {
+    "property_id": "9179101564",
+    "status": "sold",
+    "holly_role": "seller",
+    "last_sold_date": "2026-07-16",
+    "last_sold_price": 398000,
+    "list_price": 398000,
+    "address": {
+      "line": "6191 Revelry Ct",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1405,
+      "type": "single_family",
+      "year_built": 2022
+    },
+    "primary_photo": "https://ap.rdcpix.com/2e2f4610d1dfa42735097fbf3ce37f24l-m3673154289s.jpg"
+  },
+  {
     "property_id": "6333honor",
     "status": "sold",
     "holly_role": "buyer",
