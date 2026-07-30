@@ -200,17 +200,17 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9121284043",
-          "listing_id": "2998959282",
+          "property_id": "9337886864",
+          "listing_id": "2992804383",
           "status": "for_sale",
           "description": {
-            "sold_date": "2022-11-10",
+            "sold_date": "2023-04-27",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 8712,
-            "sqft": 1913,
+            "lot_sqft": 7405,
+            "sqft": 1919,
             "stories": 1,
-            "sold_price": 645335,
+            "sold_price": 546130,
             "__typename": "SearchHomeDescription"
           },
           "location": {
@@ -218,15 +218,15 @@
               "postal_code": "34142",
               "state": "Florida",
               "street_name": "Harmony",
-              "street_number": "6229",
+              "street_number": "6217",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.306214,
-                "lon": -81.433579,
+                "lat": 26.306365,
+                "lon": -81.434054,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "6229 Harmony Dr",
+              "line": "6217 Harmony Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -243,27 +243,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 559900,
+          "list_price": 479900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m3836539704rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1334951638rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
-          "permalink": "6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -286,8 +286,8 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": true,
+            "is_price_reduced": false,
+            "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -390,17 +390,17 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9337886864",
-          "listing_id": "2992804383",
+          "property_id": "9121284043",
+          "listing_id": "2998959282",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-04-27",
+            "sold_date": "2022-11-10",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 7405,
-            "sqft": 1919,
+            "lot_sqft": 8712,
+            "sqft": 1913,
             "stories": 1,
-            "sold_price": 546130,
+            "sold_price": 645335,
             "__typename": "SearchHomeDescription"
           },
           "location": {
@@ -408,15 +408,15 @@
               "postal_code": "34142",
               "state": "Florida",
               "street_name": "Harmony",
-              "street_number": "6217",
+              "street_number": "6229",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.306365,
-                "lon": -81.434054,
+                "lat": 26.306214,
+                "lon": -81.433579,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "6217 Harmony Dr",
+              "line": "6229 Harmony Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -433,27 +433,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 479900,
+          "list_price": 559900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m395283111rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m3836539704rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m60445807rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1334951638rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/50f55b5214bb5b60b14f2f1cb4b621a3l-m4149225539rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
-          "permalink": "6217-Harmony-Dr_Ave-Maria_FL_34142_M93378-86864",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
+          "permalink": "6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -476,8 +476,8 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": false,
-            "is_new_listing": false,
+            "is_price_reduced": null,
+            "is_new_listing": true,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -561,7 +561,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": null,
