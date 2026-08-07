@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 553,
-                  "total_payment": 9633,
+                  "total_payment": 9640,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06669,
+                    "rate": 0.06676,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06669
+                    "rate": 0.06676
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06529
+                    "rate": 0.06525
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05819
+                    "rate": 0.05861
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05737
+                    "rate": 0.05762
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06114
+                    "rate": 0.0611
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06168
+                    "rate": 0.06162
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06297
+                    "rate": 0.06304
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06521
+                    "rate": 0.06507
                   }
                 ]
               },
@@ -294,7 +294,7 @@
                     ],
                     "id": "0717211131",
                     "name": "Corkscrew Middle School",
-                    "parent_rating": 5,
+                    "parent_rating": 4,
                     "rating": 8,
                     "student_count": 1010
                   },
@@ -593,7 +593,7 @@
                     ],
                     "id": "0717211131",
                     "name": "Corkscrew Middle School",
-                    "parent_rating": 5,
+                    "parent_rating": 4,
                     "rating": 8,
                     "student_count": 1010
                   },
@@ -1020,9 +1020,9 @@
                       "housing_market": {
                         "__typename": "HousingMarket",
                         "median_price_per_sqft": 240,
-                        "median_sold_price": 435000,
-                        "median_listing_price": 461402,
-                        "median_days_on_market": 98
+                        "median_sold_price": 396500,
+                        "median_listing_price": 462815,
+                        "median_days_on_market": 99
                       }
                     }
                   }
