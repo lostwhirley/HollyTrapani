@@ -3073,6 +3073,10 @@
         const photoHtml = photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`;
         const houseIcon = `<div style="height:280px;background:var(--light);display:flex;align-items:center;justify-content:center;"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>`;
         const badgeLabel = role === 'buyer' ? 'Closed' : 'Sold';
+        const isNewConstruction = desc.type === 'new_construction';
+        const priceTagText = isNewConstruction
+          ? `New Construction${soldDate ? ' · Closed ' + soldDate : ''}`
+          : `Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}`;
         const cardBody = `
           <div class="listing-badge-sold">${badgeLabel}</div>
           <div class="listing-content">
@@ -3083,7 +3087,7 @@
               <div class="spec">${beds} Bed</div>
               <div class="spec">${baths} Bath</div>
             </div>
-            <div class="sold-price-tag">Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}</div>
+            <div class="sold-price-tag">${priceTagText}</div>
           </div>`;
         categories.forEach(cat => {
           const card = document.createElement('div');
