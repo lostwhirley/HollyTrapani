@@ -2602,7 +2602,7 @@
     if (!grid) return;
 
     try {
-      const response = await fetch('../articles.json');
+      const response = await fetch('./articles.json');
       if (!response.ok) throw new Error('Failed to fetch articles');
       const data = await response.json();
       const articles = data.articles || [];
@@ -3072,8 +3072,9 @@
         const categories = role === 'both' ? ['buyer', 'seller'] : [role === 'buyer' ? 'buyer' : 'seller'];
         const photoHtml = photo ? `<img src="${photo}" alt="${addr.line}" style="width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(30%);">` : `<div style="height:280px;background:var(--light);"></div>`;
         const houseIcon = `<div style="height:280px;background:var(--light);display:flex;align-items:center;justify-content:center;"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>`;
+        const badgeLabel = role === 'buyer' ? 'Closed' : 'Sold';
         const cardBody = `
-          <div class="listing-badge-sold">Sold</div>
+          <div class="listing-badge-sold">${badgeLabel}</div>
           <div class="listing-content">
             <div class="listing-price">${price}</div>
             <div class="listing-address">${addr.line || ''}</div>

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-15T12:00:00.000000Z",
+  "data_snapshot": {
+    "mortgage_30yr": 6.12,
+    "mortgage_15yr": 5.48,
+    "fred_series_date": "2026-08-12",
+    "collier_median_home_value": 505000,
+    "collier_median_gross_rent": 1890,
+    "collier_homeownership_rate": 76.5,
+    "census_vintage": "2023",
+    "holly_listings_avg_price": 468500,
+    "holly_listings_count": 9
+  },
+  "articles": [
+    {
+      "id": "2026-08-15-article-1",
+      "tag": "Buying",
+      "date": "August 2026",
+      "date_iso": "2026-08-15",
+      "title": "Mortgage Rates Drop in August 2026: Your Opportunity in Ave Maria and Naples",
+      "excerpt": "Good news for homebuyers: 30-year mortgage rates have dipped to 6.12% in August 2026. We're seeing renewed buyer interest across Ave Maria and Naples as affordability improves. If you've been waiting on the sidelines, this could be the moment to take action.",
+      "full_content": "August brings some encouraging news to Southwest Florida's real estate market. Mortgage rates have ticked down from earlier in the summer, with 30-year fixed rates now sitting at 6.12% and 15-year rates at 5.48%. For homebuyers who've been watching from the sidelines, this modest improvement in affordability could be the push needed to start house hunting.\n\n**What the Rate Drop Means for Your Budget**\n\nLet's put this in perspective: A $450,000 home with 20% down ($90,000) leaves a loan amount of $360,000. At the new 6.12% rate, your principal and interest payment comes to approximately $2,148 per month. Add property taxes, insurance, and HOA fees—typically around 3% annually—and you're looking at roughly $2,380 in total monthly housing costs.\n\nCompare that to earlier in the year at 6.37%, and that same payment would have been about $2,445 per month. The difference isn't dramatic, but it adds up over time and can make the difference between a \"stretching\" budget and a comfortable one.\n\n**The 15-Year Option**\n\nAt 5.48%, the 15-year fixed rate is now more than 60 basis points below the 30-year. If you have strong cash flow and want to build equity faster, this could be attractive. That same $360,000 loan would run approximately $2,780 per month in principal and interest—higher monthly, but you'd own the home free and clear by your mid-60s.\n\n**What's Available Right Now**\n\nHolly currently has 9 active listings in Ave Maria and Naples, ranging from $325,000 to $720,000, with an average price of $468,500. This reflects an active market with good selection. The median Collier County home value has climbed to $505,000, showing strong market fundamentals across the region.\n\nWith a 76.5% homeownership rate in Collier County, you're buying into communities where ownership is the norm. Your neighbors are invested in their properties and their community.\n\n**Timing This Opportunity**\n\nLate summer can be a strategic time to buy. You'll face less competition from other buyers (many are back-to-school focused), yet inventory is still solid. Plus, if you close before year-end, you have time to settle in before the holidays.\n\n**Your Next Move**\n\nIf you've been waiting for rates to ease, August 2026 is signaling opportunity. The question isn't whether now is a good time—it's whether your specific situation aligns with your long-term goals. Let's talk about what's available and what makes sense for your family.",
+      "data_points": [
+        "30-year fixed rate: 6.12% (FRED MORTGAGE30US, 2026-08-12)",
+        "15-year fixed rate: 5.48% (FRED MORTGAGE15US, 2026-08-12)",
+        "Collier County median home value: $505,000 (Census ACS 2023)",
+        "Collier County median rent: $1,890/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.5% (Census ACS 2023)"
+      ]
+    },
+    {
+      "id": "2026-08-15-article-2",
+      "tag": "Neighborhood",
+      "date": "August 2026",
+      "date_iso": "2026-08-15",
+      "title": "Why Ave Maria Residents Love Living Here: Community, Amenities & Real Estate Value",
+      "excerpt": "Ave Maria isn't just another Florida community—it's thoughtfully designed around residents' needs. With strong home values, excellent amenities, and a cohesive neighborhood feel, families and retirees are choosing Ave Maria for lasting quality of life. Here's what makes it special.",
+      "full_content": "If you're considering a move to Southwest Florida, you've probably heard about Ave Maria. The master-planned community continues to attract families, retirees, and investors alike. But what exactly makes Ave Maria stand out from other options in Collier County?\n\n**The Master-Planned Difference**\n\nUnlike sprawling suburban developments, Ave Maria was designed with intentionality. The community centers around a town square, emphasizing walkability, green space, and neighborhood gathering areas. This isn't just architectural preference—it shapes how residents live and interact. You'll see neighbors at the farmers market, on the bike paths, and at community events. That sense of belonging matters, especially if you're relocating to a new state.\n\n**Strong Real Estate Fundamentals**\n\nCurrently, Holly has 9 active listings in Ave Maria and Naples with an average price of $468,500—reflecting both variety and solid market value. The Collier County median home value has reached $505,000, showing appreciation and strong market confidence. Whether you're buying your first home ($300K-$400K range) or looking at luxury options ($600K-$720K+), there's genuine inventory.\n\n**Amenities That Matter**\n\nAve Maria offers more than just homes. Residents enjoy a championship golf course, resort-style pools, restaurants, boutique shops, and fitness facilities. The town square hosts regular events, from concerts to farmers markets. For families, there's an on-site elementary school plus proximity to highly-rated Collier County schools.\n\n**Rental Income Potential**\n\nWith Collier County's median rent at $1,890 per month, investment buyers are looking closely at Ave Maria properties. If you're considering a rental investment alongside personal use (snowbird property, rental during off-season), the economics work well. Your tenant base is stable—Collier County's 76.5% homeownership rate shows commitment to the area.\n\n**The Ownership Culture**\n\nThat 76.5% homeownership rate isn't random. It reflects a community where people buy in—literally and figuratively. Your neighbors own their homes, care for their properties, and invest in community life. This translates to neighborhood stability, property value protection, and a genuine sense of place.\n\n**Is Ave Maria Right for You?**\n\nIf you value planned community living, genuine neighborhood character, strong schools, and solid real estate investment, Ave Maria deserves serious consideration. The market fundamentals are strong, the community culture is welcoming, and today's rate environment makes purchasing more accessible than it was earlier this year.\n\nReady to explore what's available? Holly Trapani knows every corner of Ave Maria and can help you find the right home for your Southwest Florida lifestyle.",
+      "data_points": [
+        "30-year fixed rate: 6.12% (FRED MORTGAGE30US, 2026-08-12)",
+        "15-year fixed rate: 5.48% (FRED MORTGAGE15US, 2026-08-12)",
+        "Collier County median home value: $505,000 (Census ACS 2023)",
+        "Collier County median rent: $1,890/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.5% (Census ACS 2023)"
+      ]
+    },
+    {
+      "id": "2026-08-15-article-3",
+      "tag": "Selling",
+      "date": "August 2026",
+      "date_iso": "2026-08-15",
+      "title": "Selling This Fall? How to Position Your Ave Maria or Naples Home for Success",
+      "excerpt": "Late summer is strategic selling season in Southwest Florida. While spring sees peak buyer traffic, fall sellers face less competition and motivated buyers. With rates stabilizing and the market showing strength, now could be the perfect time to list your Ave Maria or Naples home.",
+      "full_content": "If you've been thinking about selling your Ave Maria or Naples home, August and September might be ideal timing. Here's why the fall market favors prepared sellers—and how to make the most of this window.\n\n**Why Fall Sellers Have an Advantage**\n\nMost homeowners think spring is the only time to sell. But fall brings something spring doesn't: less competition. Many sellers wait for March/April, which means summer through early fall sees fewer homes on the market. Meanwhile, buyers shopping in August and September are often serious—they need to close before year-end or settle into a new home before school starts.\n\nBuyers right now are also motivated by lower rates. At 6.12% for 30-year mortgages (down from 6.37% earlier in the year), affordability has improved modestly. This expanded buyer pool works to your advantage as a seller.\n\n**Market Strength on Your Side**\n\nCollier County's median home value has reached $505,000, reflecting consistent appreciation. Holly's current listings in Ave Maria and Naples average $468,500 with good variety ($325K-$720K+), showing active demand across price points. Your home isn't entering a dead market—it's entering one with fundamentals supporting fair pricing.\n\nWith the county's 76.5% homeownership rate, buyers here stay put. This means homes that are well-priced attract serious owner-occupants, not just investors looking for quick flips.\n\n**Pricing Strategy for Fall**\n\nThe temptation with lower inventory is to overprice. Don't. Fall buyers are motivated but selective. Price within 2-3% of recent comparable sales—not higher. A home that sits for months signals weakness and eventually sells for less than if you'd priced it right from the start.\n\nConsider what's competitive now: updated kitchens and bathrooms, fresh landscaping, good bones. If your home needs work, price accordingly or make modest improvements before listing.\n\n**Rental Market Reality**\n\nWith median rent at $1,890/month in Collier County, some potential buyers might consider renting. Make sure your price reflects why owning—not renting—makes sense. This means competitive pricing, not premium pricing.\n\n**Staging and Presentation**\n\nFall means lower visitor numbers, so each showing counts more. Stage to sell: declutter, neutralize personal décor, highlight outdoor spaces (which are actually pleasant in Florida in fall). Photos and virtual tours do heavy lifting in a slower market, so invest in quality.\n\n**Your Action Plan**\n\n1. Get a professional appraisal\n2. Price strategically within recent comps\n3. List before Labor Day to catch early fall buyers\n4. Invest in professional photography/virtual tour\n5. Be flexible on showings—fall buyers are often serious\n\nThe market is favorable for sellers who understand timing. Contact Holly Trapani to discuss your home's value and develop a selling strategy that works for today's market conditions.",
+      "data_points": [
+        "30-year fixed rate: 6.12% (FRED MORTGAGE30US, 2026-08-12)",
+        "15-year fixed rate: 5.48% (FRED MORTGAGE15US, 2026-08-12)",
+        "Collier County median home value: $505,000 (Census ACS 2023)",
+        "Collier County median rent: $1,890/month (Census ACS 2023)",
+        "Collier County homeownership rate: 76.5% (Census ACS 2023)"
+      ]
+    }
+  ]
+}

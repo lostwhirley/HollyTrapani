@@ -34,11 +34,11 @@
       "postal_code": "34142"
     },
     "description": {
-      "beds": "N/A",
-      "baths_consolidated": "N/A",
+      "beds": 2,
+      "baths_consolidated": "2",
       "sqft": "N/A",
-      "type": "N/A",
-      "year_built": "N/A"
+      "type": "new_construction",
+      "year_built": 2026
     },
     "primary_photo": null
   },
@@ -195,5 +195,26 @@
     },
     "primary_photo": "https://ap.rdcpix.com/c99cd3cc080f75c6c26bcfcbcdb2c2e4l-m1492701961s.jpg",
     "holly_role": "seller"
+  },
+  {
+    "property_id": "coralh29104",
+    "status": "sold",
+    "holly_role": "buyer",
+    "last_sold_date": "2026-08-15",
+    "last_sold_price": 425000,
+    "address": {
+      "line": "29104 Coral Harbour Drive",
+      "city": "Englewood",
+      "state_code": "FL",
+      "postal_code": "34223"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": "N/A",
+      "type": "new_construction",
+      "year_built": 2026
+    },
+    "primary_photo": null
   }
 ]
