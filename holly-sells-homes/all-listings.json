@@ -1,8 +1,8 @@
 {
   "data": {
     "home_search": {
-      "count": 9,
-      "total": 9,
+      "count": 8,
+      "total": 8,
       "results": [
         {
           "property_id": "5986196429",
@@ -200,101 +200,6 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9798464060",
-          "listing_id": "2998506976",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2023-08-07",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 7405,
-            "sqft": 1687,
-            "stories": 1,
-            "sold_price": 556425,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Celebration",
-              "street_number": "5641",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.314338,
-                "lon": -81.437536,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "5641 Celebration Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 459000,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/90927739d2f2835eb47d375c8b7ddf57l-m3221234038rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/90927739d2f2835eb47d375c8b7ddf57l-m842564664rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/90927739d2f2835eb47d375c8b7ddf57l-m327861518rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/90927739d2f2835eb47d375c8b7ddf57l-m3221234038rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5641-Celebration-Dr_Ave-Maria_FL_34142_M97984-64060",
-          "permalink": "5641-Celebration-Dr_Ave-Maria_FL_34142_M97984-64060",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
           "property_id": "9728116997",
           "listing_id": "2996707774",
           "status": "for_sale",
@@ -390,17 +295,17 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9010214527",
-          "listing_id": "2993504654",
+          "property_id": "9606074382",
+          "listing_id": "2999452079",
           "status": "for_sale",
           "description": {
-            "sold_date": null,
-            "baths_consolidated": "4.5",
+            "sold_date": "2023-09-08",
+            "baths_consolidated": "5",
             "beds": 5,
-            "lot_sqft": 7405,
-            "sqft": 3440,
+            "lot_sqft": 9148,
+            "sqft": 4272,
             "stories": 2,
-            "sold_price": null,
+            "sold_price": 1019120,
             "__typename": "SearchHomeDescription"
           },
           "location": {
@@ -408,15 +313,15 @@
               "postal_code": "34142",
               "state": "Florida",
               "street_name": "Traditions",
-              "street_number": "4163",
+              "street_number": "4151",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.345764,
-                "lon": -81.435643,
+                "lat": 26.34577,
+                "lon": -81.436196,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "4163 Traditions Dr",
+              "line": "4151 Traditions Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -433,27 +338,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 699000,
+          "list_price": 999999,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m2390444836rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m3570776019rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m788911679rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1551944793rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
-          "permalink": "4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
+          "href": "https://www.realtor.com/realestateandhomes-detail/4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
+          "permalink": "4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -466,7 +371,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": true,
+            "is_pending": null,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": null,
@@ -476,8 +381,8 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": false,
-            "is_new_listing": false,
+            "is_price_reduced": null,
+            "is_new_listing": true,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -770,17 +675,17 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9606074382",
-          "listing_id": "2999452079",
+          "property_id": "9010214527",
+          "listing_id": "2993504654",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-09-08",
-            "baths_consolidated": "5",
+            "sold_date": null,
+            "baths_consolidated": "4.5",
             "beds": 5,
-            "lot_sqft": 9148,
-            "sqft": 4272,
+            "lot_sqft": 7405,
+            "sqft": 3440,
             "stories": 2,
-            "sold_price": 1019120,
+            "sold_price": null,
             "__typename": "SearchHomeDescription"
           },
           "location": {
@@ -788,15 +693,15 @@
               "postal_code": "34142",
               "state": "Florida",
               "street_name": "Traditions",
-              "street_number": "4151",
+              "street_number": "4163",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.34577,
-                "lon": -81.436196,
+                "lat": 26.345764,
+                "lon": -81.435643,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "4151 Traditions Dr",
+              "line": "4163 Traditions Dr",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -813,27 +718,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 999999,
+          "list_price": 699000,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m3570776019rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m2390444836rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1551944793rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m788911679rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
-          "permalink": "4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
+          "href": "https://www.realtor.com/realestateandhomes-detail/4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
+          "permalink": "4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -846,7 +751,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": null,
@@ -856,8 +761,8 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": true,
+            "is_price_reduced": false,
+            "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"

@@ -1,5 +1,27 @@
 [
   {
+    "property_id": "9798464060",
+    "status": "sold",
+    "holly_role": "seller",
+    "last_sold_date": "2026-08-20",
+    "last_sold_price": 446000,
+    "list_price": 459000,
+    "address": {
+      "line": "5641 Celebration Dr",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1687,
+      "type": "single_family",
+      "year_built": 2023
+    },
+    "primary_photo": "https://ap.rdcpix.com/90927739d2f2835eb47d375c8b7ddf57l-m3221234038s.jpg"
+  },
+  {
     "property_id": "9179101564",
     "status": "sold",
     "holly_role": "seller",
