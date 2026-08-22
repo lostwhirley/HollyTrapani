@@ -1,9 +1,104 @@
 {
   "data": {
     "home_search": {
-      "count": 8,
-      "total": 8,
+      "count": 7,
+      "total": 7,
       "results": [
+        {
+          "property_id": "9208432128",
+          "listing_id": "2999732027",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2023-11-07",
+            "baths_consolidated": "6",
+            "beds": 6,
+            "lot_sqft": 8712,
+            "sqft": 4674,
+            "stories": 2,
+            "sold_price": 1112422,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Traditions",
+              "street_number": "4107",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.34631,
+                "lon": -81.438091,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "4107 Traditions Dr",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 1159000,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m941772325rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m2975929979rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m3744915319rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m941772325rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/4107-Traditions-Dr_Ave-Maria_FL_34142_M92084-32128",
+          "permalink": "4107-Traditions-Dr_Ave-Maria_FL_34142_M92084-32128",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": null,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": true,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
         {
           "property_id": "5986196429",
           "listing_id": "2994803621",
@@ -105,33 +200,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9208432128",
-          "listing_id": "2999732027",
+          "property_id": "9414944178",
+          "listing_id": "2999297311",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-11-07",
-            "baths_consolidated": "6",
-            "beds": 6,
-            "lot_sqft": 8712,
-            "sqft": 4674,
-            "stories": 2,
-            "sold_price": 1112422,
+            "sold_date": "2016-01-12",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 7841,
+            "sqft": 1784,
+            "stories": 1,
+            "sold_price": 280033,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Traditions",
-              "street_number": "4107",
+              "street_name": "Triumph",
+              "street_number": "6085",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.34631,
-                "lon": -81.438091,
+                "lat": 26.307706,
+                "lon": -81.438922,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "4107 Traditions Dr",
+              "line": "6085 Triumph Ln",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -148,27 +243,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 1159000,
+          "list_price": 399900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m941772325rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m793740791rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m2975929979rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m3191002706rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m3744915319rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m65565455rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/b4e650413726d11f92c05ccb83f56768l-m941772325rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m793740791rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4107-Traditions-Dr_Ave-Maria_FL_34142_M92084-32128",
-          "permalink": "4107-Traditions-Dr_Ave-Maria_FL_34142_M92084-32128",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6085-Triumph-Ln_Ave-Maria_FL_34142_M94149-44178",
+          "permalink": "6085-Triumph-Ln_Ave-Maria_FL_34142_M94149-44178",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -184,7 +279,7 @@
             "is_pending": null,
             "is_short_sale": null,
             "is_foreclosure": null,
-            "is_senior_community": null,
+            "is_senior_community": true,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
@@ -192,7 +287,102 @@
             "is_subdivision": null,
             "is_plan": null,
             "is_price_reduced": null,
-            "is_new_listing": true,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "9121284043",
+          "listing_id": "2998959282",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2022-11-10",
+            "baths_consolidated": "2",
+            "beds": 2,
+            "lot_sqft": 8712,
+            "sqft": 1913,
+            "stories": 1,
+            "sold_price": 645335,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Harmony",
+              "street_number": "6229",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.306209,
+                "lon": -81.433576,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "6229 Harmony Dr",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 559900,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m3836539704rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1334951638rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
+          "permalink": "6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
             "__typename": "SearchHomeFlags"
@@ -390,101 +580,6 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9414944178",
-          "listing_id": "2999297311",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2016-01-12",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 7841,
-            "sqft": 1784,
-            "stories": 1,
-            "sold_price": 280033,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Triumph",
-              "street_number": "6085",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.307706,
-                "lon": -81.438922,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "6085 Triumph Ln",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 399900,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m793740791rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m3191002706rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m65565455rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/12bbcedc74184aaecb3cc6eefc3be172l-m793740791rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6085-Triumph-Ln_Ave-Maria_FL_34142_M94149-44178",
-          "permalink": "6085-Triumph-Ln_Ave-Maria_FL_34142_M94149-44178",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": null,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
           "property_id": "9337886864",
           "listing_id": "2992804383",
           "status": "for_sale",
@@ -572,196 +667,6 @@
             "is_subdivision": null,
             "is_plan": null,
             "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9121284043",
-          "listing_id": "2998959282",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2022-11-10",
-            "baths_consolidated": "2",
-            "beds": 2,
-            "lot_sqft": 8712,
-            "sqft": 1913,
-            "stories": 1,
-            "sold_price": 645335,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Harmony",
-              "street_number": "6229",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.306209,
-                "lon": -81.433576,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "6229 Harmony Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 559900,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m3836539704rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1334951638rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
-          "permalink": "6229-Harmony-Dr_Ave-Maria_FL_34142_M91212-84043",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": null,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": null,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9010214527",
-          "listing_id": "2993504654",
-          "status": "for_sale",
-          "description": {
-            "sold_date": null,
-            "baths_consolidated": "4.5",
-            "beds": 5,
-            "lot_sqft": 7405,
-            "sqft": 3440,
-            "stories": 2,
-            "sold_price": null,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Traditions",
-              "street_number": "4163",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.345764,
-                "lon": -81.435643,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "4163 Traditions Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 699000,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m2390444836rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m788911679rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/12784d5e8983c26f6cf85704d6b0d8fel-m3124010368rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
-          "permalink": "4163-Traditions-Dr_Ave-Maria_FL_34142_M90102-14527",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": null,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": false,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
