@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "9530668405",
-              "last_update_date": "2026-06-27T18:52:35Z",
+              "last_update_date": "2026-06-27T18:56:26Z",
               "last_price_change_date": null,
               "last_price_change_amount": null,
               "listing_id": "2991350517",
@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 553,
-                  "total_payment": 9629,
+                  "total_payment": 9661,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06665,
+                    "rate": 0.06697,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06665
+                    "rate": 0.06697
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06524
+                    "rate": 0.06529
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05833
+                    "rate": 0.0586
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05713
+                    "rate": 0.05749
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06104
+                    "rate": 0.06116
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06175
+                    "rate": 0.06193
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06209
+                    "rate": 0.06282
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06475
+                    "rate": 0.06419
                   }
                 ]
               },
@@ -791,7 +791,8 @@
                   "__typename": "HomeDetails",
                   "category": "Pool and Spa",
                   "text": [
-                    "Pool Features: Community"
+                    "Pool Features: Community",
+                    "Spa Features: Community"
                   ]
                 },
                 {
@@ -2599,10 +2600,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 377243,
-                    "estimate_high": 414967,
-                    "estimate_low": 339518,
-                    "date": "2026-08-12"
+                    "estimate": 375723,
+                    "estimate_high": 413295,
+                    "estimate_low": 338150,
+                    "date": "2026-08-19"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2928,8 +2929,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 377243,
-                        "date": "2026-08-12"
+                        "estimate": 375723,
+                        "date": "2026-08-19"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -3180,62 +3181,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 376531,
+                        "estimate": 375014,
                         "date": "2026-09-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 375929,
+                        "estimate": 374415,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 375352,
+                        "estimate": 373840,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 374780,
+                        "estimate": 373270,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 374207,
+                        "estimate": 372699,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 373632,
+                        "estimate": 372127,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 373055,
+                        "estimate": 371552,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 372477,
+                        "estimate": 370976,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 371896,
+                        "estimate": 370398,
                         "date": "2027-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 371315,
+                        "estimate": 369819,
                         "date": "2027-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 370731,
+                        "estimate": 369237,
                         "date": "2027-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 370144,
+                        "estimate": 368653,
                         "date": "2027-08-01"
                       }
                     ]
