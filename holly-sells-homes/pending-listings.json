@@ -1,0 +1,52 @@
+[
+  {
+    "property_id": "5690mayflower",
+    "address": "5690 Mayflower Way",
+    "city": "Ave Maria",
+    "state_code": "FL",
+    "postal_code": "34142",
+    "days_to_pending": 2,
+    "holly_roles": ["buyer", "seller"],
+    "primary_photo": "https://ap.rdcpix.com/93a38016c3a839d4b8eb54394580badbl-m738585741s.jpg"
+  },
+  {
+    "property_id": "5641celebration",
+    "address": "5641 Celebration",
+    "city": "Ave Maria",
+    "state_code": "FL",
+    "postal_code": "34142",
+    "days_to_pending": 6,
+    "holly_roles": ["seller"],
+    "primary_photo": null
+  },
+  {
+    "property_id": "5196ciatto",
+    "address": "5196 Ciatto Way",
+    "city": "Ave Maria",
+    "state_code": "FL",
+    "postal_code": "34142",
+    "days_to_pending": 6,
+    "holly_roles": ["seller"],
+    "primary_photo": "https://ap.rdcpix.com/f2e31779b94cfd0e86047dea3376da21l-m2061110537s.jpg"
+  },
+  {
+    "property_id": "6191revelry",
+    "address": "6191 Revelry Ct",
+    "city": "Ave Maria",
+    "state_code": "FL",
+    "postal_code": "34142",
+    "days_to_pending": 27,
+    "holly_roles": ["seller"],
+    "primary_photo": "https://ap.rdcpix.com/2e2f4610d1dfa42735097fbf3ce37f24l-m3673154289s.jpg"
+  },
+  {
+    "property_id": "5901mayflower",
+    "address": "5901 Mayflower Way",
+    "city": "Ave Maria",
+    "state_code": "FL",
+    "postal_code": "34142",
+    "days_to_pending": 54,
+    "holly_roles": ["seller"],
+    "primary_photo": "https://ap.rdcpix.com/f6aa693900e040c2e91fc338f41565f3l-m1352117288s.jpg"
+  }
+]
