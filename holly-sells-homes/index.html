@@ -576,40 +576,6 @@
       position: relative;
     }
 
-    .pending-badge {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      background: linear-gradient(135deg, #d4a574 0%, #c9955a 100%);
-      border: 2px solid #9d7e3e;
-      color: #3d3530;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Jost', sans-serif;
-      font-weight: 600;
-      text-align: center;
-      z-index: 10;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .pending-badge-label {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      line-height: 1.2;
-    }
-
-    .pending-badge-days {
-      font-size: 1.75rem;
-      font-weight: 700;
-      line-height: 1;
-    }
-
     /* BLOG SECTION */
     .blog-section {
       background: var(--light);
@@ -2092,7 +2058,6 @@
   <!-- Tabs -->
   <div class="listings-tabs">
     <button class="tab-button active" data-tab="sales">For Sale</button>
-    <button class="tab-button" data-tab="pending">Pending</button>
     <button class="tab-button" data-tab="rentals">For Rent</button>
   </div>
 
@@ -2101,16 +2066,6 @@
     <div class="listings-filter-bar" id="listings-filter-bar"></div>
     <div class="listings-grid" id="listings-grid">
       <!-- Listings will be loaded here by JavaScript -->
-      <div class="spinner-container">
-        <div class="spinner"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pending Listings -->
-  <div class="tab-content" id="pending-tab">
-    <div class="listings-grid" id="pending-grid">
-      <!-- Pending listings will be loaded here by JavaScript -->
       <div class="spinner-container">
         <div class="spinner"></div>
       </div>
@@ -2889,70 +2844,10 @@
     }
   }
 
-  // Load pending listings
-  async function loadPendingListings() {
-    console.log('loadPendingListings function called');
-    const pendingGrid = document.getElementById('pending-grid');
-
-    try {
-      const response = await fetch('./pending-listings.json');
-      if (!response.ok) throw new Error('Failed to fetch pending listings');
-      const pending = await response.json();
-
-      if (!Array.isArray(pending) || pending.length === 0) {
-        pendingGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6b7280;">No pending listings at this time.</p>';
-        return;
-      }
-
-      pendingGrid.innerHTML = '';
-
-      pending.forEach(property => {
-        const addr = property.address || '';
-        const city = property.city || '';
-        const state = property.state_code || '';
-        const postal = property.postal_code || '';
-        const daysText = property.days_to_pending === 1 ? '1 day' : `${property.days_to_pending} days`;
-        const photo = property.primary_photo || '';
-
-        const photoHtml = photo
-          ? `<img src="${photo}" alt="${addr}" style="width: 100%; height: 280px; object-fit: cover; display: block;">`
-          : `<div style="height: 280px; background: var(--light); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-family: 'Jost', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em;">Property Image</div>`;
-
-        const rolesText = property.holly_roles.includes('buyer') && property.holly_roles.includes('seller')
-          ? 'Buyer & Seller Representation'
-          : property.holly_roles.includes('buyer') ? 'Buyer Representation' : 'Seller Representation';
-
-        const card = document.createElement('div');
-        card.style.cssText = 'text-decoration: none; color: inherit; cursor: pointer;';
-        card.innerHTML = `
-          <div class="listing-card" style="position: relative;">
-            <div class="pending-badge">
-              <div class="pending-badge-label">Pending<br>In</div>
-              <div class="pending-badge-days">${property.days_to_pending}</div>
-            </div>
-            ${photoHtml}
-            <div class="listing-content">
-              <div class="listing-address" style="font-weight: 600; margin-bottom: 0.5rem;">${addr}</div>
-              <div class="listing-city">${city}, ${state} ${postal}</div>
-              <div class="listing-city" style="font-size: 0.75rem; color: var(--accent); margin-top: 0.5rem;">${rolesText}</div>
-              <div class="btn btn-primary" style="margin-top: 1rem; width: 100%; text-align: center;">View Details</div>
-            </div>
-          </div>
-        `;
-
-        pendingGrid.appendChild(card);
-      });
-    } catch (error) {
-      console.error('Error loading pending listings:', error);
-      pendingGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6b7280;">Unable to load pending listings. Please try again later.</p>';
-    }
-  }
-
   // Tab switching
   document.addEventListener('DOMContentLoaded', function() {
     // Load both sales and rentals
     loadListings();
-    loadPendingListings();
     loadRentals();
     loadArticles();
     loadReviews();
