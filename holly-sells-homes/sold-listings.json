@@ -28,6 +28,7 @@
     "last_sold_date": "2026-08-20",
     "last_sold_price": 446000,
     "list_price": 459000,
+    "days_pending": 6,
     "address": {
       "line": "5641 Celebration Dr",
       "city": "Ave Maria",
@@ -50,6 +51,7 @@
     "last_sold_date": "2026-07-16",
     "last_sold_price": 398000,
     "list_price": 398000,
+    "days_pending": 27,
     "address": {
       "line": "6191 Revelry Ct",
       "city": "Ave Maria",
@@ -93,6 +95,7 @@
     "last_sold_date": "2026-06-29",
     "last_sold_price": 265000,
     "list_price": 279000,
+    "days_pending": 54,
     "address": {
       "line": "5901 Mayflower Way",
       "city": "Ave Maria",
@@ -115,6 +118,7 @@
     "last_sold_date": "2026-05-15",
     "last_sold_price": 495000,
     "list_price": 514900,
+    "days_pending": 6,
     "address": {
       "line": "5196 Ciatto Way",
       "city": "Ave Maria",
@@ -136,6 +140,7 @@
     "last_sold_date": "2026-05-01",
     "last_sold_price": 335000,
     "list_price": 349000,
+    "days_pending": 2,
     "address": {
       "line": "5690 Mayflower Way Unit 608",
       "city": "Ave Maria",
