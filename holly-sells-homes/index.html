@@ -3111,7 +3111,7 @@
           ? `New Construction${soldDate ? ' · Closed ' + soldDate : ''}`
           : `Listed at ${listPrice}${soldDate ? ' · Sold ' + soldDate : ''}`;
         const pendingBadgeHtml = home.days_pending
-          ? `<div class="pending-badge"><div class="pending-badge-label">Pending</div><div class="pending-badge-days">${home.days_pending}</div></div>`
+          ? `<div class="pending-badge"><div class="pending-badge-label">Pending<br>In</div><div class="pending-badge-days">${home.days_pending}</div><div class="pending-badge-label" style="font-size: 0.55rem; margin-top: 2px;">Days</div></div>`
           : '';
         categories.forEach(cat => {
           const badgeLabel = cat === 'buyer' ? 'Closed' : 'Sold';
