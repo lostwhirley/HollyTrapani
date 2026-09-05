@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 553,
-                  "total_payment": 9697,
+                  "total_payment": 9722,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.06734,
+                    "rate": 0.06759,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.06734
+                    "rate": 0.06759
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06592
+                    "rate": 0.06597
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.05935
+                    "rate": 0.05966
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.05831
+                    "rate": 0.05842
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06164
+                    "rate": 0.0617
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06237
+                    "rate": 0.06235
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.0626
+                    "rate": 0.06235
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06385
+                    "rate": 0.06338
                   }
                 ]
               },
@@ -2601,10 +2601,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 393781,
-                    "estimate_high": 433159,
-                    "estimate_low": 354402,
-                    "date": "2026-08-26"
+                    "estimate": 390773,
+                    "estimate_high": 441573,
+                    "estimate_low": 339972,
+                    "date": "2026-09-02"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2930,6 +2930,11 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
+                        "estimate": 390773,
+                        "date": "2026-09-02"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
                         "estimate": 393781,
                         "date": "2026-08-26"
                       },
@@ -3182,63 +3187,63 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 393038,
-                        "date": "2026-09-01"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 392410,
+                        "estimate": 390148,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 391807,
+                        "estimate": 389549,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 391210,
+                        "estimate": 388956,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390612,
+                        "estimate": 388360,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 390012,
+                        "estimate": 387764,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 389410,
+                        "estimate": 387165,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 388806,
+                        "estimate": 386565,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 388200,
+                        "estimate": 385963,
                         "date": "2027-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 387593,
+                        "estimate": 385359,
                         "date": "2027-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386983,
+                        "estimate": 384753,
                         "date": "2027-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 386371,
+                        "estimate": 384144,
                         "date": "2027-08-01"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
+                        "estimate": 383534,
+                        "date": "2027-09-01"
                       }
                     ]
                   },
