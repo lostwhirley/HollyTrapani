@@ -1,7 +1,22 @@
 {
   "average_rating": 5.0,
-  "total_reviews": 13,
+  "total_reviews": 14,
   "reviews": [
+    {
+      "source_id": "RDC",
+      "responsiveness": 5,
+      "market_expertise": 5,
+      "comment": "Holly is outstanding & very knowledgeable. Her marketing & communication skills are excellent.\nShe will stay in touch with any & all information along the way. I can attest to this because she sold mine.\n\nCall her today.\n\n",
+      "display_name": "Geralyn Wyatt",
+      "location": "Ave Maria, FL",
+      "year": "2026",
+      "negotiation_skills": 5,
+      "rating": 5,
+      "professionalism_communication": 5,
+      "describe_yourself": "SELLER",
+      "started_timestamp": "2026-09-12T16:08:43.136Z",
+      "__typename": "AgentBrandingReview"
+    },
     {
       "source_id": "RDC",
       "responsiveness": 5,
