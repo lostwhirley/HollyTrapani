@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 554,
-                  "total_payment": 10004,
+                  "total_payment": 10028,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.0704,
+                    "rate": 0.07064,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.0704
+                    "rate": 0.07064
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06904
+                    "rate": 0.06908
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06311
+                    "rate": 0.06348
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06225
+                    "rate": 0.06263
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06526
+                    "rate": 0.06555
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06608
+                    "rate": 0.06621
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06608
+                    "rate": 0.06549
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.066
+                    "rate": 0.06672
                   }
                 ]
               },
@@ -2601,10 +2601,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 402224,
-                    "estimate_high": 462557,
-                    "estimate_low": 341890,
-                    "date": "2026-09-09"
+                    "estimate": 392918,
+                    "estimate_high": 443997,
+                    "estimate_low": 341838,
+                    "date": "2026-09-16"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -2935,8 +2935,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 402224,
-                        "date": "2026-09-09"
+                        "estimate": 392918,
+                        "date": "2026-09-16"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -3192,62 +3192,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 402011,
+                        "estimate": 392710,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 401710,
+                        "estimate": 392416,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 401386,
+                        "estimate": 392099,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 401056,
+                        "estimate": 391777,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400723,
+                        "estimate": 391452,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400388,
+                        "estimate": 391125,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 400053,
+                        "estimate": 390797,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399715,
+                        "estimate": 390468,
                         "date": "2027-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399376,
+                        "estimate": 390136,
                         "date": "2027-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 399036,
+                        "estimate": 389804,
                         "date": "2027-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 398694,
+                        "estimate": 389470,
                         "date": "2027-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 398351,
+                        "estimate": 389134,
                         "date": "2027-09-01"
                       }
                     ]
@@ -3339,9 +3339,9 @@
             "home": {
               "__typename": "Home",
               "property_id": "5033608535",
-              "last_update_date": "2026-09-18T14:31:45Z",
-              "last_price_change_date": null,
-              "last_price_change_amount": null,
+              "last_update_date": "2026-09-18T23:04:20Z",
+              "last_price_change_date": "2026-09-18T23:07:00.255Z",
+              "last_price_change_amount": -105,
               "listing_id": "3000686757",
               "status": "for_rent",
               "href": "https://www.realtor.com/rentals/details/5784-Declaration-Ct_Ave-Maria_FL_34142_M50336-08535",
@@ -3350,18 +3350,18 @@
               "create_date": "2026-09-12T18:16:43Z",
               "mortgage": {
                 "__typename": "Mortgage",
-                "property_tax_rate": 2.25115385,
-                "rates_url": "https://www.realtor.com/mortgage/rates/?from=mobile#zip=34142&property_price=2600&mlid=5033608535",
+                "property_tax_rate": 2.34589178,
+                "rates_url": "https://www.realtor.com/mortgage/rates/?from=mobile#zip=34142&property_price=2495&mlid=5033608535",
                 "insurance_rate": 0.0085,
                 "estimate": {
                   "__typename": "MortgageEstimate",
-                  "loan_amount": 2080,
-                  "monthly_payment": 504,
-                  "total_payment": 5002,
-                  "down_payment": 520,
+                  "loan_amount": 1996,
+                  "monthly_payment": 503,
+                  "total_payment": 4812,
+                  "down_payment": 499,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.0704,
+                    "rate": 0.07064,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -3371,7 +3371,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 14,
+                      "amount": 13,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -3407,7 +3407,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.0704
+                    "rate": 0.07064
                   },
                   {
                     "__typename": "Rate",
@@ -3415,7 +3415,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06904
+                    "rate": 0.06908
                   },
                   {
                     "__typename": "Rate",
@@ -3423,7 +3423,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06311
+                    "rate": 0.06348
                   },
                   {
                     "__typename": "Rate",
@@ -3431,7 +3431,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06225
+                    "rate": 0.06263
                   },
                   {
                     "__typename": "Rate",
@@ -3439,7 +3439,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06526
+                    "rate": 0.06555
                   },
                   {
                     "__typename": "Rate",
@@ -3447,7 +3447,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06608
+                    "rate": 0.06621
                   },
                   {
                     "__typename": "Rate",
@@ -3455,7 +3455,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06608
+                    "rate": 0.06549
                   },
                   {
                     "__typename": "Rate",
@@ -3463,7 +3463,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.066
+                    "rate": 0.06672
                   }
                 ]
               },
@@ -3977,7 +3977,7 @@
                   "core.broker"
                 ]
               },
-              "list_price": 2600,
+              "list_price": 2495,
               "list_price_min": null,
               "list_price_max": null,
               "price_per_sqft": 2,
@@ -4018,7 +4018,7 @@
                 "is_promotion_present": null,
                 "is_subdivision": null,
                 "is_plan": null,
-                "is_price_reduced": null,
+                "is_price_reduced": true,
                 "is_new_listing": true,
                 "is_coming_soon": null
               },
@@ -5203,6 +5203,618 @@
                 }
               ],
               "property_history": [
+                {
+                  "__typename": "HomePropertyHistory",
+                  "date": "2026-09-18",
+                  "event_name": "Price Changed for rent",
+                  "price": 2495,
+                  "source_name": "Naples",
+                  "listing": {
+                    "__typename": "HomeListing",
+                    "photos": [
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3667740478s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "water_front",
+                            "probability": 0.8594989776611328
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1950034927s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "pool",
+                            "probability": 0.9995854496955872
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1487528667s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9889394640922546
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9960612654685974
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3518023843s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "dining_room",
+                            "probability": 0.9999284744262695
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2852656086s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "living_room",
+                            "probability": 0.9999738931655884
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2415434093s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "kitchen",
+                            "probability": 0.9493527412414551
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m373025629s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "kitchen",
+                            "probability": 0.9999808073043823
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3577065977s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "kitchen",
+                            "probability": 0.9999816417694092
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1306263435s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "laundry_room",
+                            "probability": 0.9998847246170044
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1461077749s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.6174498200416565
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9983345866203308
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9991447925567627
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2769145911s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9994581341743469
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.999981164932251
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9999971389770508
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m28307633s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 0.9999998807907104
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3534586694s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999938011169434
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2418441204s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999876022338867
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m292665156s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m424931025s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9657514691352844
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m91487559s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 0.9999598264694214
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3395255745s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999951124191284
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1681206281s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2858646955s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9997351765632629
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3817631052s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "garage",
+                            "probability": 0.9999924898147583
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9995279312133789
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "road_view",
+                            "probability": 0.9931054711341858
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "yard",
+                            "probability": 0.9953501224517822
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9984532594680786
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.7861114144325256
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m633122884s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9991495609283447
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.8858966827392578
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "yard",
+                            "probability": 0.9975484013557434
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.9601355195045471
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "house_view",
+                            "probability": 0.7033014893531799
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m930817237s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "water_front",
+                            "probability": 0.9978442192077637
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m344300202s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "water_front",
+                            "probability": 0.9979925155639648
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3954282778s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "farm_land",
+                            "probability": 0.5688223242759705
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "water_front",
+                            "probability": 0.7318891882896423
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1299856198s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "living_room",
+                            "probability": 0.9999065399169922
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1507358916s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "dining_room",
+                            "probability": 0.9998711347579956
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m4173217949s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3354328571s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "pool",
+                            "probability": 0.9999173879623413
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3702727139s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.7127576470375061
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "pool",
+                            "probability": 0.9975922107696533
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2372838674s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "pool",
+                            "probability": 0.9998733997344971
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3711576996s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "road_view",
+                            "probability": 0.9979733824729919
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1747451921s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9998107552528381
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1727561073s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9896299242973328
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1620358865s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9792216420173645
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m3152932689s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.8557935357093811
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m4122007791s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 0.9999837875366211
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m2913517394s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m4169154604s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999455213546753
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1806368259s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999679327011108
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m4065060169s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9858716130256653
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m1025139658s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.9999527931213379
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/6f1ba0d29605e132fdbb3982e12a3867l-m449304408s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.7564776539802551
+                          }
+                        ]
+                      }
+                    ],
+                    "description": {
+                      "__typename": "HomeDescription",
+                      "sqft": 1416
+                    }
+                  }
+                },
                 {
                   "__typename": "HomePropertyHistory",
                   "date": "2026-09-12",
@@ -12063,10 +12675,10 @@
                       "type": "quantarium",
                       "name": "Quantarium"
                     },
-                    "estimate": 323975,
-                    "estimate_high": 366091,
-                    "estimate_low": 281858,
-                    "date": "2026-09-09"
+                    "estimate": 324190,
+                    "estimate_high": 369576,
+                    "estimate_low": 278803,
+                    "date": "2026-09-16"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -12075,10 +12687,10 @@
                       "type": "collateral",
                       "name": "Collateral Analytics"
                     },
-                    "estimate": 350000,
-                    "estimate_high": 378000,
-                    "estimate_low": 322000,
-                    "date": "2026-08-13"
+                    "estimate": 343000,
+                    "estimate_high": 373900,
+                    "estimate_low": 312100,
+                    "date": "2026-09-15"
                   },
                   {
                     "__typename": "LatestEstimate",
@@ -12104,8 +12716,8 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 323975,
-                        "date": "2026-09-09"
+                        "estimate": 324190,
+                        "date": "2026-09-16"
                       },
                       {
                         "__typename": "EstimateRecord",
@@ -12734,6 +13346,11 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
+                        "estimate": 343000,
+                        "date": "2026-09-15"
+                      },
+                      {
+                        "__typename": "EstimateRecord",
                         "estimate": 350000,
                         "date": "2026-08-13"
                       },
@@ -12781,62 +13398,62 @@
                     "estimates": [
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 323803,
+                        "estimate": 324018,
                         "date": "2026-10-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 323561,
+                        "estimate": 323776,
                         "date": "2026-11-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 323300,
+                        "estimate": 323514,
                         "date": "2026-12-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 323034,
+                        "estimate": 323249,
                         "date": "2027-01-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 322766,
+                        "estimate": 322980,
                         "date": "2027-02-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 322496,
+                        "estimate": 322711,
                         "date": "2027-03-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 322226,
+                        "estimate": 322440,
                         "date": "2027-04-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 321954,
+                        "estimate": 322168,
                         "date": "2027-05-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 321681,
+                        "estimate": 321894,
                         "date": "2027-06-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 321407,
+                        "estimate": 321621,
                         "date": "2027-07-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 321132,
+                        "estimate": 321345,
                         "date": "2027-08-01"
                       },
                       {
                         "__typename": "EstimateRecord",
-                        "estimate": 320855,
+                        "estimate": 321068,
                         "date": "2027-09-01"
                       }
                     ]
