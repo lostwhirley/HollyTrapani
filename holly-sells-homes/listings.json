@@ -7,7 +7,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "5986196429",
-              "last_update_date": "2026-08-16T17:06:39Z",
+              "last_update_date": "2026-09-24T10:05:00Z",
               "last_price_change_date": "2026-07-15T23:35:01.510Z",
               "last_price_change_amount": -10000,
               "listing_id": "2994803621",
@@ -24,12 +24,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 275920,
-                  "monthly_payment": 3099,
-                  "total_payment": 662588,
+                  "monthly_payment": 3133,
+                  "total_payment": 674921,
                   "down_payment": 68980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -39,7 +39,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 1841,
+                      "amount": 1875,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -165,7 +165,7 @@
                 "stories": 1,
                 "type": "single_family",
                 "sub_type": null,
-                "text": "One or more photo(s) has been virtually staged, AI generated or rendered. Imagine starting your mornings with coffee on your private lanai, watching the sun rise over the water while enjoying the peaceful sounds of nature. Welcome to 6138 Triumph Lane, one of the best values currently available in Del Webb Naples. Positioned on a tranquil lake with desirable northeast rear exposure, this beautifully maintained Serenity model offers the privacy, natural light, and indoor-outdoor lifestyle buyers seek in Southwest Florida. Wood-look tile flooring flows throughout, creating a clean, cohesive design that is both elegant and easy to maintain. The open-concept floor plan is ideal for entertaining and everyday living. The kitchen serves as the heart of the home, featuring quartz countertops, abundant cabinetry, and a large island that naturally brings family and friends together. The adjoining dining and living areas seamlessly connect to the outdoor living space, allowing the lake views to become part of your everyday experience. The flexible den with custom barn doors offers endless possibilities as a home office, reading room, hobby space, or guest retreat. The split-bedroom floor plan provides privacy for owners and guests alike. The spacious primary suite offers peaceful water views, dual vanities, a large walk-in shower, and a generous walk-in closet. Step outside to the extended screened lanai and you'll quickly understand why homes like this are so sought after. The northeast exposure provides beautiful morning light while offering shade from the afternoon sun, creating a comfortable outdoor living space year-round. Unlike many villas within the community, this is a duplex villa, not a quad villa, offering enhanced privacy, fewer shared walls, and a more single-family-home feel. It is also one of the lowest-priced opportunities of its kind currently available in Del Webb Naples, and this floor plan is no longer offered by the builder. Life inside Del Webb Naples is centered around connection, wellness, and fun. Residents enjoy two clubhouses, resort-style and lap pools, a spa, fitness center, golf simulator, pickleball, tennis, bocce, and a full calendar of activities. The Rusty Putter Restaurant provides convenient dining, while Panther Run Golf Club offers optional championship golf. Just outside the gates, Ave Maria offers dining, shopping, parks, healthcare, live music, community events, and a popular weekly farmers market, all just a short golf cart ride away. This isn't simply a home, it's the lifestyle you've worked hard to create. Ave Maria - Once you get here, you get it.",
+                "text": "One or more photo(s) has been virtually staged, AI generated or rendered. Enjoy lakefront living and the active Del Webb lifestyle in this beautifully maintained Serenity model. This duplex villa-not a quad-offers added privacy with fewer shared walls and a comfortable, single-family feel. Set along a peaceful lake with desirable northeast rear exposure, the home offers a wonderful setting for enjoying the Southwest Florida lifestyle year-round or seasonally. Inside, the bright, open floor plan features wood-look tile flooring throughout and an easy flow between the kitchen, dining and living spaces. The kitchen offers quartz countertops, abundant cabinetry and an oversized island perfect for casual dining and entertaining. Large sliding doors open to the extended screened lanai, creating a seamless connection to the outdoors and tranquil lake views beyond. The flexible den with custom barn doors makes an ideal home office, hobby room or additional guest space. The split-bedroom design provides privacy for owners and guests, while the primary suite enjoys lake views, dual vanities, a spacious walk-in shower and generous closet space. Impact-resistant windows and doors and an attached two-car garage add convenience and peace of mind. The Serenity floor plan is no longer offered by the builder, providing an opportunity to own this established lakefront design in Del Webb Naples. And this is about much more than the home. Del Webb Naples offers the active, resort-style lifestyle Southwest Florida is known for, with clubhouses, resort and lap pools, fitness facilities, pickleball, tennis, bocce, a golf simulator, on-site dining and optional golf at Panther Run Golf Club. Whether your perfect day means golf, a morning workout, meeting friends by the pool, dinner at the clubhouse or simply relaxing on your lanai overlooking the water, there is always something to enjoy. Beyond Del Webb, enjoy everything Ave Maria has to offer. Take the golf cart to Town Center for dining, shopping, community events and everyday conveniences, or simply enjoy the miles of sidewalks, trails, parks and beautifully maintained surroundings that make Ave Maria such a distinctive Southwest Florida community. Come for the lake view. Stay for the lifestyle.",
                 "year_built": 2018,
                 "name": null
               },
@@ -939,7 +939,20 @@
                   ]
                 }
               ],
-              "open_houses": null,
+              "open_houses": [
+                {
+                  "__typename": "HomeOpenHouse",
+                  "start_date": "2026-09-26T15:30:00Z",
+                  "end_date": "2026-09-26T17:30:00Z",
+                  "description": null,
+                  "time_zone": "EST",
+                  "dst": true,
+                  "href": null,
+                  "methods": [
+                    "in_person"
+                  ]
+                }
+              ],
               "tax_history": [
                 {
                   "__typename": "TaxHistory",
@@ -1236,176 +1249,178 @@
                   }
                 }
               ],
-              "photo_count": 25,
+              "photo_count": 26,
               "photos": [
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2646447091s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "unknown",
-                      "probability": 0.6915373802185059
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "yard",
-                      "probability": 0.9031606912612915
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2499486160s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "living_room",
-                      "probability": 0.8599516153335571
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2045244615s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1230053827s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
                       "label": "farm_land",
-                      "probability": 0.7185486555099487
+                      "probability": 0.700616180896759
                     },
                     {
                       "__typename": "Tag",
                       "label": "water_front",
-                      "probability": 0.9948233366012573
+                      "probability": 0.9978717565536499
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m697262726s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3270731318s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "unknown",
+                      "probability": 0
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1139498488s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
                       "label": "garage",
-                      "probability": 0.9993022680282593
+                      "probability": 0.9996095299720764
                     },
                     {
                       "__typename": "Tag",
                       "label": "house_view",
-                      "probability": 0.9424327611923218
+                      "probability": 0.9909846782684326
                     },
                     {
                       "__typename": "Tag",
                       "label": "road_view",
-                      "probability": 0.7647625207901001
+                      "probability": 0.8938266634941101
                     },
                     {
                       "__typename": "Tag",
-                      "label": "yard",
-                      "probability": 0.9461386203765869
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "house_view",
-                      "probability": 0.7372250556945801
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "house_view",
-                      "probability": 0.765476405620575
+                      "label": "unknown",
+                      "probability": 0.9020161628723145
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1545556252s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3353506460s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
                       "label": "unknown",
-                      "probability": 0.5963047742843628
+                      "probability": 0.39490029215812683
                     },
                     {
                       "__typename": "Tag",
                       "label": "porch",
-                      "probability": 0.9735052585601807
-                    },
-                    {
-                      "__typename": "Tag",
-                      "label": "unknown",
-                      "probability": 0.2030949890613556
+                      "probability": 0.9765412211418152
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3193987857s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m4024253927s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "unknown",
+                      "probability": 0.8508433699607849
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "porch",
+                      "probability": 0.9989005327224731
+                    },
+                    {
+                      "__typename": "Tag",
+                      "label": "porch",
+                      "probability": 0.9992340803146362
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m270598986s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
                       "label": "dining_room",
-                      "probability": 0.9958528280258179
+                      "probability": 0.9999992847442627
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2340231474s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m264786785s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
-                      "label": "bedroom",
-                      "probability": 1
+                      "label": "living_room",
+                      "probability": 0.9999998807907104
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3492009142s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "bathroom",
-                      "probability": 0.9999984502792358
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2078920898s.jpg",
-                  "type": "realtordotcom_mls_listing_image",
-                  "tags": [
-                    {
-                      "__typename": "Tag",
-                      "label": "bedroom",
-                      "probability": 1
-                    }
-                  ]
-                },
-                {
-                  "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3198130715s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3844076315s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
                       "__typename": "Tag",
                       "label": "unknown",
-                      "probability": 0.5672166347503662
+                      "probability": 0.9996907711029053
                     }
                   ]
                 },
                 {
                   "__typename": "HomePhoto",
-                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1763419938s.jpg",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1182592192s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "bedroom",
+                      "probability": 1
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1257336590s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "bathroom",
+                      "probability": 0.9999998807907104
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m885462809s.jpg",
+                  "type": "realtordotcom_mls_listing_image",
+                  "tags": [
+                    {
+                      "__typename": "Tag",
+                      "label": "bedroom",
+                      "probability": 1
+                    }
+                  ]
+                },
+                {
+                  "__typename": "HomePhoto",
+                  "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1571440689s.jpg",
                   "type": "realtordotcom_mls_listing_image",
                   "tags": [
                     {
@@ -1596,172 +1611,174 @@
                     "photos": [
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2646447091s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.6915373802185059
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9031606912612915
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2499486160s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "living_room",
-                            "probability": 0.8599516153335571
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2045244615s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1230053827s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "farm_land",
-                            "probability": 0.7185486555099487
+                            "probability": 0.700616180896759
                           },
                           {
                             "__typename": "Tag",
                             "label": "water_front",
-                            "probability": 0.9948233366012573
+                            "probability": 0.9978717565536499
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m697262726s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3270731318s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1139498488s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "garage",
-                            "probability": 0.9993022680282593
+                            "probability": 0.9996095299720764
                           },
                           {
                             "__typename": "Tag",
                             "label": "house_view",
-                            "probability": 0.9424327611923218
+                            "probability": 0.9909846782684326
                           },
                           {
                             "__typename": "Tag",
                             "label": "road_view",
-                            "probability": 0.7647625207901001
+                            "probability": 0.8938266634941101
                           },
                           {
                             "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9461386203765869
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.7372250556945801
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.765476405620575
+                            "label": "unknown",
+                            "probability": 0.9020161628723145
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1545556252s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3353506460s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5963047742843628
+                            "probability": 0.39490029215812683
                           },
                           {
                             "__typename": "Tag",
                             "label": "porch",
-                            "probability": 0.9735052585601807
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.2030949890613556
+                            "probability": 0.9765412211418152
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3193987857s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m4024253927s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.8508433699607849
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9989005327224731
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9992340803146362
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m270598986s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "dining_room",
-                            "probability": 0.9958528280258179
+                            "probability": 0.9999992847442627
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2340231474s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m264786785s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
+                            "label": "living_room",
+                            "probability": 0.9999998807907104
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3492009142s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bathroom",
-                            "probability": 0.9999984502792358
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2078920898s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3198130715s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3844076315s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5672166347503662
+                            "probability": 0.9996907711029053
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1763419938s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1182592192s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1257336590s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 0.9999998807907104
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m885462809s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1571440689s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
@@ -1957,172 +1974,174 @@
                     "photos": [
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2646447091s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.6915373802185059
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9031606912612915
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2499486160s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "living_room",
-                            "probability": 0.8599516153335571
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2045244615s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1230053827s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "farm_land",
-                            "probability": 0.7185486555099487
+                            "probability": 0.700616180896759
                           },
                           {
                             "__typename": "Tag",
                             "label": "water_front",
-                            "probability": 0.9948233366012573
+                            "probability": 0.9978717565536499
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m697262726s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3270731318s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1139498488s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "garage",
-                            "probability": 0.9993022680282593
+                            "probability": 0.9996095299720764
                           },
                           {
                             "__typename": "Tag",
                             "label": "house_view",
-                            "probability": 0.9424327611923218
+                            "probability": 0.9909846782684326
                           },
                           {
                             "__typename": "Tag",
                             "label": "road_view",
-                            "probability": 0.7647625207901001
+                            "probability": 0.8938266634941101
                           },
                           {
                             "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9461386203765869
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.7372250556945801
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.765476405620575
+                            "label": "unknown",
+                            "probability": 0.9020161628723145
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1545556252s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3353506460s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5963047742843628
+                            "probability": 0.39490029215812683
                           },
                           {
                             "__typename": "Tag",
                             "label": "porch",
-                            "probability": 0.9735052585601807
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.2030949890613556
+                            "probability": 0.9765412211418152
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3193987857s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m4024253927s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.8508433699607849
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9989005327224731
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9992340803146362
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m270598986s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "dining_room",
-                            "probability": 0.9958528280258179
+                            "probability": 0.9999992847442627
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2340231474s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m264786785s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
+                            "label": "living_room",
+                            "probability": 0.9999998807907104
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3492009142s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bathroom",
-                            "probability": 0.9999984502792358
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2078920898s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3198130715s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3844076315s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5672166347503662
+                            "probability": 0.9996907711029053
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1763419938s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1182592192s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1257336590s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 0.9999998807907104
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m885462809s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1571440689s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
@@ -2318,172 +2337,174 @@
                     "photos": [
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2646447091s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.6915373802185059
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9031606912612915
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2499486160s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "living_room",
-                            "probability": 0.8599516153335571
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2045244615s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1230053827s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "farm_land",
-                            "probability": 0.7185486555099487
+                            "probability": 0.700616180896759
                           },
                           {
                             "__typename": "Tag",
                             "label": "water_front",
-                            "probability": 0.9948233366012573
+                            "probability": 0.9978717565536499
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m697262726s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3270731318s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1139498488s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "garage",
-                            "probability": 0.9993022680282593
+                            "probability": 0.9996095299720764
                           },
                           {
                             "__typename": "Tag",
                             "label": "house_view",
-                            "probability": 0.9424327611923218
+                            "probability": 0.9909846782684326
                           },
                           {
                             "__typename": "Tag",
                             "label": "road_view",
-                            "probability": 0.7647625207901001
+                            "probability": 0.8938266634941101
                           },
                           {
                             "__typename": "Tag",
-                            "label": "yard",
-                            "probability": 0.9461386203765869
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.7372250556945801
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "house_view",
-                            "probability": 0.765476405620575
+                            "label": "unknown",
+                            "probability": 0.9020161628723145
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1545556252s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3353506460s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5963047742843628
+                            "probability": 0.39490029215812683
                           },
                           {
                             "__typename": "Tag",
                             "label": "porch",
-                            "probability": 0.9735052585601807
-                          },
-                          {
-                            "__typename": "Tag",
-                            "label": "unknown",
-                            "probability": 0.2030949890613556
+                            "probability": 0.9765412211418152
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3193987857s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m4024253927s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "unknown",
+                            "probability": 0.8508433699607849
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9989005327224731
+                          },
+                          {
+                            "__typename": "Tag",
+                            "label": "porch",
+                            "probability": 0.9992340803146362
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m270598986s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "dining_room",
-                            "probability": 0.9958528280258179
+                            "probability": 0.9999992847442627
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2340231474s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m264786785s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
+                            "label": "living_room",
+                            "probability": 0.9999998807907104
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3492009142s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bathroom",
-                            "probability": 0.9999984502792358
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m2078920898s.jpg",
-                        "type": "realtordotcom_mls_listing_image",
-                        "tags": [
-                          {
-                            "__typename": "Tag",
-                            "label": "bedroom",
-                            "probability": 1
-                          }
-                        ]
-                      },
-                      {
-                        "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3198130715s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m3844076315s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
                             "__typename": "Tag",
                             "label": "unknown",
-                            "probability": 0.5672166347503662
+                            "probability": 0.9996907711029053
                           }
                         ]
                       },
                       {
                         "__typename": "HomePhoto",
-                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1763419938s.jpg",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1182592192s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1257336590s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bathroom",
+                            "probability": 0.9999998807907104
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m885462809s.jpg",
+                        "type": "realtordotcom_mls_listing_image",
+                        "tags": [
+                          {
+                            "__typename": "Tag",
+                            "label": "bedroom",
+                            "probability": 1
+                          }
+                        ]
+                      },
+                      {
+                        "__typename": "HomePhoto",
+                        "href": "https://ap.rdcpix.com/b05e1caabc86f08d7e17b81b227252fel-m1571440689s.jpg",
                         "type": "realtordotcom_mls_listing_image",
                         "tags": [
                           {
@@ -18639,12 +18660,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 927200,
-                  "monthly_payment": 8160,
-                  "total_payment": 2226558,
+                  "monthly_payment": 8275,
+                  "total_payment": 2268001,
                   "down_payment": 231800,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -18654,7 +18675,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 6185,
+                      "amount": 6300,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -18690,7 +18711,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -18698,7 +18719,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -18706,7 +18727,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -18714,7 +18735,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -18722,7 +18743,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -18730,7 +18751,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -18738,7 +18759,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -18746,7 +18767,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -23294,12 +23315,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 447920,
-                  "monthly_payment": 4444,
-                  "total_payment": 1075625,
+                  "monthly_payment": 4499,
+                  "total_payment": 1095646,
                   "down_payment": 111980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -23309,7 +23330,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 2988,
+                      "amount": 3043,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -23345,7 +23366,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -23353,7 +23374,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -23361,7 +23382,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -23369,7 +23390,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -23377,7 +23398,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -23385,7 +23406,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -23393,7 +23414,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -23401,7 +23422,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -26765,12 +26786,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 239920,
-                  "monthly_payment": 2691,
-                  "total_payment": 576139,
+                  "monthly_payment": 2721,
+                  "total_payment": 586862,
                   "down_payment": 59980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -26780,7 +26801,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 1600,
+                      "amount": 1630,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -26816,7 +26837,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -26824,7 +26845,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -26832,7 +26853,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -26840,7 +26861,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -26848,7 +26869,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -26856,7 +26877,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -26864,7 +26885,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -26872,7 +26893,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -39921,12 +39942,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 799999,
-                  "monthly_payment": 7242,
-                  "total_payment": 1921100,
+                  "monthly_payment": 7342,
+                  "total_payment": 1956858,
                   "down_payment": 200000,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -39936,7 +39957,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 5336,
+                      "amount": 5436,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -39972,7 +39993,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -39980,7 +40001,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -39988,7 +40009,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -39996,7 +40017,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -40004,7 +40025,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -40012,7 +40033,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -40020,7 +40041,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -40028,7 +40049,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -53076,12 +53097,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 393520,
-                  "monthly_payment": 4055,
-                  "total_payment": 944990,
+                  "monthly_payment": 4104,
+                  "total_payment": 962579,
                   "down_payment": 98380,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -53091,7 +53112,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 2625,
+                      "amount": 2674,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -53127,7 +53148,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -53135,7 +53156,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -53143,7 +53164,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -53151,7 +53172,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -53159,7 +53180,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -53167,7 +53188,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -53175,7 +53196,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -53183,7 +53204,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
@@ -64199,12 +64220,12 @@
                 "estimate": {
                   "__typename": "MortgageEstimate",
                   "loan_amount": 319920,
-                  "monthly_payment": 3305,
-                  "total_payment": 768249,
+                  "monthly_payment": 3345,
+                  "total_payment": 782548,
                   "down_payment": 79980,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07026,
+                    "rate": 0.0721,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -64214,7 +64235,7 @@
                     {
                       "__typename": "MonthlyOwnershipExpense",
                       "type": "principal_and_interest",
-                      "amount": 2134,
+                      "amount": 2174,
                       "display_name": "Principal & interest"
                     },
                     {
@@ -64250,7 +64271,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07026
+                    "rate": 0.0721
                   },
                   {
                     "__typename": "Rate",
@@ -64258,7 +64279,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.06896
+                    "rate": 0.07087
                   },
                   {
                     "__typename": "Rate",
@@ -64266,7 +64287,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06299
+                    "rate": 0.06471
                   },
                   {
                     "__typename": "Rate",
@@ -64274,7 +64295,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06204
+                    "rate": 0.06402
                   },
                   {
                     "__typename": "Rate",
@@ -64282,7 +64303,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.0652
+                    "rate": 0.06686
                   },
                   {
                     "__typename": "Rate",
@@ -64290,7 +64311,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06594
+                    "rate": 0.06723
                   },
                   {
                     "__typename": "Rate",
@@ -64298,7 +64319,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06545
+                    "rate": 0.06666
                   },
                   {
                     "__typename": "Rate",
@@ -64306,7 +64327,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.0667
+                    "rate": 0.06821
                   }
                 ]
               },
