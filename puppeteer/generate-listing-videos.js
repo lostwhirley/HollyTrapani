@@ -5,10 +5,10 @@ const https = require('https');
 const http = require('http');
 const { execSync } = require('child_process');
 
-const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/listings.json');
+const LISTINGS_FILE = path.join(__dirname, '../listings.json');
 const OUTPUT_DIR = path.join(__dirname, '../flyers/videos');
 const FRAMES_DIR = path.join(__dirname, '../flyers/videos/frames');
-const ZILLOW_FILE = path.join(__dirname, '../holly-sells-homes/zillow.jpeg');
+const ZILLOW_FILE = path.join(__dirname, '../zillow.jpeg');
 
 function loadZillowBadge() {
   try {

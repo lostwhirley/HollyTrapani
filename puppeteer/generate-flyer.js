@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const path = require('path');
 const fs = require('fs');
 
-const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/all-listings.json');
+const LISTINGS_FILE = path.join(__dirname, '../all-listings.json');
 const OUTPUT_FILE = path.join(__dirname, 'flyer.pdf');
 
 function formatPrice(price) {

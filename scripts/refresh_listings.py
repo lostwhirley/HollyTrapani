@@ -15,10 +15,10 @@ API_KEY = os.environ.get("RAPIDAPI_KEY", "2a1eca8e84msh49b38948c7d92c3p168af6jsn
 
 # File paths
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-HOMES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "all-listings.json")
-HOMES_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "listings.json")
-SOLD_LISTINGS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "sold-listings.json")
-REVIEWS_FILE = os.path.join(REPO_ROOT, "holly-sells-homes", "reviews.json")
+HOMES_ALL_LISTINGS_FILE = os.path.join(REPO_ROOT, "all-listings.json")
+HOMES_LISTINGS_FILE = os.path.join(REPO_ROOT, "listings.json")
+SOLD_LISTINGS_FILE = os.path.join(REPO_ROOT, "sold-listings.json")
+REVIEWS_FILE = os.path.join(REPO_ROOT, "reviews.json")
 
 def get_headers():
     """Get API headers"""

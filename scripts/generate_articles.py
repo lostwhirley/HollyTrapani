@@ -19,7 +19,7 @@ FRED_MORTGAGE_30YR = "MORTGAGE30US"
 FRED_MORTGAGE_15YR = "MORTGAGE15US"
 FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv"
 CENSUS_ACS_URL = "https://api.census.gov/data/2023/acs/acs5"
-LISTINGS_PATH = "holly-sells-homes/all-listings.json"
+LISTINGS_PATH = "all-listings.json"
 OUTPUT_PATH = "articles.json"
 
 # Claude system prompt

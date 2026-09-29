@@ -4,7 +4,7 @@ const fs = require('fs');
 const https = require('https');
 const http = require('http');
 
-const LISTINGS_FILE = path.join(__dirname, '../holly-sells-homes/listings.json');
+const LISTINGS_FILE = path.join(__dirname, '../listings.json');
 const OUTPUT_DIR = path.join(__dirname, '../flyers/output');
 
 function fetchImageAsBase64(url) {
