@@ -3349,7 +3349,7 @@
             "home": {
               "__typename": "Home",
               "property_id": "5033608535",
-              "last_update_date": "2026-10-16T18:39:04Z",
+              "last_update_date": "2026-10-17T18:00:17Z",
               "last_price_change_date": "2026-09-30T22:40:47.313Z",
               "last_price_change_amount": -200,
               "listing_id": "3000686757",
@@ -4252,20 +4252,7 @@
                   ]
                 }
               ],
-              "open_houses": [
-                {
-                  "__typename": "HomeOpenHouse",
-                  "start_date": "2026-10-17T14:00:00Z",
-                  "end_date": "2026-10-17T18:00:00Z",
-                  "description": null,
-                  "time_zone": "EST",
-                  "dst": true,
-                  "href": null,
-                  "methods": [
-                    "in_person"
-                  ]
-                }
-              ],
+              "open_houses": null,
               "tax_history": [
                 {
                   "__typename": "TaxHistory",
