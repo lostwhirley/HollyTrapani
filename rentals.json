@@ -25,11 +25,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 1836,
                   "monthly_payment": 503,
-                  "total_payment": 4508,
+                  "total_payment": 4517,
                   "down_payment": 459,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07247,
+                    "rate": 0.07268,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -75,7 +75,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07247
+                    "rate": 0.07268
                   },
                   {
                     "__typename": "Rate",
@@ -83,7 +83,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.07089
+                    "rate": 0.0709
                   },
                   {
                     "__typename": "Rate",
@@ -91,7 +91,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06472
+                    "rate": 0.06494
                   },
                   {
                     "__typename": "Rate",
@@ -99,7 +99,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06321
+                    "rate": 0.0636
                   },
                   {
                     "__typename": "Rate",
@@ -107,7 +107,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06759
+                    "rate": 0.06803
                   },
                   {
                     "__typename": "Rate",
@@ -115,7 +115,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06819
+                    "rate": 0.06853
                   },
                   {
                     "__typename": "Rate",
@@ -123,7 +123,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06775
+                    "rate": 0.06809
                   },
                   {
                     "__typename": "Rate",
@@ -131,7 +131,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06654
+                    "rate": 0.06688
                   }
                 ]
               },
@@ -10848,11 +10848,11 @@
                   "__typename": "MortgageEstimate",
                   "loan_amount": 4160,
                   "monthly_payment": 554,
-                  "total_payment": 10213,
+                  "total_payment": 10235,
                   "down_payment": 1040,
                   "average_rate": {
                     "__typename": "Rate",
-                    "rate": 0.07247,
+                    "rate": 0.07268,
                     "loan_type": {
                       "__typename": "LoanType",
                       "term": 30
@@ -10898,7 +10898,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fix"
                     },
-                    "rate": 0.07247
+                    "rate": 0.07268
                   },
                   {
                     "__typename": "Rate",
@@ -10906,7 +10906,7 @@
                       "__typename": "LoanType",
                       "loan_id": "twenty_year_fix"
                     },
-                    "rate": 0.07089
+                    "rate": 0.0709
                   },
                   {
                     "__typename": "Rate",
@@ -10914,7 +10914,7 @@
                       "__typename": "LoanType",
                       "loan_id": "fifteen_year_fix"
                     },
-                    "rate": 0.06472
+                    "rate": 0.06494
                   },
                   {
                     "__typename": "Rate",
@@ -10922,7 +10922,7 @@
                       "__typename": "LoanType",
                       "loan_id": "ten_year_fix"
                     },
-                    "rate": 0.06321
+                    "rate": 0.0636
                   },
                   {
                     "__typename": "Rate",
@@ -10930,7 +10930,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_fha"
                     },
-                    "rate": 0.06759
+                    "rate": 0.06803
                   },
                   {
                     "__typename": "Rate",
@@ -10938,7 +10938,7 @@
                       "__typename": "LoanType",
                       "loan_id": "thirty_year_va"
                     },
-                    "rate": 0.06819
+                    "rate": 0.06853
                   },
                   {
                     "__typename": "Rate",
@@ -10946,7 +10946,7 @@
                       "__typename": "LoanType",
                       "loan_id": "five_one_arm"
                     },
-                    "rate": 0.06775
+                    "rate": 0.06809
                   },
                   {
                     "__typename": "Rate",
@@ -10954,7 +10954,7 @@
                       "__typename": "LoanType",
                       "loan_id": "seven_one_arm"
                     },
-                    "rate": 0.06654
+                    "rate": 0.06688
                   }
                 ]
               },
