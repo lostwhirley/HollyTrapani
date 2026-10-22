@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /as-seen-on-tv/admin/
 
 Sitemap: https://www.hollytrapani.com/sitemap.xml

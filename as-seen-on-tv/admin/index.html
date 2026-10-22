@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>As Seen on TV Admin | Holly Trapani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #3d3530;
+      --accent: #b08d7a;
+      --cream: #faf7f4;
+      --white: #ffffff;
+      --border: #e8ddd7;
+      --text-muted: #7a6e69;
+      --ok: #3f6b4a;
+      --err: #a3403a;
+    }
+    body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 300; color: var(--primary); background: var(--cream); line-height: 1.6; min-height: 100vh; }
+    .wrap { max-width: 620px; margin: 0 auto; padding: 3rem 1.25rem; }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 2.2rem; line-height: 1.2; }
+    h1 em { color: var(--accent); }
+    .sub { color: var(--text-muted); margin: 0.4rem 0 2rem; }
+    .card { background: var(--white); border: 1px solid var(--border); padding: 1.75rem; }
+    .field { margin-bottom: 1.25rem; }
+    label { display: block; font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 0.35rem; }
+    .hint { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem; }
+    input, textarea { width: 100%; font: inherit; font-size: 1rem; color: var(--primary); background: var(--cream); border: 1px solid var(--border); padding: 0.75rem 0.9rem; }
+    input:focus, textarea:focus { outline: none; border-color: var(--accent); }
+    textarea { min-height: 90px; resize: vertical; }
+    button { font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; min-height: 48px; padding: 0 1.5rem; border: 1px solid var(--primary); background: var(--primary); color: var(--white); cursor: pointer; }
+    button:hover { background: var(--accent); border-color: var(--accent); }
+    button:disabled { opacity: 0.5; cursor: wait; }
+    button.link { background: none; border: none; color: var(--text-muted); padding: 0; min-height: 0; text-decoration: underline; letter-spacing: 0.05em; }
+    .row { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+    .msg { margin-top: 1rem; font-size: 0.9rem; }
+    .msg.ok { color: var(--ok); }
+    .msg.err { color: var(--err); }
+    .preview { margin-bottom: 1.5rem; background: linear-gradient(145deg, #3d3530, #2c2420); padding: 8px; border-radius: 10px; }
+    .preview-inner { position: relative; aspect-ratio: 16 / 9; background: #000; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #d4b8a8; font-style: italic; }
+    .preview.vertical { max-width: 260px; margin-left: auto; margin-right: auto; }
+    .preview.vertical .preview-inner { aspect-ratio: 9 / 16; }
+    .preview iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .hidden { display: none !important; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- LOCKED -->
+  <section id="view-lock">
+    <h1 style="margin-bottom: 2rem;">As Seen on TV <em>Admin</em></h1>
+    <form class="card" id="lock-form">
+      <div class="field">
+        <label for="lock-password">Password</label>
+        <input type="password" id="lock-password" autocomplete="current-password" required autofocus>
+      </div>
+      <button type="submit">Unlock</button>
+      <div class="msg" id="lock-msg"></div>
+    </form>
+  </section>
+
+  <!-- EDITOR -->
+  <section id="view-editor" class="hidden">
+    <h1>Featured <em>Video</em></h1>
+    <p class="sub">This is what people see when they scan the QR code on your sign. <a href="/as-seen-on-tv/" target="_blank" rel="noopener">View live page &rarr;</a></p>
+    <form class="card" id="editor-form">
+      <div class="preview" id="preview"><div class="preview-inner" id="preview-slot">Paste a YouTube link below</div></div>
+      <div class="field">
+        <label for="f-url">YouTube link</label>
+        <input type="text" id="f-url" placeholder="https://www.youtube.com/watch?v=..." required>
+        <div class="hint">Copy the link from YouTube's <strong>Share</strong> button and paste it here.</div>
+      </div>
+      <div class="field">
+        <label for="f-title">Headline</label>
+        <input type="text" id="f-title" placeholder="4151 Traditions Drive" required>
+        <div class="hint">Usually the property address.</div>
+      </div>
+      <div class="field">
+        <label for="f-location">Location line</label>
+        <input type="text" id="f-location" placeholder="Ave Maria, FL 34142">
+      </div>
+      <div class="field">
+        <label for="f-caption">Short description</label>
+        <textarea id="f-caption" placeholder="A sentence or two shown under the video."></textarea>
+      </div>
+      <div class="row">
+        <button type="submit" id="save-btn">Save &amp; Publish</button>
+        <button type="button" class="link" id="lock-btn">Lock</button>
+      </div>
+      <div class="msg" id="editor-msg"></div>
+    </form>
+  </section>
+
+  <!-- ONE-TIME SETUP (open with ?setup) -->
+  <section id="view-setup" class="hidden">
+    <h1>Admin <em>Setup</em></h1>
+    <p class="sub">One-time step for the site developer. Encrypts a GitHub token with the admin password and saves it to the site, so the admin page can publish changes. Run it again to replace an expired token.</p>
+    <form class="card" id="setup-form">
+      <div class="field">
+        <label for="s-token">GitHub fine-grained token</label>
+        <input type="password" id="s-token" autocomplete="off" required>
+        <div class="hint">Only this repository, with <strong>Contents: Read and write</strong> permission.</div>
+      </div>
+      <div class="field">
+        <label for="s-pass">Admin password</label>
+        <input type="password" id="s-pass" autocomplete="current-password" required>
+        <div class="hint">The same password used to unlock this page.</div>
+      </div>
+      <button type="submit" id="setup-btn">Encrypt &amp; Save</button>
+      <div class="msg" id="setup-msg"></div>
+    </form>
+  </section>
+
+</div>
+
+<script>
+  var REPO = { owner: 'lostwhirley', name: 'HollyTrapani', branch: 'main' };
+  var FEATURED_PATH = 'as-seen-on-tv/featured.json';
+  var VAULT_PATH = 'as-seen-on-tv/admin/vault.json';
+  var PBKDF2_ITERATIONS = 600000;
+  // SHA-256 of the admin password, lowercased (the password is case-insensitive).
+  var PASSWORD_SHA256 = 'e3c5446c75e9f80bb44f8192b950733c4387441b1e1385f477578f0cf588bfc1';
+
+  var token = null;      // decrypted GitHub token, held in memory only
+  var featuredSha = null;
+
+  function $(id) { return document.getElementById(id); }
+  function show(view) {
+    ['view-lock', 'view-editor', 'view-setup'].forEach(function (v) { $(v).classList.toggle('hidden', v !== view); });
+  }
+  function say(el, text, kind) { el.textContent = text; el.className = 'msg' + (kind ? ' ' + kind : ''); }
+
+  // ---------- encryption (password -> AES-GCM key via PBKDF2) ----------
+  function b64(bytes) { var s = ''; bytes = new Uint8Array(bytes); for (var i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]); return btoa(s); }
+  function unb64(str) { var s = atob(str.replace(/\s/g, '')); var b = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) b[i] = s.charCodeAt(i); return b; }
+  function utf8ToB64(text) { return b64(new TextEncoder().encode(text)); }
+  function b64ToUtf8(str) { return new TextDecoder().decode(unb64(str)); }
+
+  function normalizePassword(p) { return (p || '').trim().toLowerCase(); }
+  async function passwordMatches(p) {
+    var digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(normalizePassword(p)));
+    return Array.from(new Uint8Array(digest)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('') === PASSWORD_SHA256;
+  }
+
+  async function deriveKey(password, salt, iterations) {
+    var base = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+  }
+  async function encryptSecret(secret, password) {
+    var salt = crypto.getRandomValues(new Uint8Array(16));
+    var iv = crypto.getRandomValues(new Uint8Array(12));
+    var key = await deriveKey(password, salt, PBKDF2_ITERATIONS);
+    var data = await crypto.subtle.encrypt({ name: 'AES-GCM', iv: iv }, key, new TextEncoder().encode(secret));
+    return { v: 1, iterations: PBKDF2_ITERATIONS, salt: b64(salt), iv: b64(iv), data: b64(data) };
+  }
+  async function decryptSecret(vault, password) {
+    var key = await deriveKey(password, unb64(vault.salt), vault.iterations);
+    var plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(vault.iv) }, key, unb64(vault.data));
+    return new TextDecoder().decode(plain);
+  }
+
+  // ---------- GitHub contents API ----------
+  async function gh(path, opts) {
+    opts = opts || {};
+    var res = await fetch('https://api.github.com/repos/' + REPO.owner + '/' + REPO.name + path, {
+      method: opts.method || 'GET',
+      headers: { 'Authorization': 'Bearer ' + opts.token, 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+      body: opts.body ? JSON.stringify(opts.body) : undefined
+    });
+    if (res.status === 404 && opts.allow404) return null;
+    if (!res.ok) {
+      var detail = ''; try { detail = (await res.json()).message; } catch (e) {}
+      var err = new Error('GitHub ' + res.status + (detail ? ': ' + detail : ''));
+      err.status = res.status;
+      throw err;
+    }
+    return res.json();
+  }
+  function getFile(path, tok) {
+    return gh('/contents/' + path + '?ref=' + REPO.branch, { token: tok, allow404: true });
+  }
+  function putFile(path, text, sha, message, tok) {
+    var body = { message: message, content: utf8ToB64(text), branch: REPO.branch };
+    if (sha) body.sha = sha;
+    return gh('/contents/' + path, { method: 'PUT', token: tok, body: body });
+  }
+
+  // ---------- YouTube link parsing ----------
+  function parseYouTube(input) {
+    var s = (input || '').trim();
+    if (/^[A-Za-z0-9_-]{11}$/.test(s)) return { id: s, vertical: false };
+    var m = s.match(/(?:youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/|v\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    return m ? { id: m[1], vertical: /\/shorts\//.test(s) } : null;
+  }
+  function renderPreview() {
+    var yt = parseYouTube($('f-url').value);
+    var slot = $('preview-slot');
+    $('preview').classList.toggle('vertical', !!(yt && yt.vertical));
+    if (!yt) {
+      slot.innerHTML = '';
+      slot.textContent = $('f-url').value.trim() ? "That doesn't look like a YouTube link" : 'Paste a YouTube link below';
+      return;
+    }
+    if (slot.dataset.id === yt.id) return;
+    slot.dataset.id = yt.id;
+    slot.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + yt.id + '?rel=0" allowfullscreen></iframe>';
+  }
+  $('f-url').addEventListener('input', renderPreview);
+
+  // ---------- unlock ----------
+  $('lock-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var msg = $('lock-msg');
+    var btn = e.submitter || this.querySelector('button');
+    btn.disabled = true;
+    say(msg, 'Unlocking...');
+    try {
+      var password = normalizePassword($('lock-password').value);
+      if (!(await passwordMatches(password))) throw new Error('bad-password');
+      token = null;
+      var current = {};
+      var res = await fetch('vault.json?v=' + Date.now(), { cache: 'no-store' });
+      if (res.ok) {
+        token = await decryptSecret(await res.json(), password);
+        var file = await getFile(FEATURED_PATH, token);
+        if (file) { featuredSha = file.sha; current = JSON.parse(b64ToUtf8(file.content)); }
+      } else {
+        // Saving isn't connected yet (no vault); still let the editor open with what's live now.
+        var live = await fetch('../featured.json?v=' + Date.now(), { cache: 'no-store' });
+        if (live.ok) current = await live.json();
+      }
+      $('f-url').value = current.youtube_id ? 'https://www.youtube.com/watch?v=' + current.youtube_id : '';
+      $('f-title').value = current.title || '';
+      $('f-location').value = current.location || '';
+      $('f-caption').value = current.caption || '';
+      $('lock-password').value = '';
+      say(msg, '');
+      say($('editor-msg'), token ? '' : 'Preview only: saving is not connected yet. Ask Geoff to finish the one-time setup.', token ? '' : 'err');
+      show('view-editor');
+      renderPreview();
+    } catch (err) {
+      token = null;
+      if (err.message === 'bad-password') say(msg, 'That password is not right. Please try again.', 'err');
+      else if (err.status === 401) say(msg, 'Password is correct, but the saved GitHub key has expired. Ask Geoff to renew it.', 'err');
+      else say(msg, 'Could not unlock: ' + err.message, 'err');
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  $('lock-btn').addEventListener('click', function () {
+    token = null; featuredSha = null;
+    show('view-lock');
+    $('lock-password').focus();
+  });
+
+  // ---------- save ----------
+  $('editor-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var msg = $('editor-msg');
+    var yt = parseYouTube($('f-url').value);
+    if (!yt) { say(msg, "That doesn't look like a YouTube link. Use the Share button on YouTube and copy the link.", 'err'); return; }
+    if (!token) { say(msg, 'Saving is not connected yet. Ask Geoff to finish the one-time setup.', 'err'); return; }
+    var featured = {
+      youtube_id: yt.id,
+      vertical: yt.vertical,
+      title: $('f-title').value.trim(),
+      location: $('f-location').value.trim(),
+      caption: $('f-caption').value.trim()
+    };
+    var btn = $('save-btn');
+    btn.disabled = true;
+    say(msg, 'Saving...');
+    try {
+      var result = await putFile(FEATURED_PATH, JSON.stringify(featured, null, 2) + '\n', featuredSha,
+        'Update As Seen on TV video: ' + (featured.title || yt.id), token);
+      featuredSha = result.content.sha;
+      say(msg, 'Saved! Your page will show the new video in about 1 to 2 minutes.', 'ok');
+    } catch (err) {
+      if (err.status === 409 || err.status === 422) {
+        // Someone else changed the file; pick up the latest version so the next save works.
+        var file = await getFile(FEATURED_PATH, token).catch(function () { return null; });
+        if (file) featuredSha = file.sha;
+        say(msg, 'The page changed since you opened it. Please click Save again.', 'err');
+      } else if (err.status === 401) {
+        say(msg, 'The saved GitHub key has expired. Ask Geoff to renew it.', 'err');
+      } else {
+        say(msg, 'Could not save: ' + err.message, 'err');
+      }
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  // ---------- one-time setup ----------
+  $('setup-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var msg = $('setup-msg');
+    var tok = $('s-token').value.trim();
+    var pass = normalizePassword($('s-pass').value);
+    if (!(await passwordMatches(pass))) { say(msg, 'That is not the admin password.', 'err'); return; }
+    var btn = $('setup-btn');
+    btn.disabled = true;
+    say(msg, 'Checking token...');
+    try {
+      // Verifies the token can read this repo; the vault write below proves it can write.
+      await getFile(FEATURED_PATH, tok);
+      say(msg, 'Encrypting...');
+      var vault = await encryptSecret(tok, pass);
+      var existing = await getFile(VAULT_PATH, tok);
+      await putFile(VAULT_PATH, JSON.stringify(vault, null, 2) + '\n', existing && existing.sha,
+        'Update As Seen on TV admin vault', tok);
+      $('s-token').value = $('s-pass').value = '';
+      say(msg, 'Done. In about 1 to 2 minutes, saving will work from the admin page.', 'ok');
+    } catch (err) {
+      say(msg, 'Setup failed: ' + err.message, 'err');
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  if (!window.crypto || !crypto.subtle) {
+    say($('lock-msg'), 'This page must be opened over https.', 'err');
+  }
+  if (/[?&]setup\b/.test(location.search)) show('view-setup');
+</script>
+</body>
+</html>

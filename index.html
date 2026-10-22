@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ave Maria &amp; Naples FL Real Estate | Holly Trapani, REALTOR&reg;</title>
-  <meta name="description" content="Ave Maria and Naples, FL real estate with Holly Trapani, REALTOR&reg; at New Day Realty. 14+ years, 500+ homes sold. New construction, 55+ communities &amp; military relocation.">
+  <title>Ave Maria, Naples &amp; Southwest FL Real Estate | Holly Trapani, REALTOR&reg;</title>
+  <meta name="description" content="Ave Maria, Naples &amp; Southwest Florida real estate with Holly Trapani, REALTOR&reg; at New Day Realty. 14+ years, 500+ homes sold. New construction, 55+ communities &amp; military relocation.">
   <link rel="canonical" href="https://www.hollytrapani.com/">
   <!-- Link previews (Facebook, texts, etc.) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.hollytrapani.com/">
-  <meta property="og:title" content="Ave Maria &amp; Naples FL Real Estate | Holly Trapani, REALTOR&reg;">
-  <meta property="og:description" content="14+ years helping buyers and sellers in Ave Maria and Naples, Florida. 500+ homes sold. New construction, 55+ communities &amp; military relocation.">
+  <meta property="og:title" content="Ave Maria, Naples &amp; Southwest FL Real Estate | Holly Trapani, REALTOR&reg;">
+  <meta property="og:description" content="14+ years helping buyers and sellers in Ave Maria, Naples &amp; Southwest Florida. 500+ homes sold. New construction, 55+ communities &amp; military relocation.">
   <meta property="og:image" content="https://www.hollytrapani.com/holly-profile.jpg">
   <!-- Structured data: tells Google this is a real estate agent serving Ave Maria and Naples -->
   <script type="application/ld+json">
@@ -32,10 +32,11 @@
     "areaServed": [
       { "@type": "City", "name": "Ave Maria, FL" },
       { "@type": "City", "name": "Naples, FL" },
-      { "@type": "AdministrativeArea", "name": "Collier County, FL" }
+      { "@type": "AdministrativeArea", "name": "Collier County, FL" },
+      { "@type": "Place", "name": "Southwest Florida" }
     ],
     "parentOrganization": { "@type": "RealEstateAgent", "name": "New Day Realty" },
-    "knowsAbout": ["Ave Maria real estate", "Naples real estate", "New construction homes", "55+ communities", "Military relocation", "VA loans"],
+    "knowsAbout": ["Ave Maria real estate", "Naples real estate", "Southwest Florida real estate", "New construction homes", "55+ communities", "Military relocation", "VA loans"],
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61581878379003",
       "https://www.instagram.com/hollyfloridarealtor/"
@@ -229,8 +230,21 @@
     .nav-phone:hover { color: var(--primary); }
     .nav-phone svg { flex-shrink: 0; }
 
+    .nav-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
     .nav-mrp {
       height: 36px;
+      width: auto;
+      display: block;
+      opacity: 0.9;
+    }
+
+    .nav-psa {
+      height: 22px;
       width: auto;
       display: block;
       opacity: 0.9;
@@ -1165,7 +1179,7 @@
     .homes-logo-img { width: 150px; height: 50px; background: url('homes-logo.png') center / 120% auto no-repeat; }
     .platform-badge.homes .platform-badge-title { margin-top: 0.25rem; }
 
-    .platform-badge.realtor { border-color: #d92228; min-width: 160px; height: auto; padding: 1.2rem 1rem; }
+    .platform-badge.realtor { border-color: #d92228; min-width: 180px; height: auto; padding: 1.2rem 1rem; }
     .platform-badge.realtor .platform-badge-name { color: #d92228; }
 
     .mrp-badge {
@@ -1178,6 +1192,26 @@
     .mrp-badge img {
       height: 56px;
       width: auto;
+    }
+
+    .psa-badge img {
+      height: 34px;
+    }
+
+    /* Realtor.com and MRP share the first row; PSA sits under Realtor.com */
+    .badge-stack {
+      display: grid;
+      grid-template-columns: auto auto;
+      /* Realtor.com matches Zillow's 180px width; -10px offsets the blank margin built into
+         mrp-logo.png so the MRP flag lines up with the Homes.com box */
+      column-gap: calc(1.25rem - 10px);
+      align-items: center;
+    }
+
+    .badge-stack .psa-badge {
+      height: auto;
+      margin-top: 1.5rem;
+      justify-content: center;
     }
 
     /* VIDEO TOURS */
@@ -1773,7 +1807,7 @@
         display: none;
       }
 
-      .nav-mrp {
+      .nav-badges {
         display: none;
       }
 
@@ -2177,7 +2211,10 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <img src="mrp-logo.png" alt="MRP — Military Relocation Professional" class="nav-mrp">
+      <div class="nav-badges">
+        <img src="mrp-logo.png" alt="MRP — Military Relocation Professional" class="nav-mrp">
+        <img src="psa-logo.png" alt="PSA" class="nav-psa">
+      </div>
       <a href="tel:2395658765" class="nav-phone">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 11.88 19.79 19.79 0 0 1 1.06 3.26 2 2 0 0 1 3.04 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         239-565-8765
@@ -2350,12 +2387,17 @@
             <div class="homes-logo-img" role="img" aria-label="Homes.com"></div>
             <div class="platform-badge-title">Member Agent</div>
           </div>
-          <div class="platform-badge realtor">
-            <div class="platform-badge-name">Realtor.com</div>
-            <div class="platform-badge-title">Pro</div>
-          </div>
-          <div class="mrp-badge">
-            <img src="mrp-logo.png" alt="MRP — Military Relocation Professional">
+          <div class="badge-stack">
+            <div class="platform-badge realtor">
+              <div class="platform-badge-name">Realtor.com</div>
+              <div class="platform-badge-title">Pro</div>
+            </div>
+            <div class="mrp-badge">
+              <img src="mrp-logo.png" alt="MRP — Military Relocation Professional">
+            </div>
+            <div class="mrp-badge psa-badge">
+              <img src="psa-logo.png" alt="PSA">
+            </div>
           </div>
         </div>
       </div>
