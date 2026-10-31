@@ -70,6 +70,12 @@
     .btn-outline { background: transparent; color: var(--primary); }
     .btn-outline:hover { background: var(--primary); color: var(--white); }
 
+    .featured-on { margin: 0 auto; max-width: 720px; }
+    .feature-home { margin: 3rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); max-width: 720px; }
+    .featured-on-logos { display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+    /* Logos are JPEG crops on white; multiply lets the cream background show through */
+    .featured-on-logos img { height: 56px; width: auto; mix-blend-mode: multiply; }
+
     /* ABOUT */
     .section-label { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.25em; color: var(--accent); margin-bottom: 0.75rem; }
     .about { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4.5rem 2rem; }
@@ -117,6 +123,9 @@
       .video-frame { padding: 8px; border-radius: 10px; margin-top: 1.5rem; }
       .video-frame-inner { outline-offset: 3px; }
       .cta-row .btn { flex: 1 1 100%; }
+      .feature-home { margin-top: 2.25rem; }
+      .featured-on-logos { gap: 1.5rem; }
+      .featured-on-logos img { height: 40px; }
       .about, .contact { padding: 3rem 1rem; }
       .about-inner, .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
       .about-photo { max-width: 260px; margin: 0 auto; }
@@ -147,12 +156,14 @@
 
 <section class="feature">
   <div class="feature-inner">
-    <div class="tv-badge">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
-      As Seen on TV
+    <div class="featured-on">
+      <div class="section-label">As Featured On</div>
+      <div class="featured-on-logos">
+        <img src="logos/fox4.png" alt="FOX 4">
+        <img src="logos/fox-florida.png" alt="FOX Florida">
+        <img src="logos/cw.png" alt="The CW">
+      </div>
     </div>
-    <h1 id="feature-title">4151 Traditions Drive</h1>
-    <div class="feature-location" id="feature-location">Ave Maria, FL 34142</div>
 
     <div class="video-frame" id="video-frame">
       <div class="video-frame-inner" id="video-slot">
@@ -168,6 +179,15 @@
     <div class="cta-row">
       <a href="#contact" class="btn btn-primary">Schedule a Showing</a>
       <a href="tel:+12395658765" class="btn btn-outline">Call Holly</a>
+    </div>
+
+    <div class="feature-home">
+      <div class="tv-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        As Seen on TV
+      </div>
+      <h1 id="feature-title">4151 Traditions Drive</h1>
+      <div class="feature-location" id="feature-location">Ave Maria, FL 34142</div>
     </div>
   </div>
 </section>
