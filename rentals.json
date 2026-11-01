@@ -10293,11 +10293,6 @@
                         "__typename": "EstimateRecord",
                         "estimate": 307076,
                         "date": "2021-11-10"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 314196,
-                        "date": "2021-10-20"
                       }
                     ]
                   },
@@ -10608,11 +10603,6 @@
                         "__typename": "EstimateRecord",
                         "estimate": 282400,
                         "date": "2021-11-17"
-                      },
-                      {
-                        "__typename": "EstimateRecord",
-                        "estimate": 278400,
-                        "date": "2021-10-31"
                       }
                     ]
                   },
