@@ -1,5 +1,49 @@
 [
   {
+    "property_id": "9121284043",
+    "status": "sold",
+    "holly_role": "seller",
+    "last_sold_date": "2026-11-02",
+    "last_sold_price": 557400,
+    "list_price": 559900,
+    "address": {
+      "line": "6229 Harmony Dr",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1913,
+      "type": "single_family",
+      "year_built": 2022
+    },
+    "primary_photo": "https://ap.rdcpix.com/0d7eb07aa9f28cff9584e570c03560eal-m1788690748s.jpg"
+  },
+  {
+    "property_id": "5986196429",
+    "status": "sold",
+    "holly_role": null,
+    "last_sold_date": "2026-04-03",
+    "last_sold_price": 225500,
+    "list_price": null,
+    "address": {
+      "line": "6138 Triumph Ln",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": null,
+      "baths_consolidated": null,
+      "sqft": 1554,
+      "type": "single_family",
+      "year_built": 2018
+    },
+    "primary_photo": "https://ap.rdcpix.com/1974767523/a85f329075f4add68c6523aa44ecd6ffl-m0s.jpg"
+  },
+  {
     "property_id": "9010214527",
     "status": "sold",
     "holly_role": "seller",
