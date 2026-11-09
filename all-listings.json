@@ -100,33 +100,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9459539363",
-          "listing_id": "3002229566",
+          "property_id": "9728116997",
+          "listing_id": "2996707774",
           "status": "for_sale",
           "description": {
-            "sold_date": "2020-11-10",
+            "sold_date": "2023-01-06",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 7841,
-            "sqft": 1871,
+            "lot_sqft": 4356,
+            "sqft": 1459,
             "stories": 1,
-            "sold_price": 326440,
+            "sold_price": 390000,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Holiman",
-              "street_number": "6522",
+              "street_name": "Mayflower",
+              "street_number": "5872",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.302867,
-                "lon": -81.449459,
+                "lat": 26.314927,
+                "lon": -81.447305,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "6522 Holiman Way",
+              "line": "5872 Mayflower Way",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -143,27 +143,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 595000,
+          "list_price": 299900,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m4196006350rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m860807846rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m1722216967rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m4143885741rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m3133896510rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m4255820550rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m4196006350rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m860807846rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/6522-Holiman-Way_Ave-Maria_FL_34142_M94595-39363",
-          "permalink": "6522-Holiman-Way_Ave-Maria_FL_34142_M94595-39363",
+          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
+          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -176,7 +176,7 @@
             "is_contingent": null,
             "is_garage_present": true,
             "is_new_construction": null,
-            "is_pending": null,
+            "is_pending": true,
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
@@ -186,7 +186,7 @@
             "is_promotion_present": null,
             "is_subdivision": null,
             "is_plan": null,
-            "is_price_reduced": null,
+            "is_price_reduced": false,
             "is_new_listing": false,
             "is_sales_builder": null,
             "is_usda_eligible": null,
@@ -275,6 +275,101 @@
             "is_short_sale": null,
             "is_foreclosure": null,
             "is_senior_community": true,
+            "is_for_rent": null,
+            "is_deal_available": null,
+            "is_price_excludes_land": null,
+            "is_promotion_present": null,
+            "is_subdivision": null,
+            "is_plan": null,
+            "is_price_reduced": null,
+            "is_new_listing": false,
+            "is_sales_builder": null,
+            "is_usda_eligible": null,
+            "__typename": "SearchHomeFlags"
+          },
+          "__typename": "SearchHome"
+        },
+        {
+          "property_id": "9606074382",
+          "listing_id": "2999452079",
+          "status": "for_sale",
+          "description": {
+            "sold_date": "2023-09-08",
+            "baths_consolidated": "5",
+            "beds": 5,
+            "lot_sqft": 9148,
+            "sqft": 4272,
+            "stories": 2,
+            "sold_price": 1019120,
+            "__typename": "SearchHomeDescription"
+          },
+          "location": {
+            "address": {
+              "postal_code": "34142",
+              "state": "Florida",
+              "street_name": "Traditions",
+              "street_number": "4151",
+              "city": "Ave Maria",
+              "coordinate": {
+                "lat": 26.34577,
+                "lon": -81.436196,
+                "__typename": "Coordinate"
+              },
+              "state_code": "FL",
+              "line": "4151 Traditions Dr",
+              "__typename": "SearchHomeAddress"
+            },
+            "county": {
+              "state_code": "FL",
+              "__typename": "HomeCounty"
+            },
+            "search_areas": [
+              {
+                "city": "ave maria",
+                "state_code": "fl",
+                "county": "collier",
+                "__typename": "SearchArea"
+              }
+            ],
+            "__typename": "SearchHomeLocation"
+          },
+          "list_price": 999999,
+          "photos": [
+            {
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m3570776019rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            },
+            {
+              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1551944793rd-w960_h720.jpg",
+              "__typename": "HomePhoto"
+            }
+          ],
+          "primary_photo": {
+            "href": "https://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
+            "__typename": "HomePhoto"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
+          "permalink": "4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
+          "advertisers": [
+            {
+              "fulfillment_id": "100732851",
+              "type": "seller",
+              "__typename": "HomeAdvertiser"
+            }
+          ],
+          "flags": {
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_garage_present": true,
+            "is_new_construction": null,
+            "is_pending": null,
+            "is_short_sale": null,
+            "is_foreclosure": null,
+            "is_senior_community": null,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
@@ -385,33 +480,33 @@
           "__typename": "SearchHome"
         },
         {
-          "property_id": "9728116997",
-          "listing_id": "2996707774",
+          "property_id": "9459539363",
+          "listing_id": "3002229566",
           "status": "for_sale",
           "description": {
-            "sold_date": "2023-01-06",
+            "sold_date": "2020-11-10",
             "baths_consolidated": "2",
             "beds": 2,
-            "lot_sqft": 4356,
-            "sqft": 1459,
+            "lot_sqft": 7841,
+            "sqft": 1871,
             "stories": 1,
-            "sold_price": 390000,
+            "sold_price": 326440,
             "__typename": "SearchHomeDescription"
           },
           "location": {
             "address": {
               "postal_code": "34142",
               "state": "Florida",
-              "street_name": "Mayflower",
-              "street_number": "5872",
+              "street_name": "Holiman",
+              "street_number": "6522",
               "city": "Ave Maria",
               "coordinate": {
-                "lat": 26.314927,
-                "lon": -81.447305,
+                "lat": 26.302867,
+                "lon": -81.449459,
                 "__typename": "Coordinate"
               },
               "state_code": "FL",
-              "line": "5872 Mayflower Way",
+              "line": "6522 Holiman Way",
               "__typename": "SearchHomeAddress"
             },
             "county": {
@@ -428,122 +523,27 @@
             ],
             "__typename": "SearchHomeLocation"
           },
-          "list_price": 299900,
+          "list_price": 595000,
           "photos": [
             {
-              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m860807846rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m4196006350rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m4143885741rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m1722216967rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             },
             {
-              "href": "http://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m4255820550rd-w960_h720.jpg",
+              "href": "http://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m3133896510rd-w960_h720.jpg",
               "__typename": "HomePhoto"
             }
           ],
           "primary_photo": {
-            "href": "https://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m860807846rd-w960_h720.jpg",
+            "href": "https://ap.rdcpix.com/ee2d49f0e1434fba86ea7c5d30813198l-m4196006350rd-w960_h720.jpg",
             "__typename": "HomePhoto"
           },
-          "href": "https://www.realtor.com/realestateandhomes-detail/5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
-          "permalink": "5872-Mayflower-Way_Ave-Maria_FL_34142_M97281-16997",
-          "advertisers": [
-            {
-              "fulfillment_id": "100732851",
-              "type": "seller",
-              "__typename": "HomeAdvertiser"
-            }
-          ],
-          "flags": {
-            "is_coming_soon": null,
-            "is_contingent": null,
-            "is_garage_present": true,
-            "is_new_construction": null,
-            "is_pending": true,
-            "is_short_sale": null,
-            "is_foreclosure": null,
-            "is_senior_community": true,
-            "is_for_rent": null,
-            "is_deal_available": null,
-            "is_price_excludes_land": null,
-            "is_promotion_present": null,
-            "is_subdivision": null,
-            "is_plan": null,
-            "is_price_reduced": false,
-            "is_new_listing": false,
-            "is_sales_builder": null,
-            "is_usda_eligible": null,
-            "__typename": "SearchHomeFlags"
-          },
-          "__typename": "SearchHome"
-        },
-        {
-          "property_id": "9606074382",
-          "listing_id": "2999452079",
-          "status": "for_sale",
-          "description": {
-            "sold_date": "2023-09-08",
-            "baths_consolidated": "5",
-            "beds": 5,
-            "lot_sqft": 9148,
-            "sqft": 4272,
-            "stories": 2,
-            "sold_price": 1019120,
-            "__typename": "SearchHomeDescription"
-          },
-          "location": {
-            "address": {
-              "postal_code": "34142",
-              "state": "Florida",
-              "street_name": "Traditions",
-              "street_number": "4151",
-              "city": "Ave Maria",
-              "coordinate": {
-                "lat": 26.34577,
-                "lon": -81.436196,
-                "__typename": "Coordinate"
-              },
-              "state_code": "FL",
-              "line": "4151 Traditions Dr",
-              "__typename": "SearchHomeAddress"
-            },
-            "county": {
-              "state_code": "FL",
-              "__typename": "HomeCounty"
-            },
-            "search_areas": [
-              {
-                "city": "ave maria",
-                "state_code": "fl",
-                "county": "collier",
-                "__typename": "SearchArea"
-              }
-            ],
-            "__typename": "SearchHomeLocation"
-          },
-          "list_price": 999999,
-          "photos": [
-            {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m3570776019rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            },
-            {
-              "href": "http://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1551944793rd-w960_h720.jpg",
-              "__typename": "HomePhoto"
-            }
-          ],
-          "primary_photo": {
-            "href": "https://ap.rdcpix.com/b41a8f1ef09638f75c59f332843413f8l-m1769076372rd-w960_h720.jpg",
-            "__typename": "HomePhoto"
-          },
-          "href": "https://www.realtor.com/realestateandhomes-detail/4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
-          "permalink": "4151-Traditions-Dr_Ave-Maria_FL_34142_M96060-74382",
+          "href": "https://www.realtor.com/realestateandhomes-detail/6522-Holiman-Way_Ave-Maria_FL_34142_M94595-39363",
+          "permalink": "6522-Holiman-Way_Ave-Maria_FL_34142_M94595-39363",
           "advertisers": [
             {
               "fulfillment_id": "100732851",
@@ -559,7 +559,7 @@
             "is_pending": null,
             "is_short_sale": null,
             "is_foreclosure": null,
-            "is_senior_community": null,
+            "is_senior_community": true,
             "is_for_rent": null,
             "is_deal_available": null,
             "is_price_excludes_land": null,
