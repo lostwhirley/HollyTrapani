@@ -24,7 +24,7 @@
   {
     "property_id": "5986196429",
     "status": "sold",
-    "holly_role": null,
+    "holly_role": "buyer",
     "last_sold_date": "2026-04-03",
     "last_sold_price": 225500,
     "list_price": null,
