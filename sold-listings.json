@@ -1,5 +1,27 @@
 [
   {
+    "property_id": "9728116997",
+    "status": "sold",
+    "holly_role": "seller",
+    "last_sold_date": "2026-11-23",
+    "last_sold_price": 270000,
+    "list_price": 299900,
+    "address": {
+      "line": "5872 Mayflower Way",
+      "city": "Ave Maria",
+      "state_code": "FL",
+      "postal_code": "34142"
+    },
+    "description": {
+      "beds": 2,
+      "baths_consolidated": "2",
+      "sqft": 1459,
+      "type": "single_family",
+      "year_built": 2019
+    },
+    "primary_photo": "https://ap.rdcpix.com/9511ce4d1d977246347cf4a15b2b7d5cl-m860807846s.jpg"
+  },
+  {
     "property_id": "9121284043",
     "status": "sold",
     "holly_role": "seller",
